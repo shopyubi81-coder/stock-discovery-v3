@@ -68,7 +68,31 @@ function renderScope() {
   renderSignal();
   renderFocus();
   renderIndexCards();
+  renderRefLinks();
   if (!all) { renderTabs(); renderList(); renderTracking(); renderRecord(); }
+}
+
+// ── 참고 사이트 링크 (스코프별) ──────────────────────────────────────────────
+const REF_LINKS = {
+  kr: [
+    ['국민연금 매수·매도 현황', 'https://fastjusik.com/pension'],
+    ['국민연금 포트폴리오', 'https://whale-insight.com'],
+  ],
+  us: [
+    ['QuiverQuant — 美 정치인 거래', 'https://www.quiverquant.com'],
+    ['ApeWisdom — 커뮤니티 트렌드', 'https://apewisdom.io'],
+    ['Stock Analysis — 재무·밸류', 'https://stockanalysis.com'],
+    ['StockNear — 정치 일정×주가', 'https://stocknear.com'],
+  ],
+};
+function renderRefLinks() {
+  const links = state.scope === 'kr' ? REF_LINKS.kr
+    : state.scope === 'us' ? REF_LINKS.us
+    : [...REF_LINKS.kr, ...REF_LINKS.us];
+  const el = $('#ref-links');
+  el.hidden = false;
+  el.innerHTML = '<span class="rl-label">🔗 참고</span>' + links.map(([t, u]) =>
+    `<a href="${u}" target="_blank" rel="noopener">${t}</a>`).join('');
 }
 
 // ── 시장 신호등 — 시장폭 + 공포지수 + 지수 흐름 종합 ─────────────────────────

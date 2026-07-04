@@ -47,6 +47,18 @@ body {
 .signal.red    { border-color: #5a1d2e; } .signal.red .sig-dot    { background: var(--up); box-shadow: 0 0 10px var(--up); }
 .sig-msg { font-size: 12.5px; color: var(--muted); margin: 0 2px 14px; }
 
+/* ── 참고 사이트 링크 칩 ── */
+.ref-links {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: -6px 0 14px; font-size: 11.5px;
+}
+.ref-links .rl-label { color: var(--muted); font-size: 11px; }
+.ref-links a {
+  color: #aab3d8; text-decoration: none; border: 1px solid var(--line);
+  border-radius: 14px; padding: 3px 10px; background: var(--panel);
+}
+.ref-links a:hover { border-color: var(--indigo); color: var(--indigo2); }
+
 /* ── 집중 후보 TOP 3 ── */
 .sec-head { display: flex; align-items: baseline; gap: 10px; margin: 4px 2px 10px; flex-wrap: wrap; }
 .sec-head h2 { font-size: 17px; }
