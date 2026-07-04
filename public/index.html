@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오늘의 발굴 — Stock Discovery V3</title>
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<div id="page">
+
+  <!-- ① 히어로: 제목 + 시장 신호등 -->
+  <header id="head">
+    <div>
+      <h1>오늘의 발굴</h1>
+      <span id="asof" class="muted">—</span>
+    </div>
+    <div id="signal" class="signal yellow">
+      <span class="sig-dot"></span>
+      <div>
+        <b id="signal-title">시장 판독 중…</b>
+        <small id="signal-sub" class="muted">—</small>
+      </div>
+    </div>
+  </header>
+  <p id="signal-msg" class="sig-msg"></p>
+
+  <!-- ② 시장 스트립: 지수 2 + 환율 + 공포지수 -->
+  <section id="market-strip" hidden>
+    <div class="mw idx" id="mw-kospi">
+      <div class="mw-txt"><label>KOSPI</label><b>—</b><small class="muted">—</small></div>
+      <div class="spark"></div>
+    </div>
+    <div class="mw idx" id="mw-kosdaq">
+      <div class="mw-txt"><label>KOSDAQ</label><b>—</b><small class="muted">—</small></div>
+      <div class="spark"></div>
+    </div>
+    <button class="mw clickable" id="mw-fx" type="button" title="누르면 60일 그래프">
+      <div class="mw-txt"><label>원/달러</label><b id="fx-rate">—</b><small id="fx-sub" class="muted">—</small></div>
+      <div id="fx-spark"></div>
+    </button>
+    <div class="mw">
+      <div id="fg-donut" class="donut"></div>
+      <div class="mw-txt"><label>공포·탐욕</label><b id="fg-rating">—</b><small id="fg-sub" class="muted">—</small></div>
+    </div>
+  </section>
+  <div id="news-line" class="news-line" hidden></div>
+
+  <!-- ③ 오늘의 집중 후보 TOP 3 -->
+  <section id="focus-sec" hidden>
+    <div class="sec-head">
+      <h2>🎯 오늘의 집중 후보</h2>
+      <small class="muted">4개 관점 교차 검증 · 수급 근거 필수 · 레벨은 기계적 계산 참고치</small>
+    </div>
+    <div id="focus-grid"></div>
+  </section>
+
+  <!-- ④ 안전 필터 + 관점 리스트 -->
+  <div id="filter-strip">
+    <span class="f-label">🛡 안전 필터</span>
+    <span class="f-chip" id="f-amount">—</span>
+    <span class="f-chip" id="f-cap">—</span>
+    <span class="f-chip" id="f-loss">—</span>
+    <span class="f-pass" id="f-pass">—</span>
+  </div>
+
+  <div id="regime-warn" class="warn" hidden></div>
+  <div id="theme-focus" class="theme-focus" hidden></div>
+
+  <nav id="tabs">
+    <button class="tab on" data-k="supply">수급 포착 <b>0</b></button>
+    <button class="tab" data-k="trend">추세 전환 <b>0</b></button>
+    <button class="tab" data-k="volume">거래 폭발 <b>0</b></button>
+    <button class="tab" data-k="steady">장기 매집 <b>0</b></button>
+    <button class="tab" data-k="track">🔍 추적 관찰 <b>0</b></button>
+  </nav>
+  <p id="tab-desc" class="muted"></p>
+  <div id="list-warn" class="warn" hidden></div>
+
+  <section id="list"></section>
+
+  <section id="track-sec" hidden>
+    <div id="track"></div>
+  </section>
+
+  <section id="record" class="record" hidden>
+    <div class="r-icon">📊</div>
+    <div>
+      <b>이 리스트의 성적표</b>
+      <p id="record-body" class="muted">데이터 쌓이는 중 — 발굴 이력이 5일 이상 누적되면 표시됩니다.</p>
+    </div>
+  </section>
+
+  <footer class="muted foot">본 화면은 데이터 요약 도구이며 모든 수치는 기계적 계산 참고치입니다. 투자 판단과 책임은 본인에게 있습니다.</footer>
+</div>
+
+<!-- 종목 상세 모달 -->
+<div id="modal" hidden>
+  <div id="modal-bg"></div>
+  <div id="modal-card">
+    <div class="m-head">
+      <div>
+        <h2 id="m-name">—</h2>
+        <span id="m-sub" class="muted">—</span>
+      </div>
+      <div class="m-price">
+        <b id="m-close">—</b>
+        <span id="m-change">—</span>
+      </div>
+      <button id="m-x" aria-label="닫기">✕</button>
+    </div>
+    <div class="m-sec"><h3>60일 주가</h3><div id="m-chart"></div></div>
+    <div class="m-sec"><h3>수급 — 외국인 · 기관 · 개인 · 거래량</h3><div id="m-supply"></div></div>
+    <div class="m-sec"><h3>발굴 근거</h3><ul id="m-reasons"></ul></div>
+    <div class="m-sec"><h3>📰 최근 뉴스</h3><ul id="m-news"></ul></div>
+  </div>
+</div>
+
+<!-- 환율 그래프 모달 -->
+<div id="fx-modal" hidden>
+  <div id="fx-modal-bg"></div>
+  <div id="fx-card">
+    <div class="m-head">
+      <h2>원/달러 환율 (60일)</h2>
+      <div class="m-price"><b id="fxm-rate">—</b><span id="fxm-chg">—</span></div>
+      <button id="fx-x" aria-label="닫기">✕</button>
+    </div>
+    <div id="fx-chart"></div>
+  </div>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
