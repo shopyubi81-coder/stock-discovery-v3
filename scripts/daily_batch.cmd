@@ -9,5 +9,7 @@ node --env-file-if-exists=.env src\fetch_daily.js >> "%LOGDIR%\batch.log" 2>&1
 node --env-file-if-exists=.env src\engine\discover.js >> "%LOGDIR%\batch.log" 2>&1
 node --env-file-if-exists=.env src\fetch_market.js >> "%LOGDIR%\batch.log" 2>&1
 node --env-file-if-exists=.env src\fetch_news.js >> "%LOGDIR%\batch.log" 2>&1
+node --env-file-if-exists=.env src\fetch_us.js >> "%LOGDIR%\batch.log" 2>&1
+node --env-file-if-exists=.env src\engine\discover_us.js >> "%LOGDIR%\batch.log" 2>&1
 node --env-file-if-exists=.env src\notify.js >> "%LOGDIR%\batch.log" 2>&1
 echo [%date% %time%] batch end >> "%LOGDIR%\batch.log"

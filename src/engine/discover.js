@@ -254,7 +254,7 @@ export function buildDayLists(stocks, qMap, sMap, newsMap = null) {
 
 // ── 신선도 — 발굴 이력에서 연속 포착일 계산 ──────────────────────────────────
 // history: { "YYYY-MM-DD": { supply:[t...], trend:[...], volume:[...] } }
-function freshness(history, dates, listKey, ticker, today) {
+export function freshness(history, dates, listKey, ticker, today) {
   let days = 1; // 오늘 포함
   let prev = today;
   for (let i = dates.length - 1; i >= 0; i--) {
@@ -270,7 +270,7 @@ function freshness(history, dates, listKey, ticker, today) {
 // ── 오늘의 집중 후보 TOP 3 — 관점 리스트 교차 검증 ───────────────────────────
 // 여러 리스트에 동시에 걸린 종목일수록 신뢰(수급 3 + 매집 3 + 추세 2 + 거래 1).
 // 약세장 실증(수급만 시장 방어)에 따라 수급 계열(supply/steady) 근거를 필수로 요구.
-function buildFocus(lists, qMap) {
+export function buildFocus(lists, qMap) {
   const W = { supply: 3, steady: 3, trend: 2, volume: 1 };
   const cand = new Map();
   for (const [key, rows] of Object.entries(lists)) {
@@ -316,8 +316,8 @@ function buildFocus(lists, qMap) {
 }
 
 // ── 추적 관찰 — 최근 발굴 종목의 "그 후" (처음 포착일 기준 수익률) ────────────
-const LIST_ORDER = ['supply', 'steady', 'trend', 'volume'];
-function buildTracking(history, histDates, qMap, nameOf, today, todayLists) {
+export const LIST_ORDER = ['supply', 'steady', 'trend', 'volume'];
+export function buildTracking(history, histDates, qMap, nameOf, today, todayLists) {
   const anchor = new Map(); // ticker → { date, list } (기간 내 최초 포착)
   for (const d of histDates.slice(-DISCOVER.recordWindowDays)) {
     for (const key of LIST_ORDER) {
@@ -358,7 +358,7 @@ function buildTracking(history, histDates, qMap, nameOf, today, todayLists) {
 
 // ── 성적표 — 과거 리스트 종목의 D+N 수익률 vs 유니버스 평균 ──────────────────
 // 전체 + 관점별(수급/추세/거래)로 나눠 집계해 "어떤 관점이 먹히는지" 보여준다.
-function buildRecord(history, dates, qMap, today) {
+export function buildRecord(history, dates, qMap, today) {
   const H = DISCOVER.recordHorizon;
   const recent = dates.filter((d) => d < today).slice(-DISCOVER.recordWindowDays);
 

@@ -11,6 +11,8 @@
     "notify": "node --env-file-if-exists=.env src/notify.js",
     "market": "node --env-file-if-exists=.env src/fetch_market.js",
     "news": "node --env-file-if-exists=.env src/fetch_news.js",
+    "us": "node --env-file-if-exists=.env src/fetch_us.js",
+    "score:us": "node --env-file-if-exists=.env src/engine/discover_us.js",
     "build": "node --env-file-if-exists=.env src/fetch_daily.js && node --env-file-if-exists=.env src/engine/discover.js",
     "serve": "node src/server.js",
     "dev": "node src/server.js"

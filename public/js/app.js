@@ -2,7 +2,11 @@
 // 데이터: /data/discover.json (+ 종목 클릭 시 /data/detail/{ticker}.json)
 
 const $ = (s) => document.querySelector(s);
-const state = { data: null, market: null, news: null, tab: 'supply' };
+const state = { data: null, dataKr: null, dataUs: null, scope: 'kr', market: null, news: null, tab: 'supply' };
+
+const fmtP = (v, us) => us
+  ? '$' + Number(v).toLocaleString('en-US', { maximumFractionDigits: 2 })
+  : Number(v).toLocaleString();
 
 const TAB_DESC = {
   supply: '외국인·기관 매집 — 바닥권/초입/⚠고점 추격을 자동 분류 · A=신뢰 높음, C=주의',
@@ -19,15 +23,46 @@ async function load() {
     $('#list').innerHTML = '<div class="empty-list">데이터 없음 — 터미널에서 npm run build 를 먼저 실행하세요.</div>';
     return;
   }
-  state.data = await res.json();
+  state.dataKr = await res.json();
+  try {
+    const r2 = await fetch('/data/discover-us.json');
+    if (r2.ok) {
+      state.dataUs = await r2.json();
+      for (const rows of Object.values(state.dataUs.lists)) rows.forEach((r) => { r.us = true; });
+      (state.dataUs.focus || []).forEach((r) => { r.us = true; });
+      (state.dataUs.tracking || []).forEach((r) => { r.us = true; });
+    }
+  } catch {}
+  renderScope();
+  loadMarket();
+}
+
+// ── 스코프 전환: 국내 / 해외 / 전체 ──────────────────────────────────────────
+function renderScope() {
+  document.querySelectorAll('.sc').forEach((b) => b.classList.toggle('on', b.dataset.s === state.scope));
+  const all = state.scope === 'all';
+  state.data = state.scope === 'us' && state.dataUs ? state.dataUs : state.dataKr;
+
+  $('#filter-strip').hidden = all;
+  $('#tabs').hidden = all;
+  $('#tab-desc').hidden = all;
+  if (all) {
+    $('#list').hidden = true; $('#track-sec').hidden = true;
+    $('#record').hidden = true; $('#list-warn').hidden = true;
+  }
+
+  if (state.scope === 'us' && !state.dataUs) {
+    $('#focus-sec').hidden = true;
+    $('#list').hidden = false;
+    $('#list').innerHTML = '<div class="empty-list">미국 데이터가 아직 없습니다 — 수집이 끝나면 자동으로 채워집니다 (npm run us → npm run score:us)</div>';
+    renderHead(); renderSignal();
+    return;
+  }
+
   renderHead();
   renderSignal();
   renderFocus();
-  renderTabs();
-  renderList();
-  renderTracking();
-  renderRecord();
-  loadMarket();
+  if (!all) { renderTabs(); renderList(); renderTracking(); renderRecord(); }
 }
 
 // ── 시장 신호등 — 시장폭 + 공포지수 + 지수 흐름 종합 ─────────────────────────
@@ -46,9 +81,9 @@ function renderSignal() {
   };
   $('#signal').className = `signal ${level}`;
   $('#signal-title').textContent = TITLE[level];
-  const subs = [`20일선 위 종목 ${d.market.breadth}%`];
+  const subs = [`${d.scope === 'us' ? 'S&P500 ' : ''}20일선 위 종목 ${d.market.breadth}%`];
   if (fg != null) subs.push(`공포지수 ${fg}`);
-  if (kospi) subs.push(`KOSPI ${kospi.ratio > 0 ? '+' : ''}${kospi.ratio}%`);
+  if (kospi && d.scope !== 'us') subs.push(`KOSPI ${kospi.ratio > 0 ? '+' : ''}${kospi.ratio}%`);
   $('#signal-sub').textContent = subs.join(' · ');
   $('#signal-msg').textContent = MSG[level];
 }
@@ -60,14 +95,16 @@ const HIT_BADGE = {
 };
 
 async function renderFocus() {
-  const picks = state.data.focus || [];
+  const picks = state.scope === 'all'
+    ? [...(state.dataKr.focus || []), ...(state.dataUs?.focus || [])]
+    : state.data.focus || [];
   if (!picks.length) { $('#focus-sec').hidden = true; return; }
   $('#focus-sec').hidden = false;
 
   $('#focus-grid').innerHTML = picks.map((p, i) => `
     <div class="fcard" data-t="${p.ticker}">
       <div class="fc-top">
-        <div><b>${i + 1}. ${p.name}</b>
+        <div><b>${state.scope === 'all' ? (p.us ? '🇺🇸 ' : '🇰🇷 ') : ''}${p.name}</b>
           <small>${p.ticker} · ${p.sector || p.market} · ${p.freshDays === 1 ? '오늘 진입' : p.freshDays + '일째 포착'}</small></div>
         <div class="fc-chg ${p.change > 0 ? 'up' : p.change < 0 ? 'down' : 'flat'}">${p.change > 0 ? '+' : ''}${p.change}%
           <small>대금 ${p.amountEok.toLocaleString()}억</small></div>
@@ -77,16 +114,16 @@ async function renderFocus() {
       <div class="fc-spark" id="fspark-${p.ticker}"></div>
       <div class="fc-why">${p.reasons.slice(0, 3).join(' · ')}</div>
       <div class="fc-levels">
-        <div><label>현재가 (진입 참고)</label><b>${p.entry.toLocaleString()}</b></div>
-        <div class="lv-stop"><label>손절 참고 ${p.stopPct}%</label><b>${p.stop.toLocaleString()}</b></div>
-        <div class="lv-target"><label>목표 참고 +${p.targetPct}%</label><b>${p.target.toLocaleString()}</b></div>
+        <div><label>현재가 (진입 참고)</label><b>${fmtP(p.entry, p.us)}</b></div>
+        <div class="lv-stop"><label>손절 참고 ${p.stopPct}%</label><b>${fmtP(p.stop, p.us)}</b></div>
+        <div class="lv-target"><label>목표 참고 +${p.targetPct}%</label><b>${fmtP(p.target, p.us)}</b></div>
       </div>
       <div class="fc-news" id="fnews-${p.ticker}"></div>
     </div>`).join('');
 
   // 스파크라인 (30일) + 뉴스 1건 — 비동기 로드
   for (const p of picks) {
-    fetch(`/data/detail/${p.ticker}.json`).then((r) => r.json()).then((d) => {
+    fetch(`/data/${p.us ? 'detail-us' : 'detail'}/${p.ticker}.json`).then((r) => r.json()).then((d) => {
       const el = document.getElementById(`fspark-${p.ticker}`);
       if (!el) return;
       const vals = d.quotes.slice(-30).map((r) => r.close);
@@ -216,7 +253,7 @@ function renderHead() {
   const d = state.data;
   const dt = new Date(d.date + 'T00:00:00');
   const day = ['일', '월', '화', '수', '목', '금', '토'][dt.getDay()];
-  $('#asof').textContent = `${dt.getMonth() + 1}월 ${dt.getDate()}일 (${day}) 장마감 기준`;
+  $('#asof').textContent = `${dt.getMonth() + 1}월 ${dt.getDate()}일 (${day}) ${d.scope === 'us' ? '미국 종가 기준' : '장마감 기준'}`;
   const b = $('#market-badge');
   b.textContent = `${REGIME_LABEL[d.market.regime]} · 20일선 위 종목 ${d.market.breadth}%`;
   b.className = `badge ${d.market.regime}`;
@@ -228,9 +265,10 @@ function renderHead() {
     tf.innerHTML = `🔥 오늘 발굴 종목의 <b>${d.themeFocus.share}%가 ${d.themeFocus.name}</b> (${d.themeFocus.count}종목) — 시장 관심이 이 테마에 몰려 있습니다.`;
   } else tf.hidden = true;
 
-  $('#f-amount').textContent = `거래대금 ${d.filter.minAmountEok}억↑`;
-  $('#f-cap').textContent = `시총 ${d.filter.minMarketCapEok.toLocaleString()}억↑`;
-  $('#f-loss').textContent = d.filter.excludeLoss ? '적자 제외' : '적자 포함';
+  $('#f-amount').textContent = `거래대금 ${d.filter.minAmountEok}억↑${d.scope === 'us' ? '(원화 환산)' : ''}`;
+  $('#f-cap').textContent = d.filter.minMarketCapEok
+    ? `시총 ${d.filter.minMarketCapEok.toLocaleString()}억↑` : 'S&P500 대형주';
+  $('#f-loss').textContent = d.filter.excludeLoss ? '적자 제외' : d.scope === 'us' ? '펀더 필터 없음' : '적자 포함';
   $('#f-pass').innerHTML = `${d.filter.universe.toLocaleString()}종목 → <b>${d.filter.passed.toLocaleString()}종목 통과</b>`;
 }
 
@@ -264,10 +302,13 @@ function renderList() {
 
   const rows = state.data.lists[state.tab] || [];
   if (!rows.length) {
+    const usNoSupply = state.scope === 'us' && (state.tab === 'supply' || state.tab === 'steady');
     $('#list').innerHTML = `<div class="empty-list">${
-      state.tab === 'steady'
-        ? '아직 10일 이상 연속 매수 종목이 없습니다 — 수급 이력이 매일 쌓이면서 자동으로 채워집니다.'
-        : '오늘은 이 조건을 만족하는 종목이 없습니다 — 무리해서 살 필요 없다는 뜻이기도 합니다.'
+      usNoSupply
+        ? '미국 주식은 투자자별(외국인·기관) 수급 데이터가 제공되지 않아 이 관점은 비어 있습니다 — 추세 전환·거래 폭발 탭을 이용하세요.'
+        : state.tab === 'steady'
+          ? '아직 10일 이상 연속 매수 종목이 없습니다 — 수급 이력이 매일 쌓이면서 자동으로 채워집니다.'
+          : '오늘은 이 조건을 만족하는 종목이 없습니다 — 무리해서 살 필요 없다는 뜻이기도 합니다.'
     }</div>`;
     return;
   }
@@ -341,15 +382,23 @@ function renderRecord() {
 
 // ── 상세 모달 ────────────────────────────────────────────────────────────────
 async function openDetail(ticker) {
-  let item = Object.values(state.data.lists).flat().find((x) => x.ticker === ticker);
+  // 국내·해외 데이터 모두에서 탐색 (전체 스코프의 카드 클릭 대응)
+  const pools = [state.data, state.dataKr, state.dataUs].filter(Boolean);
+  let item = null, src = null;
+  for (const d of pools) {
+    item = Object.values(d.lists).flat().find((x) => x.ticker === ticker)
+      || (d.focus || []).find((x) => x.ticker === ticker);
+    if (item) { src = d; break; }
+  }
 
   // 오늘 리스트엔 없는 추적 관찰 종목 — 포착 정보로 근거 구성
   if (!item) {
+    src = state.data;
     const tr = (state.data.tracking || []).find((x) => x.ticker === ticker);
     if (!tr) return;
     const md = `${+tr.pickedAt.slice(5, 7)}/${+tr.pickedAt.slice(8, 10)}`;
     item = {
-      ticker: tr.ticker, name: tr.name, sector: null, market: '', change: null,
+      ticker: tr.ticker, name: tr.name, sector: null, market: '', change: null, us: tr.us,
       reasons: [
         `${md} "${SRC_LABEL[tr.list]}" 리스트에서 처음 포착`,
         tr.tradingDays > 0
@@ -373,8 +422,8 @@ async function openDetail(ticker) {
   $('#modal').hidden = false;
 
   try {
-    const d = await (await fetch(`/data/detail/${ticker}.json`)).json();
-    $('#m-close').textContent = d.quotes.at(-1).close.toLocaleString();
+    const d = await (await fetch(`/data/${item.us ? 'detail-us' : 'detail'}/${ticker}.json`)).json();
+    $('#m-close').textContent = fmtP(d.quotes.at(-1).close, item.us);
     drawPrice(d.quotes);
     drawSupply(d.supply, d.quotes);
   } catch {
@@ -524,6 +573,11 @@ $('#tabs').addEventListener('click', (e) => {
   const t = e.target.closest('.tab'); if (!t) return;
   state.tab = t.dataset.k;
   renderTabs(); renderList();
+});
+$('#scope').addEventListener('click', (e) => {
+  const b = e.target.closest('.sc'); if (!b) return;
+  state.scope = b.dataset.s;
+  renderScope();
 });
 $('#list').addEventListener('click', (e) => {
   const row = e.target.closest('.row');

@@ -26,6 +26,13 @@ body {
 #head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
 #head h1 { font-size: 24px; display: inline; margin-right: 10px; }
 #asof { font-size: 12px; }
+.scope { display: inline-flex; gap: 4px; margin-left: 14px; vertical-align: 3px; }
+.sc {
+  background: var(--panel); color: var(--muted); border: 1px solid var(--line);
+  border-radius: 16px; padding: 4px 12px; font-size: 12px; cursor: pointer; font-weight: 600;
+}
+.sc.on { background: var(--indigo); border-color: var(--indigo); color: #fff; }
+
 .signal {
   display: flex; align-items: center; gap: 10px;
   border-radius: 12px; padding: 9px 16px; border: 1px solid var(--line); background: var(--panel);
