@@ -81,8 +81,10 @@ const REF_LINKS = {
     ['국민연금 매수·매도 현황', 'https://fastjusik.com/pension'],
     ['국민연금 포트폴리오', 'https://whale-insight.com'],
     ['테마 머니플로우 (생애주기)', 'https://f29.io/moneyflow'],
+    ['ETF 인기 랭킹 (거래량 TOP)', 'https://www.etfcheck.co.kr/mobile/rank/volume'],
   ],
   us: [
+    ['ETF 인기 랭킹 (거래량 TOP)', 'https://stockanalysis.com/etf/screener/?p=volume&d=desc'],
     ['QuiverQuant — 美 정치인 거래', 'https://www.quiverquant.com'],
     ['ApeWisdom — 커뮤니티 트렌드', 'https://apewisdom.io'],
     ['Stock Analysis — 재무·밸류', 'https://stockanalysis.com'],
