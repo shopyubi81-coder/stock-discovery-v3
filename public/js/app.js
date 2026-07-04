@@ -16,6 +16,11 @@ const TAB_DESC = {
   track: '최근 2주 발굴 종목의 그 후 — 처음 포착일 종가 기준 수익률 · ● = 오늘도 리스트에 있음',
 };
 const REGIME_LABEL = { strong: '🟢 시장 강세', neutral: '🟡 시장 중립', weak: '🔴 시장 약세' };
+// 미국 스코프 전용 설명 — 수급이 비공개라 프록시(CMF·OBV) 기반임을 명시
+const TAB_DESC_US = {
+  supply: '미국은 수급 비공개 — CMF(고가권 마감×거래량)·OBV·상승일 거래량으로 기관성 매집을 추정한 프록시',
+  steady: '60일 CMF + OBV 상승 지속 — 장기 매집 추정(프록시)',
+};
 
 async function load() {
   const res = await fetch('/data/discover.json');
@@ -287,7 +292,7 @@ function renderTabs() {
       ? (state.data.tracking || []).length
       : (state.data.lists[t.dataset.k] || []).length;
   });
-  $('#tab-desc').textContent = TAB_DESC[state.tab];
+  $('#tab-desc').textContent = (state.scope === 'us' && TAB_DESC_US[state.tab]) || TAB_DESC[state.tab];
 
   // 추적 관찰 탭이면 리스트 대신 추적 섹션 + 성적표 표시 (성적표는 추적의 요약본)
   const isTrack = state.tab === 'track';
@@ -313,7 +318,7 @@ function renderList() {
     const usNoSupply = state.scope === 'us' && (state.tab === 'supply' || state.tab === 'steady');
     $('#list').innerHTML = `<div class="empty-list">${
       usNoSupply
-        ? '미국 주식은 투자자별(외국인·기관) 수급 데이터가 제공되지 않아 이 관점은 비어 있습니다 — 추세 전환·거래 폭발 탭을 이용하세요.'
+        ? '오늘은 매집 프록시 기준(CMF·OBV·상승일 거래량)을 충족한 종목이 없습니다.'
         : state.tab === 'steady'
           ? '아직 10일 이상 연속 매수 종목이 없습니다 — 수급 이력이 매일 쌓이면서 자동으로 채워집니다.'
           : '오늘은 이 조건을 만족하는 종목이 없습니다 — 무리해서 살 필요 없다는 뜻이기도 합니다.'

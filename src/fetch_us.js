@@ -72,6 +72,7 @@ async function main() {
     for (const q of data.quotes.slice(-130)) {
       quotes.push({
         ticker: s.symbol, date: q.date, close: q.close, volume: q.volume || 0,
+        high: q.high ?? q.close, low: q.low ?? q.close, // CMF(매집 프록시) 계산용
         value: (q.close || 0) * (q.volume || 0) * fxRate, // 원화 환산 거래대금
       });
     }
