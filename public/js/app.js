@@ -254,10 +254,6 @@ function renderHead() {
   const dt = new Date(d.date + 'T00:00:00');
   const day = ['일', '월', '화', '수', '목', '금', '토'][dt.getDay()];
   $('#asof').textContent = `${dt.getMonth() + 1}월 ${dt.getDate()}일 (${day}) ${d.scope === 'us' ? '미국 종가 기준' : '장마감 기준'}`;
-  const b = $('#market-badge');
-  b.textContent = `${REGIME_LABEL[d.market.regime]} · 20일선 위 종목 ${d.market.breadth}%`;
-  b.className = `badge ${d.market.regime}`;
-
   // 테마 쏠림
   const tf = $('#theme-focus');
   if (d.themeFocus) {
