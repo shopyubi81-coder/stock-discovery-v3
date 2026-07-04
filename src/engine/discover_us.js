@@ -11,7 +11,7 @@ import { outPath } from '../lib/paths.js';
 import { REGIME, DISCOVER } from './config.js';
 import { obv } from './indicators.js';
 import {
-  buildDayLists, freshness, buildTracking, buildRecord, buildFocus,
+  buildDayLists, freshness, buildTracking, buildRecord, buildFocus, buildThemeFlow,
 } from './discover.js';
 
 // ── 수급 프록시 — 미국은 투자자별 수급이 비공개라 가격·거래량 지문으로 기관성 매집을 추정 ──
@@ -121,6 +121,7 @@ async function main() {
   const tracking = buildTracking(history, histDates, qMap, nameOf, today, lists);
   const record = buildRecord(history, histDates, qMap, today);
   const focus = buildFocus(lists, qMap);
+  const themeFlow = buildThemeFlow(stocks, lists, history, histDates);
 
   history[today] = Object.fromEntries(Object.entries(lists).map(([k, v]) => [k, v.map((r) => r.ticker)]));
   const keep = Object.keys(history).sort().slice(-DISCOVER.historyKeep);
@@ -134,7 +135,7 @@ async function main() {
     version: 3, scope: 'us', date: today, generated_at: new Date().toISOString(),
     market: { regime, breadth: Math.round(breadth * 100) },
     filter: { minAmountEok: 100, minMarketCapEok: null, excludeLoss: false, universe: day.universe, passed: day.passed },
-    themeFocus: null, focus, lists, tracking, record,
+    themeFocus: null, themeFlow, focus, lists, tracking, record,
   }, null, 2));
 
   await mkdir(outPath('detail-us'), { recursive: true });

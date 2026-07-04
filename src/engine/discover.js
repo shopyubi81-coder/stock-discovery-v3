@@ -12,7 +12,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { outPath } from '../lib/paths.js';
-import { FILTER, DISCOVER, REGIME, THEMES } from './config.js';
+import { FILTER, DISCOVER, REGIME, THEMES, THEME_FLOW } from './config.js';
 import { sma, rsi, obv, streak } from './indicators.js';
 import { computeSignals } from './signals.js';
 
@@ -267,6 +267,72 @@ export function freshness(history, dates, listKey, ticker, today) {
   return days;
 }
 
+// ── 테마(섹터) 생애주기 — "강한 테마인 건 알겠는데 지금이 초입인지 늦은 건지" ──
+// 오늘 히트(등급 가중) vs 최근 N일 평균 히트(과거 리스트 소속 가중)를 비교해
+// 레벨(활성 상위 1/3 여부) × 모멘텀(상승/하락)으로 5단계 + 중립을 분류한다.
+export function buildThemeFlow(stocks, lists, history, histDates) {
+  const F = THEME_FLOW;
+  const sectorOf = new Map(stocks.map((s) => [s.ticker, s.sector || null]));
+
+  // 오늘 히트 — 등급까지 반영
+  const todayHeat = new Map();
+  for (const [key, rows] of Object.entries(lists)) {
+    const w = F.listWeight[key] || 1;
+    for (const r of rows) {
+      const sec = sectorOf.get(r.ticker) || r.sector;
+      if (!sec) continue;
+      const gw = F.gradeWeight[r.grade] ?? 1;
+      todayHeat.set(sec, (todayHeat.get(sec) || 0) + w * gw);
+    }
+  }
+
+  // 과거 N일 히트 — 리스트 소속만으로 가중(과거 등급은 저장돼 있지 않음)
+  const dayHeat = (entry) => {
+    const h = new Map();
+    for (const [key, tickers] of Object.entries(entry || {})) {
+      const w = F.listWeight[key] || 1;
+      for (const t of tickers) {
+        const sec = sectorOf.get(t);
+        if (sec) h.set(sec, (h.get(sec) || 0) + w);
+      }
+    }
+    return h;
+  };
+  const recentHeats = histDates.slice(-F.window).map((d) => dayHeat(history[d]));
+
+  const allSectors = new Set([...todayHeat.keys(), ...recentHeats.flatMap((h) => [...h.keys()])]);
+  const avgPrior = new Map();
+  for (const s of allSectors) {
+    const vals = recentHeats.map((h) => h.get(s) || 0);
+    avgPrior.set(s, vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : 0);
+  }
+
+  const sectors = [...allSectors].filter((s) => (todayHeat.get(s) || 0) >= F.minHeat || (avgPrior.get(s) || 0) >= F.minHeat);
+  if (!sectors.length) return [];
+
+  const topN = Math.max(1, Math.ceil(sectors.length * F.topFraction));
+  const highSet = new Set([...sectors].sort((a, b) => (todayHeat.get(b) || 0) - (todayHeat.get(a) || 0)).slice(0, topN));
+  const priorHighSet = new Set([...sectors].sort((a, b) => (avgPrior.get(b) || 0) - (avgPrior.get(a) || 0)).slice(0, topN));
+
+  const stages = sectors.map((s) => {
+    const today = todayHeat.get(s) || 0, prior = avgPrior.get(s) || 0;
+    const up = today > prior * F.upMult + 0.3;
+    const isHigh = highSet.has(s), wasHigh = priorHighSet.has(s);
+
+    let stage;
+    if (wasHigh && !isHigh) stage = '이탈';
+    else if (isHigh && up) stage = '주도';
+    else if (isHigh) stage = '둔화';
+    else if (up && prior < F.minHeat) stage = '신규부상';
+    else if (up) stage = '강화';
+    else stage = '중립';
+
+    return { sector: s, heat: Math.round(today * 10) / 10, prior: Math.round(prior * 10) / 10, stage };
+  });
+  stages.sort((a, b) => b.heat - a.heat);
+  return stages;
+}
+
 // ── 오늘의 집중 후보 TOP 3 — 관점 리스트 교차 검증 ───────────────────────────
 // 여러 리스트에 동시에 걸린 종목일수록 신뢰(수급 3 + 매집 3 + 추세 2 + 거래 1).
 // 약세장 실증(수급만 시장 방어)에 따라 수급 계열(supply/steady) 근거를 필수로 요구.
@@ -457,6 +523,7 @@ async function main() {
   const tracking = buildTracking(history, histDates, qMap, nameOf, today, lists);
   const record = buildRecord(history, histDates, qMap, today);
   const focus = buildFocus(lists, qMap);
+  const themeFlow = buildThemeFlow(stocks, lists, history, histDates);
 
   // 4) 발굴 이력 갱신
   history[today] = Object.fromEntries(Object.entries(lists).map(([k, v]) => [k, v.map((r) => r.ticker)]));
@@ -477,7 +544,7 @@ async function main() {
       excludeLoss: FILTER.excludeLoss,
       universe: day.universe, passed: day.passed,
     },
-    themeFocus, focus, lists, tracking, record,
+    themeFocus, themeFlow, focus, lists, tracking, record,
   };
   await writeFile(outPath('discover.json'), JSON.stringify(out, null, 2));
 

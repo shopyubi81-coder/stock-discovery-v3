@@ -25,6 +25,17 @@ export const REGIME = {
   riskOffBreadth: 0.40,  // 40% 미만 → risk-off
 };
 
+// 테마(섹터) 생애주기 분류 — 신규부상/강화/주도/둔화/이탈/중립
+export const THEME_FLOW = {
+  window: 5,           // 비교 기준 — 최근 N거래일 평균 히트 대비
+  topFraction: 1 / 3,  // 활성 섹터 중 상위 1/3을 "레벨 높음"으로 간주
+  upMult: 1.15,        // 오늘 히트가 평균×이 배수보다 크면 "상승"
+  downMult: 0.80,      // 평균×이 배수보다 작으면 "하락"
+  minHeat: 0.5,        // 이 미만은 무시(노이즈 제거)
+  listWeight: { supply: 3, steady: 3, trend: 2, volume: 1 },  // 이력(과거)용 — 리스트 소속만으로 가중
+  gradeWeight: { A: 1.5, B: 1, C: 0.4 },                      // 오늘용 — 등급까지 반영해 가중
+};
+
 // 테마 사전 (V2 검증본 재사용, 관심도 순)
 export const THEMES = [
   { name: 'AI/반도체', heat: 95, keys: ['AI', '인공지능', '반도체', 'HBM', 'GPU', 'DRAM', '파운드리', '낸드', '메모리', 'TSV', 'CXL', '패키징', '에칭', '증착', '노광', '웨이퍼'] },

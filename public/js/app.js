@@ -54,10 +54,12 @@ function renderScope() {
   if (all) {
     $('#list').hidden = true; $('#track-sec').hidden = true;
     $('#record').hidden = true; $('#list-warn').hidden = true;
+    $('#flow-sec').hidden = true; // 테마 생애주기는 시장별 섹터 체계가 달라 국내/해외 탭에서만 표시
   }
 
   if (state.scope === 'us' && !state.dataUs) {
     $('#focus-sec').hidden = true;
+    $('#flow-sec').hidden = true;
     $('#list').hidden = false;
     $('#list').innerHTML = '<div class="empty-list">미국 데이터가 아직 없습니다 — 수집이 끝나면 자동으로 채워집니다 (npm run us → npm run score:us)</div>';
     renderHead(); renderSignal();
@@ -66,6 +68,7 @@ function renderScope() {
 
   renderHead();
   renderSignal();
+  if (!all) renderThemeFlow();
   renderFocus();
   renderIndexCards();
   renderRefLinks();
@@ -117,6 +120,39 @@ function renderSignal() {
   if (kospi && d.scope !== 'us') subs.push(`KOSPI ${kospi.ratio > 0 ? '+' : ''}${kospi.ratio}%`);
   $('#signal-sub').textContent = subs.join(' · ');
   $('#signal-msg').textContent = MSG[level];
+}
+
+// ── 테마 생애주기 ────────────────────────────────────────────────────────────
+const FLOW_STAGE = {
+  신규부상: ['fl-new', '막 관심이 붙기 시작한 테마 — 아직 리스크는 크지만 가장 이르게 탈 수 있는 구간'],
+  강화: ['fl-grow', '관심도가 꾸준히 커지는 중 — 초입은 지났지만 여력이 남은 구간'],
+  주도: ['fl-lead', '이미 시장을 이끌고 있고 관심도도 계속 오르는 중 — 가장 강하지만 이미 늦었을 수 있는 구간'],
+  둔화: ['fl-slow', '여전히 강하지만 관심도 개선 속도가 줄어드는 중 — 신규 진입엔 주의'],
+  이탈: ['fl-fade', '상위권에서 멀어지는 중 — 차익실현·관심 이동 신호'],
+};
+function renderThemeFlow() {
+  const flow = state.data.themeFlow || [];
+  const sec = $('#flow-sec');
+  const active = flow.filter((f) => f.stage !== '중립');
+  if (!active.length) { sec.hidden = true; return; }
+  sec.hidden = false;
+
+  const counts = {};
+  for (const f of flow) counts[f.stage] = (counts[f.stage] || 0) + 1;
+  const ORDER = ['신규부상', '강화', '주도', '둔화', '이탈', '중립'];
+  $('#flow-summary').innerHTML = ORDER.filter((s) => counts[s]).map((s) =>
+    `<span><b>${counts[s]}</b>${s}</span>`).join('');
+
+  const byStage = {};
+  for (const f of active) (byStage[f.stage] = byStage[f.stage] || []).push(f);
+  $('#flow-groups').innerHTML = ORDER.filter((s) => s !== '중립' && byStage[s]?.length).map((s) => {
+    const [cls, desc] = FLOW_STAGE[s];
+    const names = byStage[s].sort((a, b) => b.heat - a.heat).map((f) => f.sector).join(' · ');
+    return `<div class="flow-row">
+      <span class="fl-tag ${cls}">${s} ${byStage[s].length}개</span>
+      <div class="fl-body"><div class="fl-sectors">${names}</div><div class="fl-desc">${desc}</div></div>
+    </div>`;
+  }).join('');
 }
 
 // ── 오늘의 집중 후보 TOP 3 ───────────────────────────────────────────────────
