@@ -5,6 +5,7 @@
 
 import { writeFile } from 'node:fs/promises';
 import { outPath } from './lib/paths.js';
+import { fetchYahooChart } from './lib/yahoo.js';
 
 const UA = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36' };
 
@@ -70,6 +71,21 @@ async function fetchIndex(code) {
   };
 }
 
+// ── 미국 지수 30일 (Yahoo Finance) ────────────────────────────────────────────
+async function fetchUsIndex(symbol) {
+  const { quotes } = await fetchYahooChart(symbol, '3mo');
+  if (!quotes?.length) throw new Error('데이터 없음');
+  const last = quotes.at(-1), prev = quotes.at(-2) || last;
+  const change = last.close - prev.close;
+  return {
+    value: Math.round(last.close * 100) / 100,
+    change: Math.round(change * 100) / 100,
+    ratio: Math.round((change / prev.close) * 1000) / 10,
+    date: last.date,
+    history: quotes.slice(-30).map((r) => ({ d: r.date, v: r.close })),
+  };
+}
+
 // ── 연기금 리밸런싱 뉴스 (구글뉴스 RSS — 키 불필요) ──────────────────────────
 async function fetchPensionNews() {
   const q = encodeURIComponent('연기금 리밸런싱 OR 국민연금 순매수');
@@ -77,10 +93,12 @@ async function fetchPensionNews() {
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const xml = await res.text();
   const items = [];
+  const ENT = { '&quot;': '"', '&amp;': '&', '&lt;': '<', '&gt;': '>', '&#39;': "'", '&apos;': "'" };
+  const decode = (s) => s ? s.replace(/&quot;|&amp;|&lt;|&gt;|&#39;|&apos;/g, (m) => ENT[m]) : s;
   const blocks = xml.split('<item>').slice(1);
   const pick = (b, tag) => {
     const m = b.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`));
-    return m ? m[1].replace(/<!\[CDATA\[|\]\]>/g, '').trim() : null;
+    return m ? decode(m[1].replace(/<!\[CDATA\[|\]\]>/g, '').trim()) : null;
   };
   for (const b of blocks.slice(0, 6)) {
     const title = pick(b, 'title');
@@ -99,11 +117,16 @@ async function fetchPensionNews() {
 }
 
 async function main() {
-  const out = { generated_at: new Date().toISOString(), feargreed: null, fx: null, indices: {}, pensionNews: [] };
+  const out = { generated_at: new Date().toISOString(), feargreed: null, fx: null, indices: {}, indicesUs: {}, pensionNews: [] };
 
   for (const code of ['KOSPI', 'KOSDAQ']) {
     try { out.indices[code.toLowerCase()] = await fetchIndex(code); console.log(`[market] ${code} ${out.indices[code.toLowerCase()].value} (${out.indices[code.toLowerCase()].ratio}%)`); }
     catch (e) { console.warn(`[market] ${code} 실패: ${e.message}`); }
+  }
+
+  for (const [key, symbol, label] of [['dow', '^DJI', '다우'], ['nasdaq', '^IXIC', '나스닥'], ['russell', '^RUT', '러셀2000']]) {
+    try { out.indicesUs[key] = await fetchUsIndex(symbol); console.log(`[market] ${label} ${out.indicesUs[key].value} (${out.indicesUs[key].ratio}%)`); }
+    catch (e) { console.warn(`[market] ${label} 실패: ${e.message}`); }
   }
 
   try { out.feargreed = await fetchFearGreed(); console.log(`[market] 공포지수 ${out.feargreed.score} (${out.feargreed.rating})`); }

@@ -34,6 +34,10 @@ const sentiment = (text) => {
 };
 const parseDate = (dt) => dt && dt.length >= 8 ? `${dt.slice(0, 4)}-${dt.slice(4, 6)}-${dt.slice(6, 8)}` : null;
 
+// 네이버 API가 제목에 HTML 엔티티를 인코딩된 채로 내려줄 때가 있어 화면에 &quot; 등이 그대로 노출됨 → 여기서 디코딩
+const ENTITIES = { '&quot;': '"', '&amp;': '&', '&lt;': '<', '&gt;': '>', '&#39;': "'", '&apos;': "'", '&nbsp;': ' ' };
+const decodeEntities = (s) => s ? s.replace(/&quot;|&amp;|&lt;|&gt;|&#39;|&apos;|&nbsp;/g, (m) => ENTITIES[m]) : s;
+
 async function fetchTickerNews(ticker) {
   try {
     const res = await fetch(`https://m.stock.naver.com/api/news/stock/${ticker}?page=1&pageSize=10`, H);
@@ -42,9 +46,10 @@ async function fetchTickerNews(ticker) {
     const groups = await res.json();
     const items = (Array.isArray(groups) ? groups : []).flatMap((g) => g.items || []);
     return items.map((n) => {
-      const text = (n.title || '') + ' ' + (n.body || '');
+      const title = decodeEntities(n.title);
+      const text = (title || '') + ' ' + decodeEntities(n.body || '');
       return {
-        title: n.title, date: parseDate(n.datetime), source: n.officeName,
+        title, date: parseDate(n.datetime), source: decodeEntities(n.officeName),
         url: n.mobileNewsUrl, score: sentiment(text),
       };
     });

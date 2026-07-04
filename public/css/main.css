@@ -91,7 +91,7 @@ body {
 
 /* ── 시장 위젯 스트립 (공포지수·환율·연기금뉴스) ── */
 #market-strip {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 10px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 10px;
 }
 .mw.idx .spark { margin-left: auto; flex: 0 0 auto; }
 .mw.idx b.up { color: var(--up); } .mw.idx b.down { color: var(--down); }

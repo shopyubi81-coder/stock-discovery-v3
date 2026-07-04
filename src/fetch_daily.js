@@ -15,6 +15,7 @@ import { writeFile, readFile } from 'node:fs/promises';
 import { upsert, hasSupabase } from './lib/supabase.js';
 import { sampleHistory, TODAY } from './lib/sample.js';
 import { fetchUniverse, fetchBundleMany } from './lib/naver.js';
+import { resolveSectorNames } from './lib/sector.js';
 import { outPath } from './lib/paths.js';
 
 const MODE = process.env.FETCH_MODE || 'sample';
@@ -51,11 +52,12 @@ async function collectLive() {
     onProgress: (i, n) => { if (i % 50 === 0 || i === n) console.log(`    ${i}/${n}`); },
   });
 
-  // 펀더멘털·업종코드를 종목 마스터에 부착 (score.js 가 사용)
+  // 펀더멘털·업종코드를 종목 마스터에 부착 + 업종명 해석(캐시)
+  const sectorNames = await resolveSectorNames([...funda.values()].map((f) => f.sector_code));
   const stocks = universe.map(({ close, ...s }) => {
     const f = funda.get(s.ticker) || {};
     return {
-      ...s, sector_code: f.sector_code ?? null,
+      ...s, sector: sectorNames[f.sector_code] ?? null, sector_code: f.sector_code ?? null,
       per: f.per ?? null, pbr: f.pbr ?? null, eps: f.eps ?? null,
       op_margin: f.op_margin ?? null, roe: f.roe ?? null, debt_ratio: f.debt_ratio ?? null,
     };

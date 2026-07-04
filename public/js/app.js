@@ -62,6 +62,7 @@ function renderScope() {
   renderHead();
   renderSignal();
   renderFocus();
+  renderIndexCards();
   if (!all) { renderTabs(); renderList(); renderTracking(); renderRecord(); }
 }
 
@@ -145,23 +146,23 @@ async function renderFocus() {
   });
 }
 
-// ── 시장 위젯 (공포지수 · 환율 · 연기금 뉴스) ────────────────────────────────
-async function loadMarket() {
-  try {
-    const res = await fetch('/data/market-extra.json');
-    if (!res.ok) return;
-    state.market = await res.json();
-  } catch { return; }
+// ── 지수 카드 (국내: KOSPI/KOSDAQ · 해외: 다우/나스닥/러셀2000) — 스코프에 따라 전환 ──
+function renderIndexCards() {
   const m = state.market;
-  $('#market-strip').hidden = false;
-  renderSignal(); // 공포지수·지수 반영해 신호등 갱신
+  if (!m) return;
+  const isUs = state.scope === 'us';
+  const defs = isUs
+    ? [['#mw-idx1', '다우존스', m.indicesUs?.dow], ['#mw-idx2', '나스닥', m.indicesUs?.nasdaq], ['#mw-idx3', '러셀2000', m.indicesUs?.russell]]
+    : [['#mw-idx1', 'KOSPI', m.indices?.kospi], ['#mw-idx2', 'KOSDAQ', m.indices?.kosdaq]];
 
-  // KOSPI / KOSDAQ 카드
-  const idxCard = (sel, v) => {
-    if (!v) return;
+  document.querySelectorAll('.mw.idx').forEach((el) => { el.hidden = true; });
+  for (const [sel, label, v] of defs) {
     const el = document.querySelector(sel);
-    const b = el.querySelector('b'), s = el.querySelector('small');
-    b.textContent = v.value.toLocaleString();
+    el.hidden = false;
+    const lab = el.querySelector('label'), b = el.querySelector('b'), s = el.querySelector('small');
+    lab.textContent = label;
+    if (!v) { b.textContent = '—'; s.textContent = '데이터 없음'; el.querySelector('.spark').innerHTML = ''; continue; }
+    b.textContent = v.value.toLocaleString(isUs ? 'en-US' : 'ko-KR');
     b.className = v.change > 0 ? 'up' : v.change < 0 ? 'down' : '';
     s.textContent = `${v.change > 0 ? '▲ +' : v.change < 0 ? '▼ ' : ''}${Math.abs(v.change).toLocaleString()} (${v.ratio > 0 ? '+' : ''}${v.ratio}%)`;
     s.className = v.change > 0 ? 'up' : v.change < 0 ? 'down' : 'muted';
@@ -171,10 +172,21 @@ async function loadMarket() {
       `${(i / (hist.length - 1) * 92 + 2).toFixed(1)},${(30 - (x - lo) / (hi - lo || 1) * 26 + 2).toFixed(1)}`).join(' ');
     el.querySelector('.spark').innerHTML = `<svg width="96" height="36" viewBox="0 0 96 36">
       <polyline points="${pts}" fill="none" stroke="${v.change >= 0 ? '#ff5d73' : '#4d8dff'}" stroke-width="1.6"/></svg>`;
-  };
-  idxCard('#mw-kospi', m.indices?.kospi);
-  idxCard('#mw-kosdaq', m.indices?.kosdaq);
+  }
+}
 
+// ── 시장 위젯 (공포지수 · 환율 · 연기금 뉴스) ────────────────────────────────
+async function loadMarket() {
+  try {
+    const res = await fetch('/data/market-extra.json');
+    if (!res.ok) return;
+    state.market = await res.json();
+  } catch { return; }
+  $('#market-strip').hidden = false;
+  renderSignal(); // 공포지수·지수 반영해 신호등 갱신
+  renderIndexCards();
+
+  const m = state.market;
   // 공포지수 도넛
   if (m.feargreed) {
     const fg = m.feargreed;
