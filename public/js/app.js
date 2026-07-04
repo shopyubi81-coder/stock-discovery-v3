@@ -115,7 +115,7 @@ async function renderFocus() {
       <div class="fc-spark" id="fspark-${p.ticker}"></div>
       <div class="fc-why">${p.reasons.slice(0, 3).join(' · ')}</div>
       <div class="fc-levels">
-        <div><label>현재가 (진입 참고)</label><b>${fmtP(p.entry, p.us)}</b></div>
+        <div><label>진입 참고</label><b>${fmtP(p.entry, p.us)}</b></div>
         <div class="lv-stop"><label>손절 참고 ${p.stopPct}%</label><b>${fmtP(p.stop, p.us)}</b></div>
         <div class="lv-target"><label>목표 참고 +${p.targetPct}%</label><b>${fmtP(p.target, p.us)}</b></div>
       </div>

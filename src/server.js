@@ -21,7 +21,11 @@ createServer(async (req, res) => {
   if (path === '/') path = '/index.html';
 
   const send = (buf) => {
-    res.writeHead(200, { 'Content-Type': MIME[extname(path)] || 'application/octet-stream' });
+    res.writeHead(200, {
+      'Content-Type': MIME[extname(path)] || 'application/octet-stream',
+      // 캐시 금지 — 브라우저가 옛 JS/CSS/데이터를 붙들고 있어 수정이 안 보이는 문제 방지
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+    });
     res.end(buf);
   };
 

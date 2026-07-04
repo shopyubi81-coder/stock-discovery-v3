@@ -59,20 +59,30 @@ body {
 .fcard:hover { border-color: var(--indigo2); }
 .fcard .fc-top { display: flex; align-items: flex-start; gap: 8px; }
 .fcard .fc-top b { font-size: 15.5px; }
-.fcard .fc-top small { display: block; font-size: 11px; color: var(--muted); margin-top: 1px; }
+.fcard .fc-top small {
+  display: block; font-size: 11px; color: var(--muted); margin-top: 1px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 170px;
+}
 .fcard .fc-chg { margin-left: auto; text-align: right; font-size: 15px; font-weight: 700; }
 .fcard .fc-chg small { display: block; font-size: 10px; color: var(--muted); font-weight: 400; }
 .fc-hits { display: flex; gap: 4px; flex-wrap: wrap; }
 .fc-hits span { font-size: 10px; font-weight: 700; border-radius: 10px; padding: 1px 8px; }
 .fc-spark { height: 40px; }
-.fcard .fc-why { font-size: 11.5px; color: #aab3d8; line-height: 1.55; }
+.fcard .fc-why {
+  font-size: 11.5px; color: #aab3d8; line-height: 1.55;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden; height: 36px; /* 2줄 고정 — 카드 간 줄맞춤 */
+}
 .fc-levels { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-top: auto; }
-.fc-levels div { background: #0e1228; border: 1px solid var(--line); border-radius: 8px; padding: 5px 8px; text-align: center; }
-.fc-levels label { display: block; font-size: 9.5px; color: var(--muted); }
-.fc-levels b { font-size: 12px; }
+.fc-levels div { background: #0e1228; border: 1px solid var(--line); border-radius: 8px; padding: 5px 4px; text-align: center; min-width: 0; }
+.fc-levels label {
+  display: block; font-size: 9.5px; color: var(--muted);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.fc-levels b { font-size: 12px; white-space: nowrap; }
 .fc-levels .lv-stop b { color: var(--down); }
 .fc-levels .lv-target b { color: var(--up); }
-.fc-news { font-size: 11px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fc-news { font-size: 11px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-height: 15px; }
 
 /* ── 뉴스 한 줄 ── */
 .news-line {
