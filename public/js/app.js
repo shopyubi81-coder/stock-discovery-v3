@@ -77,6 +77,7 @@ const REF_LINKS = {
   kr: [
     ['국민연금 매수·매도 현황', 'https://fastjusik.com/pension'],
     ['국민연금 포트폴리오', 'https://whale-insight.com'],
+    ['테마 머니플로우 (생애주기)', 'https://f29.io/moneyflow'],
   ],
   us: [
     ['QuiverQuant — 美 정치인 거래', 'https://www.quiverquant.com'],
