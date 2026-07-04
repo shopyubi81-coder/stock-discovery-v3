@@ -375,7 +375,13 @@ function renderTracking() {
 
 function renderRecord() {
   const r = state.data.record;
-  if (!r.samples) return; // 기본 안내문 유지
+  if (!r.samples) {
+    // 스코프 전환 시 이전 시장의 수치가 남지 않도록 항상 새로 쓴다
+    $('#record-body').innerHTML = state.scope === 'us'
+      ? '미국 발굴 이력이 쌓이는 중 — D+5 데이터가 생기면 표시됩니다.'
+      : '데이터 쌓이는 중 — 발굴 이력이 5일 이상 누적되면 표시됩니다.';
+    return;
+  }
   const cls = (v) => v > 0 ? 'pos' : 'neg';
   const sign = (v) => `${v > 0 ? '+' : ''}${v}%`;
   const byList = r.byList
