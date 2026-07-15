@@ -7,7 +7,22 @@ export const FILTER = {
   minAmountEok: 100,       // 당일 거래대금 하한 (억원)
   minMarketCap: 1e11,      // 시가총액 하한 (1,000억)
   excludeLoss: true,       // 영업적자(또는 EPS 음수) 제외
+  maxDebtRatio: 200,       // 부채비율 상한(%) — 재무 부실 위험 제외
+  maxPerOverheat: 100,     // PER 이 이 값을 넘으면서
+  minOpMarginForHighPer: 5, //   영업이익률이 이 값 미만이면 고평가로 보고 제외
+  excludeNonCommon: true,  // 우선주·리츠·스팩·ETN 등 일반 보통주 아닌 종목 제외
 };
+
+// 일반 보통주가 아닌 종목명 패턴 (이름 끝 기준)
+export const NON_COMMON_NAME_RE = /(\d*우[A-Z]?)$|스팩\d*호?$|리츠$|ETN$/;
+
+// 금융업 — 고객 예수금·보험 준비금이 부채로 잡혀 부채비율이 구조적으로 높다.
+// 일반 기업의 "부채비율 과다 = 재무 위험" 공식이 적용되지 않아 부채비율 필터에서 제외한다.
+export const FIN_SECTORS = new Set(['증권', '은행', '생명보험', '손해보험', '카드', '창업투자']);
+
+// 수주산업 — 건설·방산·조선은 프로젝트 진행 중 선수금·기성금 받기 전까지 외부차입(부채)을 크게 짊어지는 구조.
+// 부채비율이 높아도 사업성·현금흐름은 정상인 경우가 많다. 부채비율 필터에서 완화(200→350%) 또는 제외.
+export const CAPEX_SECTORS = new Set(['건설', '우주항공과국방', '조선']);
 
 // 발굴 리스트 설정
 export const DISCOVER = {

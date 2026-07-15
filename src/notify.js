@@ -110,6 +110,12 @@ async function send(text) {
 }
 
 async function main() {
+  // 킬스위치 — .env 의 NOTIFY_DISABLED=1 이면 데이터 수집은 그대로 두고 텔레그램 발송만 중단(대기).
+  // 재개: .env 에서 NOTIFY_DISABLED 줄을 지우거나 0 으로 바꾸면 됨.
+  if (process.env.NOTIFY_DISABLED === '1') {
+    console.log('[notify] NOTIFY_DISABLED=1 — 텔레그램 발송 중단(대기) 상태. 데이터 수집은 정상 진행됨.');
+    return;
+  }
   const dKr = JSON.parse(await readFile(outPath('discover.json'), 'utf8'));
   let dUs = null, mkt = null;
   try { dUs = JSON.parse(await readFile(outPath('discover-us.json'), 'utf8')); } catch {}

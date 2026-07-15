@@ -1,7 +1,7 @@
 // 발굴 엔진 — "아침 5분, 오늘 볼 종목과 그 이유"
 //
 //   파이프라인:
-//   1. 안전 필터   — 거래대금·시총 하한, 적자 제외 (FILTER)
+//   1. 안전 필터   — 거래대금·시총 하한, 적자·비보통주 제외, 부채비율·고평가 상한 (FILTER)
 //   2. 관점 리스트 — 수급 포착 / 추세 전환 / 거래 폭발, 각각 이유 문장 포함
 //   3. 신선도      — 발굴 이력과 비교해 "오늘 진입 / N일째 포착" 계산
 //   4. 성적표      — 과거 리스트에 뽑힌 종목의 D+5 실제 수익률 집계
@@ -12,7 +12,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { outPath } from '../lib/paths.js';
-import { FILTER, DISCOVER, REGIME, THEMES, THEME_FLOW } from './config.js';
+import { FILTER, DISCOVER, REGIME, THEMES, THEME_FLOW, NON_COMMON_NAME_RE, FIN_SECTORS, CAPEX_SECTORS } from './config.js';
 import { sma, rsi, obv, streak } from './indicators.js';
 import { computeSignals } from './signals.js';
 
@@ -78,13 +78,27 @@ function analyze(stock, q, sup) {
     posIn60, ddFromHi, runup20, distMa20, reverseAligned,
     touch20, touch60, freshAlign, overheat,
     fToday: lastSup.foreign_net || 0, iToday: lastSup.inst_net || 0, rToday: lastSup.retail_net || 0,
+    roe: stock.roe, opMargin: stock.op_margin, debtRatio: stock.debt_ratio, per: stock.per,
   };
+}
+
+// 펀더멘털 우량 — 매집 신뢰도를 높이는 보조 근거 (ROE·영업이익률 동반 우량)
+function soundFundamentals(a) {
+  return a.roe != null && a.roe >= 15 && a.opMargin != null && a.opMargin >= 10;
 }
 
 // ── 안전 필터 ────────────────────────────────────────────────────────────────
 function passesFilter(stock, a) {
   if (a.amountEok < FILTER.minAmountEok) return false;
   if ((stock.market_cap ?? 0) < FILTER.minMarketCap) return false;
+  if (FILTER.excludeNonCommon && NON_COMMON_NAME_RE.test(stock.name || '')) return false;
+  // 부채비율 필터: 금융은 예외, 수주업(건설·방산·조선)은 완화(250%), 나머지는 200%
+  if (stock.debt_ratio != null) {
+    const maxDebt = FIN_SECTORS.has(stock.sector) ? Infinity : CAPEX_SECTORS.has(stock.sector) ? 250 : FILTER.maxDebtRatio;
+    if (stock.debt_ratio > maxDebt) return false;
+  }
+  if (stock.per != null && stock.per > FILTER.maxPerOverheat
+    && (stock.op_margin == null || stock.op_margin < FILTER.minOpMarginForHighPer)) return false;
   if (FILTER.excludeLoss) {
     if (stock.op_margin != null && stock.op_margin < 0) return false;
     if (stock.op_margin == null && stock.eps != null && stock.eps < 0) return false;
@@ -108,6 +122,7 @@ function judgeSupply(a) {
   } else {
     ctx = '상승 초입~중간 구간 매집';
     grade = a.aligned ? 'A' : 'B';
+    if (a.overheat) { ctx = `⚠ 초입~중간 구간이나 과열(RSI ${a.rsi}) — 추격 주의`; grade = 'C'; warn = true; }
   }
 
   const reasons = [ctx];
@@ -118,6 +133,7 @@ function judgeSupply(a) {
   if (a.hi60 && a.last >= a.hi60) reasons.push('60일 신고가');
   if (a.valueRatio >= 2) reasons.push(`거래대금 평소 ${a.valueRatio}배`);
   if (a.aligned) reasons.push('정배열 유지');
+  if (!warn && soundFundamentals(a)) reasons.push(`펀더멘털 우량 (ROE ${a.roe}%)`);
   const sort = a.fS + a.iS + (a.fS >= 2 && a.iS >= 2 ? 3 : 0) + (a.accumulating ? 2 : 0)
     + (grade === 'A' ? 3 : 0) - (warn ? 6 : 0);
   return { reasons, sort, grade, warn };
@@ -167,6 +183,9 @@ function judgeSteady(a) {
   if (a.posIn60 != null && a.posIn60 > 0.85 && a.runup20 > 0.15) {
     reasons.push(`⚠ 이미 20일간 +${Math.round(a.runup20 * 100)}% 상승한 고점권 — 추격 주의`);
     grade = 'C'; warn = true;
+  } else if (a.overheat) {
+    reasons.push(`⚠ 과열 구간 (RSI ${a.rsi}) — 추격 주의`);
+    grade = 'C'; warn = true;
   }
   if (a.fS >= D) reasons.push(`외국인 ${a.fS}일 연속 매수`);
   if (a.iS >= D) reasons.push(`기관 ${a.iS}일 연속 매수`);
@@ -174,6 +193,7 @@ function judgeSteady(a) {
   if (a.accumulating) reasons.push('주가 횡보 중 매집형 거래');
   if (a.aligned) reasons.push('정배열 유지');
   if (a.hi60 && a.last >= a.hi60) reasons.push('60일 신고가');
+  if (!warn && soundFundamentals(a)) reasons.push(`펀더멘털 우량 (ROE ${a.roe}%)`);
   return { reasons, sort: a.fS + a.iS - (warn ? 10 : 0), grade, warn };
 }
 

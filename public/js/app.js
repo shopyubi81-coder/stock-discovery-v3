@@ -651,6 +651,11 @@ function drawSupply(sup, quotes) {
 }
 
 // ── 이벤트 ───────────────────────────────────────────────────────────────────
+$('#flow-toggle').addEventListener('click', () => {
+  const groups = $('#flow-groups');
+  groups.hidden = !groups.hidden;
+  $('#flow-toggle').textContent = groups.hidden ? '펼치기 ▾' : '접기 ▴';
+});
 $('#tabs').addEventListener('click', (e) => {
   const t = e.target.closest('.tab'); if (!t) return;
   state.tab = t.dataset.k;
