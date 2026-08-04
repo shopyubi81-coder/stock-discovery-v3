@@ -23,14 +23,14 @@ const TAB_DESC_US = {
 };
 
 async function load() {
-  const res = await fetch('/data/discover.json');
+  const res = await fetch('data/discover.json');
   if (!res.ok) {
     $('#list').innerHTML = '<div class="empty-list">데이터 없음 — 터미널에서 npm run build 를 먼저 실행하세요.</div>';
     return;
   }
   state.dataKr = await res.json();
   try {
-    const r2 = await fetch('/data/discover-us.json');
+    const r2 = await fetch('data/discover-us.json');
     if (r2.ok) {
       state.dataUs = await r2.json();
       for (const rows of Object.values(state.dataUs.lists)) rows.forEach((r) => { r.us = true; });
@@ -246,7 +246,7 @@ function renderIndexCards() {
 // ── 시장 위젯 (공포지수 · 환율 · 연기금 뉴스) ────────────────────────────────
 async function loadMarket() {
   try {
-    const res = await fetch('/data/market-extra.json');
+    const res = await fetch('data/market-extra.json');
     if (!res.ok) return;
     state.market = await res.json();
   } catch { return; }
@@ -517,7 +517,7 @@ async function openDetail(ticker) {
 async function ensureNews() {
   if (state.news !== null) return;
   try {
-    const res = await fetch('/data/news.json');
+    const res = await fetch('data/news.json');
     state.news = res.ok
       ? new Map((await res.json()).items.map((n) => [n.ticker, n]))
       : new Map();
