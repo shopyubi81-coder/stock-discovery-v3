@@ -2,6 +2,9 @@ node_modules/
 .env
 public/app-config.js
 data/*.json
-public/data/scores.json
-public/data/backtest.json
+
+# public/data/*.json used to be excluded (매일 새로 fetch되는 데이터를 커밋
+# 히스토리에 안 쌓으려는 의도) -- 정적 배포(GitHub Pages)로 전환하면서
+# 이 스냅샷 자체가 배포본이 되므로 git이 durable store 역할을 해야 함
+# (AlphaFactory Sprint33, gamja-market-trend와 동일 판단).
 !public/data/.gitkeep
