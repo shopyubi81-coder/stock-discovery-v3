@@ -1,0 +1,60 @@
+name: Daily Data Refresh
+
+# "상시 라이브"라고 걸어둔 GitHub Pages 배포가 실제로는 정적 스냅샷이라
+# 재빌드 없이는 데이터가 고정되는 문제를 고치기 위한 크론. AlphaFactory의
+# daily_collection.yml(Sprint 33)과 동일한 이유로 GitHub Actions를 쓴다 —
+# Founder의 PC가 꺼져 있어도 계속 돈다. 여기서 쓰는 소스(네이버/야후
+# 파이낸스/CNN Fear&Greed/구글뉴스, 전부 비공식 무료 공개 엔드포인트)와
+# Actions 자체(공개 저장소라 무제한 무료 분)는 모두 비용이 들지 않는다.
+
+on:
+  schedule:
+    # 22:00 UTC == 07:00 KST — KR 장 시작 전, 전일 종가+간밤 미국장 반영.
+    - cron: "0 22 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      OUT_DIR: ${{ github.workspace }}/public/data
+      FETCH_MODE: live
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch KR universe + score
+        run: |
+          node src/fetch_daily.js
+          node src/engine/discover.js
+
+      - name: Fetch market extras (needed for US FX rate)
+        run: node src/fetch_market.js
+
+      - name: Fetch US universe + score
+        run: |
+          node src/fetch_us.js
+          node src/engine/discover_us.js
+
+      - name: Fetch news
+        run: node src/fetch_news.js
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "chore: daily data refresh ($(date -u +%Y-%m-%d))"
+            git push
+          fi
