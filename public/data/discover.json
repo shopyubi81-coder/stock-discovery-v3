@@ -1,17 +1,17 @@
 {
   "version": 3,
   "date": "2026-08-04",
-  "generated_at": "2026-08-04T01:47:28.646Z",
+  "generated_at": "2026-08-04T01:53:15.354Z",
   "market": {
     "regime": "neutral",
-    "breadth": 51
+    "breadth": 53
   },
   "filter": {
     "minAmountEok": 100,
     "minMarketCapEok": 1000,
     "excludeLoss": true,
     "universe": 400,
-    "passed": 120
+    "passed": 121
   },
   "themeFocus": null,
   "themeFlow": [
@@ -25,12 +25,6 @@
       "sector": "해운사",
       "heat": 15,
       "prior": 8.4,
-      "stage": "주도"
-    },
-    {
-      "sector": "우주항공과국방",
-      "heat": 13.5,
-      "prior": 2.8,
       "stage": "주도"
     },
     {
@@ -49,6 +43,18 @@
       "sector": "반도체와반도체장비",
       "heat": 10,
       "prior": 5.6,
+      "stage": "주도"
+    },
+    {
+      "sector": "우주항공과국방",
+      "heat": 9,
+      "prior": 2.8,
+      "stage": "주도"
+    },
+    {
+      "sector": "건설",
+      "heat": 9,
+      "prior": 4.2,
       "stage": "주도"
     },
     {
@@ -85,19 +91,13 @@
       "sector": "방송과엔터테인먼트",
       "heat": 4.5,
       "prior": 2,
-      "stage": "주도"
+      "stage": "강화"
     },
     {
       "sector": "에너지장비및서비스",
       "heat": 4.5,
       "prior": 0.4,
       "stage": "신규부상"
-    },
-    {
-      "sector": "건설",
-      "heat": 4.5,
-      "prior": 4.2,
-      "stage": "중립"
     },
     {
       "sector": "통신장비",
@@ -136,9 +136,9 @@
       "stage": "이탈"
     },
     {
-      "sector": "전기제품",
+      "sector": "생물공학",
       "heat": 0.4,
-      "prior": 2.2,
+      "prior": 0.8,
       "stage": "중립"
     },
     {
@@ -152,6 +152,12 @@
       "heat": 0.4,
       "prior": 7.4,
       "stage": "이탈"
+    },
+    {
+      "sector": "전기제품",
+      "heat": 0.4,
+      "prior": 2.2,
+      "stage": "중립"
     },
     {
       "sector": "손해보험",
@@ -175,12 +181,6 @@
       "sector": "식품",
       "heat": 0,
       "prior": 3.6,
-      "stage": "중립"
-    },
-    {
-      "sector": "생물공학",
-      "heat": 0,
-      "prior": 0.8,
       "stage": "중립"
     },
     {
@@ -232,8 +232,8 @@
       "name": "HMM",
       "sector": "해운사",
       "market": "KOSPI",
-      "change": 2.2,
-      "amountEok": 198,
+      "change": 2.9,
+      "amountEok": 213,
       "freshDays": 8,
       "hits": [
         "supply",
@@ -246,19 +246,19 @@
         "정배열 유지",
         "역배열→정배열 전환 + 이평선 지지 확인 후 반등"
       ],
-      "entry": 21200,
-      "stop": 20291,
-      "stopPct": -4.3,
+      "entry": 21350,
+      "stop": 20299,
+      "stopPct": -4.9,
       "target": 22150,
-      "targetPct": 4.5
+      "targetPct": 3.7
     },
     {
       "ticker": "003550",
       "name": "LG",
       "sector": "복합기업",
       "market": "KOSPI",
-      "change": 0.9,
-      "amountEok": 111,
+      "change": 1.2,
+      "amountEok": 117,
       "freshDays": 7,
       "hits": [
         "supply",
@@ -266,12 +266,13 @@
       ],
       "reasons": [
         "바닥권 매집 — 고점 대비 -39% 조정 후 저점 매수",
-        "외국인 11일 연속 매수"
+        "외국인 11일 연속 매수",
+        "최근 호재성 뉴스 동반"
       ],
-      "entry": 100600,
-      "stop": 98800,
-      "stopPct": -1.8,
-      "target": 115690,
+      "entry": 100900,
+      "stop": 98815,
+      "stopPct": -2.1,
+      "target": 116035,
       "targetPct": 15
     },
     {
@@ -280,7 +281,7 @@
       "sector": "전자장비와기기",
       "market": "KOSDAQ",
       "change": 11.8,
-      "amountEok": 887,
+      "amountEok": 893,
       "freshDays": 1,
       "hits": [
         "supply",
@@ -290,7 +291,7 @@
         "바닥권 매집 — 고점 대비 -50% 조정 후 저점 매수",
         "외국인 1일 연속 매수",
         "기관 3일 연속 매수",
-        "거래대금 평소 9배"
+        "거래대금 평소 9.1배"
       ],
       "entry": 81300,
       "stop": 74796,
@@ -306,8 +307,8 @@
         "name": "HMM",
         "market": "KOSPI",
         "sector": "해운사",
-        "change": 2.2,
-        "amountEok": 198,
+        "change": 2.9,
+        "amountEok": 213,
         "reasons": [
           "상승 초입~중간 구간 매집",
           "외국인 15일 연속 매수",
@@ -322,10 +323,10 @@
         "name": "스피어",
         "market": "KOSDAQ",
         "sector": "우주항공과국방",
-        "change": 14,
+        "change": 12.9,
         "amountEok": 164,
         "reasons": [
-          "바닥권 매집 — 고점 대비 -62% 조정 후 저점 매수",
+          "바닥권 매집 — 고점 대비 -63% 조정 후 저점 매수",
           "외국인 5일 연속 매수",
           "기관 3일 연속 매수",
           "외인·기관 쌍끌이"
@@ -339,11 +340,12 @@
         "name": "LG",
         "market": "KOSPI",
         "sector": "복합기업",
-        "change": 0.9,
-        "amountEok": 111,
+        "change": 1.2,
+        "amountEok": 117,
         "reasons": [
           "바닥권 매집 — 고점 대비 -39% 조정 후 저점 매수",
-          "외국인 11일 연속 매수"
+          "외국인 11일 연속 매수",
+          "최근 호재성 뉴스 동반"
         ],
         "grade": "A",
         "warn": false,
@@ -354,10 +356,10 @@
         "name": "효성중공업",
         "market": "KOSPI",
         "sector": "전기장비",
-        "change": 4.2,
-        "amountEok": 1073,
+        "change": 5.3,
+        "amountEok": 1110,
         "reasons": [
-          "바닥권 매집 — 고점 대비 -41% 조정 후 저점 매수",
+          "바닥권 매집 — 고점 대비 -40% 조정 후 저점 매수",
           "외국인 4일 연속 매수",
           "기관 2일 연속 매수",
           "외인·기관 쌍끌이",
@@ -372,14 +374,13 @@
         "name": "LS ELECTRIC",
         "market": "KOSPI",
         "sector": "전기장비",
-        "change": 3.7,
-        "amountEok": 1925,
+        "change": 4,
+        "amountEok": 1976,
         "reasons": [
-          "바닥권 매집 — 고점 대비 -38% 조정 후 저점 매수",
+          "바닥권 매집 — 고점 대비 -37% 조정 후 저점 매수",
           "외국인 4일 연속 매수",
           "기관 2일 연속 매수",
-          "외인·기관 쌍끌이",
-          "최근 호재성 뉴스 동반"
+          "외인·기관 쌍끌이"
         ],
         "grade": "A",
         "warn": false,
@@ -390,10 +391,10 @@
         "name": "삼성증권",
         "market": "KOSPI",
         "sector": "금융",
-        "change": -0.4,
-        "amountEok": 152,
+        "change": 0.1,
+        "amountEok": 161,
         "reasons": [
-          "바닥권 매집 — 고점 대비 -30% 조정 후 저점 매수",
+          "바닥권 매집 — 고점 대비 -29% 조정 후 저점 매수",
           "외국인 9일 연속 매수"
         ],
         "grade": "A",
@@ -405,8 +406,8 @@
         "name": "아모레퍼시픽",
         "market": "KOSPI",
         "sector": "화장품",
-        "change": 0.8,
-        "amountEok": 254,
+        "change": 0.5,
+        "amountEok": 265,
         "reasons": [
           "상승 초입~중간 구간 매집",
           "외국인 1일 연속 매수",
@@ -423,7 +424,7 @@
         "market": "KOSPI",
         "sector": "양방향미디어와서비스",
         "change": 1.1,
-        "amountEok": 485,
+        "amountEok": 498,
         "reasons": [
           "바닥권 매집 — 고점 대비 -18% 조정 후 저점 매수",
           "외국인 6일 연속 매수"
@@ -437,8 +438,8 @@
         "name": "미래에셋증권",
         "market": "KOSPI",
         "sector": "금융",
-        "change": -0.3,
-        "amountEok": 388,
+        "change": 0.6,
+        "amountEok": 403,
         "reasons": [
           "바닥권 매집 — 고점 대비 -58% 조정 후 저점 매수",
           "외국인 6일 연속 매수"
@@ -452,8 +453,8 @@
         "name": "현대로템",
         "market": "KOSPI",
         "sector": "우주항공과국방",
-        "change": 4.6,
-        "amountEok": 307,
+        "change": 4.9,
+        "amountEok": 318,
         "reasons": [
           "바닥권 매집 — 고점 대비 -40% 조정 후 저점 매수",
           "외국인 5일 연속 매수",
@@ -469,7 +470,7 @@
         "market": "KOSPI",
         "sector": "무역회사와판매업체",
         "change": 4.5,
-        "amountEok": 107,
+        "amountEok": 109,
         "reasons": [
           "바닥권 매집 — 고점 대비 -31% 조정 후 저점 매수",
           "기관 5일 연속 매수"
@@ -483,8 +484,8 @@
         "name": "산일전기",
         "market": "KOSPI",
         "sector": "HVDC/전력",
-        "change": 3.5,
-        "amountEok": 257,
+        "change": 4.1,
+        "amountEok": 264,
         "reasons": [
           "바닥권 매집 — 고점 대비 -54% 조정 후 저점 매수",
           "외국인 5일 연속 매수",
@@ -499,10 +500,10 @@
         "name": "하이브",
         "market": "KOSPI",
         "sector": "방송과엔터테인먼트",
-        "change": 2.9,
-        "amountEok": 445,
+        "change": 3.3,
+        "amountEok": 458,
         "reasons": [
-          "바닥권 매집 — 고점 대비 -28% 조정 후 저점 매수",
+          "바닥권 매집 — 고점 대비 -27% 조정 후 저점 매수",
           "외국인 4일 연속 매수",
           "기관 1일 연속 매수"
         ],
@@ -515,8 +516,8 @@
         "name": "현대모비스",
         "market": "KOSPI",
         "sector": "자동차부품",
-        "change": -4.1,
-        "amountEok": 1060,
+        "change": -3.4,
+        "amountEok": 1109,
         "reasons": [
           "바닥권 매집 — 고점 대비 -38% 조정 후 저점 매수",
           "외국인 5일 연속 매수"
@@ -526,14 +527,14 @@
         "freshDays": 2
       },
       {
-        "ticker": "322000",
-        "name": "HD현대에너지솔루션",
+        "ticker": "006360",
+        "name": "GS건설",
         "market": "KOSPI",
-        "sector": "에너지장비및서비스",
-        "change": 13.9,
-        "amountEok": 765,
+        "sector": "건설",
+        "change": 13,
+        "amountEok": 697,
         "reasons": [
-          "바닥권 매집 — 고점 대비 -44% 조정 후 저점 매수",
+          "바닥권 매집 — 고점 대비 -27% 조정 후 저점 매수",
           "외국인 1일 연속 매수",
           "기관 3일 연속 매수"
         ],
@@ -542,31 +543,14 @@
         "freshDays": 1
       },
       {
-        "ticker": "078600",
-        "name": "대주전자재료",
-        "market": "KOSDAQ",
-        "sector": "전자장비와기기",
-        "change": 11.8,
-        "amountEok": 887,
-        "reasons": [
-          "바닥권 매집 — 고점 대비 -50% 조정 후 저점 매수",
-          "외국인 1일 연속 매수",
-          "기관 3일 연속 매수",
-          "거래대금 평소 9배"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "006360",
-        "name": "GS건설",
+        "ticker": "322000",
+        "name": "HD현대에너지솔루션",
         "market": "KOSPI",
-        "sector": "건설",
-        "change": 11.5,
-        "amountEok": 660,
+        "sector": "에너지장비및서비스",
+        "change": 13,
+        "amountEok": 767,
         "reasons": [
-          "바닥권 매집 — 고점 대비 -28% 조정 후 저점 매수",
+          "바닥권 매집 — 고점 대비 -45% 조정 후 저점 매수",
           "외국인 1일 연속 매수",
           "기관 3일 연속 매수"
         ],
@@ -579,11 +563,28 @@
         "name": "RFHIC",
         "market": "KOSDAQ",
         "sector": "통신장비",
-        "change": 11.4,
-        "amountEok": 128,
+        "change": 12.1,
+        "amountEok": 135,
         "reasons": [
           "바닥권 매집 — 고점 대비 -57% 조정 후 저점 매수",
           "기관 4일 연속 매수"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "078600",
+        "name": "대주전자재료",
+        "market": "KOSDAQ",
+        "sector": "전자장비와기기",
+        "change": 11.8,
+        "amountEok": 893,
+        "reasons": [
+          "바닥권 매집 — 고점 대비 -50% 조정 후 저점 매수",
+          "외국인 1일 연속 매수",
+          "기관 3일 연속 매수",
+          "거래대금 평소 9.1배"
         ],
         "grade": "A",
         "warn": false,
@@ -594,8 +595,8 @@
         "name": "제룡전기",
         "market": "KOSDAQ",
         "sector": "HVDC/전력",
-        "change": 7.2,
-        "amountEok": 112,
+        "change": 7.6,
+        "amountEok": 116,
         "reasons": [
           "바닥권 매집 — 고점 대비 -49% 조정 후 저점 매수",
           "외국인 3일 연속 매수",
@@ -607,14 +608,14 @@
         "freshDays": 1
       },
       {
-        "ticker": "272210",
-        "name": "한화시스템",
+        "ticker": "375500",
+        "name": "DL이앤씨",
         "market": "KOSPI",
-        "sector": "우주항공과국방",
-        "change": 5.5,
-        "amountEok": 311,
+        "sector": "건설",
+        "change": 5.6,
+        "amountEok": 120,
         "reasons": [
-          "바닥권 매집 — 고점 대비 -43% 조정 후 저점 매수",
+          "바닥권 매집 — 고점 대비 -32% 조정 후 저점 매수",
           "외국인 4일 연속 매수"
         ],
         "grade": "A",
@@ -628,8 +629,8 @@
         "name": "팬오션",
         "market": "KOSPI",
         "sector": "해운사",
-        "change": 12.7,
-        "amountEok": 276,
+        "change": 13.7,
+        "amountEok": 294,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "5/20 골든크로스",
@@ -646,8 +647,8 @@
         "name": "HMM",
         "market": "KOSPI",
         "sector": "해운사",
-        "change": 2.2,
-        "amountEok": 198,
+        "change": 2.9,
+        "amountEok": 213,
         "reasons": [
           "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
           "5/10 골든크로스",
@@ -662,8 +663,8 @@
         "name": "금호타이어",
         "market": "KOSPI",
         "sector": "자동차부품",
-        "change": 0.9,
-        "amountEok": 316,
+        "change": 2,
+        "amountEok": 330,
         "reasons": [
           "추세 신호 발생",
           "정배열 진입",
@@ -678,8 +679,8 @@
         "name": "달바글로벌",
         "market": "KOSPI",
         "sector": "화장품",
-        "change": 6.5,
-        "amountEok": 424,
+        "change": 6.9,
+        "amountEok": 471,
         "reasons": [
           "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)",
           "기관 1일 매수 동반"
@@ -693,8 +694,8 @@
         "name": "SK텔레콤",
         "market": "KOSPI",
         "sector": "무선통신서비스",
-        "change": 13.7,
-        "amountEok": 2361,
+        "change": 13.8,
+        "amountEok": 2441,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "MACD 골든크로스",
@@ -711,7 +712,7 @@
         "market": "KOSPI",
         "sector": "석유와가스",
         "change": 9.9,
-        "amountEok": 261,
+        "amountEok": 268,
         "reasons": [
           "추세 신호 발생",
           "MACD 골든크로스",
@@ -726,8 +727,8 @@
         "name": "동진쎄미켐",
         "market": "KOSDAQ",
         "sector": "반도체와반도체장비",
-        "change": 4.8,
-        "amountEok": 170,
+        "change": 5.4,
+        "amountEok": 174,
         "reasons": [
           "추세 신호 발생",
           "MACD 골든크로스",
@@ -738,28 +739,12 @@
         "freshDays": 1
       },
       {
-        "ticker": "039030",
-        "name": "이오테크닉스",
-        "market": "KOSDAQ",
-        "sector": "반도체와반도체장비",
-        "change": 4.5,
-        "amountEok": 180,
-        "reasons": [
-          "추세 신호 발생",
-          "MACD 골든크로스",
-          "기관 3일 매수 동반"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
         "ticker": "298040",
         "name": "효성중공업",
         "market": "KOSPI",
         "sector": "전기장비",
-        "change": 4.2,
-        "amountEok": 1073,
+        "change": 5.3,
+        "amountEok": 1110,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "MACD 골든크로스",
@@ -771,12 +756,28 @@
         "freshDays": 1
       },
       {
+        "ticker": "039030",
+        "name": "이오테크닉스",
+        "market": "KOSDAQ",
+        "sector": "반도체와반도체장비",
+        "change": 5.3,
+        "amountEok": 188,
+        "reasons": [
+          "추세 신호 발생",
+          "MACD 골든크로스",
+          "기관 3일 매수 동반"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
         "ticker": "001440",
         "name": "대한전선",
         "market": "KOSPI",
         "sector": "HVDC/전력",
-        "change": 4.2,
-        "amountEok": 344,
+        "change": 5,
+        "amountEok": 361,
         "reasons": [
           "추세 신호 발생",
           "MACD 골든크로스",
@@ -791,8 +792,8 @@
         "name": "ISC",
         "market": "KOSDAQ",
         "sector": "반도체와반도체장비",
-        "change": 3.9,
-        "amountEok": 102,
+        "change": 4.4,
+        "amountEok": 106,
         "reasons": [
           "추세 신호 발생",
           "MACD 골든크로스"
@@ -806,8 +807,8 @@
         "name": "일진전기",
         "market": "KOSPI",
         "sector": "HVDC/전력",
-        "change": 3.8,
-        "amountEok": 191,
+        "change": 4.1,
+        "amountEok": 197,
         "reasons": [
           "추세 신호 발생",
           "MACD 골든크로스",
@@ -823,7 +824,7 @@
         "market": "KOSPI",
         "sector": "조선",
         "change": 3.7,
-        "amountEok": 814,
+        "amountEok": 826,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "10/20 골든크로스",
@@ -839,8 +840,8 @@
         "name": "리노공업",
         "market": "KOSDAQ",
         "sector": "반도체와반도체장비",
-        "change": 3.1,
-        "amountEok": 228,
+        "change": 3.7,
+        "amountEok": 239,
         "reasons": [
           "추세 신호 발생",
           "MACD 골든크로스"
@@ -854,8 +855,8 @@
         "name": "테크윙",
         "market": "KOSDAQ",
         "sector": "반도체와반도체장비",
-        "change": 2.7,
-        "amountEok": 203,
+        "change": 2.9,
+        "amountEok": 211,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "MACD 골든크로스",
@@ -872,8 +873,8 @@
         "name": "미래에셋증권",
         "market": "KOSPI",
         "sector": "금융",
-        "change": -0.3,
-        "amountEok": 388,
+        "change": 0.6,
+        "amountEok": 403,
         "reasons": [
           "추세 신호 발생",
           "MACD 골든크로스",
@@ -888,8 +889,8 @@
         "name": "삼성물산",
         "market": "KOSPI",
         "sector": "복합기업",
-        "change": -3,
-        "amountEok": 735,
+        "change": -2.4,
+        "amountEok": 767,
         "reasons": [
           "추세 신호 발생",
           "MACD 골든크로스",
@@ -904,8 +905,8 @@
         "name": "엘앤씨바이오",
         "market": "KOSDAQ",
         "sector": "바이오",
-        "change": 15.1,
-        "amountEok": 198,
+        "change": 13.5,
+        "amountEok": 208,
         "reasons": [
           "추세 신호 발생",
           "RSI 과매도 탈출",
@@ -920,8 +921,8 @@
         "name": "가온전선",
         "market": "KOSPI",
         "sector": "HVDC/전력",
-        "change": 7.3,
-        "amountEok": 996,
+        "change": 8.3,
+        "amountEok": 1016,
         "reasons": [
           "추세 신호 발생",
           "RSI 과매도 탈출",
@@ -936,8 +937,8 @@
         "name": "에스티팜",
         "market": "KOSDAQ",
         "sector": "제약",
-        "change": 6.5,
-        "amountEok": 146,
+        "change": 6.7,
+        "amountEok": 150,
         "reasons": [
           "추세 신호 발생",
           "RSI 과매도 탈출",
@@ -955,10 +956,10 @@
         "market": "KOSDAQ",
         "sector": "전자장비와기기",
         "change": 11.8,
-        "amountEok": 887,
+        "amountEok": 893,
         "reasons": [
           "외인·기관 동반 매수 폭발 — 세력 주도",
-          "거래대금 평소 9배",
+          "거래대금 평소 9.1배",
           "외국인 1일 연속 매수",
           "기관 3일 연속 매수"
         ],
@@ -971,11 +972,11 @@
         "name": "가온전선",
         "market": "KOSPI",
         "sector": "HVDC/전력",
-        "change": 7.3,
-        "amountEok": 996,
+        "change": 8.3,
+        "amountEok": 1016,
         "reasons": [
           "외인·기관 동반 매수 폭발 — 세력 주도",
-          "거래대금 평소 2.2배",
+          "거래대금 평소 2.3배",
           "외국인 1일 연속 매수",
           "기관 2일 연속 매수"
         ],
@@ -988,12 +989,12 @@
         "name": "지엔씨에너지",
         "market": "KOSDAQ",
         "sector": "전기장비",
-        "change": 25.7,
-        "amountEok": 3217,
+        "change": 23.3,
+        "amountEok": 3196,
         "reasons": [
           "기관 주도 상승 폭발",
           "거래대금 평소 9.3배",
-          "⚠ 과열 구간 (RSI 70) — 추격 주의",
+          "⚠ 과열 구간 (RSI 69) — 추격 주의",
           "기관 3일 연속 매수",
           "60일 신고가"
         ],
@@ -1006,11 +1007,11 @@
         "name": "팬오션",
         "market": "KOSPI",
         "sector": "해운사",
-        "change": 12.7,
-        "amountEok": 276,
+        "change": 13.7,
+        "amountEok": 294,
         "reasons": [
           "기관 주도 상승 폭발",
-          "거래대금 평소 2.1배",
+          "거래대금 평소 2.2배",
           "기관 1일 연속 매수"
         ],
         "grade": "B",
@@ -1018,29 +1019,12 @@
         "freshDays": 4
       },
       {
-        "ticker": "058610",
-        "name": "에스피지",
-        "market": "KOSDAQ",
-        "sector": "전기제품",
-        "change": 1.5,
-        "amountEok": 2445,
-        "reasons": [
-          "기관 주도 상승 폭발",
-          "거래대금 평소 4.1배",
-          "⚠ 과열 구간 (RSI 70) — 추격 주의",
-          "기관 2일 연속 매수"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 3
-      },
-      {
         "ticker": "035420",
         "name": "NAVER",
         "market": "KOSPI",
         "sector": "양방향미디어와서비스",
-        "change": 10.4,
-        "amountEok": 7892,
+        "change": 9.4,
+        "amountEok": 7929,
         "reasons": [
           "외국인 주도 상승 폭발",
           "거래대금 평소 3.2배",
@@ -1052,12 +1036,29 @@
         "freshDays": 1
       },
       {
+        "ticker": "0009K0",
+        "name": "에임드바이오",
+        "market": "KOSDAQ",
+        "sector": "바이오",
+        "change": 20,
+        "amountEok": 103,
+        "reasons": [
+          "외국인 주도 상승 폭발",
+          "거래대금 평소 3.1배",
+          "⚠ 과열 구간 (RSI 59) — 추격 주의",
+          "외국인 3일 연속 매수"
+        ],
+        "grade": "C",
+        "warn": true,
+        "freshDays": 1
+      },
+      {
         "ticker": "108490",
         "name": "로보티즈",
         "market": "KOSDAQ",
         "sector": "기계",
-        "change": 6.7,
-        "amountEok": 1187,
+        "change": 6.3,
+        "amountEok": 1219,
         "reasons": [
           "기관 주도 상승 폭발",
           "거래대금 평소 2.8배",
@@ -1073,17 +1074,34 @@
         "name": "NHN",
         "market": "KOSPI",
         "sector": "IT서비스",
-        "change": 16,
-        "amountEok": 110,
+        "change": 15.7,
+        "amountEok": 113,
         "reasons": [
           "기관 주도 상승 폭발",
-          "거래대금 평소 2.6배",
+          "거래대금 평소 2.7배",
           "⚠ 과열 구간 (RSI 59) — 추격 주의",
           "기관 4일 연속 매수"
         ],
         "grade": "C",
         "warn": true,
         "freshDays": 1
+      },
+      {
+        "ticker": "058610",
+        "name": "에스피지",
+        "market": "KOSDAQ",
+        "sector": "전기제품",
+        "change": -0.7,
+        "amountEok": 2460,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 4.2배",
+          "⚠ 과열 구간 (RSI 69) — 추격 주의",
+          "기관 2일 연속 매수"
+        ],
+        "grade": "C",
+        "warn": true,
+        "freshDays": 3
       }
     ],
     "steady": [
@@ -1092,8 +1110,8 @@
         "name": "HMM",
         "market": "KOSPI",
         "sector": "해운사",
-        "change": 2.2,
-        "amountEok": 198,
+        "change": 2.9,
+        "amountEok": 213,
         "reasons": [
           "외국인 15일 연속 매수",
           "정배열 유지"
@@ -1107,10 +1125,11 @@
         "name": "LG",
         "market": "KOSPI",
         "sector": "복합기업",
-        "change": 0.9,
-        "amountEok": 111,
+        "change": 1.2,
+        "amountEok": 117,
         "reasons": [
-          "외국인 11일 연속 매수"
+          "외국인 11일 연속 매수",
+          "최근 호재성 뉴스 동반"
         ],
         "grade": "A",
         "warn": false,
@@ -1125,8 +1144,8 @@
       "pickedAt": "2026-07-09",
       "list": "trend",
       "pickClose": 72000,
-      "curClose": 110300,
-      "ret": 53.2,
+      "curClose": 107900,
+      "ret": 49.9,
       "tradingDays": 17,
       "stillListed": true
     },
@@ -1136,8 +1155,8 @@
       "pickedAt": "2026-07-09",
       "list": "volume",
       "pickClose": 32450,
-      "curClose": 37650,
-      "ret": 16,
+      "curClose": 37700,
+      "ret": 16.2,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1147,10 +1166,21 @@
       "pickedAt": "2026-07-09",
       "list": "trend",
       "pickClose": 33800,
-      "curClose": 38800,
-      "ret": 14.8,
+      "curClose": 38550,
+      "ret": 14.1,
       "tradingDays": 17,
       "stillListed": false
+    },
+    {
+      "ticker": "073240",
+      "name": "금호타이어",
+      "pickedAt": "2026-07-09",
+      "list": "volume",
+      "pickClose": 6000,
+      "curClose": 6790,
+      "ret": 13.2,
+      "tradingDays": 17,
+      "stillListed": true
     },
     {
       "ticker": "018260",
@@ -1158,8 +1188,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 188300,
-      "curClose": 213000,
-      "ret": 13.1,
+      "curClose": 212000,
+      "ret": 12.6,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1169,19 +1199,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 204000,
-      "curClose": 230000,
-      "ret": 12.7,
-      "tradingDays": 17,
-      "stillListed": true
-    },
-    {
-      "ticker": "073240",
-      "name": "금호타이어",
-      "pickedAt": "2026-07-09",
-      "list": "volume",
-      "pickClose": 6000,
-      "curClose": 6720,
-      "ret": 12,
+      "curClose": 229000,
+      "ret": 12.3,
       "tradingDays": 17,
       "stillListed": true
     },
@@ -1202,8 +1221,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 50700,
-      "curClose": 55500,
-      "ret": 9.5,
+      "curClose": 56100,
+      "ret": 10.7,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1235,8 +1254,8 @@
       "pickedAt": "2026-07-09",
       "list": "volume",
       "pickClose": 26950,
-      "curClose": 29250,
-      "ret": 8.5,
+      "curClose": 29350,
+      "ret": 8.9,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1246,32 +1265,10 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 86700,
-      "curClose": 93200,
-      "ret": 7.5,
+      "curClose": 93300,
+      "ret": 7.6,
       "tradingDays": 17,
       "stillListed": true
-    },
-    {
-      "ticker": "319400",
-      "name": "현대무벡스",
-      "pickedAt": "2026-07-09",
-      "list": "supply",
-      "pickClose": 22750,
-      "curClose": 23950,
-      "ret": 5.3,
-      "tradingDays": 17,
-      "stillListed": false
-    },
-    {
-      "ticker": "257720",
-      "name": "실리콘투",
-      "pickedAt": "2026-07-09",
-      "list": "trend",
-      "pickClose": 35550,
-      "curClose": 37350,
-      "ret": 5.1,
-      "tradingDays": 17,
-      "stillListed": false
     },
     {
       "ticker": "138040",
@@ -1279,8 +1276,19 @@
       "pickedAt": "2026-07-09",
       "list": "trend",
       "pickClose": 112900,
-      "curClose": 118500,
-      "ret": 5,
+      "curClose": 118800,
+      "ret": 5.2,
+      "tradingDays": 17,
+      "stillListed": false
+    },
+    {
+      "ticker": "319400",
+      "name": "현대무벡스",
+      "pickedAt": "2026-07-09",
+      "list": "supply",
+      "pickClose": 22750,
+      "curClose": 23900,
+      "ret": 5.1,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1301,8 +1309,19 @@
       "pickedAt": "2026-07-09",
       "list": "trend",
       "pickClose": 61900,
-      "curClose": 64100,
-      "ret": 3.6,
+      "curClose": 64600,
+      "ret": 4.4,
+      "tradingDays": 17,
+      "stillListed": true
+    },
+    {
+      "ticker": "257720",
+      "name": "실리콘투",
+      "pickedAt": "2026-07-09",
+      "list": "trend",
+      "pickClose": 35550,
+      "curClose": 36400,
+      "ret": 2.4,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1312,19 +1331,8 @@
       "pickedAt": "2026-07-09",
       "list": "trend",
       "pickClose": 120200,
-      "curClose": 121300,
-      "ret": 0.9,
-      "tradingDays": 17,
-      "stillListed": false
-    },
-    {
-      "ticker": "139130",
-      "name": "iM금융지주",
-      "pickedAt": "2026-07-09",
-      "list": "trend",
-      "pickClose": 17310,
-      "curClose": 17310,
-      "ret": 0,
+      "curClose": 121800,
+      "ret": 1.3,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1334,8 +1342,19 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 98900,
-      "curClose": 98600,
-      "ret": -0.3,
+      "curClose": 99600,
+      "ret": 0.7,
+      "tradingDays": 17,
+      "stillListed": false
+    },
+    {
+      "ticker": "139130",
+      "name": "iM금융지주",
+      "pickedAt": "2026-07-09",
+      "list": "trend",
+      "pickClose": 17310,
+      "curClose": 17370,
+      "ret": 0.3,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1362,35 +1381,24 @@
       "stillListed": false
     },
     {
-      "ticker": "278470",
-      "name": "에이피알",
-      "pickedAt": "2026-07-09",
-      "list": "trend",
-      "pickClose": 365500,
-      "curClose": 354500,
-      "ret": -3,
-      "tradingDays": 17,
-      "stillListed": false
-    },
-    {
       "ticker": "000810",
       "name": "삼성화재",
       "pickedAt": "2026-07-09",
       "list": "trend",
       "pickClose": 622000,
-      "curClose": 602000,
-      "ret": -3.2,
+      "curClose": 606000,
+      "ret": -2.6,
       "tradingDays": 17,
       "stillListed": false
     },
     {
-      "ticker": "161890",
-      "name": "한국콜마",
+      "ticker": "278470",
+      "name": "에이피알",
       "pickedAt": "2026-07-09",
-      "list": "volume",
-      "pickClose": 102800,
-      "curClose": 98800,
-      "ret": -3.9,
+      "list": "trend",
+      "pickClose": 365500,
+      "curClose": 355000,
+      "ret": -2.9,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1400,19 +1408,19 @@
       "pickedAt": "2026-07-09",
       "list": "volume",
       "pickClose": 146000,
-      "curClose": 139100,
-      "ret": -4.7,
+      "curClose": 140200,
+      "ret": -4,
       "tradingDays": 17,
       "stillListed": false
     },
     {
-      "ticker": "161390",
-      "name": "한국타이어앤테크놀로지",
+      "ticker": "161890",
+      "name": "한국콜마",
       "pickedAt": "2026-07-09",
-      "list": "trend",
-      "pickClose": 70700,
-      "curClose": 66800,
-      "ret": -5.5,
+      "list": "volume",
+      "pickClose": 102800,
+      "curClose": 98200,
+      "ret": -4.5,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1422,10 +1430,32 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 43100,
-      "curClose": 40650,
-      "ret": -5.7,
+      "curClose": 40900,
+      "ret": -5.1,
       "tradingDays": 17,
       "stillListed": true
+    },
+    {
+      "ticker": "161390",
+      "name": "한국타이어앤테크놀로지",
+      "pickedAt": "2026-07-09",
+      "list": "trend",
+      "pickClose": 70700,
+      "curClose": 67000,
+      "ret": -5.2,
+      "tradingDays": 17,
+      "stillListed": false
+    },
+    {
+      "ticker": "195870",
+      "name": "해성디에스",
+      "pickedAt": "2026-07-09",
+      "list": "trend",
+      "pickClose": 52400,
+      "curClose": 49450,
+      "ret": -5.6,
+      "tradingDays": 17,
+      "stillListed": false
     },
     {
       "ticker": "030000",
@@ -1439,15 +1469,15 @@
       "stillListed": false
     },
     {
-      "ticker": "195870",
-      "name": "해성디에스",
+      "ticker": "006360",
+      "name": "GS건설",
       "pickedAt": "2026-07-09",
-      "list": "trend",
-      "pickClose": 52400,
-      "curClose": 49200,
-      "ret": -6.1,
+      "list": "supply",
+      "pickClose": 29250,
+      "curClose": 27400,
+      "ret": -6.3,
       "tradingDays": 17,
-      "stillListed": false
+      "stillListed": true
     },
     {
       "ticker": "042700",
@@ -1455,8 +1485,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 215500,
-      "curClose": 199600,
-      "ret": -7.4,
+      "curClose": 202000,
+      "ret": -6.3,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1466,21 +1496,10 @@
       "pickedAt": "2026-07-09",
       "list": "trend",
       "pickClose": 50100,
-      "curClose": 46400,
-      "ret": -7.4,
+      "curClose": 46300,
+      "ret": -7.6,
       "tradingDays": 17,
       "stillListed": false
-    },
-    {
-      "ticker": "006360",
-      "name": "GS건설",
-      "pickedAt": "2026-07-09",
-      "list": "supply",
-      "pickClose": 29250,
-      "curClose": 27050,
-      "ret": -7.5,
-      "tradingDays": 17,
-      "stillListed": true
     },
     {
       "ticker": "095340",
@@ -1488,8 +1507,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 141800,
-      "curClose": 128800,
-      "ret": -9.2,
+      "curClose": 129500,
+      "ret": -8.7,
       "tradingDays": 17,
       "stillListed": true
     },
@@ -1499,8 +1518,8 @@
       "pickedAt": "2026-07-09",
       "list": "volume",
       "pickClose": 58000,
-      "curClose": 52100,
-      "ret": -10.2,
+      "curClose": 52200,
+      "ret": -10,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1510,8 +1529,8 @@
       "pickedAt": "2026-07-09",
       "list": "volume",
       "pickClose": 150000,
-      "curClose": 134300,
-      "ret": -10.5,
+      "curClose": 134400,
+      "ret": -10.4,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1521,8 +1540,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 8300,
-      "curClose": 7390,
-      "ret": -11,
+      "curClose": 7400,
+      "ret": -10.8,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1532,8 +1551,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 112000,
-      "curClose": 99200,
-      "ret": -11.4,
+      "curClose": 99700,
+      "ret": -11,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1543,8 +1562,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 192900,
-      "curClose": 171000,
-      "ret": -11.4,
+      "curClose": 171400,
+      "ret": -11.1,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1554,8 +1573,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 445500,
-      "curClose": 383500,
-      "ret": -13.9,
+      "curClose": 386000,
+      "ret": -13.4,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1565,8 +1584,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 41700,
-      "curClose": 35400,
-      "ret": -15.1,
+      "curClose": 35600,
+      "ret": -14.6,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1576,8 +1595,8 @@
       "pickedAt": "2026-07-09",
       "list": "trend",
       "pickClose": 11840,
-      "curClose": 9560,
-      "ret": -19.3,
+      "curClose": 9590,
+      "ret": -19,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1587,8 +1606,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 226000,
-      "curClose": 176500,
-      "ret": -21.9,
+      "curClose": 177700,
+      "ret": -21.4,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1609,8 +1628,8 @@
       "pickedAt": "2026-07-09",
       "list": "supply",
       "pickClose": 70100,
-      "curClose": 48250,
-      "ret": -31.2,
+      "curClose": 48550,
+      "ret": -30.7,
       "tradingDays": 17,
       "stillListed": false
     },
@@ -1620,8 +1639,8 @@
       "pickedAt": "2026-07-15",
       "list": "volume",
       "pickClose": 288500,
-      "curClose": 342250,
-      "ret": 18.6,
+      "curClose": 344000,
+      "ret": 19.2,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1631,8 +1650,8 @@
       "pickedAt": "2026-07-15",
       "list": "trend",
       "pickClose": 121600,
-      "curClose": 136200,
-      "ret": 12,
+      "curClose": 135100,
+      "ret": 11.1,
       "tradingDays": 13,
       "stillListed": true
     },
@@ -1642,8 +1661,8 @@
       "pickedAt": "2026-07-15",
       "list": "supply",
       "pickClose": 191200,
-      "curClose": 198600,
-      "ret": 3.9,
+      "curClose": 199400,
+      "ret": 4.3,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1667,16 +1686,16 @@
       "curClose": 66600,
       "ret": 1.2,
       "tradingDays": 13,
-      "stillListed": true
+      "stillListed": false
     },
     {
-      "ticker": "021240",
-      "name": "코웨이",
+      "ticker": "003160",
+      "name": "디아이",
       "pickedAt": "2026-07-15",
-      "list": "trend",
-      "pickClose": 95700,
-      "curClose": 93400,
-      "ret": -2.4,
+      "list": "supply",
+      "pickClose": 22600,
+      "curClose": 22150,
+      "ret": -2,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1686,19 +1705,19 @@
       "pickedAt": "2026-07-15",
       "list": "supply",
       "pickClose": 40600,
-      "curClose": 39500,
-      "ret": -2.7,
+      "curClose": 39700,
+      "ret": -2.2,
       "tradingDays": 13,
       "stillListed": false
     },
     {
-      "ticker": "003160",
-      "name": "디아이",
+      "ticker": "021240",
+      "name": "코웨이",
       "pickedAt": "2026-07-15",
-      "list": "supply",
-      "pickClose": 22600,
-      "curClose": 21850,
-      "ret": -3.3,
+      "list": "trend",
+      "pickClose": 95700,
+      "curClose": 93200,
+      "ret": -2.6,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1719,8 +1738,8 @@
       "pickedAt": "2026-07-15",
       "list": "trend",
       "pickClose": 86400,
-      "curClose": 82300,
-      "ret": -4.7,
+      "curClose": 83100,
+      "ret": -3.8,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1730,8 +1749,8 @@
       "pickedAt": "2026-07-15",
       "list": "supply",
       "pickClose": 129500,
-      "curClose": 122600,
-      "ret": -5.3,
+      "curClose": 123100,
+      "ret": -4.9,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1741,8 +1760,8 @@
       "pickedAt": "2026-07-15",
       "list": "supply",
       "pickClose": 51200,
-      "curClose": 48350,
-      "ret": -5.6,
+      "curClose": 48650,
+      "ret": -5,
       "tradingDays": 13,
       "stillListed": true
     },
@@ -1752,8 +1771,8 @@
       "pickedAt": "2026-07-15",
       "list": "trend",
       "pickClose": 4520,
-      "curClose": 4265,
-      "ret": -5.6,
+      "curClose": 4285,
+      "ret": -5.2,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1763,8 +1782,8 @@
       "pickedAt": "2026-07-15",
       "list": "steady",
       "pickClose": 162500,
-      "curClose": 152700,
-      "ret": -6,
+      "curClose": 153900,
+      "ret": -5.3,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1785,8 +1804,8 @@
       "pickedAt": "2026-07-15",
       "list": "trend",
       "pickClose": 60900,
-      "curClose": 56800,
-      "ret": -6.7,
+      "curClose": 57000,
+      "ret": -6.4,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1807,8 +1826,8 @@
       "pickedAt": "2026-07-15",
       "list": "trend",
       "pickClose": 51900,
-      "curClose": 47550,
-      "ret": -8.4,
+      "curClose": 47650,
+      "ret": -8.2,
       "tradingDays": 13,
       "stillListed": true
     },
@@ -1818,8 +1837,8 @@
       "pickedAt": "2026-07-15",
       "list": "supply",
       "pickClose": 426000,
-      "curClose": 386000,
-      "ret": -9.4,
+      "curClose": 387500,
+      "ret": -9,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1829,8 +1848,8 @@
       "pickedAt": "2026-07-15",
       "list": "volume",
       "pickClose": 48000,
-      "curClose": 43050,
-      "ret": -10.3,
+      "curClose": 43400,
+      "ret": -9.6,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1840,21 +1859,10 @@
       "pickedAt": "2026-07-15",
       "list": "steady",
       "pickClose": 140400,
-      "curClose": 125200,
+      "curClose": 125300,
       "ret": -10.8,
       "tradingDays": 13,
       "stillListed": false
-    },
-    {
-      "ticker": "347700",
-      "name": "스피어",
-      "pickedAt": "2026-07-15",
-      "list": "supply",
-      "pickClose": 20500,
-      "curClose": 18230,
-      "ret": -11.1,
-      "tradingDays": 13,
-      "stillListed": true
     },
     {
       "ticker": "000270",
@@ -1862,8 +1870,8 @@
       "pickedAt": "2026-07-15",
       "list": "trend",
       "pickClose": 145000,
-      "curClose": 128700,
-      "ret": -11.2,
+      "curClose": 129300,
+      "ret": -10.8,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1873,10 +1881,21 @@
       "pickedAt": "2026-07-15",
       "list": "supply",
       "pickClose": 31100,
-      "curClose": 27250,
-      "ret": -12.4,
+      "curClose": 27500,
+      "ret": -11.6,
       "tradingDays": 13,
       "stillListed": false
+    },
+    {
+      "ticker": "347700",
+      "name": "스피어",
+      "pickedAt": "2026-07-15",
+      "list": "supply",
+      "pickClose": 20500,
+      "curClose": 18050,
+      "ret": -12,
+      "tradingDays": 13,
+      "stillListed": true
     },
     {
       "ticker": "016360",
@@ -1884,8 +1903,8 @@
       "pickedAt": "2026-07-15",
       "list": "trend",
       "pickClose": 111100,
-      "curClose": 96600,
-      "ret": -13.1,
+      "curClose": 97100,
+      "ret": -12.6,
       "tradingDays": 13,
       "stillListed": true
     },
@@ -1895,8 +1914,8 @@
       "pickedAt": "2026-07-15",
       "list": "volume",
       "pickClose": 58300,
-      "curClose": 50600,
-      "ret": -13.2,
+      "curClose": 50700,
+      "ret": -13,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1906,19 +1925,8 @@
       "pickedAt": "2026-07-15",
       "list": "supply",
       "pickClose": 194000,
-      "curClose": 162300,
-      "ret": -16.3,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "247540",
-      "name": "에코프로비엠",
-      "pickedAt": "2026-07-15",
-      "list": "trend",
-      "pickClose": 120900,
-      "curClose": 100700,
-      "ret": -16.7,
+      "curClose": 163200,
+      "ret": -15.9,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1928,8 +1936,19 @@
       "pickedAt": "2026-07-15",
       "list": "trend",
       "pickClose": 331000,
-      "curClose": 274500,
-      "ret": -17.1,
+      "curClose": 278000,
+      "ret": -16,
+      "tradingDays": 13,
+      "stillListed": false
+    },
+    {
+      "ticker": "247540",
+      "name": "에코프로비엠",
+      "pickedAt": "2026-07-15",
+      "list": "trend",
+      "pickClose": 120900,
+      "curClose": 101500,
+      "ret": -16,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1939,8 +1958,8 @@
       "pickedAt": "2026-07-15",
       "list": "trend",
       "pickClose": 77900,
-      "curClose": 63300,
-      "ret": -18.7,
+      "curClose": 63650,
+      "ret": -18.3,
       "tradingDays": 13,
       "stillListed": true
     },
@@ -1950,8 +1969,19 @@
       "pickedAt": "2026-07-15",
       "list": "supply",
       "pickClose": 167700,
-      "curClose": 135700,
-      "ret": -19.1,
+      "curClose": 136000,
+      "ret": -18.9,
+      "tradingDays": 13,
+      "stillListed": true
+    },
+    {
+      "ticker": "006800",
+      "name": "미래에셋증권",
+      "pickedAt": "2026-07-15",
+      "list": "supply",
+      "pickClose": 41750,
+      "curClose": 33450,
+      "ret": -19.9,
       "tradingDays": 13,
       "stillListed": true
     },
@@ -1961,21 +1991,10 @@
       "pickedAt": "2026-07-15",
       "list": "volume",
       "pickClose": 15690,
-      "curClose": 12510,
-      "ret": -20.3,
+      "curClose": 12420,
+      "ret": -20.8,
       "tradingDays": 13,
       "stillListed": false
-    },
-    {
-      "ticker": "006800",
-      "name": "미래에셋증권",
-      "pickedAt": "2026-07-15",
-      "list": "supply",
-      "pickClose": 41750,
-      "curClose": 33150,
-      "ret": -20.6,
-      "tradingDays": 13,
-      "stillListed": true
     },
     {
       "ticker": "388210",
@@ -1983,8 +2002,8 @@
       "pickedAt": "2026-07-15",
       "list": "volume",
       "pickClose": 94000,
-      "curClose": 74100,
-      "ret": -21.2,
+      "curClose": 74000,
+      "ret": -21.3,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -1994,8 +2013,8 @@
       "pickedAt": "2026-07-15",
       "list": "supply",
       "pickClose": 688000,
-      "curClose": 510000,
-      "ret": -25.9,
+      "curClose": 514000,
+      "ret": -25.3,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -2005,8 +2024,8 @@
       "pickedAt": "2026-07-15",
       "list": "supply",
       "pickClose": 159100,
-      "curClose": 113500,
-      "ret": -28.7,
+      "curClose": 114100,
+      "ret": -28.3,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -2016,19 +2035,8 @@
       "pickedAt": "2026-07-15",
       "list": "volume",
       "pickClose": 284500,
-      "curClose": 196600,
-      "ret": -30.9,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "281820",
-      "name": "케이씨텍",
-      "pickedAt": "2026-07-15",
-      "list": "volume",
-      "pickClose": 104900,
-      "curClose": 69000,
-      "ret": -34.2,
+      "curClose": 199000,
+      "ret": -30.1,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -2038,8 +2046,19 @@
       "pickedAt": "2026-07-15",
       "list": "supply",
       "pickClose": 610000,
-      "curClose": 401000,
-      "ret": -34.3,
+      "curClose": 405500,
+      "ret": -33.5,
+      "tradingDays": 13,
+      "stillListed": false
+    },
+    {
+      "ticker": "281820",
+      "name": "케이씨텍",
+      "pickedAt": "2026-07-15",
+      "list": "volume",
+      "pickClose": 104900,
+      "curClose": 69300,
+      "ret": -33.9,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -2049,8 +2068,8 @@
       "pickedAt": "2026-07-15",
       "list": "volume",
       "pickClose": 156200,
-      "curClose": 101600,
-      "ret": -35,
+      "curClose": 102900,
+      "ret": -34.1,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -2060,8 +2079,8 @@
       "pickedAt": "2026-07-15",
       "list": "trend",
       "pickClose": 209500,
-      "curClose": 132200,
-      "ret": -36.9,
+      "curClose": 131900,
+      "ret": -37,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -2071,8 +2090,8 @@
       "pickedAt": "2026-07-15",
       "list": "volume",
       "pickClose": 204500,
-      "curClose": 125300,
-      "ret": -38.7,
+      "curClose": 125500,
+      "ret": -38.6,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -2082,8 +2101,8 @@
       "pickedAt": "2026-07-15",
       "list": "volume",
       "pickClose": 214000,
-      "curClose": 129500,
-      "ret": -39.5,
+      "curClose": 130600,
+      "ret": -39,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -2093,8 +2112,8 @@
       "pickedAt": "2026-07-15",
       "list": "volume",
       "pickClose": 115900,
-      "curClose": 66300,
-      "ret": -42.8,
+      "curClose": 66400,
+      "ret": -42.7,
       "tradingDays": 13,
       "stillListed": false
     },
@@ -2104,8 +2123,19 @@
       "pickedAt": "2026-07-16",
       "list": "trend",
       "pickClose": 336500,
-      "curClose": 389000,
-      "ret": 15.6,
+      "curClose": 384000,
+      "ret": 14.1,
+      "tradingDays": 12,
+      "stillListed": false
+    },
+    {
+      "ticker": "009540",
+      "name": "HD한국조선해양",
+      "pickedAt": "2026-07-16",
+      "list": "trend",
+      "pickClose": 354000,
+      "curClose": 373000,
+      "ret": 5.4,
       "tradingDays": 12,
       "stillListed": false
     },
@@ -2121,24 +2151,13 @@
       "stillListed": true
     },
     {
-      "ticker": "009540",
-      "name": "HD한국조선해양",
-      "pickedAt": "2026-07-16",
-      "list": "trend",
-      "pickClose": 354000,
-      "curClose": 372500,
-      "ret": 5.2,
-      "tradingDays": 12,
-      "stillListed": false
-    },
-    {
       "ticker": "068270",
       "name": "셀트리온",
       "pickedAt": "2026-07-16",
       "list": "supply",
       "pickClose": 175800,
-      "curClose": 183500,
-      "ret": 4.4,
+      "curClose": 183700,
+      "ret": 4.5,
       "tradingDays": 12,
       "stillListed": false
     },
@@ -2159,8 +2178,8 @@
       "pickedAt": "2026-07-16",
       "list": "supply",
       "pickClose": 482000,
-      "curClose": 473500,
-      "ret": -1.8,
+      "curClose": 476500,
+      "ret": -1.1,
       "tradingDays": 12,
       "stillListed": true
     },
@@ -2170,41 +2189,8 @@
       "pickedAt": "2026-07-16",
       "list": "trend",
       "pickClose": 179900,
-      "curClose": 176600,
-      "ret": -1.8,
-      "tradingDays": 12,
-      "stillListed": false
-    },
-    {
-      "ticker": "128940",
-      "name": "한미약품",
-      "pickedAt": "2026-07-16",
-      "list": "supply",
-      "pickClose": 386000,
-      "curClose": 372000,
-      "ret": -3.6,
-      "tradingDays": 12,
-      "stillListed": false
-    },
-    {
-      "ticker": "373220",
-      "name": "LG에너지솔루션",
-      "pickedAt": "2026-07-16",
-      "list": "trend",
-      "pickClose": 334000,
-      "curClose": 320500,
-      "ret": -4,
-      "tradingDays": 12,
-      "stillListed": false
-    },
-    {
-      "ticker": "241560",
-      "name": "두산밥캣",
-      "pickedAt": "2026-07-16",
-      "list": "trend",
-      "pickClose": 64300,
-      "curClose": 61600,
-      "ret": -4.2,
+      "curClose": 176800,
+      "ret": -1.7,
       "tradingDays": 12,
       "stillListed": false
     },
@@ -2214,8 +2200,41 @@
       "pickedAt": "2026-07-16",
       "list": "trend",
       "pickClose": 260500,
-      "curClose": 249500,
-      "ret": -4.2,
+      "curClose": 251500,
+      "ret": -3.5,
+      "tradingDays": 12,
+      "stillListed": false
+    },
+    {
+      "ticker": "373220",
+      "name": "LG에너지솔루션",
+      "pickedAt": "2026-07-16",
+      "list": "trend",
+      "pickClose": 334000,
+      "curClose": 321500,
+      "ret": -3.7,
+      "tradingDays": 12,
+      "stillListed": false
+    },
+    {
+      "ticker": "128940",
+      "name": "한미약품",
+      "pickedAt": "2026-07-16",
+      "list": "supply",
+      "pickClose": 386000,
+      "curClose": 371500,
+      "ret": -3.8,
+      "tradingDays": 12,
+      "stillListed": false
+    },
+    {
+      "ticker": "241560",
+      "name": "두산밥캣",
+      "pickedAt": "2026-07-16",
+      "list": "trend",
+      "pickClose": 64300,
+      "curClose": 61800,
+      "ret": -3.9,
       "tradingDays": 12,
       "stillListed": false
     },
@@ -2225,8 +2244,8 @@
       "pickedAt": "2026-07-16",
       "list": "supply",
       "pickClose": 53600,
-      "curClose": 49650,
-      "ret": -7.4,
+      "curClose": 49950,
+      "ret": -6.8,
       "tradingDays": 12,
       "stillListed": false
     },
@@ -2236,8 +2255,8 @@
       "pickedAt": "2026-07-16",
       "list": "trend",
       "pickClose": 123500,
-      "curClose": 112800,
-      "ret": -8.7,
+      "curClose": 113500,
+      "ret": -8.1,
       "tradingDays": 12,
       "stillListed": false
     },
@@ -2247,8 +2266,8 @@
       "pickedAt": "2026-07-16",
       "list": "volume",
       "pickClose": 6390,
-      "curClose": 5570,
-      "ret": -12.8,
+      "curClose": 5580,
+      "ret": -12.7,
       "tradingDays": 12,
       "stillListed": false
     },
@@ -2258,8 +2277,8 @@
       "pickedAt": "2026-07-16",
       "list": "trend",
       "pickClose": 46900,
-      "curClose": 39350,
-      "ret": -16.1,
+      "curClose": 39450,
+      "ret": -15.9,
       "tradingDays": 12,
       "stillListed": false
     },
@@ -2269,8 +2288,8 @@
       "pickedAt": "2026-07-16",
       "list": "supply",
       "pickClose": 92000,
-      "curClose": 75700,
-      "ret": -17.7,
+      "curClose": 76500,
+      "ret": -16.8,
       "tradingDays": 12,
       "stillListed": false
     },
@@ -2280,8 +2299,8 @@
       "pickedAt": "2026-07-16",
       "list": "trend",
       "pickClose": 124300,
-      "curClose": 100500,
-      "ret": -19.1,
+      "curClose": 100700,
+      "ret": -19,
       "tradingDays": 12,
       "stillListed": true
     },
@@ -2291,8 +2310,8 @@
       "pickedAt": "2026-07-16",
       "list": "supply",
       "pickClose": 140800,
-      "curClose": 111400,
-      "ret": -20.9,
+      "curClose": 112000,
+      "ret": -20.5,
       "tradingDays": 12,
       "stillListed": false
     },
@@ -2302,8 +2321,8 @@
       "pickedAt": "2026-07-16",
       "list": "trend",
       "pickClose": 162800,
-      "curClose": 114600,
-      "ret": -29.6,
+      "curClose": 115300,
+      "ret": -29.2,
       "tradingDays": 12,
       "stillListed": false
     },
@@ -2313,8 +2332,8 @@
       "pickedAt": "2026-07-20",
       "list": "volume",
       "pickClose": 35500,
-      "curClose": 52800,
-      "ret": 48.7,
+      "curClose": 51800,
+      "ret": 45.9,
       "tradingDays": 11,
       "stillListed": true
     },
@@ -2324,8 +2343,8 @@
       "pickedAt": "2026-07-20",
       "list": "supply",
       "pickClose": 185900,
-      "curClose": 229000,
-      "ret": 23.2,
+      "curClose": 227000,
+      "ret": 22.1,
       "tradingDays": 11,
       "stillListed": true
     },
@@ -2335,8 +2354,8 @@
       "pickedAt": "2026-07-20",
       "list": "supply",
       "pickClose": 210500,
-      "curClose": 236500,
-      "ret": 12.4,
+      "curClose": 237000,
+      "ret": 12.6,
       "tradingDays": 11,
       "stillListed": false
     },
@@ -2357,8 +2376,8 @@
       "pickedAt": "2026-07-20",
       "list": "supply",
       "pickClose": 19370,
-      "curClose": 21300,
-      "ret": 10,
+      "curClose": 21350,
+      "ret": 10.2,
       "tradingDays": 11,
       "stillListed": false
     },
@@ -2368,8 +2387,8 @@
       "pickedAt": "2026-07-20",
       "list": "supply",
       "pickClose": 1053000,
-      "curClose": 1142000,
-      "ret": 8.5,
+      "curClose": 1145000,
+      "ret": 8.7,
       "tradingDays": 11,
       "stillListed": false
     },
@@ -2379,8 +2398,8 @@
       "pickedAt": "2026-07-20",
       "list": "supply",
       "pickClose": 20150,
-      "curClose": 21200,
-      "ret": 5.2,
+      "curClose": 21350,
+      "ret": 6,
       "tradingDays": 11,
       "stillListed": true
     },
@@ -2390,8 +2409,8 @@
       "pickedAt": "2026-07-20",
       "list": "trend",
       "pickClose": 298000,
-      "curClose": 300500,
-      "ret": 0.8,
+      "curClose": 303000,
+      "ret": 1.7,
       "tradingDays": 11,
       "stillListed": false
     },
@@ -2412,8 +2431,8 @@
       "pickedAt": "2026-07-20",
       "list": "trend",
       "pickClose": 579000,
-      "curClose": 506000,
-      "ret": -12.6,
+      "curClose": 510000,
+      "ret": -11.9,
       "tradingDays": 11,
       "stillListed": false
     },
@@ -2423,8 +2442,8 @@
       "pickedAt": "2026-07-20",
       "list": "trend",
       "pickClose": 244000,
-      "curClose": 210000,
-      "ret": -13.9,
+      "curClose": 210500,
+      "ret": -13.7,
       "tradingDays": 11,
       "stillListed": false
     },
@@ -2434,8 +2453,8 @@
       "pickedAt": "2026-07-20",
       "list": "trend",
       "pickClose": 17700,
-      "curClose": 14960,
-      "ret": -15.5,
+      "curClose": 14990,
+      "ret": -15.3,
       "tradingDays": 11,
       "stillListed": false
     },
@@ -2445,8 +2464,8 @@
       "pickedAt": "2026-07-21",
       "list": "volume",
       "pickClose": 56500,
-      "curClose": 64200,
-      "ret": 13.6,
+      "curClose": 64800,
+      "ret": 14.7,
       "tradingDays": 10,
       "stillListed": false
     },
@@ -2456,8 +2475,8 @@
       "pickedAt": "2026-07-21",
       "list": "supply",
       "pickClose": 41300,
-      "curClose": 45650,
-      "ret": 10.5,
+      "curClose": 46200,
+      "ret": 11.9,
       "tradingDays": 10,
       "stillListed": false
     },
@@ -2467,8 +2486,8 @@
       "pickedAt": "2026-07-21",
       "list": "trend",
       "pickClose": 40800,
-      "curClose": 43400,
-      "ret": 6.4,
+      "curClose": 43450,
+      "ret": 6.5,
       "tradingDays": 10,
       "stillListed": false
     },
@@ -2478,8 +2497,8 @@
       "pickedAt": "2026-07-21",
       "list": "trend",
       "pickClose": 97300,
-      "curClose": 100600,
-      "ret": 3.4,
+      "curClose": 100900,
+      "ret": 3.7,
       "tradingDays": 10,
       "stillListed": true
     },
@@ -2489,8 +2508,8 @@
       "pickedAt": "2026-07-21",
       "list": "supply",
       "pickClose": 189100,
-      "curClose": 195300,
-      "ret": 3.3,
+      "curClose": 195900,
+      "ret": 3.6,
       "tradingDays": 10,
       "stillListed": true
     },
@@ -2500,8 +2519,8 @@
       "pickedAt": "2026-07-21",
       "list": "supply",
       "pickClose": 236000,
-      "curClose": 238000,
-      "ret": 0.8,
+      "curClose": 239000,
+      "ret": 1.3,
       "tradingDays": 10,
       "stillListed": true
     },
@@ -2511,8 +2530,8 @@
       "pickedAt": "2026-07-21",
       "list": "supply",
       "pickClose": 17000,
-      "curClose": 16900,
-      "ret": -0.6,
+      "curClose": 16930,
+      "ret": -0.4,
       "tradingDays": 10,
       "stillListed": false
     },
@@ -2522,8 +2541,8 @@
       "pickedAt": "2026-07-21",
       "list": "trend",
       "pickClose": 79900,
-      "curClose": 79400,
-      "ret": -0.6,
+      "curClose": 79600,
+      "ret": -0.4,
       "tradingDays": 10,
       "stillListed": false
     },
@@ -2544,8 +2563,8 @@
       "pickedAt": "2026-07-21",
       "list": "trend",
       "pickClose": 3405,
-      "curClose": 3275,
-      "ret": -3.8,
+      "curClose": 3285,
+      "ret": -3.5,
       "tradingDays": 10,
       "stillListed": false
     },
@@ -2555,8 +2574,8 @@
       "pickedAt": "2026-07-21",
       "list": "trend",
       "pickClose": 104700,
-      "curClose": 100500,
-      "ret": -4,
+      "curClose": 100700,
+      "ret": -3.8,
       "tradingDays": 10,
       "stillListed": false
     },
@@ -2566,8 +2585,8 @@
       "pickedAt": "2026-07-21",
       "list": "trend",
       "pickClose": 174000,
-      "curClose": 166600,
-      "ret": -4.3,
+      "curClose": 167000,
+      "ret": -4,
       "tradingDays": 10,
       "stillListed": false
     },
@@ -2577,8 +2596,8 @@
       "pickedAt": "2026-07-21",
       "list": "trend",
       "pickClose": 343500,
-      "curClose": 319000,
-      "ret": -7.1,
+      "curClose": 321000,
+      "ret": -6.6,
       "tradingDays": 10,
       "stillListed": true
     },
@@ -2588,8 +2607,8 @@
       "pickedAt": "2026-07-21",
       "list": "trend",
       "pickClose": 408500,
-      "curClose": 374500,
-      "ret": -8.3,
+      "curClose": 378500,
+      "ret": -7.3,
       "tradingDays": 10,
       "stillListed": false
     },
@@ -2599,8 +2618,8 @@
       "pickedAt": "2026-07-21",
       "list": "trend",
       "pickClose": 316000,
-      "curClose": 275500,
-      "ret": -12.8,
+      "curClose": 277500,
+      "ret": -12.2,
       "tradingDays": 10,
       "stillListed": false
     },
@@ -2610,8 +2629,8 @@
       "pickedAt": "2026-07-21",
       "list": "trend",
       "pickClose": 1836000,
-      "curClose": 1541000,
-      "ret": -16.1,
+      "curClose": 1559000,
+      "ret": -15.1,
       "tradingDays": 10,
       "stillListed": false
     },
@@ -2621,8 +2640,8 @@
       "pickedAt": "2026-07-21",
       "list": "trend",
       "pickClose": 181100,
-      "curClose": 145500,
-      "ret": -19.7,
+      "curClose": 146800,
+      "ret": -18.9,
       "tradingDays": 10,
       "stillListed": true
     },
@@ -2654,8 +2673,8 @@
       "pickedAt": "2026-07-22",
       "list": "trend",
       "pickClose": 994000,
-      "curClose": 1043000,
-      "ret": 4.9,
+      "curClose": 1047000,
+      "ret": 5.3,
       "tradingDays": 9,
       "stillListed": false
     },
@@ -2665,8 +2684,8 @@
       "pickedAt": "2026-07-22",
       "list": "supply",
       "pickClose": 64600,
-      "curClose": 67100,
-      "ret": 3.9,
+      "curClose": 67300,
+      "ret": 4.2,
       "tradingDays": 9,
       "stillListed": false
     },
@@ -2687,8 +2706,8 @@
       "pickedAt": "2026-07-22",
       "list": "trend",
       "pickClose": 212000,
-      "curClose": 205000,
-      "ret": -3.3,
+      "curClose": 203500,
+      "ret": -4,
       "tradingDays": 9,
       "stillListed": false
     },
@@ -2698,8 +2717,8 @@
       "pickedAt": "2026-07-22",
       "list": "volume",
       "pickClose": 14430,
-      "curClose": 13280,
-      "ret": -8,
+      "curClose": 13240,
+      "ret": -8.2,
       "tradingDays": 9,
       "stillListed": false
     },
@@ -2709,8 +2728,8 @@
       "pickedAt": "2026-07-23",
       "list": "trend",
       "pickClose": 25550,
-      "curClose": 26900,
-      "ret": 5.3,
+      "curClose": 26850,
+      "ret": 5.1,
       "tradingDays": 8,
       "stillListed": false
     },
@@ -2720,8 +2739,8 @@
       "pickedAt": "2026-07-23",
       "list": "trend",
       "pickClose": 364000,
-      "curClose": 375000,
-      "ret": 3,
+      "curClose": 375500,
+      "ret": 3.2,
       "tradingDays": 8,
       "stillListed": false
     },
@@ -2731,8 +2750,8 @@
       "pickedAt": "2026-07-23",
       "list": "trend",
       "pickClose": 41700,
-      "curClose": 42100,
-      "ret": 1,
+      "curClose": 42350,
+      "ret": 1.6,
       "tradingDays": 8,
       "stillListed": false
     },
@@ -2742,8 +2761,8 @@
       "pickedAt": "2026-07-23",
       "list": "trend",
       "pickClose": 32200,
-      "curClose": 31850,
-      "ret": -1.1,
+      "curClose": 32050,
+      "ret": -0.5,
       "tradingDays": 8,
       "stillListed": false
     },
@@ -2753,8 +2772,8 @@
       "pickedAt": "2026-07-23",
       "list": "supply",
       "pickClose": 50900,
-      "curClose": 49700,
-      "ret": -2.4,
+      "curClose": 49600,
+      "ret": -2.6,
       "tradingDays": 8,
       "stillListed": false
     },
@@ -2764,8 +2783,8 @@
       "pickedAt": "2026-07-23",
       "list": "volume",
       "pickClose": 47100,
-      "curClose": 44525,
-      "ret": -5.5,
+      "curClose": 44700,
+      "ret": -5.1,
       "tradingDays": 8,
       "stillListed": true
     },
@@ -2775,8 +2794,8 @@
       "pickedAt": "2026-07-23",
       "list": "volume",
       "pickClose": 23500,
-      "curClose": 22050,
-      "ret": -6.2,
+      "curClose": 22100,
+      "ret": -6,
       "tradingDays": 8,
       "stillListed": false
     },
@@ -2786,8 +2805,8 @@
       "pickedAt": "2026-07-23",
       "list": "trend",
       "pickClose": 38600,
-      "curClose": 35600,
-      "ret": -7.8,
+      "curClose": 35550,
+      "ret": -7.9,
       "tradingDays": 8,
       "stillListed": false
     },
@@ -2797,8 +2816,8 @@
       "pickedAt": "2026-07-23",
       "list": "volume",
       "pickClose": 52700,
-      "curClose": 43650,
-      "ret": -17.2,
+      "curClose": 44550,
+      "ret": -15.5,
       "tradingDays": 8,
       "stillListed": false
     },
@@ -2808,8 +2827,8 @@
       "pickedAt": "2026-07-23",
       "list": "trend",
       "pickClose": 66600,
-      "curClose": 55100,
-      "ret": -17.3,
+      "curClose": 55300,
+      "ret": -17,
       "tradingDays": 8,
       "stillListed": true
     },
@@ -2830,8 +2849,8 @@
       "pickedAt": "2026-07-23",
       "list": "trend",
       "pickClose": 869000,
-      "curClose": 693000,
-      "ret": -20.3,
+      "curClose": 700000,
+      "ret": -19.4,
       "tradingDays": 8,
       "stillListed": false
     },
@@ -2852,8 +2871,8 @@
       "pickedAt": "2026-07-24",
       "list": "supply",
       "pickClose": 68300,
-      "curClose": 70100,
-      "ret": 2.6,
+      "curClose": 69900,
+      "ret": 2.3,
       "tradingDays": 7,
       "stillListed": false
     },
@@ -2863,8 +2882,19 @@
       "pickedAt": "2026-07-24",
       "list": "trend",
       "pickClose": 979000,
-      "curClose": 991000,
-      "ret": 1.2,
+      "curClose": 987000,
+      "ret": 0.8,
+      "tradingDays": 7,
+      "stillListed": false
+    },
+    {
+      "ticker": "005490",
+      "name": "POSCO홀딩스",
+      "pickedAt": "2026-07-24",
+      "list": "supply",
+      "pickClose": 313000,
+      "curClose": 311000,
+      "ret": -0.6,
       "tradingDays": 7,
       "stillListed": false
     },
@@ -2880,24 +2910,13 @@
       "stillListed": false
     },
     {
-      "ticker": "005490",
-      "name": "POSCO홀딩스",
-      "pickedAt": "2026-07-24",
-      "list": "supply",
-      "pickClose": 313000,
-      "curClose": 310500,
-      "ret": -0.8,
-      "tradingDays": 7,
-      "stillListed": false
-    },
-    {
       "ticker": "326030",
       "name": "SK바이오팜",
       "pickedAt": "2026-07-24",
       "list": "trend",
       "pickClose": 80600,
-      "curClose": 79800,
-      "ret": -1,
+      "curClose": 79900,
+      "ret": -0.9,
       "tradingDays": 7,
       "stillListed": false
     },
@@ -2907,8 +2926,8 @@
       "pickedAt": "2026-07-24",
       "list": "trend",
       "pickClose": 485500,
-      "curClose": 478500,
-      "ret": -1.4,
+      "curClose": 477500,
+      "ret": -1.6,
       "tradingDays": 7,
       "stillListed": false
     },
@@ -2918,8 +2937,8 @@
       "pickedAt": "2026-07-24",
       "list": "supply",
       "pickClose": 47100,
-      "curClose": 46000,
-      "ret": -2.3,
+      "curClose": 46050,
+      "ret": -2.2,
       "tradingDays": 7,
       "stillListed": false
     },
@@ -2929,8 +2948,8 @@
       "pickedAt": "2026-07-24",
       "list": "volume",
       "pickClose": 99100,
-      "curClose": 96300,
-      "ret": -2.8,
+      "curClose": 96800,
+      "ret": -2.3,
       "tradingDays": 7,
       "stillListed": false
     },
@@ -2940,8 +2959,8 @@
       "pickedAt": "2026-07-24",
       "list": "supply",
       "pickClose": 213000,
-      "curClose": 196000,
-      "ret": -8,
+      "curClose": 197800,
+      "ret": -7.1,
       "tradingDays": 7,
       "stillListed": false
     },
@@ -2951,8 +2970,8 @@
       "pickedAt": "2026-07-24",
       "list": "trend",
       "pickClose": 212000,
-      "curClose": 179400,
-      "ret": -15.4,
+      "curClose": 180000,
+      "ret": -15.1,
       "tradingDays": 7,
       "stillListed": true
     },
@@ -2962,8 +2981,8 @@
       "pickedAt": "2026-07-27",
       "list": "supply",
       "pickClose": 256000,
-      "curClose": 288500,
-      "ret": 12.7,
+      "curClose": 287500,
+      "ret": 12.3,
       "tradingDays": 6,
       "stillListed": false
     },
@@ -2973,8 +2992,8 @@
       "pickedAt": "2026-07-27",
       "list": "volume",
       "pickClose": 40100,
-      "curClose": 43100,
-      "ret": 7.5,
+      "curClose": 43000,
+      "ret": 7.2,
       "tradingDays": 6,
       "stillListed": true
     },
@@ -2984,8 +3003,8 @@
       "pickedAt": "2026-07-27",
       "list": "trend",
       "pickClose": 243000,
-      "curClose": 257000,
-      "ret": 5.8,
+      "curClose": 258000,
+      "ret": 6.2,
       "tradingDays": 6,
       "stillListed": false
     },
@@ -2995,8 +3014,8 @@
       "pickedAt": "2026-07-27",
       "list": "volume",
       "pickClose": 63600,
-      "curClose": 65800,
-      "ret": 3.5,
+      "curClose": 66700,
+      "ret": 4.9,
       "tradingDays": 6,
       "stillListed": false
     },
@@ -3006,8 +3025,8 @@
       "pickedAt": "2026-07-27",
       "list": "trend",
       "pickClose": 27650,
-      "curClose": 28500,
-      "ret": 3.1,
+      "curClose": 28750,
+      "ret": 4,
       "tradingDays": 6,
       "stillListed": false
     },
@@ -3017,8 +3036,8 @@
       "pickedAt": "2026-07-27",
       "list": "supply",
       "pickClose": 74400,
-      "curClose": 75900,
-      "ret": 2,
+      "curClose": 76400,
+      "ret": 2.7,
       "tradingDays": 6,
       "stillListed": false
     },
@@ -3028,19 +3047,8 @@
       "pickedAt": "2026-07-27",
       "list": "trend",
       "pickClose": 1197000,
-      "curClose": 1207000,
-      "ret": 0.8,
-      "tradingDays": 6,
-      "stillListed": false
-    },
-    {
-      "ticker": "316140",
-      "name": "우리금융지주",
-      "pickedAt": "2026-07-27",
-      "list": "trend",
-      "pickClose": 33100,
-      "curClose": 33050,
-      "ret": -0.2,
+      "curClose": 1217000,
+      "ret": 1.7,
       "tradingDays": 6,
       "stillListed": false
     },
@@ -3050,10 +3058,21 @@
       "pickedAt": "2026-07-27",
       "list": "trend",
       "pickClose": 2625000,
-      "curClose": 2601000,
-      "ret": -0.9,
+      "curClose": 2626000,
+      "ret": 0,
       "tradingDays": 6,
       "stillListed": true
+    },
+    {
+      "ticker": "316140",
+      "name": "우리금융지주",
+      "pickedAt": "2026-07-27",
+      "list": "trend",
+      "pickClose": 33100,
+      "curClose": 32950,
+      "ret": -0.5,
+      "tradingDays": 6,
+      "stillListed": false
     },
     {
       "ticker": "035900",
@@ -3061,8 +3080,8 @@
       "pickedAt": "2026-07-27",
       "list": "trend",
       "pickClose": 47000,
-      "curClose": 46000,
-      "ret": -2.1,
+      "curClose": 46200,
+      "ret": -1.7,
       "tradingDays": 6,
       "stillListed": false
     },
@@ -3072,8 +3091,8 @@
       "pickedAt": "2026-07-27",
       "list": "trend",
       "pickClose": 277500,
-      "curClose": 269500,
-      "ret": -2.9,
+      "curClose": 271000,
+      "ret": -2.3,
       "tradingDays": 6,
       "stillListed": false
     },
@@ -3083,8 +3102,8 @@
       "pickedAt": "2026-07-27",
       "list": "trend",
       "pickClose": 1325000,
-      "curClose": 1171000,
-      "ret": -11.6,
+      "curClose": 1185000,
+      "ret": -10.6,
       "tradingDays": 6,
       "stillListed": false
     },
@@ -3094,8 +3113,8 @@
       "pickedAt": "2026-07-28",
       "list": "trend",
       "pickClose": 192000,
-      "curClose": 183300,
-      "ret": -4.5,
+      "curClose": 183000,
+      "ret": -4.7,
       "tradingDays": 5,
       "stillListed": false
     },
@@ -3105,8 +3124,8 @@
       "pickedAt": "2026-07-29",
       "list": "supply",
       "pickClose": 7980,
-      "curClose": 8900,
-      "ret": 11.5,
+      "curClose": 8890,
+      "ret": 11.4,
       "tradingDays": 4,
       "stillListed": false
     },
@@ -3116,8 +3135,8 @@
       "pickedAt": "2026-07-29",
       "list": "trend",
       "pickClose": 121900,
-      "curClose": 130800,
-      "ret": 7.3,
+      "curClose": 130400,
+      "ret": 7,
       "tradingDays": 4,
       "stillListed": true
     },
@@ -3127,19 +3146,8 @@
       "pickedAt": "2026-07-29",
       "list": "trend",
       "pickClose": 190600,
-      "curClose": 193000,
-      "ret": 1.3,
-      "tradingDays": 4,
-      "stillListed": false
-    },
-    {
-      "ticker": "035250",
-      "name": "강원랜드",
-      "pickedAt": "2026-07-29",
-      "list": "supply",
-      "pickClose": 14450,
-      "curClose": 14540,
-      "ret": 0.6,
+      "curClose": 192900,
+      "ret": 1.2,
       "tradingDays": 4,
       "stillListed": false
     },
@@ -3149,8 +3157,19 @@
       "pickedAt": "2026-07-29",
       "list": "volume",
       "pickClose": 20200,
-      "curClose": 20250,
-      "ret": 0.2,
+      "curClose": 20300,
+      "ret": 0.5,
+      "tradingDays": 4,
+      "stillListed": false
+    },
+    {
+      "ticker": "035250",
+      "name": "강원랜드",
+      "pickedAt": "2026-07-29",
+      "list": "supply",
+      "pickClose": 14450,
+      "curClose": 14510,
+      "ret": 0.4,
       "tradingDays": 4,
       "stillListed": false
     },
@@ -3160,8 +3179,8 @@
       "pickedAt": "2026-07-29",
       "list": "trend",
       "pickClose": 135000,
-      "curClose": 131100,
-      "ret": -2.9,
+      "curClose": 130900,
+      "ret": -3,
       "tradingDays": 4,
       "stillListed": false
     },
@@ -3171,8 +3190,8 @@
       "pickedAt": "2026-07-29",
       "list": "trend",
       "pickClose": 77600,
-      "curClose": 61100,
-      "ret": -21.3,
+      "curClose": 61400,
+      "ret": -20.9,
       "tradingDays": 4,
       "stillListed": false
     },
@@ -3182,8 +3201,8 @@
       "pickedAt": "2026-07-30",
       "list": "supply",
       "pickClose": 57800,
-      "curClose": 76600,
-      "ret": 32.5,
+      "curClose": 77700,
+      "ret": 34.4,
       "tradingDays": 3,
       "stillListed": false
     },
@@ -3193,8 +3212,8 @@
       "pickedAt": "2026-07-30",
       "list": "volume",
       "pickClose": 24850,
-      "curClose": 32400,
-      "ret": 30.4,
+      "curClose": 32350,
+      "ret": 30.2,
       "tradingDays": 3,
       "stillListed": false
     },
@@ -3204,8 +3223,8 @@
       "pickedAt": "2026-07-30",
       "list": "volume",
       "pickClose": 207000,
-      "curClose": 236500,
-      "ret": 14.3,
+      "curClose": 238000,
+      "ret": 15,
       "tradingDays": 3,
       "stillListed": false
     },
@@ -3215,8 +3234,8 @@
       "pickedAt": "2026-07-30",
       "list": "supply",
       "pickClose": 4935,
-      "curClose": 5560,
-      "ret": 12.7,
+      "curClose": 5610,
+      "ret": 13.7,
       "tradingDays": 3,
       "stillListed": true
     },
@@ -3226,8 +3245,8 @@
       "pickedAt": "2026-07-30",
       "list": "volume",
       "pickClose": 38450,
-      "curClose": 38950,
-      "ret": 1.3,
+      "curClose": 38800,
+      "ret": 0.9,
       "tradingDays": 3,
       "stillListed": false
     },
@@ -3237,8 +3256,8 @@
       "pickedAt": "2026-07-30",
       "list": "trend",
       "pickClose": 49050,
-      "curClose": 47500,
-      "ret": -3.2,
+      "curClose": 47700,
+      "ret": -2.8,
       "tradingDays": 3,
       "stillListed": false
     },
@@ -3248,8 +3267,8 @@
       "pickedAt": "2026-07-31",
       "list": "supply",
       "pickClose": 82900,
-      "curClose": 93800,
-      "ret": 13.1,
+      "curClose": 94200,
+      "ret": 13.6,
       "tradingDays": 2,
       "stillListed": false
     },
@@ -3259,8 +3278,8 @@
       "pickedAt": "2026-07-31",
       "list": "trend",
       "pickClose": 44700,
-      "curClose": 47400,
-      "ret": 6,
+      "curClose": 47450,
+      "ret": 6.2,
       "tradingDays": 2,
       "stillListed": false
     },
@@ -3270,8 +3289,8 @@
       "pickedAt": "2026-07-31",
       "list": "trend",
       "pickClose": 23050,
-      "curClose": 24050,
-      "ret": 4.3,
+      "curClose": 24100,
+      "ret": 4.6,
       "tradingDays": 2,
       "stillListed": false
     },
@@ -3281,8 +3300,8 @@
       "pickedAt": "2026-07-31",
       "list": "supply",
       "pickClose": 144500,
-      "curClose": 146700,
-      "ret": 1.5,
+      "curClose": 147400,
+      "ret": 2,
       "tradingDays": 2,
       "stillListed": false
     },
@@ -3292,8 +3311,8 @@
       "pickedAt": "2026-08-03",
       "list": "volume",
       "pickClose": 48550,
-      "curClose": 55900,
-      "ret": 15.1,
+      "curClose": 55100,
+      "ret": 13.5,
       "tradingDays": 1,
       "stillListed": true
     },
@@ -3303,8 +3322,8 @@
       "pickedAt": "2026-08-03",
       "list": "supply",
       "pickClose": 33550,
-      "curClose": 35900,
-      "ret": 7,
+      "curClose": 36050,
+      "ret": 7.5,
       "tradingDays": 1,
       "stillListed": false
     },
@@ -3314,8 +3333,8 @@
       "pickedAt": "2026-08-03",
       "list": "supply",
       "pickClose": 145600,
-      "curClose": 150700,
-      "ret": 3.5,
+      "curClose": 151600,
+      "ret": 4.1,
       "tradingDays": 1,
       "stillListed": true
     }
@@ -3330,8 +3349,8 @@
       "supply": {
         "samples": 200,
         "horizon": 5,
-        "avgReturn": -4.1,
-        "hitRate": 38,
+        "avgReturn": -4,
+        "hitRate": 39,
         "benchReturn": -2.7
       },
       "steady": {
@@ -3339,13 +3358,13 @@
         "horizon": 5,
         "avgReturn": -5.2,
         "hitRate": 31,
-        "benchReturn": -3
+        "benchReturn": -3.1
       },
       "trend": {
         "samples": 187,
         "horizon": 5,
-        "avgReturn": -3.3,
-        "hitRate": 35,
+        "avgReturn": -3.4,
+        "hitRate": 34,
         "benchReturn": -2.7
       },
       "volume": {
