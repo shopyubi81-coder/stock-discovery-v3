@@ -15,10 +15,19 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     env:
       OUT_DIR: ${{ github.workspace }}/public/data
       FETCH_MODE: live
@@ -58,3 +67,20 @@ jobs:
             git commit -m "chore: daily data refresh ($(date -u +%Y-%m-%d))"
             git push
           fi
+
+      # GITHUB_TOKEN으로 만든 push는 다른 워크플로(deploy-pages.yml)를
+      # 자동 트리거하지 않는 GitHub의 재귀방지 제한 때문에, 데이터만
+      # 갱신되고 실제 배포는 안 되는 문제가 있었음(2026-08-04 실측
+      # 확인). 그래서 이 워크플로가 직접 배포까지 끝낸다 — 방금 fetch한
+      # public/ 이 워크스페이스에 이미 있으니 그대로 업로드.
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload public/ as artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
