@@ -2,7 +2,7 @@
   "version": 3,
   "scope": "us",
   "date": "2026-08-14",
-  "generated_at": "2026-08-15T22:26:51.116Z",
+  "generated_at": "2026-08-16T22:25:13.470Z",
   "market": {
     "regime": "strong",
     "breadth": 66
@@ -18,33 +18,27 @@
   "themeFlow": [
     {
       "sector": "금융",
-      "heat": 62.5,
+      "heat": 67,
       "prior": 32.6,
       "stage": "주도"
     },
     {
       "sector": "헬스케어",
-      "heat": 50.5,
+      "heat": 53,
       "prior": 33.6,
       "stage": "주도"
     },
     {
       "sector": "산업재",
-      "heat": 49.5,
+      "heat": 45,
       "prior": 23.6,
       "stage": "주도"
     },
     {
       "sector": "IT/기술",
-      "heat": 15.5,
+      "heat": 16.5,
       "prior": 27.6,
       "stage": "둔화"
-    },
-    {
-      "sector": "커뮤니케이션",
-      "heat": 13.5,
-      "prior": 9.2,
-      "stage": "강화"
     },
     {
       "sector": "소비재(임의)",
@@ -54,8 +48,14 @@
     },
     {
       "sector": "에너지",
-      "heat": 9.5,
+      "heat": 12.5,
       "prior": 13,
+      "stage": "중립"
+    },
+    {
+      "sector": "커뮤니케이션",
+      "heat": 9,
+      "prior": 9.2,
       "stage": "중립"
     },
     {
@@ -159,22 +159,6 @@
   ],
   "lists": {
     "supply": [
-      {
-        "ticker": "VLTO",
-        "name": "Veralto",
-        "market": "US",
-        "sector": "산업재",
-        "change": 0.1,
-        "amountEok": 1182,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.31 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 2.7배",
-          "OBV 상승 추세"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 1
-      },
       {
         "ticker": "CPRT",
         "name": "Copart",
@@ -320,6 +304,22 @@
         "freshDays": 1
       },
       {
+        "ticker": "LH",
+        "name": "Labcorp",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": -1.4,
+        "amountEok": 1969,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.25 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 1.9배",
+          "OBV 상승 추세"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 2
+      },
+      {
         "ticker": "NOC",
         "name": "Northrop Grumman",
         "market": "US",
@@ -416,6 +416,22 @@
         "freshDays": 2
       },
       {
+        "ticker": "VLTO",
+        "name": "Veralto",
+        "market": "US",
+        "sector": "산업재",
+        "change": 0.1,
+        "amountEok": 1182,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.21 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 1.9배",
+          "OBV 상승 추세"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
         "ticker": "WAT",
         "name": "Waters Corporation",
         "market": "US",
@@ -462,22 +478,6 @@
         "grade": "A",
         "warn": false,
         "freshDays": 3
-      },
-      {
-        "ticker": "CMCSA",
-        "name": "Comcast",
-        "market": "US",
-        "sector": "커뮤니케이션",
-        "change": 0,
-        "amountEok": 7430,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.21 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 1.7배",
-          "OBV 상승 추세"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 1
       }
     ],
     "trend": [
@@ -500,6 +500,23 @@
         "freshDays": 1
       },
       {
+        "ticker": "GDDY",
+        "name": "GoDaddy",
+        "market": "US",
+        "sector": "IT/기술",
+        "change": -5.6,
+        "amountEok": 2809,
+        "reasons": [
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
+          "정배열 진입",
+          "5/20 골든크로스",
+          "MACD 골든크로스"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
         "ticker": "GIS",
         "name": "General Mills",
         "market": "US",
@@ -515,6 +532,21 @@
         "grade": "A",
         "warn": false,
         "freshDays": 3
+      },
+      {
+        "ticker": "OKE",
+        "name": "Oneok",
+        "market": "US",
+        "sector": "에너지",
+        "change": 2.5,
+        "amountEok": 3340,
+        "reasons": [
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
+          "60일 신고가"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 2
       },
       {
         "ticker": "IRM",
@@ -676,22 +708,6 @@
         "freshDays": 1
       },
       {
-        "ticker": "GDDY",
-        "name": "GoDaddy",
-        "market": "US",
-        "sector": "IT/기술",
-        "change": -5.6,
-        "amountEok": 2809,
-        "reasons": [
-          "정배열 전환 직후 — 지지 확인 전 초기 단계",
-          "정배열 진입",
-          "5/20 골든크로스"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
         "ticker": "ALGN",
         "name": "Align Technology",
         "market": "US",
@@ -703,23 +719,6 @@
           "10/20 골든크로스",
           "BB 수축→상단돌파",
           "20일선 위 안착"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 2
-      },
-      {
-        "ticker": "SOLV",
-        "name": "Solventum",
-        "market": "US",
-        "sector": "헬스케어",
-        "change": 2.5,
-        "amountEok": 1823,
-        "reasons": [
-          "추세 신호 발생",
-          "5/10 골든크로스",
-          "60일 신고가",
-          "MACD 골든크로스"
         ],
         "grade": "B",
         "warn": false,
@@ -885,7 +884,7 @@
         "warn": false,
         "reasons": [
           "장기 매집 프록시 — 60일 CMF +0.19 · OBV 상승 지속",
-          "상승일 거래량 우위 1.2배"
+          "상승일 거래량 우위 1.1배"
         ],
         "freshDays": 5
       },
@@ -990,7 +989,7 @@
         "warn": false,
         "reasons": [
           "장기 매집 프록시 — 60일 CMF +0.14 · OBV 상승 지속",
-          "상승일 거래량 우위 1.3배"
+          "상승일 거래량 우위 1.1배"
         ],
         "freshDays": 4
       },
@@ -1055,6 +1054,21 @@
         "freshDays": 7
       },
       {
+        "ticker": "RVTY",
+        "name": "Revvity",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": -0.6,
+        "amountEok": 1284,
+        "grade": "A",
+        "warn": false,
+        "reasons": [
+          "장기 매집 프록시 — 60일 CMF +0.13 · OBV 상승 지속",
+          "상승일 거래량 우위 1.6배"
+        ],
+        "freshDays": 1
+      },
+      {
         "ticker": "AJG",
         "name": "Arthur J. Gallagher & Co.",
         "market": "US",
@@ -1115,32 +1129,17 @@
         "freshDays": 1
       },
       {
-        "ticker": "GEHC",
-        "name": "GE HealthCare",
+        "ticker": "PNC",
+        "name": "PNC Financial Services",
         "market": "US",
-        "sector": "헬스케어",
-        "change": -0.1,
-        "amountEok": 1696,
+        "sector": "금융",
+        "change": 0.7,
+        "amountEok": 2863,
         "grade": "A",
         "warn": false,
         "reasons": [
           "장기 매집 프록시 — 60일 CMF +0.12 · OBV 상승 지속",
           "상승일 거래량 우위 1.3배"
-        ],
-        "freshDays": 1
-      },
-      {
-        "ticker": "PAYX",
-        "name": "Paychex",
-        "market": "US",
-        "sector": "산업재",
-        "change": -2.7,
-        "amountEok": 2891,
-        "grade": "A",
-        "warn": false,
-        "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.11 · OBV 상승 지속",
-          "상승일 거래량 우위 1.8배"
         ],
         "freshDays": 1
       }
@@ -1188,7 +1187,7 @@
       "pickClose": 55.310001373291016,
       "curClose": 69.04000091552734,
       "ret": 24.8,
-      "tradingDays": 15,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1353,8 +1352,8 @@
       "pickClose": 296.7699890136719,
       "curClose": 318.1300048828125,
       "ret": 7.2,
-      "tradingDays": 14,
-      "stillListed": false
+      "tradingDays": 15,
+      "stillListed": true
     },
     {
       "ticker": "PH",
@@ -1529,7 +1528,7 @@
       "pickClose": 93.16000366210938,
       "curClose": 94.91000366210938,
       "ret": 1.9,
-      "tradingDays": 15,
+      "tradingDays": 14,
       "stillListed": true
     },
     {
@@ -1617,7 +1616,7 @@
       "pickClose": 254.38999938964844,
       "curClose": 255.47999572753906,
       "ret": 0.4,
-      "tradingDays": 14,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
@@ -1672,7 +1671,7 @@
       "pickClose": 259.3599853515625,
       "curClose": 249.4600067138672,
       "ret": -3.8,
-      "tradingDays": 15,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1771,7 +1770,7 @@
       "pickClose": 89.25,
       "curClose": 76.68000030517578,
       "ret": -14.1,
-      "tradingDays": 15,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1815,7 +1814,7 @@
       "pickClose": 152.77999877929688,
       "curClose": 171.00999450683594,
       "ret": 11.9,
-      "tradingDays": 13,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1826,7 +1825,7 @@
       "pickClose": 213.22000122070312,
       "curClose": 236.66000366210938,
       "ret": 11,
-      "tradingDays": 14,
+      "tradingDays": 13,
       "stillListed": true
     },
     {
@@ -1859,7 +1858,7 @@
       "pickClose": 94.16999816894531,
       "curClose": 102.06999969482422,
       "ret": 8.4,
-      "tradingDays": 13,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -2420,7 +2419,7 @@
       "pickClose": 98.47000122070312,
       "curClose": 97.68000030517578,
       "ret": -0.8,
-      "tradingDays": 13,
+      "tradingDays": 12,
       "stillListed": true
     },
     {
@@ -2464,7 +2463,7 @@
       "pickClose": 319.5799865722656,
       "curClose": 313.82000732421875,
       "ret": -1.8,
-      "tradingDays": 12,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2530,7 +2529,7 @@
       "pickClose": 64.08999633789062,
       "curClose": 61.619998931884766,
       "ret": -3.9,
-      "tradingDays": 13,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -2541,7 +2540,7 @@
       "pickClose": 119.01000213623047,
       "curClose": 114.11000061035156,
       "ret": -4.1,
-      "tradingDays": 12,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2563,7 +2562,7 @@
       "pickClose": 124.97000122070312,
       "curClose": 119.68000030517578,
       "ret": -4.2,
-      "tradingDays": 12,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2772,8 +2771,8 @@
       "pickClose": 71.9000015258789,
       "curClose": 73.69000244140625,
       "ret": 2.5,
-      "tradingDays": 12,
-      "stillListed": true
+      "tradingDays": 11,
+      "stillListed": false
     },
     {
       "ticker": "NWS",
@@ -2783,7 +2782,7 @@
       "pickClose": 32.63999938964844,
       "curClose": 33.16999816894531,
       "ret": 1.6,
-      "tradingDays": 12,
+      "tradingDays": 11,
       "stillListed": false
     },
     {
@@ -2794,7 +2793,7 @@
       "pickClose": 28.81999969482422,
       "curClose": 29.15999984741211,
       "ret": 1.2,
-      "tradingDays": 12,
+      "tradingDays": 11,
       "stillListed": false
     },
     {
@@ -2893,7 +2892,7 @@
       "pickClose": 147.9199981689453,
       "curClose": 139.4199981689453,
       "ret": -5.7,
-      "tradingDays": 12,
+      "tradingDays": 11,
       "stillListed": true
     },
     {
@@ -2959,7 +2958,7 @@
       "pickClose": 128.08999633789062,
       "curClose": 144.02000427246094,
       "ret": 12.4,
-      "tradingDays": 10,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3126,6 +3125,17 @@
       "ret": 2.4,
       "tradingDays": 10,
       "stillListed": true
+    },
+    {
+      "ticker": "SBAC",
+      "name": "SBA Communications",
+      "pickedAt": "2026-07-31",
+      "list": "volume",
+      "pickClose": 180.97999572753906,
+      "curClose": 185.1999969482422,
+      "ret": 2.3,
+      "tradingDays": 10,
+      "stillListed": false
     },
     {
       "ticker": "TTWO",
@@ -3335,31 +3345,20 @@
       "ret": 5,
       "tradingDays": 9,
       "stillListed": false
-    },
-    {
-      "ticker": "COF",
-      "name": "Capital One",
-      "pickedAt": "2026-08-03",
-      "list": "trend",
-      "pickClose": 217.67999267578125,
-      "curClose": 227.33999633789062,
-      "ret": 4.4,
-      "tradingDays": 9,
-      "stillListed": false
     }
   ],
   "record": {
-    "samples": 644,
+    "samples": 643,
     "horizon": 5,
     "avgReturn": 1.1,
     "hitRate": 56,
     "benchReturn": 1.3,
     "byList": {
       "supply": {
-        "samples": 200,
+        "samples": 198,
         "horizon": 5,
         "avgReturn": 1.6,
-        "hitRate": 60,
+        "hitRate": 59,
         "benchReturn": 1.3
       },
       "steady": {
@@ -3377,7 +3376,7 @@
         "benchReturn": 1.3
       },
       "volume": {
-        "samples": 145,
+        "samples": 146,
         "horizon": 5,
         "avgReturn": 0.8,
         "hitRate": 54,
