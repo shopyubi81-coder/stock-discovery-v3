@@ -56,6 +56,22 @@ jobs:
       - name: Fetch news
         run: node src/fetch_news.js
 
+      # 2026-08-17: notify.js 호출 자체가 이 워크플로에 없었다 -- 실제로 텔레그램을
+      # 보내는 유일한 경로는 로컬 PC 예약작업(StockDiscoveryV3Daily, 18:40/20:15 KST)
+      # 뿐이었고, PC가 꺼져 있으면 그 경로도 없다. discover.json/discover-us.json/
+      # market-extra.json은 위 단계들이 이미 OUT_DIR(public/data)에 써뒀으므로
+      # notify.js가 그대로 읽을 수 있다.
+      #
+      # NOTIFY_DISABLED=1로 유지 -- 로컬 .env가 이미 그렇게 설정되어 있어 지금
+      # 무음 상태이고, 이 재구성은 "PC 없이도 돌아가게" 하는 것이지 알림을
+      # 새로 켜는 것이 아니다. 실제로 발송을 원하면 이 값을 "0"으로 바꾼다.
+      - name: Send Telegram digest (if not muted)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          NOTIFY_DISABLED: "1"
+        run: node src/notify.js
+
       - name: Commit and push if data changed
         run: |
           git config user.name "github-actions[bot]"
