@@ -1,7 +1,7 @@
 {
   "version": 3,
   "date": "2026-08-21",
-  "generated_at": "2026-08-22T22:26:05.708Z",
+  "generated_at": "2026-08-23T22:26:49.054Z",
   "market": {
     "regime": "neutral",
     "breadth": 50
@@ -11,27 +11,21 @@
     "minMarketCapEok": 1000,
     "excludeLoss": true,
     "universe": 399,
-    "passed": 167
+    "passed": 152
   },
   "themeFocus": null,
   "themeFlow": [
     {
-      "sector": "반도체와반도체장비",
-      "heat": 19.9,
-      "prior": 19.4,
-      "stage": "둔화"
-    },
-    {
       "sector": "증권",
-      "heat": 15.3,
+      "heat": 18.8,
       "prior": 10.6,
       "stage": "주도"
     },
     {
-      "sector": "건강관리장비와용품",
-      "heat": 12,
-      "prior": 1.4,
-      "stage": "주도"
+      "sector": "반도체와반도체장비",
+      "heat": 17.5,
+      "prior": 19.4,
+      "stage": "둔화"
     },
     {
       "sector": "석유와가스",
@@ -46,27 +40,21 @@
       "stage": "주도"
     },
     {
-      "sector": "백화점과일반상점",
+      "sector": "조선",
       "heat": 9,
-      "prior": 6.2,
+      "prior": 2.2,
+      "stage": "주도"
+    },
+    {
+      "sector": "건강관리장비와용품",
+      "heat": 7.5,
+      "prior": 1.4,
       "stage": "주도"
     },
     {
       "sector": "IT서비스",
-      "heat": 5.7,
+      "heat": 5.3,
       "prior": 4.8,
-      "stage": "둔화"
-    },
-    {
-      "sector": "복합기업",
-      "heat": 4.9,
-      "prior": 4.6,
-      "stage": "둔화"
-    },
-    {
-      "sector": "제약",
-      "heat": 4.9,
-      "prior": 6.6,
       "stage": "둔화"
     },
     {
@@ -82,16 +70,28 @@
       "stage": "둔화"
     },
     {
+      "sector": "백화점과일반상점",
+      "heat": 4.5,
+      "prior": 6.2,
+      "stage": "둔화"
+    },
+    {
       "sector": "전기제품",
       "heat": 4.5,
       "prior": 3.6,
       "stage": "주도"
     },
     {
-      "sector": "조선",
+      "sector": "복합기업",
       "heat": 4.5,
-      "prior": 2.2,
-      "stage": "강화"
+      "prior": 4.6,
+      "stage": "둔화"
+    },
+    {
+      "sector": "제약",
+      "heat": 4.5,
+      "prior": 6.6,
+      "stage": "이탈"
     },
     {
       "sector": "손해보험",
@@ -125,38 +125,26 @@
     },
     {
       "sector": "식품",
-      "heat": 1.6,
+      "heat": 1.2,
       "prior": 4,
       "stage": "이탈"
     },
     {
-      "sector": "포장재",
-      "heat": 1.2,
-      "prior": 0,
-      "stage": "신규부상"
-    },
-    {
       "sector": "인터넷과카탈로그소매",
-      "heat": 1.2,
+      "heat": 0.8,
       "prior": 1.4,
-      "stage": "중립"
-    },
-    {
-      "sector": "자동차부품",
-      "heat": 0.4,
-      "prior": 4,
-      "stage": "중립"
-    },
-    {
-      "sector": "전자장비와기기",
-      "heat": 0.4,
-      "prior": 2,
       "stage": "중립"
     },
     {
       "sector": "철강",
       "heat": 0,
       "prior": 2.6,
+      "stage": "중립"
+    },
+    {
+      "sector": "자동차부품",
+      "heat": 0,
+      "prior": 4,
       "stage": "중립"
     },
     {
@@ -169,6 +157,12 @@
       "sector": "건설",
       "heat": 0,
       "prior": 1.6,
+      "stage": "중립"
+    },
+    {
+      "sector": "전자장비와기기",
+      "heat": 0,
+      "prior": 2,
       "stage": "중립"
     },
     {
@@ -233,7 +227,7 @@
       "sector": "금융",
       "market": "KOSPI",
       "change": -2.7,
-      "amountEok": 272,
+      "amountEok": 209,
       "freshDays": 9,
       "hits": [
         "supply",
@@ -255,7 +249,7 @@
       "sector": "석유와가스",
       "market": "KOSPI",
       "change": -0.9,
-      "amountEok": 824,
+      "amountEok": 530,
       "freshDays": 8,
       "hits": [
         "supply",
@@ -264,8 +258,7 @@
       "reasons": [
         "상승 초입~중간 구간 매집",
         "외국인 11일 연속 매수",
-        "정배열 유지",
-        "최근 호재성 뉴스 동반"
+        "정배열 유지"
       ],
       "entry": 124800,
       "stop": 119300,
@@ -279,7 +272,7 @@
       "sector": "건강관리장비와용품",
       "market": "KOSDAQ",
       "change": -3.1,
-      "amountEok": 496,
+      "amountEok": 336,
       "freshDays": 1,
       "hits": [
         "supply",
@@ -322,7 +315,7 @@
         "market": "KOSPI",
         "sector": "금융",
         "change": -2.7,
-        "amountEok": 272,
+        "amountEok": 209,
         "reasons": [
           "바닥권 매집 — 고점 대비 -31% 조정 후 저점 매수",
           "외국인 13일 연속 매수"
@@ -337,12 +330,11 @@
         "market": "KOSPI",
         "sector": "석유와가스",
         "change": -0.9,
-        "amountEok": 824,
+        "amountEok": 530,
         "reasons": [
           "상승 초입~중간 구간 매집",
           "외국인 11일 연속 매수",
-          "정배열 유지",
-          "최근 호재성 뉴스 동반"
+          "정배열 유지"
         ],
         "grade": "A",
         "warn": false,
@@ -354,7 +346,7 @@
         "market": "KOSPI",
         "sector": "증권",
         "change": -1.2,
-        "amountEok": 426,
+        "amountEok": 312,
         "reasons": [
           "바닥권 매집 — 고점 대비 -27% 조정 후 저점 매수",
           "외국인 9일 연속 매수",
@@ -370,7 +362,7 @@
         "market": "KOSDAQ",
         "sector": "건강관리장비와용품",
         "change": -3.1,
-        "amountEok": 496,
+        "amountEok": 336,
         "reasons": [
           "상승 초입~중간 구간 매집",
           "외국인 9일 연속 매수",
@@ -387,7 +379,7 @@
         "market": "KOSPI",
         "sector": "전기장비",
         "change": -3.8,
-        "amountEok": 1245,
+        "amountEok": 986,
         "reasons": [
           "바닥권 매집 — 고점 대비 -40% 조정 후 저점 매수",
           "외국인 8일 연속 매수",
@@ -397,21 +389,6 @@
         "grade": "A",
         "warn": false,
         "freshDays": 4
-      },
-      {
-        "ticker": "023530",
-        "name": "롯데쇼핑",
-        "market": "KOSPI",
-        "sector": "백화점과일반상점",
-        "change": -0.5,
-        "amountEok": 107,
-        "reasons": [
-          "바닥권 매집 — 고점 대비 -52% 조정 후 저점 매수",
-          "외국인 7일 연속 매수"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 1
       },
       {
         "ticker": "028670",
@@ -436,7 +413,7 @@
         "market": "KOSPI",
         "sector": "백화점과일반상점",
         "change": -1,
-        "amountEok": 324,
+        "amountEok": 246,
         "reasons": [
           "바닥권 매집 — 고점 대비 -48% 조정 후 저점 매수",
           "외국인 6일 연속 매수"
@@ -451,7 +428,7 @@
         "market": "KOSPI",
         "sector": "IT서비스",
         "change": -2.1,
-        "amountEok": 728,
+        "amountEok": 457,
         "reasons": [
           "바닥권 매집 — 고점 대비 -37% 조정 후 저점 매수",
           "외국인 6일 연속 매수",
@@ -467,7 +444,7 @@
         "market": "KOSPI",
         "sector": "전기제품",
         "change": -4.1,
-        "amountEok": 1074,
+        "amountEok": 855,
         "reasons": [
           "바닥권 매집 — 고점 대비 -25% 조정 후 저점 매수",
           "외국인 6일 연속 매수"
@@ -477,27 +454,12 @@
         "freshDays": 2
       },
       {
-        "ticker": "290650",
-        "name": "엘앤씨바이오",
-        "market": "KOSDAQ",
-        "sector": "바이오",
-        "change": -4.3,
-        "amountEok": 118,
-        "reasons": [
-          "바닥권 매집 — 고점 대비 -47% 조정 후 저점 매수",
-          "외국인 6일 연속 매수"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
         "ticker": "084370",
         "name": "유진테크",
         "market": "KOSDAQ",
         "sector": "반도체와반도체장비",
         "change": -4.5,
-        "amountEok": 175,
+        "amountEok": 140,
         "reasons": [
           "바닥권 매집 — 고점 대비 -38% 조정 후 저점 매수",
           "외국인 6일 연속 매수"
@@ -512,7 +474,7 @@
         "market": "KOSPI",
         "sector": "화장품",
         "change": 1,
-        "amountEok": 383,
+        "amountEok": 286,
         "reasons": [
           "⚠ 고점권 매집 — 20일간 +16% 상승 후, 추격 주의",
           "외국인 9일 연속 매수",
@@ -530,7 +492,7 @@
         "market": "KOSPI",
         "sector": "복합기업",
         "change": -2.4,
-        "amountEok": 386,
+        "amountEok": 350,
         "reasons": [
           "바닥권 매집 — 고점 대비 -35% 조정 후 저점 매수",
           "외국인 5일 연속 매수"
@@ -545,32 +507,17 @@
         "market": "KOSPI",
         "sector": "식품",
         "change": -2.8,
-        "amountEok": 162,
+        "amountEok": 100,
         "reasons": [
           "⚠ 고점권 매집 — 20일간 +31% 상승 후, 추격 주의",
           "외국인 3일 연속 매수",
           "기관 8일 연속 매수",
           "외인·기관 쌍끌이",
-          "거래대금 평소 2배"
+          "정배열 유지"
         ],
         "grade": "C",
         "warn": true,
         "freshDays": 2
-      },
-      {
-        "ticker": "281820",
-        "name": "케이씨텍",
-        "market": "KOSPI",
-        "sector": "반도체와반도체장비",
-        "change": -5.9,
-        "amountEok": 136,
-        "reasons": [
-          "바닥권 매집 — 고점 대비 -46% 조정 후 저점 매수",
-          "외국인 5일 연속 매수"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 1
       },
       {
         "ticker": "089970",
@@ -578,7 +525,7 @@
         "market": "KOSDAQ",
         "sector": "반도체와반도체장비",
         "change": -7.3,
-        "amountEok": 382,
+        "amountEok": 248,
         "reasons": [
           "바닥권 매집 — 고점 대비 -51% 조정 후 저점 매수",
           "외국인 5일 연속 매수",
@@ -594,7 +541,7 @@
         "market": "KOSPI",
         "sector": "바이오",
         "change": -1.5,
-        "amountEok": 841,
+        "amountEok": 693,
         "reasons": [
           "상승 초입~중간 구간 매집",
           "외국인 4일 연속 매수",
@@ -611,11 +558,59 @@
         "market": "KOSPI",
         "sector": "조선",
         "change": -2.6,
-        "amountEok": 210,
+        "amountEok": 173,
         "reasons": [
           "바닥권 매집 — 고점 대비 -23% 조정 후 저점 매수",
           "외국인 4일 연속 매수",
-          "펀더멘털 우량 (ROE 33.73%)"
+          "펀더멘털 우량 (ROE 33.73%)",
+          "최근 호재성 뉴스 동반"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "080220",
+        "name": "제주반도체",
+        "market": "KOSDAQ",
+        "sector": "AI/반도체",
+        "change": -3.9,
+        "amountEok": 671,
+        "reasons": [
+          "바닥권 매집 — 고점 대비 -45% 조정 후 저점 매수",
+          "외국인 4일 연속 매수",
+          "펀더멘털 우량 (ROE 19.21%)"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 2
+      },
+      {
+        "ticker": "006800",
+        "name": "미래에셋증권",
+        "market": "KOSPI",
+        "sector": "금융",
+        "change": -4.4,
+        "amountEok": 400,
+        "reasons": [
+          "바닥권 매집 — 고점 대비 -47% 조정 후 저점 매수",
+          "외국인 4일 연속 매수"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "329180",
+        "name": "HD현대중공업",
+        "market": "KOSPI",
+        "sector": "조선",
+        "change": -4.7,
+        "amountEok": 1145,
+        "reasons": [
+          "바닥권 매집 — 고점 대비 -39% 조정 후 저점 매수",
+          "외국인 4일 연속 매수",
+          "펀더멘털 우량 (ROE 18.82%)"
         ],
         "grade": "A",
         "warn": false,
@@ -629,7 +624,7 @@
         "market": "KOSPI",
         "sector": "가정용기기와용품",
         "change": 2.7,
-        "amountEok": 133,
+        "amountEok": 119,
         "reasons": [
           "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)",
           "기관 1일 매수 동반"
@@ -644,7 +639,7 @@
         "market": "KOSPI",
         "sector": "해운사",
         "change": 1.9,
-        "amountEok": 594,
+        "amountEok": 305,
         "reasons": [
           "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)",
           "기관 1일 매수 동반"
@@ -659,7 +654,7 @@
         "market": "KOSDAQ",
         "sector": "건강관리장비와용품",
         "change": -3.1,
-        "amountEok": 496,
+        "amountEok": 336,
         "reasons": [
           "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)",
           "외국인 9일 매수 동반"
@@ -674,7 +669,7 @@
         "market": "KOSPI",
         "sector": "손해보험",
         "change": 6.3,
-        "amountEok": 908,
+        "amountEok": 773,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "MACD 골든크로스",
@@ -691,28 +686,13 @@
         "market": "KOSPI",
         "sector": "석유와가스",
         "change": 3.2,
-        "amountEok": 1400,
+        "amountEok": 1105,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "10/20 골든크로스",
           "20일선 위 안착",
-          "외국인 1일 매수 동반"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "281820",
-        "name": "케이씨텍",
-        "market": "KOSPI",
-        "sector": "반도체와반도체장비",
-        "change": -5.9,
-        "amountEok": 136,
-        "reasons": [
-          "추세 신호 발생",
-          "10/20 골든크로스",
-          "외국인 5일 매수 동반"
+          "외국인 1일 매수 동반",
+          "최근 호재성 뉴스 동반"
         ],
         "grade": "B",
         "warn": false,
@@ -724,7 +704,7 @@
         "market": "KOSDAQ",
         "sector": "반도체와반도체장비",
         "change": -6.1,
-        "amountEok": 485,
+        "amountEok": 350,
         "reasons": [
           "추세 신호 발생",
           "10/20 골든크로스",
@@ -740,7 +720,7 @@
         "market": "KOSDAQ",
         "sector": "반도체와반도체장비",
         "change": -7.3,
-        "amountEok": 382,
+        "amountEok": 248,
         "reasons": [
           "추세 신호 발생",
           "10/20 골든크로스",
@@ -789,7 +769,7 @@
         "market": "KOSPI",
         "sector": "게임엔터테인먼트",
         "change": -0.2,
-        "amountEok": 231,
+        "amountEok": 196,
         "reasons": [
           "추세 신호 발생",
           "RSI 과매도 탈출"
@@ -821,7 +801,7 @@
         "market": "KOSPI",
         "sector": "생명보험",
         "change": 10.6,
-        "amountEok": 5327,
+        "amountEok": 3407,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "⚠ 과열 구간 — 20일 +0% · RSI 54 · 뒤늦은 진입 위험",
@@ -834,29 +814,12 @@
         "freshDays": 1
       },
       {
-        "ticker": "251970",
-        "name": "펌텍코리아",
-        "market": "KOSDAQ",
-        "sector": "포장재",
-        "change": 4.7,
-        "amountEok": 115,
-        "reasons": [
-          "추세 신호 발생",
-          "⚠ 과열 구간 — 20일 +48% · RSI 72 · 뒤늦은 진입 위험",
-          "60일 신고가",
-          "기관 3일 매수 동반"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
         "ticker": "181710",
         "name": "NHN",
         "market": "KOSPI",
         "sector": "IT서비스",
         "change": 4.6,
-        "amountEok": 552,
+        "amountEok": 331,
         "reasons": [
           "추세 신호 발생",
           "⚠ 과열 구간 — 20일 +95% · RSI 84 · 뒤늦은 진입 위험",
@@ -873,7 +836,7 @@
         "market": "KOSDAQ",
         "sector": "인터넷과카탈로그소매",
         "change": 3.7,
-        "amountEok": 1298,
+        "amountEok": 710,
         "reasons": [
           "추세 신호 발생",
           "⚠ 과열 구간 — 20일 +31% · RSI 77 · 뒤늦은 진입 위험",
@@ -890,7 +853,7 @@
         "market": "KOSDAQ",
         "sector": "화장품",
         "change": 0.1,
-        "amountEok": 346,
+        "amountEok": 247,
         "reasons": [
           "추세 신호 발생",
           "⚠ 과열 구간 — 20일 +65% · RSI 92 · 뒤늦은 진입 위험",
@@ -906,7 +869,7 @@
         "market": "KOSPI",
         "sector": "화장품",
         "change": 2.8,
-        "amountEok": 333,
+        "amountEok": 230,
         "reasons": [
           "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)",
           "⚠ 과열 구간 — 20일 +26% · RSI 62 · 뒤늦은 진입 위험",
@@ -934,21 +897,6 @@
         "freshDays": 2
       },
       {
-        "ticker": "016360",
-        "name": "삼성증권",
-        "market": "KOSPI",
-        "sector": "금융",
-        "change": -0.4,
-        "amountEok": 2182,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 4.3배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 2
-      },
-      {
         "ticker": "003530",
         "name": "한화투자증권",
         "market": "KOSPI",
@@ -971,10 +919,10 @@
         "market": "KOSPI",
         "sector": "생명보험",
         "change": 10.6,
-        "amountEok": 5327,
+        "amountEok": 3407,
         "reasons": [
           "기관 주도 상승 폭발",
-          "거래대금 평소 4.1배",
+          "거래대금 평소 2.6배",
           "⚠ 과열 구간 (RSI 54) — 추격 주의",
           "기관 2일 연속 매수",
           "최근 호재성 뉴스 동반"
@@ -989,140 +937,17 @@
         "market": "KOSPI",
         "sector": "건축자재",
         "change": 2,
-        "amountEok": 298,
+        "amountEok": 206,
         "reasons": [
           "기관 주도 상승 폭발",
-          "거래대금 평소 3.1배",
+          "거래대금 평소 2.1배",
           "⚠ 과열 구간 (RSI 75) — 추격 주의",
-          "기관 2일 연속 매수"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 2
-      },
-      {
-        "ticker": "181710",
-        "name": "NHN",
-        "market": "KOSPI",
-        "sector": "IT서비스",
-        "change": 4.6,
-        "amountEok": 552,
-        "reasons": [
-          "외인·기관 동반 매수 폭발 — 세력 주도",
-          "거래대금 평소 2.9배",
-          "⚠ 과열 구간 (RSI 84) — 추격 주의",
-          "외국인 2일 연속 매수",
-          "기관 3일 연속 매수"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "128940",
-        "name": "한미약품",
-        "market": "KOSPI",
-        "sector": "제약",
-        "change": 4.1,
-        "amountEok": 799,
-        "reasons": [
-          "기관 주도 상승 폭발",
-          "거래대금 평소 2.6배",
-          "⚠ 과열 구간 (RSI 80) — 추격 주의",
-          "기관 4일 연속 매수"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "005930",
-        "name": "삼성전자",
-        "market": "KOSPI",
-        "sector": "반도체와반도체장비",
-        "change": 3.9,
-        "amountEok": 190302,
-        "reasons": [
-          "외인·기관 동반 매수 폭발 — 세력 주도",
-          "거래대금 평소 2.6배",
-          "⚠ 과열 구간 (RSI 56) — 추격 주의",
-          "외국인 2일 연속 매수",
-          "기관 2일 연속 매수"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "028260",
-        "name": "삼성물산",
-        "market": "KOSPI",
-        "sector": "복합기업",
-        "change": 5.7,
-        "amountEok": 3528,
-        "reasons": [
-          "기관 주도 상승 폭발",
-          "거래대금 평소 2.3배",
-          "⚠ 과열 구간 (RSI 63) — 추격 주의",
           "기관 2일 연속 매수",
           "최근 호재성 뉴스 동반"
         ],
         "grade": "C",
         "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "257720",
-        "name": "실리콘투",
-        "market": "KOSDAQ",
-        "sector": "인터넷과카탈로그소매",
-        "change": 3.7,
-        "amountEok": 1298,
-        "reasons": [
-          "기관 주도 상승 폭발",
-          "거래대금 평소 2.3배",
-          "⚠ 과열 구간 (RSI 77) — 추격 주의",
-          "기관 5일 연속 매수",
-          "60일 신고가"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "251970",
-        "name": "펌텍코리아",
-        "market": "KOSDAQ",
-        "sector": "포장재",
-        "change": 4.7,
-        "amountEok": 115,
-        "reasons": [
-          "기관 주도 상승 폭발",
-          "거래대금 평소 2.1배",
-          "⚠ 과열 구간 (RSI 72) — 추격 주의",
-          "기관 3일 연속 매수",
-          "60일 신고가"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "017670",
-        "name": "SK텔레콤",
-        "market": "KOSPI",
-        "sector": "무선통신서비스",
-        "change": 5.8,
-        "amountEok": 3607,
-        "reasons": [
-          "기관 주도 상승 폭발",
-          "거래대금 평소 2배",
-          "⚠ 과열 구간 (RSI 73) — 추격 주의",
-          "기관 5일 연속 매수"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
+        "freshDays": 2
       },
       {
         "ticker": "085620",
@@ -1139,73 +964,6 @@
         "grade": "C",
         "warn": true,
         "freshDays": 4
-      },
-      {
-        "ticker": "010130",
-        "name": "고려아연",
-        "market": "KOSPI",
-        "sector": "비철금속",
-        "change": -0.1,
-        "amountEok": 811,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2.5배",
-          "⚠ 과열 구간 (RSI 66) — 추격 주의",
-          "기관 2일 연속 매수"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 2
-      },
-      {
-        "ticker": "007340",
-        "name": "DN오토모티브",
-        "market": "KOSPI",
-        "sector": "자동차부품",
-        "change": -5.3,
-        "amountEok": 326,
-        "reasons": [
-          "⚠ 급락(-5.3%) 속 폭발 — 기관 매수 유입 (낙폭 매집 가능성, 고위험)",
-          "거래대금 평소 2.2배",
-          "기관 1일 연속 매수"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "005180",
-        "name": "빙그레",
-        "market": "KOSPI",
-        "sector": "식품",
-        "change": -2.8,
-        "amountEok": 162,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2배",
-          "⚠ 과열 구간 (RSI 72) — 추격 주의",
-          "외국인 3일 연속 매수",
-          "기관 8일 연속 매수"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 2
-      },
-      {
-        "ticker": "007810",
-        "name": "코리아써키트",
-        "market": "KOSPI",
-        "sector": "전자장비와기기",
-        "change": -11.4,
-        "amountEok": 449,
-        "reasons": [
-          "⚠ 급락(-11.4%) 속 폭발 — 외국인 매수 유입 (낙폭 매집 가능성, 고위험)",
-          "거래대금 평소 2배",
-          "외국인 1일 연속 매수"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
       }
     ],
     "steady": [
@@ -1230,7 +988,7 @@
         "market": "KOSPI",
         "sector": "금융",
         "change": -2.7,
-        "amountEok": 272,
+        "amountEok": 209,
         "reasons": [
           "외국인 13일 연속 매수"
         ],
@@ -1244,11 +1002,10 @@
         "market": "KOSPI",
         "sector": "석유와가스",
         "change": -0.9,
-        "amountEok": 824,
+        "amountEok": 530,
         "reasons": [
           "외국인 11일 연속 매수",
-          "정배열 유지",
-          "최근 호재성 뉴스 동반"
+          "정배열 유지"
         ],
         "grade": "A",
         "warn": false,
@@ -1260,7 +1017,7 @@
         "market": "KOSPI",
         "sector": "손해보험",
         "change": 1.8,
-        "amountEok": 324,
+        "amountEok": 249,
         "reasons": [
           "⚠ 이미 20일간 +29% 상승한 고점권 — 추격 주의",
           "기관 11일 연속 매수",
@@ -1447,7 +1204,7 @@
       "curClose": 44200,
       "ret": 9.5,
       "tradingDays": 14,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "103140",
@@ -1480,7 +1237,7 @@
       "curClose": 281500,
       "ret": 7.2,
       "tradingDays": 14,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "028670",
@@ -1810,7 +1567,7 @@
       "curClose": 92000,
       "ret": -7.8,
       "tradingDays": 14,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "039490",
@@ -1975,7 +1732,7 @@
       "curClose": 51000,
       "ret": 5,
       "tradingDays": 13,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "006800",
@@ -1986,7 +1743,7 @@
       "curClose": 34500,
       "ret": 3.8,
       "tradingDays": 13,
-      "stillListed": false
+      "stillListed": true
     },
     {
       "ticker": "145020",
@@ -2140,7 +1897,7 @@
       "curClose": 395500,
       "ret": 22.6,
       "tradingDays": 12,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "095340",
@@ -2173,7 +1930,7 @@
       "curClose": 102200,
       "ret": 11.8,
       "tradingDays": 12,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "001440",
@@ -2459,7 +2216,7 @@
       "curClose": 415500,
       "ret": 5.9,
       "tradingDays": 9,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "043260",
@@ -2723,7 +2480,7 @@
       "curClose": 1237000,
       "ret": 0.2,
       "tradingDays": 8,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "096530",
@@ -2866,7 +2623,7 @@
       "curClose": 73500,
       "ret": -16.2,
       "tradingDays": 8,
-      "stillListed": false
+      "stillListed": true
     },
     {
       "ticker": "189300",
@@ -3108,7 +2865,7 @@
       "curClose": 59800,
       "ret": 1.5,
       "tradingDays": 6,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "010950",
@@ -3350,7 +3107,7 @@
       "curClose": 63800,
       "ret": -11.3,
       "tradingDays": 4,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "085620",
@@ -3416,7 +3173,7 @@
       "curClose": 96700,
       "ret": -6.1,
       "tradingDays": 3,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "120110",
@@ -3438,7 +3195,7 @@
       "curClose": 54600,
       "ret": -16.5,
       "tradingDays": 3,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "ticker": "000370",
