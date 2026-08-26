@@ -1,5 +1,7 @@
 # Stock Discovery V3 — 오늘의 발굴
 
+> 공통 규칙(전 프로젝트 적용): [workspace-governance](https://github.com/shopyubi81-coder/workspace-governance)
+
 한국장(코스피+코스닥) 종목 발굴 도구. **"아침 5분, 오늘 볼 종목 20개와 그 이유"** — 리스트 한 장.
 Node.js 런타임 의존성 0 (내장 fetch만).
 
