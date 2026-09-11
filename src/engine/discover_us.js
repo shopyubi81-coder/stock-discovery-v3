@@ -12,7 +12,9 @@ import { REGIME, DISCOVER } from './config.js';
 import { obv } from './indicators.js';
 import {
   buildDayLists, freshness, buildTracking, buildRecord, buildFocus, buildThemeFlow,
+  attachMentions,
 } from './discover.js';
+import { fetchMentions } from '../lib/mentions.js';
 
 // ── 수급 프록시 — 미국은 투자자별 수급이 비공개라 가격·거래량 지문으로 기관성 매집을 추정 ──
 // CMF(Chaikin Money Flow): 종가가 일중 범위 어디서 끝났는지 × 거래량. +면 고가권 마감이 잦음 = 매집 신호.
@@ -116,11 +118,20 @@ async function main() {
   const lists = Object.fromEntries(Object.entries(day.lists).map(([key, rows]) =>
     [key, rows.map((r) => ({ ...r, freshDays: freshness(history, histDates, key, r.ticker, today) }))]));
 
+  // 인플루언서 언급 부착 — 국내와 동일하게 표시 전용.
+  // 미국 쪽은 적중이 낮다: 실측(2026-09-11) 언급된 US 심볼 106개 중 S&P500
+  // 유니버스 안은 47개(44%)뿐이었다. 인플루언서가 RKLB·MSTR 같은 중소형주를
+  // 많이 얘기하는데 이 프로젝트 유니버스는 S&P500이라 애초에 안 겹친다.
+  const mentionMap = await fetchMentions('US');
+  if (mentionMap.size) {
+    for (const rows of Object.values(lists)) attachMentions(rows, mentionMap, today);
+  }
+
   const nameMap = new Map(stocks.map((s) => [s.ticker, s.name]));
   const nameOf = (t) => nameMap.get(t) || t;
   const tracking = buildTracking(history, histDates, qMap, nameOf, today, lists);
   const record = buildRecord(history, histDates, qMap, today);
-  const focus = buildFocus(lists, qMap);
+  const focus = attachMentions(buildFocus(lists, qMap), mentionMap, today);
   const themeFlow = buildThemeFlow(stocks, lists, history, histDates);
 
   history[today] = Object.fromEntries(Object.entries(lists).map(([k, v]) => [k, v.map((r) => r.ticker)]));

@@ -355,3 +355,19 @@ body {
   .f-pass { margin-left: 0; width: 100%; }
   #market-strip { grid-template-columns: 1fr; }
 }
+
+/* 인플루언서 언급 — 발굴 근거(.why)와 시각적으로 구분한다.
+   예측력이 측정된 적 없는 참고 정보라, 검증된 근거와 같은 무게로 보이면 안 된다.
+   (2026-09-11, x-watchlist-intel 연동) */
+.mention {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.45;
+  color: #a5b4fc;
+  opacity: .85;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.fc-why + .mention { margin-top: 6px; }

@@ -15,6 +15,7 @@ import { outPath } from '../lib/paths.js';
 import { FILTER, DISCOVER, REGIME, THEMES, THEME_FLOW, NON_COMMON_NAME_RE, FIN_SECTORS, CAPEX_SECTORS } from './config.js';
 import { sma, rsi, obv, streak } from './indicators.js';
 import { computeSignals } from './signals.js';
+import { fetchMentions, mentionReason } from '../lib/mentions.js';
 
 const read = async (n) => JSON.parse(await readFile(outPath(n), 'utf8'));
 const tryRead = async (n) => { try { return await read(n); } catch { return null; } };
@@ -401,6 +402,27 @@ export function buildFocus(lists, qMap) {
   });
 }
 
+// ── 인플루언서 언급 부착 ─────────────────────────────────────────────────────
+// x-watchlist-intel 이 Supabase 에 쌓은 "오늘 누가 무슨 종목을 얘기했나"를
+// 이미 발굴된 종목에 덧붙인다 (2026-09-11, 크로스 프로젝트 통합 2단계).
+//
+// ⚠️ reasons 배열에 섞지 않고 별도 필드(mention/mentions)로 둔다. reasons 는
+// 수급·추세·거래량처럼 성적표로 사후 검증되는 근거들의 자리인데, 인플루언서
+// 언급의 예측력은 아직 한 번도 측정된 적이 없다. 같은 칸에 넣으면 검증된
+// 근거와 미검증 근거가 구분되지 않는다 — 측정 전엔 가중치도, 발굴 여부에
+// 대한 영향력도 주지 않고 화면에 보여주기만 한다. 나중에 성적표로 "언급을
+// 동반한 종목이 실제로 더 나았나"가 나오면 그때 승격을 논한다.
+export function attachMentions(rows, mentionMap, today) {
+  if (!mentionMap?.size || !rows?.length) return rows;
+  for (const r of rows) {
+    const m = mentionMap.get(r.ticker);
+    if (!m?.length) continue;
+    r.mentions = m;
+    r.mention = mentionReason(m, new Date(today));
+  }
+  return rows;
+}
+
 // ── 추적 관찰 — 최근 발굴 종목의 "그 후" (처음 포착일 기준 수익률) ────────────
 export const LIST_ORDER = ['supply', 'steady', 'trend', 'volume'];
 export function buildTracking(history, histDates, qMap, nameOf, today, todayLists) {
@@ -525,6 +547,15 @@ async function main() {
   const lists = Object.fromEntries(Object.entries(day.lists).map(([key, rows]) =>
     [key, rows.map((r) => ({ ...r, freshDays: freshness(history, histDates, key, r.ticker, today) }))]));
 
+  // 1.5) 인플루언서 언급 부착 — 표시 전용이라 리스트가 확정된 뒤에 붙인다.
+  //      조회가 실패해도(키 없음·표 없음) 빈 Map 이 와서 배지만 안 나온다.
+  const mentionMap = await fetchMentions('KR');
+  if (mentionMap.size) {
+    for (const rows of Object.values(lists)) attachMentions(rows, mentionMap, today);
+    const hit = new Set(Object.values(lists).flat().filter((r) => r.mention).map((r) => r.ticker));
+    console.log(`  · 인플루언서 언급 ${mentionMap.size}종목 중 발굴 리스트와 겹친 종목 ${hit.size}개`);
+  }
+
   // 2) 테마 쏠림 — 오늘 발굴 종목(중복 제거)이 특정 테마에 20% 이상 몰리면 표시
   const byTickerSector = new Map();
   for (const r of Object.values(lists).flat()) byTickerSector.set(r.ticker, r.sector);
@@ -542,7 +573,7 @@ async function main() {
   const nameOf = (t) => nameMap.get(t) || t;
   const tracking = buildTracking(history, histDates, qMap, nameOf, today, lists);
   const record = buildRecord(history, histDates, qMap, today);
-  const focus = buildFocus(lists, qMap);
+  const focus = attachMentions(buildFocus(lists, qMap), mentionMap, today);
   const themeFlow = buildThemeFlow(stocks, lists, history, histDates);
 
   // 4) 발굴 이력 갱신

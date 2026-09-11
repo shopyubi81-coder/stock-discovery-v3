@@ -8,6 +8,13 @@ const fmtP = (v, us) => us
   ? '$' + Number(v).toLocaleString('en-US', { maximumFractionDigits: 2 })
   : Number(v).toLocaleString();
 
+// HTML 이스케이프. 이 화면의 문자열은 대부분 우리가 만든 것이라 지금까지는
+// 필요 없었지만, 인플루언서 언급(mention)은 다르다 — 남이 쓴 트윗에서 나온
+// 외부 문자열이 x-watchlist-intel → Supabase 를 거쳐 그대로 들어오고,
+// 이 화면은 innerHTML 로 그린다. 외부에서 온 문자열은 반드시 통과시킨다.
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
+  ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
 const TAB_DESC = {
   supply: '외국인·기관 매집 — 바닥권/초입/⚠고점 추격을 자동 분류 · A=신뢰 높음, C=주의',
   trend: '추세 전환 — A: 전환+지지 확인·눌림목(확실) / B: 전환 시도(확인 필요) / C·⚠: 과열 추격 위험',
@@ -182,6 +189,7 @@ async function renderFocus() {
         `<span style="background:${HIT_BADGE[h][1]};color:${HIT_BADGE[h][2]}">${HIT_BADGE[h][0]}</span>`).join('')}</div>
       <div class="fc-spark" id="fspark-${p.ticker}"></div>
       <div class="fc-why">${p.reasons.slice(0, 3).join(' · ')}</div>
+      ${p.mention ? `<div class="mention" title="x-watchlist-intel 수집 — 발굴 근거가 아니라 참고용입니다">${esc(p.mention)}</div>` : ''}
       <div class="fc-levels">
         <div><label>진입 참고</label><b>${fmtP(p.entry, p.us)}</b></div>
         <div class="lv-stop"><label>손절 참고 ${p.stopPct}%</label><b>${fmtP(p.stop, p.us)}</b></div>
@@ -401,6 +409,7 @@ function renderList() {
             : `<span class="fresh old">${r.freshDays}일째 포착</span>`}
         </div>
         <div class="why">${r.reasons.join(' · ')}</div>
+        ${r.mention ? `<div class="mention" title="x-watchlist-intel 수집 — 발굴 근거가 아니라 참고용입니다">${esc(r.mention)}</div>` : ''}
       </div>
       <div class="rt">
         <div class="chg ${r.change > 0 ? 'up' : r.change < 0 ? 'down' : 'flat'}">${r.change > 0 ? '+' : ''}${r.change}%</div>
