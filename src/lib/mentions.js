@@ -25,9 +25,18 @@ import { select } from './supabase.js';
 
 const TABLE = 'influencer_mentions';
 
-// 며칠 전 언급까지 근거로 볼 것인가. 3일: 주말을 사이에 낀 금요일 언급이
-// 월요일 발굴에도 보이도록 하는 최소 길이.
-export const LOOKBACK_DAYS = 3;
+// 며칠 전 언급까지 볼 것인가.
+//
+// 7일로 둔 이유는 실측이다(2026-09-11, 적재분 781건 기준): 심볼이 붙은 언급의
+// 날짜 분포를 보면 3일 창에는 29건뿐이고 7일이면 82건으로 약 3배가 된다.
+// 수집 자체가 매일 균일하지 않기 때문이다 — 09-08·09-02 처럼 아예 빈 날이
+// 있고, 08-24~08-31 은 GitHub Actions 과금 차단으로 통째로 비어 있다.
+// 3일 창은 그런 공백 하나만 걸려도 화면에서 이 기능이 사라진다.
+//
+// 7일이 길다고 느껴질 수 있지만, 이건 발굴을 바꾸는 신호가 아니라 "최근에
+// 이 종목 얘기가 있었다"는 참고 문구다. 문구에 며칠 전인지 그대로 적히므로
+// 오래된 언급이 최신인 척하지 않는다.
+export const LOOKBACK_DAYS = 7;
 
 const ymd = (d) => d.toISOString().slice(0, 10);
 
@@ -96,14 +105,20 @@ export async function fetchMentions(market, { days = LOOKBACK_DAYS } = {}) {
 export function mentionReason(mentions, today = new Date()) {
   if (!mentions?.length) return null;
 
-  const t = ymd(today);
-  const y = ymd(new Date(today.getTime() - 86400000));
-  const when = (on) => (on === t ? '오늘' : on === y ? '어제' : '최근');
+  // 며칠 전인지 그대로 적는다. 창이 7일이라 '최근'으로 뭉뚱그리면 6일 전
+  // 언급이 어제 것처럼 읽힌다 — 참고 정보일수록 신선도가 정직해야 한다.
+  const when = (on) => {
+    const diff = Math.round((Date.parse(ymd(today)) - Date.parse(on)) / 86400000);
+    if (!Number.isFinite(diff) || diff < 0) return '';
+    if (diff === 0) return '오늘';
+    if (diff === 1) return '어제';
+    return `${diff}일 전`;
+  };
 
   const [first] = mentions;
   const others = mentions.length - 1;
-  let s = `💬 ${when(first.on)} @${first.by} 언급`;
-  if (others > 0) s = `💬 ${when(first.on)} @${first.by} 외 ${others}명 언급`;
+  const who = others > 0 ? `@${first.by} 외 ${others}명` : `@${first.by}`;
+  let s = `💬 ${when(first.on)} ${who} 언급`.replace(/\s+/g, ' ').trim();
   if (first.detail) s += ` — ${first.detail}`;
   return s;
 }
