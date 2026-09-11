@@ -16,6 +16,7 @@ import { FILTER, DISCOVER, REGIME, THEMES, THEME_FLOW, NON_COMMON_NAME_RE, FIN_S
 import { sma, rsi, obv, streak } from './indicators.js';
 import { computeSignals } from './signals.js';
 import { fetchMentions, mentionReason } from '../lib/mentions.js';
+import { exportNewDiscoveries } from '../lib/discovery_export.js';
 
 const read = async (n) => JSON.parse(await readFile(outPath(n), 'utf8'));
 const tryRead = async (n) => { try { return await read(n); } catch { return null; } };
@@ -581,6 +582,16 @@ async function main() {
   const keep = Object.keys(history).sort().slice(-DISCOVER.historyKeep);
   const trimmed = Object.fromEntries(keep.map((d) => [d, history[d]]));
   await writeFile(outPath('discover-history.json'), JSON.stringify(trimmed));
+
+  // 4.5) 오늘 신규 발굴을 AlphaFactory 몫으로 Supabase에 내보낸다
+  // (크로스 프로젝트 통합 3단계, 2026-09-11). Supabase 키가 없거나 요청이
+  // 실패해도 발굴 자체를 막지 않는다 — 이 프로젝트의 본업이 아니다.
+  try {
+    const exp = await exportNewDiscoveries(lists, qMap, 'KR', { currency: 'KRW' });
+    if (exp?.count) console.log(`  · AlphaFactory 몫 신규 발굴 ${exp.count}건 내보냄`);
+  } catch (e) {
+    console.warn(`  ! 신규 발굴 내보내기 실패(non-fatal): ${e.message}`);
+  }
 
   // 5) 시장 온도
   const breadth = day.aboveMa20 / day.universe;

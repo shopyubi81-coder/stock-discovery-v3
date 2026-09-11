@@ -15,6 +15,7 @@ import {
   attachMentions,
 } from './discover.js';
 import { fetchMentions } from '../lib/mentions.js';
+import { exportNewDiscoveries } from '../lib/discovery_export.js';
 
 // ── 수급 프록시 — 미국은 투자자별 수급이 비공개라 가격·거래량 지문으로 기관성 매집을 추정 ──
 // CMF(Chaikin Money Flow): 종가가 일중 범위 어디서 끝났는지 × 거래량. +면 고가권 마감이 잦음 = 매집 신호.
@@ -138,6 +139,15 @@ async function main() {
   const keep = Object.keys(history).sort().slice(-DISCOVER.historyKeep);
   await writeFile(outPath('discover-history-us.json'),
     JSON.stringify(Object.fromEntries(keep.map((d) => [d, history[d]]))));
+
+  // AlphaFactory 몫으로 오늘 신규 발굴 내보내기 (크로스 프로젝트 통합 3단계,
+  // 2026-09-11). discover.js와 동일 — 실패해도 발굴 자체는 계속된다.
+  try {
+    const exp = await exportNewDiscoveries(lists, qMap, 'US', { currency: 'USD' });
+    if (exp?.count) console.log(`  · AlphaFactory 몫 신규 발굴 ${exp.count}건 내보냄`);
+  } catch (e) {
+    console.warn(`  ! 신규 발굴 내보내기 실패(non-fatal): ${e.message}`);
+  }
 
   const breadth = day.aboveMa20 / day.universe;
   const regime = breadth >= REGIME.riskOnBreadth ? 'strong' : breadth < REGIME.riskOffBreadth ? 'weak' : 'neutral';
