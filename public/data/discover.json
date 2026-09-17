@@ -1,36 +1,60 @@
 {
   "version": 3,
-  "date": "2026-09-16",
-  "generated_at": "2026-09-16T00:04:03.508Z",
+  "date": "2026-09-17",
+  "generated_at": "2026-09-17T00:13:43.395Z",
   "market": {
-    "regime": "weak",
-    "breadth": 36
+    "regime": "neutral",
+    "breadth": 42
   },
   "filter": {
     "minAmountEok": 100,
     "minMarketCapEok": 1000,
     "excludeLoss": true,
-    "universe": 399,
-    "passed": 21
+    "universe": 400,
+    "passed": 52
   },
   "themeFocus": null,
   "themeFlow": [
     {
-      "sector": "석유와가스",
-      "heat": 7.5,
-      "prior": 4,
+      "sector": "전자장비와기기",
+      "heat": 20,
+      "prior": 3.6,
       "stage": "주도"
     },
     {
-      "sector": "전기제품",
-      "heat": 7.5,
-      "prior": 2.6,
+      "sector": "전기장비",
+      "heat": 20,
+      "prior": 5.2,
       "stage": "주도"
     },
     {
-      "sector": "자동차",
+      "sector": "은행",
+      "heat": 9,
+      "prior": 5.6,
+      "stage": "주도"
+    },
+    {
+      "sector": "우주항공과국방",
+      "heat": 8,
+      "prior": 0.6,
+      "stage": "주도"
+    },
+    {
+      "sector": "무역회사와판매업체",
+      "heat": 7.5,
+      "prior": 0,
+      "stage": "주도"
+    },
+    {
+      "sector": "반도체와반도체장비",
+      "heat": 7.2,
+      "prior": 8.4,
+      "stage": "둔화"
+    },
+    {
+      "sector": "조선",
       "heat": 6.5,
-      "prior": 0.4,
+      "prior": 5.2,
       "stage": "주도"
     },
     {
@@ -40,88 +64,52 @@
       "stage": "주도"
     },
     {
-      "sector": "통신장비",
+      "sector": "건설",
       "heat": 4.5,
-      "prior": 0.2,
+      "prior": 2.8,
       "stage": "주도"
     },
     {
-      "sector": "은행",
+      "sector": "화장품",
       "heat": 4.5,
-      "prior": 5,
-      "stage": "둔화"
+      "prior": 1.4,
+      "stage": "주도"
     },
     {
-      "sector": "반도체와반도체장비",
+      "sector": "화학",
       "heat": 3.2,
-      "prior": 12,
-      "stage": "둔화"
-    },
-    {
-      "sector": "양방향미디어와서비스",
-      "heat": 3,
-      "prior": 0,
+      "prior": 1.8,
       "stage": "주도"
     },
     {
-      "sector": "전자제품",
+      "sector": "통신장비",
       "heat": 3,
-      "prior": 0.4,
-      "stage": "주도"
-    },
-    {
-      "sector": "전기장비",
-      "heat": 2.4,
-      "prior": 5.2,
-      "stage": "둔화"
-    },
-    {
-      "sector": "자동차부품",
-      "heat": 2.4,
-      "prior": 3.2,
-      "stage": "둔화"
-    },
-    {
-      "sector": "에너지장비및서비스",
-      "heat": 1.2,
-      "prior": 3.2,
-      "stage": "이탈"
+      "prior": 1,
+      "stage": "강화"
     },
     {
       "sector": "기계",
-      "heat": 1.2,
-      "prior": 1.8,
+      "heat": 2,
+      "prior": 2.4,
       "stage": "중립"
     },
     {
       "sector": "제약",
-      "heat": 1.2,
-      "prior": 0,
-      "stage": "신규부상"
-    },
-    {
-      "sector": "전자장비와기기",
-      "heat": 0,
-      "prior": 5.6,
-      "stage": "이탈"
-    },
-    {
-      "sector": "건설",
-      "heat": 0,
-      "prior": 3.8,
-      "stage": "이탈"
-    },
-    {
-      "sector": "전기유틸리티",
-      "heat": 0,
-      "prior": 2.8,
-      "stage": "이탈"
-    },
-    {
-      "sector": "화장품",
-      "heat": 0,
-      "prior": 1.4,
+      "heat": 0.8,
+      "prior": 0.6,
       "stage": "중립"
+    },
+    {
+      "sector": "전기제품",
+      "heat": 0.8,
+      "prior": 3.6,
+      "stage": "이탈"
+    },
+    {
+      "sector": "석유와가스",
+      "heat": 0,
+      "prior": 5,
+      "stage": "이탈"
     },
     {
       "sector": "식품",
@@ -130,9 +118,15 @@
       "stage": "중립"
     },
     {
-      "sector": "조선",
+      "sector": "자동차",
       "heat": 0,
-      "prior": 5.2,
+      "prior": 1.4,
+      "stage": "중립"
+    },
+    {
+      "sector": "자동차부품",
+      "heat": 0,
+      "prior": 4.4,
       "stage": "이탈"
     },
     {
@@ -140,6 +134,12 @@
       "heat": 0,
       "prior": 2.2,
       "stage": "중립"
+    },
+    {
+      "sector": "에너지장비및서비스",
+      "heat": 0,
+      "prior": 2.6,
+      "stage": "이탈"
     },
     {
       "sector": "IT서비스",
@@ -160,9 +160,9 @@
       "stage": "중립"
     },
     {
-      "sector": "화학",
+      "sector": "전기유틸리티",
       "heat": 0,
-      "prior": 0.8,
+      "prior": 1.6,
       "stage": "중립"
     },
     {
@@ -196,13 +196,19 @@
       "stage": "중립"
     },
     {
-      "sector": "우주항공과국방",
+      "sector": "생명보험",
       "heat": 0,
       "prior": 0.6,
       "stage": "중립"
     },
     {
-      "sector": "생명보험",
+      "sector": "양방향미디어와서비스",
+      "heat": 0,
+      "prior": 0.6,
+      "stage": "중립"
+    },
+    {
+      "sector": "전자제품",
       "heat": 0,
       "prior": 0.6,
       "stage": "중립"
@@ -210,75 +216,76 @@
   ],
   "focus": [
     {
-      "ticker": "058610",
-      "name": "에스피지",
-      "sector": "전기제품",
+      "ticker": "119850",
+      "name": "지엔씨에너지",
+      "sector": "전기장비",
       "market": "KOSDAQ",
-      "change": -6.2,
-      "amountEok": 409,
+      "change": 9,
+      "amountEok": 685,
       "freshDays": 1,
       "hits": [
         "supply",
-        "trend"
+        "trend",
+        "volume"
       ],
       "reasons": [
         "상승 초입~중간 구간 매집",
-        "외국인 1일 연속 매수",
-        "기관 1일 연속 매수",
-        "정배열 유지"
-      ],
-      "entry": 99900,
-      "stop": 94210,
-      "stopPct": -5.7,
-      "target": 114885,
-      "targetPct": 15
-    },
-    {
-      "ticker": "096770",
-      "name": "SK이노베이션",
-      "sector": "석유와가스",
-      "market": "KOSPI",
-      "change": -1.1,
-      "amountEok": 124,
-      "freshDays": 3,
-      "hits": [
-        "supply",
-        "trend"
-      ],
-      "reasons": [
-        "상승 초입~중간 구간 매집",
-        "외국인 6일 연속 매수",
-        "기관 1일 연속 매수",
-        "정배열 유지"
-      ],
-      "entry": 140400,
-      "stop": 132545,
-      "stopPct": -5.6,
-      "target": 153500,
-      "targetPct": 9.3
-    },
-    {
-      "ticker": "005380",
-      "name": "현대차",
-      "sector": "자동차",
-      "market": "KOSPI",
-      "change": -1.6,
-      "amountEok": 150,
-      "freshDays": 1,
-      "hits": [
-        "supply",
-        "trend"
-      ],
-      "reasons": [
-        "바닥권 매집 — 고점 대비 -29% 조정 후 저점 매수",
         "외국인 2일 연속 매수",
-        "추세 신호 발생",
-        "RSI 과매도 탈출"
+        "거래대금 평소 2.3배",
+        "정배열 유지"
       ],
-      "entry": 363500,
-      "stop": 338055,
-      "stopPct": -7,
-      "target": 418025,
+      "entry": 51700,
+      "stop": 47853,
+      "stopPct": -7.4,
+      "target": 55400,
+      "targetPct": 7.2
+    },
+    {
+      "ticker": "047050",
+      "name": "포스코인터내셔널",
+      "sector": "무역회사와판매업체",
+      "market": "KOSPI",
+      "change": 2,
+      "amountEok": 178,
+      "freshDays": 1,
+      "hits": [
+        "supply",
+        "trend"
+      ],
+      "reasons": [
+        "상승 초입~중간 구간 매집",
+        "기관 4일 연속 매수",
+        "정배열 유지",
+        "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)"
+      ],
+      "entry": 56200,
+      "stop": 54610,
+      "stopPct": -2.8,
+      "target": 58000,
+      "targetPct": 3.2
+    },
+    {
+      "ticker": "222800",
+      "name": "심텍",
+      "sector": "전자장비와기기",
+      "market": "KOSDAQ",
+      "change": 0.5,
+      "amountEok": 153,
+      "freshDays": 1,
+      "hits": [
+        "supply",
+        "trend"
+      ],
+      "reasons": [
+        "상승 초입~중간 구간 매집",
+        "외국인 2일 연속 매수",
+        "기관 1일 연속 매수",
+        "정배열 유지"
+      ],
+      "entry": 129800,
+      "stop": 122260,
+      "stopPct": -5.8,
+      "target": 149270,
       "targetPct": 15
     }
   ],
@@ -289,50 +296,95 @@
         "name": "알테오젠",
         "market": "KOSDAQ",
         "sector": "생물공학",
-        "change": -2.1,
-        "amountEok": 162,
+        "change": 0.4,
+        "amountEok": 256,
         "reasons": [
-          "바닥권 매집 — 고점 대비 -32% 조정 후 저점 매수",
-          "외국인 8일 연속 매수",
-          "기관 1일 연속 매수",
+          "바닥권 매집 — 고점 대비 -31% 조정 후 저점 매수",
+          "외국인 9일 연속 매수",
           "펀더멘털 우량 (ROE 39.42%)"
         ],
         "grade": "A",
         "warn": false,
-        "freshDays": 8
+        "freshDays": 9
       },
       {
-        "ticker": "096770",
-        "name": "SK이노베이션",
+        "ticker": "082740",
+        "name": "한화엔진",
         "market": "KOSPI",
-        "sector": "석유와가스",
-        "change": -1.1,
-        "amountEok": 124,
+        "sector": "조선",
+        "change": 7.5,
+        "amountEok": 356,
         "reasons": [
           "상승 초입~중간 구간 매집",
-          "외국인 6일 연속 매수",
-          "기관 1일 연속 매수",
+          "기관 7일 연속 매수",
           "정배열 유지"
         ],
         "grade": "A",
         "warn": false,
-        "freshDays": 3
+        "freshDays": 1
       },
       {
-        "ticker": "218410",
-        "name": "RFHIC",
-        "market": "KOSDAQ",
-        "sector": "통신장비",
-        "change": 3.5,
-        "amountEok": 395,
+        "ticker": "055550",
+        "name": "신한지주",
+        "market": "KOSPI",
+        "sector": "은행",
+        "change": 0.7,
+        "amountEok": 101,
         "reasons": [
           "상승 초입~중간 구간 매집",
-          "외국인 2일 연속 매수",
-          "기관 3일 연속 매수",
-          "외인·기관 쌍끌이",
-          "거래대금 평소 2.2배"
+          "기관 4일 연속 매수",
+          "주가 횡보 중 매집형 거래",
+          "정배열 유지"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "011070",
+        "name": "LG이노텍",
+        "market": "KOSPI",
+        "sector": "전자장비와기기",
+        "change": 1.6,
+        "amountEok": 127,
+        "reasons": [
+          "바닥권 매집 — 고점 대비 -47% 조정 후 저점 매수",
+          "외국인 5일 연속 매수"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "007660",
+        "name": "이수페타시스",
+        "market": "KOSPI",
+        "sector": "반도체와반도체장비",
+        "change": 7.8,
+        "amountEok": 611,
+        "reasons": [
+          "상승 초입~중간 구간 매집",
+          "외국인 6일 연속 매수",
+          "기관 1일 연속 매수",
+          "펀더멘털 우량 (ROE 29.64%)"
         ],
         "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "047050",
+        "name": "포스코인터내셔널",
+        "market": "KOSPI",
+        "sector": "무역회사와판매업체",
+        "change": 2,
+        "amountEok": 178,
+        "reasons": [
+          "상승 초입~중간 구간 매집",
+          "기관 4일 연속 매수",
+          "정배열 유지"
+        ],
+        "grade": "A",
         "warn": false,
         "freshDays": 1
       },
@@ -341,11 +393,27 @@
         "name": "KB금융",
         "market": "KOSPI",
         "sector": "은행",
-        "change": -0.6,
-        "amountEok": 229,
+        "change": 0.5,
+        "amountEok": 216,
         "reasons": [
           "상승 초입~중간 구간 매집",
-          "기관 3일 연속 매수",
+          "기관 4일 연속 매수",
+          "정배열 유지"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 2
+      },
+      {
+        "ticker": "028050",
+        "name": "삼성E&A",
+        "market": "KOSPI",
+        "sector": "건설",
+        "change": 0.4,
+        "amountEok": 108,
+        "reasons": [
+          "상승 초입~중간 구간 매집",
+          "기관 4일 연속 매수",
           "정배열 유지"
         ],
         "grade": "A",
@@ -353,30 +421,15 @@
         "freshDays": 1
       },
       {
-        "ticker": "005380",
-        "name": "현대차",
-        "market": "KOSPI",
-        "sector": "자동차",
-        "change": -1.6,
-        "amountEok": 150,
-        "reasons": [
-          "바닥권 매집 — 고점 대비 -29% 조정 후 저점 매수",
-          "외국인 2일 연속 매수"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "058610",
-        "name": "에스피지",
+        "ticker": "222800",
+        "name": "심텍",
         "market": "KOSDAQ",
-        "sector": "전기제품",
-        "change": -6.2,
-        "amountEok": 409,
+        "sector": "전자장비와기기",
+        "change": 0.5,
+        "amountEok": 153,
         "reasons": [
           "상승 초입~중간 구간 매집",
-          "외국인 1일 연속 매수",
+          "외국인 2일 연속 매수",
           "기관 1일 연속 매수",
           "정배열 유지"
         ],
@@ -385,16 +438,67 @@
         "freshDays": 1
       },
       {
-        "ticker": "229640",
-        "name": "LS에코에너지",
-        "market": "KOSPI",
+        "ticker": "119850",
+        "name": "지엔씨에너지",
+        "market": "KOSDAQ",
         "sector": "전기장비",
-        "change": 18.2,
-        "amountEok": 597,
+        "change": 9,
+        "amountEok": 685,
         "reasons": [
-          "⚠ 고점권 매집 — 20일간 +28% 상승 후, 추격 주의",
-          "기관 9일 연속 매수",
-          "거래대금 평소 16.5배",
+          "상승 초입~중간 구간 매집",
+          "외국인 2일 연속 매수",
+          "거래대금 평소 2.3배",
+          "정배열 유지",
+          "펀더멘털 우량 (ROE 21.15%)"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "062040",
+        "name": "산일전기",
+        "market": "KOSPI",
+        "sector": "HVDC/전력",
+        "change": 2.1,
+        "amountEok": 281,
+        "reasons": [
+          "상승 초입~중간 구간 매집",
+          "외국인 1일 연속 매수",
+          "기관 1일 연속 매수",
+          "정배열 유지",
+          "펀더멘털 우량 (ROE 29.21%)"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "278470",
+        "name": "에이피알",
+        "market": "KOSPI",
+        "sector": "화장품",
+        "change": 1.9,
+        "amountEok": 159,
+        "reasons": [
+          "바닥권 매집 — 고점 대비 -23% 조정 후 저점 매수",
+          "외국인 2일 연속 매수",
+          "펀더멘털 우량 (ROE 75.3%)"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "093370",
+        "name": "후성",
+        "market": "KOSPI",
+        "sector": "화학",
+        "change": 4.5,
+        "amountEok": 151,
+        "reasons": [
+          "⚠ 초입~중간 구간이나 과열(RSI 78) — 추격 주의",
+          "기관 10일 연속 매수",
           "정배열 유지"
         ],
         "grade": "C",
@@ -402,15 +506,64 @@
         "freshDays": 1
       },
       {
-        "ticker": "035420",
-        "name": "NAVER",
+        "ticker": "353200",
+        "name": "대덕전자",
         "market": "KOSPI",
-        "sector": "양방향미디어와서비스",
-        "change": -1.2,
-        "amountEok": 151,
+        "sector": "전자장비와기기",
+        "change": 3,
+        "amountEok": 133,
         "reasons": [
           "상승 초입~중간 구간 매집",
-          "외국인 3일 연속 매수"
+          "외국인 3일 연속 매수",
+          "기관 1일 연속 매수"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "218410",
+        "name": "RFHIC",
+        "market": "KOSDAQ",
+        "sector": "통신장비",
+        "change": 1.7,
+        "amountEok": 322,
+        "reasons": [
+          "상승 초입~중간 구간 매집",
+          "기관 4일 연속 매수",
+          "최근 호재성 뉴스 동반"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 2
+      },
+      {
+        "ticker": "240810",
+        "name": "원익IPS",
+        "market": "KOSDAQ",
+        "sector": "반도체와반도체장비",
+        "change": 1,
+        "amountEok": 150,
+        "reasons": [
+          "상승 초입~중간 구간 매집",
+          "외국인 3일 연속 매수",
+          "기관 1일 연속 매수"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "347700",
+        "name": "스피어",
+        "market": "KOSDAQ",
+        "sector": "우주항공과국방",
+        "change": 12.3,
+        "amountEok": 217,
+        "reasons": [
+          "상승 초입~중간 구간 매집",
+          "외국인 2일 연속 매수",
+          "기관 1일 연속 매수"
         ],
         "grade": "B",
         "warn": false,
@@ -421,159 +574,126 @@
         "name": "DB하이텍",
         "market": "KOSPI",
         "sector": "반도체와반도체장비",
-        "change": -1,
-        "amountEok": 258,
+        "change": 2.2,
+        "amountEok": 773,
         "reasons": [
-          "⚠ 초입~중간 구간이나 과열(RSI 69) — 추격 주의",
-          "기관 8일 연속 매수"
+          "⚠ 초입~중간 구간이나 과열(RSI 76) — 추격 주의",
+          "기관 9일 연속 매수"
         ],
         "grade": "C",
         "warn": true,
-        "freshDays": 1
+        "freshDays": 2
       },
       {
-        "ticker": "066570",
-        "name": "LG전자",
+        "ticker": "009150",
+        "name": "삼성전기",
         "market": "KOSPI",
-        "sector": "전자제품",
-        "change": -1.4,
-        "amountEok": 140,
+        "sector": "HVDC/전력",
+        "change": 0.5,
+        "amountEok": 1654,
         "reasons": [
           "상승 초입~중간 구간 매집",
-          "외국인 2일 연속 매수"
+          "외국인 2일 연속 매수",
+          "기관 1일 연속 매수"
         ],
         "grade": "B",
         "warn": false,
         "freshDays": 1
       },
       {
-        "ticker": "100840",
-        "name": "SNT에너지",
+        "ticker": "298040",
+        "name": "효성중공업",
         "market": "KOSPI",
-        "sector": "에너지장비및서비스",
-        "change": 2.7,
-        "amountEok": 144,
+        "sector": "전기장비",
+        "change": -0.4,
+        "amountEok": 210,
         "reasons": [
-          "⚠ 고점권 매집 — 20일간 +42% 상승 후, 추격 주의",
-          "외국인 2일 연속 매수",
-          "기관 2일 연속 매수",
-          "외인·기관 쌍끌이",
-          "60일 신고가"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "437730",
-        "name": "삼현",
-        "market": "KOSDAQ",
-        "sector": "자동차부품",
-        "change": -2.8,
-        "amountEok": 697,
-        "reasons": [
-          "⚠ 고점권 매집 — 20일간 +40% 상승 후, 추격 주의",
+          "상승 초입~중간 구간 매집",
           "외국인 1일 연속 매수",
-          "기관 5일 연속 매수",
-          "거래대금 평소 7배",
-          "정배열 유지"
+          "기관 1일 연속 매수",
+          "펀더멘털 우량 (ROE 24.41%)",
+          "최근 호재성 뉴스 동반"
         ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "108490",
-        "name": "로보티즈",
-        "market": "KOSDAQ",
-        "sector": "기계",
-        "change": -2.9,
-        "amountEok": 292,
-        "reasons": [
-          "⚠ 고점권 매집 — 20일간 +20% 상승 후, 추격 주의",
-          "외국인 1일 연속 매수",
-          "기관 5일 연속 매수",
-          "정배열 유지"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "128940",
-        "name": "한미약품",
-        "market": "KOSPI",
-        "sector": "제약",
-        "change": 2.3,
-        "amountEok": 164,
-        "reasons": [
-          "⚠ 고점권 매집 — 20일간 +31% 상승 후, 추격 주의",
-          "기관 2일 연속 매수",
-          "정배열 유지"
-        ],
-        "grade": "C",
-        "warn": true,
+        "grade": "B",
+        "warn": false,
         "freshDays": 1
       }
     ],
     "trend": [
       {
-        "ticker": "058610",
-        "name": "에스피지",
-        "market": "KOSDAQ",
-        "sector": "전기제품",
-        "change": -6.2,
-        "amountEok": 409,
+        "ticker": "012450",
+        "name": "한화에어로스페이스",
+        "market": "KOSPI",
+        "sector": "우주항공과국방",
+        "change": 1.7,
+        "amountEok": 264,
         "reasons": [
           "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
-          "10/20 골든크로스",
-          "외국인 1일 매수 동반"
+          "정배열 진입",
+          "5/20 골든크로스",
+          "기관 1일 매수 동반"
         ],
         "grade": "A",
-        "warn": false,
-        "freshDays": 2
-      },
-      {
-        "ticker": "096770",
-        "name": "SK이노베이션",
-        "market": "KOSPI",
-        "sector": "석유와가스",
-        "change": -1.1,
-        "amountEok": 124,
-        "reasons": [
-          "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)",
-          "외국인 6일 매수 동반"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 2
-      },
-      {
-        "ticker": "402340",
-        "name": "SK스퀘어",
-        "market": "KOSPI",
-        "sector": "반도체와반도체장비",
-        "change": -2.3,
-        "amountEok": 317,
-        "reasons": [
-          "추세 신호 발생",
-          "10/20 골든크로스",
-          "외국인 1일 매수 동반"
-        ],
-        "grade": "B",
         "warn": false,
         "freshDays": 1
       },
       {
-        "ticker": "005380",
-        "name": "현대차",
-        "market": "KOSPI",
-        "sector": "자동차",
-        "change": -1.6,
-        "amountEok": 150,
+        "ticker": "119850",
+        "name": "지엔씨에너지",
+        "market": "KOSDAQ",
+        "sector": "전기장비",
+        "change": 9,
+        "amountEok": 685,
         "reasons": [
-          "추세 신호 발생",
-          "RSI 과매도 탈출",
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
+          "10/20 골든크로스",
+          "외국인 2일 매수 동반"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "047050",
+        "name": "포스코인터내셔널",
+        "market": "KOSPI",
+        "sector": "무역회사와판매업체",
+        "change": 2,
+        "amountEok": 178,
+        "reasons": [
+          "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)",
+          "기관 4일 매수 동반"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "222800",
+        "name": "심텍",
+        "market": "KOSDAQ",
+        "sector": "전자장비와기기",
+        "change": 0.5,
+        "amountEok": 153,
+        "reasons": [
+          "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)",
+          "외국인 2일 매수 동반"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "347700",
+        "name": "스피어",
+        "market": "KOSDAQ",
+        "sector": "우주항공과국방",
+        "change": 12.3,
+        "amountEok": 217,
+        "reasons": [
+          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
+          "MACD 골든크로스",
+          "20일선 위 안착",
           "외국인 2일 매수 동반"
         ],
         "grade": "B",
@@ -581,623 +701,216 @@
         "freshDays": 1
       },
       {
-        "ticker": "229640",
-        "name": "LS에코에너지",
+        "ticker": "267270",
+        "name": "HD건설기계",
         "market": "KOSPI",
-        "sector": "전기장비",
-        "change": 18.2,
-        "amountEok": 597,
+        "sector": "기계",
+        "change": 6.5,
+        "amountEok": 149,
         "reasons": [
-          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
-          "⚠ 과열 구간 — 20일 +28% · RSI 69 · 뒤늦은 진입 위험",
-          "정배열 진입",
-          "기관 9일 매수 동반"
+          "추세 신호 발생",
+          "MACD 골든크로스",
+          "기관 1일 매수 동반"
         ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "437730",
-        "name": "삼현",
-        "market": "KOSDAQ",
-        "sector": "자동차부품",
-        "change": -2.8,
-        "amountEok": 697,
-        "reasons": [
-          "정배열 전환 직후 — 지지 확인 전 초기 단계",
-          "⚠ 과열 구간 — 20일 +40% · RSI 76 · 뒤늦은 진입 위험",
-          "정배열 진입",
-          "기관 5일 매수 동반"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 2
-      }
-    ],
-    "volume": [
-      {
-        "ticker": "229640",
-        "name": "LS에코에너지",
-        "market": "KOSPI",
-        "sector": "전기장비",
-        "change": 18.2,
-        "amountEok": 597,
-        "reasons": [
-          "기관 주도 상승 폭발",
-          "거래대금 평소 16.5배",
-          "⚠ 과열 구간 (RSI 69) — 추격 주의",
-          "기관 9일 연속 매수"
-        ],
-        "grade": "C",
-        "warn": true,
-        "freshDays": 1
-      },
-      {
-        "ticker": "218410",
-        "name": "RFHIC",
-        "market": "KOSDAQ",
-        "sector": "통신장비",
-        "change": 3.5,
-        "amountEok": 395,
-        "reasons": [
-          "외인·기관 동반 매수 폭발 — 세력 주도",
-          "거래대금 평소 2.2배",
-          "외국인 2일 연속 매수",
-          "기관 3일 연속 매수"
-        ],
-        "grade": "A",
+        "grade": "B",
         "warn": false,
         "freshDays": 1
       },
       {
-        "ticker": "437730",
-        "name": "삼현",
-        "market": "KOSDAQ",
-        "sector": "자동차부품",
-        "change": -2.8,
-        "amountEok": 697,
+        "ticker": "329180",
+        "name": "HD현대중공업",
+        "market": "KOSPI",
+        "sector": "조선",
+        "change": 2.7,
+        "amountEok": 276,
         "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 7배",
-          "⚠ 과열 구간 (RSI 76) — 추격 주의",
-          "외국인 1일 연속 매수",
-          "기관 5일 연속 매수"
+          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
+          "10/20 골든크로스",
+          "20일선 위 안착"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "010120",
+        "name": "LS ELECTRIC",
+        "market": "KOSPI",
+        "sector": "전기장비",
+        "change": 0.8,
+        "amountEok": 267,
+        "reasons": [
+          "추세 신호 발생",
+          "10/20 골든크로스",
+          "기관 1일 매수 동반"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "009150",
+        "name": "삼성전기",
+        "market": "KOSPI",
+        "sector": "HVDC/전력",
+        "change": 0.5,
+        "amountEok": 1654,
+        "reasons": [
+          "추세 신호 발생",
+          "10/20 골든크로스",
+          "외국인 2일 매수 동반"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "267260",
+        "name": "HD현대일렉트릭",
+        "market": "KOSPI",
+        "sector": "전기장비",
+        "change": -0.4,
+        "amountEok": 115,
+        "reasons": [
+          "추세 신호 발생",
+          "RSI 과매도 탈출",
+          "기관 1일 매수 동반",
+          "최근 호재성 뉴스 동반"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "128940",
+        "name": "한미약품",
+        "market": "KOSPI",
+        "sector": "제약",
+        "change": 3.6,
+        "amountEok": 136,
+        "reasons": [
+          "추세 신호 발생",
+          "⚠ 과열 구간 — 20일 +30% · RSI 53 · 뒤늦은 진입 위험",
+          "정배열 진입",
+          "5/20 골든크로스",
+          "기관 3일 매수 동반"
         ],
         "grade": "C",
         "warn": true,
-        "freshDays": 2
+        "freshDays": 1
+      },
+      {
+        "ticker": "005690",
+        "name": "파미셀",
+        "market": "KOSPI",
+        "sector": "화학",
+        "change": 7.6,
+        "amountEok": 126,
+        "reasons": [
+          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
+          "⚠ 과열 구간 — 20일 +4% · RSI 65 · 뒤늦은 진입 위험",
+          "10/20 골든크로스",
+          "20일선 위 안착",
+          "외국인 1일 매수 동반"
+        ],
+        "grade": "C",
+        "warn": true,
+        "freshDays": 1
+      },
+      {
+        "ticker": "043260",
+        "name": "성호전자",
+        "market": "KOSDAQ",
+        "sector": "전기제품",
+        "change": 1.5,
+        "amountEok": 202,
+        "reasons": [
+          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
+          "⚠ 과열 구간 — 20일 +-1% · RSI 67 · 뒤늦은 진입 위험",
+          "10/20 골든크로스",
+          "20일선 위 안착",
+          "외국인 2일 매수 동반"
+        ],
+        "grade": "C",
+        "warn": true,
+        "freshDays": 1
       }
     ],
-    "steady": []
+    "volume": [
+      {
+        "ticker": "119850",
+        "name": "지엔씨에너지",
+        "market": "KOSDAQ",
+        "sector": "전기장비",
+        "change": 9,
+        "amountEok": 685,
+        "reasons": [
+          "외국인 주도 상승 폭발",
+          "거래대금 평소 2.3배",
+          "외국인 2일 연속 매수"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "295310",
+        "name": "에이치브이엠",
+        "market": "KOSDAQ",
+        "sector": "비철금속",
+        "change": 12.8,
+        "amountEok": 156,
+        "reasons": [
+          "기관 주도 상승 폭발",
+          "거래대금 평소 3.8배",
+          "⚠ 과열 구간 (RSI 73) — 추격 주의",
+          "기관 3일 연속 매수"
+        ],
+        "grade": "C",
+        "warn": true,
+        "freshDays": 1
+      }
+    ],
+    "steady": [
+      {
+        "ticker": "093370",
+        "name": "후성",
+        "market": "KOSPI",
+        "sector": "화학",
+        "change": 4.5,
+        "amountEok": 151,
+        "reasons": [
+          "⚠ 과열 구간 (RSI 78) — 추격 주의",
+          "기관 10일 연속 매수",
+          "정배열 유지"
+        ],
+        "grade": "C",
+        "warn": true,
+        "freshDays": 1
+      }
+    ]
   },
   "tracking": [
-    {
-      "ticker": "000990",
-      "name": "DB하이텍",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 95400,
-      "curClose": 118600,
-      "ret": 24.3,
-      "tradingDays": 14,
-      "stillListed": true
-    },
-    {
-      "ticker": "327260",
-      "name": "RF머트리얼즈",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 38250,
-      "curClose": 45950,
-      "ret": 20.1,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "000500",
-      "name": "가온전선",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 211500,
-      "curClose": 253000,
-      "ret": 19.6,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "100840",
-      "name": "SNT에너지",
-      "pickedAt": "2026-08-27",
-      "list": "volume",
-      "pickClose": 32400,
-      "curClose": 38150,
-      "ret": 17.7,
-      "tradingDays": 14,
-      "stillListed": true
-    },
-    {
-      "ticker": "052690",
-      "name": "한전기술",
-      "pickedAt": "2026-08-27",
-      "list": "volume",
-      "pickClose": 126300,
-      "curClose": 144600,
-      "ret": 14.5,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "004020",
-      "name": "현대제철",
-      "pickedAt": "2026-08-27",
-      "list": "volume",
-      "pickClose": 31450,
-      "curClose": 34900,
-      "ret": 11,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "047050",
-      "name": "포스코인터내셔널",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 52500,
-      "curClose": 56700,
-      "ret": 8,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "055550",
-      "name": "신한지주",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 108800,
-      "curClose": 111300,
-      "ret": 2.3,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "282330",
-      "name": "BGF리테일",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 139700,
-      "curClose": 142500,
-      "ret": 2,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "086790",
-      "name": "하나금융지주",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 133600,
-      "curClose": 136200,
-      "ret": 1.9,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "128940",
-      "name": "한미약품",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 504000,
-      "curClose": 507000,
-      "ret": 0.6,
-      "tradingDays": 14,
-      "stillListed": true
-    },
-    {
-      "ticker": "066570",
-      "name": "LG전자",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 198300,
-      "curClose": 199100,
-      "ret": 0.4,
-      "tradingDays": 14,
-      "stillListed": true
-    },
-    {
-      "ticker": "090430",
-      "name": "아모레퍼시픽",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 142400,
-      "curClose": 142500,
-      "ret": 0.1,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "028050",
-      "name": "삼성E&A",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 50100,
-      "curClose": 50100,
-      "ret": 0,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "024110",
-      "name": "기업은행",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 20500,
-      "curClose": 20200,
-      "ret": -1.5,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "222800",
-      "name": "심텍",
-      "pickedAt": "2026-08-27",
-      "list": "volume",
-      "pickClose": 126900,
-      "curClose": 124700,
-      "ret": -1.7,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "042700",
-      "name": "한미반도체",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 222000,
-      "curClose": 217500,
-      "ret": -2,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "035900",
-      "name": "JYP Ent.",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 39750,
-      "curClose": 38950,
-      "ret": -2,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "071050",
-      "name": "한국금융지주",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 191400,
-      "curClose": 187300,
-      "ret": -2.1,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "012750",
-      "name": "에스원",
-      "pickedAt": "2026-08-27",
-      "list": "volume",
-      "pickClose": 85500,
-      "curClose": 83700,
-      "ret": -2.1,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "030200",
-      "name": "KT",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 53900,
-      "curClose": 52700,
-      "ret": -2.2,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "000720",
-      "name": "현대건설",
-      "pickedAt": "2026-08-27",
-      "list": "volume",
-      "pickClose": 129300,
-      "curClose": 126500,
-      "ret": -2.2,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "005490",
-      "name": "POSCO홀딩스",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 339500,
-      "curClose": 329000,
-      "ret": -3.1,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "352820",
-      "name": "하이브",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 178500,
-      "curClose": 171600,
-      "ret": -3.9,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "329180",
-      "name": "HD현대중공업",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 470000,
-      "curClose": 450500,
-      "ret": -4.1,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "004370",
-      "name": "농심",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 427000,
-      "curClose": 407000,
-      "ret": -4.7,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "000100",
-      "name": "유한양행",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 82700,
-      "curClose": 78700,
-      "ret": -4.8,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "267270",
-      "name": "HD건설기계",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 140600,
-      "curClose": 133900,
-      "ret": -4.8,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "039490",
-      "name": "키움증권",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 279500,
-      "curClose": 265500,
-      "ret": -5,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "062040",
-      "name": "산일전기",
-      "pickedAt": "2026-08-27",
-      "list": "volume",
-      "pickClose": 201500,
-      "curClose": 189900,
-      "ret": -5.8,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "035420",
-      "name": "NAVER",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 216500,
-      "curClose": 203000,
-      "ret": -6.2,
-      "tradingDays": 14,
-      "stillListed": true
-    },
-    {
-      "ticker": "018260",
-      "name": "삼성에스디에스",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 234000,
-      "curClose": 218500,
-      "ret": -6.6,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "042660",
-      "name": "한화오션",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 89600,
-      "curClose": 82400,
-      "ret": -8,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "377300",
-      "name": "카카오페이",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 46900,
-      "curClose": 42800,
-      "ret": -8.7,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "033100",
-      "name": "제룡전기",
-      "pickedAt": "2026-08-27",
-      "list": "volume",
-      "pickClose": 50100,
-      "curClose": 45700,
-      "ret": -8.8,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "010120",
-      "name": "LS ELECTRIC",
-      "pickedAt": "2026-08-27",
-      "list": "volume",
-      "pickClose": 219500,
-      "curClose": 197500,
-      "ret": -10,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "356860",
-      "name": "티엘비",
-      "pickedAt": "2026-08-27",
-      "list": "volume",
-      "pickClose": 41500,
-      "curClose": 37200,
-      "ret": -10.4,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "080220",
-      "name": "제주반도체",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 77700,
-      "curClose": 68900,
-      "ret": -11.3,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "326030",
-      "name": "SK바이오팜",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 88000,
-      "curClose": 78000,
-      "ret": -11.4,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "006800",
-      "name": "미래에셋증권",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 36100,
-      "curClose": 31750,
-      "ret": -12,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "207940",
-      "name": "삼성바이오로직스",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 1594000,
-      "curClose": 1398000,
-      "ret": -12.3,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "257720",
-      "name": "실리콘투",
-      "pickedAt": "2026-08-27",
-      "list": "volume",
-      "pickClose": 49150,
-      "curClose": 42900,
-      "ret": -12.7,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "064350",
-      "name": "현대로템",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 138600,
-      "curClose": 120900,
-      "ret": -12.8,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "089970",
-      "name": "브이엠",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 60500,
-      "curClose": 49000,
-      "ret": -19,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "007810",
-      "name": "코리아써키트",
-      "pickedAt": "2026-08-27",
-      "list": "supply",
-      "pickClose": 60900,
-      "curClose": 49250,
-      "ret": -19.1,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "278470",
-      "name": "에이피알",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 434500,
-      "curClose": 351500,
-      "ret": -19.1,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "483650",
-      "name": "달바글로벌",
-      "pickedAt": "2026-08-27",
-      "list": "trend",
-      "pickClose": 222500,
-      "curClose": 161900,
-      "ret": -27.2,
-      "tradingDays": 14,
-      "stillListed": false
-    },
     {
       "ticker": "001820",
       "name": "삼화콘덴서",
       "pickedAt": "2026-08-28",
       "list": "volume",
       "pickClose": 110200,
-      "curClose": 143500,
-      "ret": 30.2,
-      "tradingDays": 13,
+      "curClose": 143100,
+      "ret": 29.9,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "000500",
+      "name": "가온전선",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 204000,
+      "curClose": 254500,
+      "ret": 24.8,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1206,42 +919,20 @@
       "pickedAt": "2026-08-28",
       "list": "volume",
       "pickClose": 116900,
-      "curClose": 140400,
-      "ret": 20.1,
-      "tradingDays": 13,
-      "stillListed": true
-    },
-    {
-      "ticker": "316140",
-      "name": "우리금융지주",
-      "pickedAt": "2026-08-28",
-      "list": "trend",
-      "pickClose": 33900,
-      "curClose": 36150,
-      "ret": 6.6,
-      "tradingDays": 13,
+      "curClose": 135800,
+      "ret": 16.2,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
-      "ticker": "138930",
-      "name": "BNK금융지주",
-      "pickedAt": "2026-08-28",
-      "list": "trend",
-      "pickClose": 15120,
-      "curClose": 16080,
-      "ret": 6.3,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "014620",
-      "name": "성광벤드",
+      "ticker": "100840",
+      "name": "SNT에너지",
       "pickedAt": "2026-08-28",
       "list": "volume",
-      "pickClose": 31850,
-      "curClose": 33650,
-      "ret": 5.7,
-      "tradingDays": 13,
+      "pickClose": 32500,
+      "curClose": 37700,
+      "ret": 16,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1250,10 +941,43 @@
       "pickedAt": "2026-08-28",
       "list": "supply",
       "pickClose": 100400,
-      "curClose": 103400,
-      "ret": 3,
-      "tradingDays": 13,
+      "curClose": 107900,
+      "ret": 7.5,
+      "tradingDays": 14,
       "stillListed": false
+    },
+    {
+      "ticker": "316140",
+      "name": "우리금융지주",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 33900,
+      "curClose": 36400,
+      "ret": 7.4,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "138930",
+      "name": "BNK금융지주",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 15120,
+      "curClose": 15970,
+      "ret": 5.6,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "267270",
+      "name": "HD건설기계",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 136600,
+      "curClose": 142700,
+      "ret": 4.5,
+      "tradingDays": 14,
+      "stillListed": true
     },
     {
       "ticker": "105560",
@@ -1261,42 +985,31 @@
       "pickedAt": "2026-08-28",
       "list": "trend",
       "pickClose": 171600,
-      "curClose": 175300,
-      "ret": 2.2,
-      "tradingDays": 13,
+      "curClose": 177800,
+      "ret": 3.6,
+      "tradingDays": 14,
       "stillListed": true
     },
     {
-      "ticker": "023160",
-      "name": "태광",
-      "pickedAt": "2026-08-28",
-      "list": "volume",
-      "pickClose": 26600,
-      "curClose": 26900,
-      "ret": 1.1,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "010950",
-      "name": "S-Oil",
+      "ticker": "055550",
+      "name": "신한지주",
       "pickedAt": "2026-08-28",
       "list": "supply",
-      "pickClose": 149200,
-      "curClose": 148600,
-      "ret": -0.4,
-      "tradingDays": 13,
-      "stillListed": false
+      "pickClose": 109700,
+      "curClose": 113400,
+      "ret": 3.4,
+      "tradingDays": 14,
+      "stillListed": true
     },
     {
-      "ticker": "001040",
-      "name": "CJ",
+      "ticker": "086790",
+      "name": "하나금융지주",
       "pickedAt": "2026-08-28",
-      "list": "trend",
-      "pickClose": 130500,
-      "curClose": 130000,
-      "ret": -0.4,
-      "tradingDays": 13,
+      "list": "supply",
+      "pickClose": 136000,
+      "curClose": 138000,
+      "ret": 1.5,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1305,163 +1018,20 @@
       "pickedAt": "2026-08-28",
       "list": "steady",
       "pickClose": 5950,
-      "curClose": 5920,
-      "ret": -0.5,
-      "tradingDays": 13,
+      "curClose": 5980,
+      "ret": 0.5,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
-      "ticker": "086280",
-      "name": "현대글로비스",
-      "pickedAt": "2026-08-28",
-      "list": "trend",
-      "pickClose": 205000,
-      "curClose": 201500,
-      "ret": -1.7,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "088980",
-      "name": "맥쿼리인프라",
-      "pickedAt": "2026-08-28",
-      "list": "trend",
-      "pickClose": 9960,
-      "curClose": 9780,
-      "ret": -1.8,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "000370",
-      "name": "한화손해보험",
-      "pickedAt": "2026-08-28",
-      "list": "supply",
-      "pickClose": 8450,
-      "curClose": 8260,
-      "ret": -2.2,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "323410",
-      "name": "카카오뱅크",
-      "pickedAt": "2026-08-28",
-      "list": "trend",
-      "pickClose": 21850,
-      "curClose": 21200,
-      "ret": -3,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "051910",
-      "name": "LG화학",
-      "pickedAt": "2026-08-28",
-      "list": "supply",
-      "pickClose": 277000,
-      "curClose": 268000,
-      "ret": -3.2,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "033780",
-      "name": "KT&G",
-      "pickedAt": "2026-08-28",
-      "list": "trend",
-      "pickClose": 176300,
-      "curClose": 169200,
-      "ret": -4,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "171090",
-      "name": "선익시스템",
+      "ticker": "014620",
+      "name": "성광벤드",
       "pickedAt": "2026-08-28",
       "list": "volume",
-      "pickClose": 71600,
-      "curClose": 68300,
-      "ret": -4.6,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "011200",
-      "name": "HMM",
-      "pickedAt": "2026-08-28",
-      "list": "trend",
-      "pickClose": 21700,
-      "curClose": 20650,
-      "ret": -4.8,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "097950",
-      "name": "CJ제일제당",
-      "pickedAt": "2026-08-28",
-      "list": "supply",
-      "pickClose": 189300,
-      "curClose": 179400,
-      "ret": -5.2,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "086450",
-      "name": "동국제약",
-      "pickedAt": "2026-08-28",
-      "list": "volume",
-      "pickClose": 21500,
-      "curClose": 20150,
-      "ret": -6.3,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "005180",
-      "name": "빙그레",
-      "pickedAt": "2026-08-28",
-      "list": "steady",
-      "pickClose": 92900,
-      "curClose": 86600,
-      "ret": -6.8,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "071970",
-      "name": "HD현대마린엔진",
-      "pickedAt": "2026-08-28",
-      "list": "trend",
-      "pickClose": 53100,
-      "curClose": 49450,
-      "ret": -6.9,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "280360",
-      "name": "롯데웰푸드",
-      "pickedAt": "2026-08-28",
-      "list": "steady",
-      "pickClose": 146300,
-      "curClose": 134700,
-      "ret": -7.9,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "003530",
-      "name": "한화투자증권",
-      "pickedAt": "2026-08-28",
-      "list": "volume",
-      "pickClose": 5000,
-      "curClose": 4600,
-      "ret": -8,
-      "tradingDays": 13,
+      "pickClose": 31850,
+      "curClose": 31950,
+      "ret": 0.3,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1470,20 +1040,174 @@
       "pickedAt": "2026-08-28",
       "list": "supply",
       "pickClose": 128600,
-      "curClose": 118000,
-      "ret": -8.2,
-      "tradingDays": 13,
+      "curClose": 128600,
+      "ret": 0,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
-      "ticker": "004490",
-      "name": "세방전지",
+      "ticker": "001040",
+      "name": "CJ",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 130500,
+      "curClose": 130100,
+      "ret": -0.3,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "329180",
+      "name": "HD현대중공업",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 457000,
+      "curClose": 454500,
+      "ret": -0.5,
+      "tradingDays": 14,
+      "stillListed": true
+    },
+    {
+      "ticker": "086280",
+      "name": "현대글로비스",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 205000,
+      "curClose": 204000,
+      "ret": -0.5,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "010950",
+      "name": "S-Oil",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 149200,
+      "curClose": 147800,
+      "ret": -0.9,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "062040",
+      "name": "산일전기",
       "pickedAt": "2026-08-28",
       "list": "volume",
-      "pickClose": 66300,
-      "curClose": 60700,
-      "ret": -8.4,
-      "tradingDays": 13,
+      "pickClose": 202500,
+      "curClose": 199900,
+      "ret": -1.3,
+      "tradingDays": 14,
+      "stillListed": true
+    },
+    {
+      "ticker": "171090",
+      "name": "선익시스템",
+      "pickedAt": "2026-08-28",
+      "list": "volume",
+      "pickClose": 71600,
+      "curClose": 70500,
+      "ret": -1.5,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "000370",
+      "name": "한화손해보험",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 8450,
+      "curClose": 8290,
+      "ret": -1.9,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "088980",
+      "name": "맥쿼리인프라",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 9960,
+      "curClose": 9770,
+      "ret": -1.9,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "071050",
+      "name": "한국금융지주",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 191300,
+      "curClose": 187200,
+      "ret": -2.1,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "033780",
+      "name": "KT&G",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 176300,
+      "curClose": 172500,
+      "ret": -2.2,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "030200",
+      "name": "KT",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 54500,
+      "curClose": 53100,
+      "ret": -2.6,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "051910",
+      "name": "LG화학",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 277000,
+      "curClose": 269500,
+      "ret": -2.7,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "024110",
+      "name": "기업은행",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 20850,
+      "curClose": 20250,
+      "ret": -2.9,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "039490",
+      "name": "키움증권",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 278500,
+      "curClose": 270000,
+      "ret": -3.1,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "090430",
+      "name": "아모레퍼시픽",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 150600,
+      "curClose": 146000,
+      "ret": -3.1,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1492,9 +1216,64 @@
       "pickedAt": "2026-08-28",
       "list": "supply",
       "pickClose": 107600,
-      "curClose": 97200,
-      "ret": -9.7,
-      "tradingDays": 13,
+      "curClose": 103800,
+      "ret": -3.5,
+      "tradingDays": 14,
+      "stillListed": true
+    },
+    {
+      "ticker": "086450",
+      "name": "동국제약",
+      "pickedAt": "2026-08-28",
+      "list": "volume",
+      "pickClose": 21500,
+      "curClose": 20700,
+      "ret": -3.7,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "023160",
+      "name": "태광",
+      "pickedAt": "2026-08-28",
+      "list": "volume",
+      "pickClose": 26600,
+      "curClose": 25600,
+      "ret": -3.8,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "323410",
+      "name": "카카오뱅크",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 21850,
+      "curClose": 20850,
+      "ret": -4.6,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "011200",
+      "name": "HMM",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 21700,
+      "curClose": 20550,
+      "ret": -5.3,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "071970",
+      "name": "HD현대마린엔진",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 53100,
+      "curClose": 50300,
+      "ret": -5.3,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1503,42 +1282,9 @@
       "pickedAt": "2026-08-28",
       "list": "supply",
       "pickClose": 109800,
-      "curClose": 98800,
-      "ret": -10,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "096530",
-      "name": "씨젠",
-      "pickedAt": "2026-08-28",
-      "list": "volume",
-      "pickClose": 35650,
-      "curClose": 32050,
-      "ret": -10.1,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "145020",
-      "name": "휴젤",
-      "pickedAt": "2026-08-28",
-      "list": "trend",
-      "pickClose": 259000,
-      "curClose": 231500,
-      "ret": -10.6,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "290650",
-      "name": "엘앤씨바이오",
-      "pickedAt": "2026-08-28",
-      "list": "trend",
-      "pickClose": 52900,
-      "curClose": 46550,
-      "ret": -12,
-      "tradingDays": 13,
+      "curClose": 103700,
+      "ret": -5.6,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1547,9 +1293,119 @@
       "pickedAt": "2026-08-28",
       "list": "volume",
       "pickClose": 161700,
-      "curClose": 142300,
-      "ret": -12,
-      "tradingDays": 13,
+      "curClose": 151600,
+      "ret": -6.2,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "096530",
+      "name": "씨젠",
+      "pickedAt": "2026-08-28",
+      "list": "volume",
+      "pickClose": 35650,
+      "curClose": 33400,
+      "ret": -6.3,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "097950",
+      "name": "CJ제일제당",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 189300,
+      "curClose": 176600,
+      "ret": -6.7,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "003530",
+      "name": "한화투자증권",
+      "pickedAt": "2026-08-28",
+      "list": "volume",
+      "pickClose": 5000,
+      "curClose": 4620,
+      "ret": -7.6,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "005180",
+      "name": "빙그레",
+      "pickedAt": "2026-08-28",
+      "list": "steady",
+      "pickClose": 92900,
+      "curClose": 85600,
+      "ret": -7.9,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "004490",
+      "name": "세방전지",
+      "pickedAt": "2026-08-28",
+      "list": "volume",
+      "pickClose": 66300,
+      "curClose": 60000,
+      "ret": -9.5,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "018260",
+      "name": "삼성에스디에스",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 243000,
+      "curClose": 219500,
+      "ret": -9.7,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "006800",
+      "name": "미래에셋증권",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 36150,
+      "curClose": 32450,
+      "ret": -10.2,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "280360",
+      "name": "롯데웰푸드",
+      "pickedAt": "2026-08-28",
+      "list": "steady",
+      "pickClose": 146300,
+      "curClose": 130700,
+      "ret": -10.7,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "145020",
+      "name": "휴젤",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 259000,
+      "curClose": 230500,
+      "ret": -11,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "089970",
+      "name": "브이엠",
+      "pickedAt": "2026-08-28",
+      "list": "supply",
+      "pickClose": 58000,
+      "curClose": 51300,
+      "ret": -11.6,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1558,20 +1414,31 @@
       "pickedAt": "2026-08-28",
       "list": "volume",
       "pickClose": 3153000,
-      "curClose": 2725000,
-      "ret": -13.6,
-      "tradingDays": 13,
+      "curClose": 2787000,
+      "ret": -11.6,
+      "tradingDays": 14,
+      "stillListed": true
+    },
+    {
+      "ticker": "290650",
+      "name": "엘앤씨바이오",
+      "pickedAt": "2026-08-28",
+      "list": "trend",
+      "pickClose": 52900,
+      "curClose": 46350,
+      "ret": -12.4,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
-      "ticker": "017960",
-      "name": "한국카본",
+      "ticker": "377300",
+      "name": "카카오페이",
       "pickedAt": "2026-08-28",
-      "list": "volume",
-      "pickClose": 24950,
-      "curClose": 21000,
-      "ret": -15.8,
-      "tradingDays": 13,
+      "list": "trend",
+      "pickClose": 47350,
+      "curClose": 40700,
+      "ret": -14,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1580,9 +1447,31 @@
       "pickedAt": "2026-08-28",
       "list": "supply",
       "pickClose": 611000,
-      "curClose": 507000,
-      "ret": -17,
-      "tradingDays": 13,
+      "curClose": 520000,
+      "ret": -14.9,
+      "tradingDays": 14,
+      "stillListed": true
+    },
+    {
+      "ticker": "017960",
+      "name": "한국카본",
+      "pickedAt": "2026-08-28",
+      "list": "volume",
+      "pickClose": 24950,
+      "curClose": 21150,
+      "ret": -15.2,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "257720",
+      "name": "실리콘투",
+      "pickedAt": "2026-08-28",
+      "list": "volume",
+      "pickClose": 53300,
+      "curClose": 42950,
+      "ret": -19.4,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -1591,9 +1480,9 @@
       "pickedAt": "2026-08-28",
       "list": "volume",
       "pickClose": 320000,
-      "curClose": 256000,
-      "ret": -20,
-      "tradingDays": 13,
+      "curClose": 257500,
+      "ret": -19.5,
+      "tradingDays": 14,
       "stillListed": true
     },
     {
@@ -1602,9 +1491,9 @@
       "pickedAt": "2026-08-31",
       "list": "trend",
       "pickClose": 177000,
-      "curClose": 193700,
-      "ret": 9.4,
-      "tradingDays": 12,
+      "curClose": 204000,
+      "ret": 15.3,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -1613,31 +1502,20 @@
       "pickedAt": "2026-08-31",
       "list": "supply",
       "pickClose": 1263000,
-      "curClose": 1307000,
-      "ret": 3.5,
-      "tradingDays": 12,
+      "curClose": 1418000,
+      "ret": 12.3,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
-      "ticker": "373220",
-      "name": "LG에너지솔루션",
+      "ticker": "000720",
+      "name": "현대건설",
       "pickedAt": "2026-08-31",
-      "list": "supply",
-      "pickClose": 378000,
-      "curClose": 366500,
-      "ret": -3,
-      "tradingDays": 12,
-      "stillListed": false
-    },
-    {
-      "ticker": "073240",
-      "name": "금호타이어",
-      "pickedAt": "2026-08-31",
-      "list": "supply",
-      "pickClose": 7360,
-      "curClose": 7130,
-      "ret": -3.1,
-      "tradingDays": 12,
+      "list": "trend",
+      "pickClose": 123300,
+      "curClose": 125500,
+      "ret": 1.8,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -1646,21 +1524,43 @@
       "pickedAt": "2026-08-31",
       "list": "supply",
       "pickClose": 1037000,
-      "curClose": 991000,
-      "ret": -4.4,
-      "tradingDays": 12,
-      "stillListed": true
+      "curClose": 1022000,
+      "ret": -1.4,
+      "tradingDays": 13,
+      "stillListed": false
     },
     {
-      "ticker": "032830",
-      "name": "삼성생명",
+      "ticker": "005490",
+      "name": "POSCO홀딩스",
       "pickedAt": "2026-08-31",
-      "list": "trend",
-      "pickClose": 306000,
-      "curClose": 283500,
-      "ret": -7.4,
-      "tradingDays": 12,
+      "list": "supply",
+      "pickClose": 338500,
+      "curClose": 328000,
+      "ret": -3.1,
+      "tradingDays": 13,
       "stillListed": false
+    },
+    {
+      "ticker": "373220",
+      "name": "LG에너지솔루션",
+      "pickedAt": "2026-08-31",
+      "list": "supply",
+      "pickClose": 378000,
+      "curClose": 365500,
+      "ret": -3.3,
+      "tradingDays": 13,
+      "stillListed": false
+    },
+    {
+      "ticker": "010120",
+      "name": "LS ELECTRIC",
+      "pickedAt": "2026-08-31",
+      "list": "supply",
+      "pickClose": 207500,
+      "curClose": 200500,
+      "ret": -3.4,
+      "tradingDays": 13,
+      "stillListed": true
     },
     {
       "ticker": "028260",
@@ -1668,20 +1568,20 @@
       "pickedAt": "2026-08-31",
       "list": "supply",
       "pickClose": 376500,
-      "curClose": 344500,
-      "ret": -8.5,
-      "tradingDays": 12,
+      "curClose": 360000,
+      "ret": -4.4,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
-      "ticker": "267260",
-      "name": "HD현대일렉트릭",
+      "ticker": "073240",
+      "name": "금호타이어",
       "pickedAt": "2026-08-31",
       "list": "supply",
-      "pickClose": 781000,
-      "curClose": 709000,
-      "ret": -9.2,
-      "tradingDays": 12,
+      "pickClose": 7360,
+      "curClose": 7020,
+      "ret": -4.6,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -1690,10 +1590,54 @@
       "pickedAt": "2026-08-31",
       "list": "trend",
       "pickClose": 1458000,
-      "curClose": 1311000,
-      "ret": -10.1,
-      "tradingDays": 12,
+      "curClose": 1379000,
+      "ret": -5.4,
+      "tradingDays": 13,
+      "stillListed": true
+    },
+    {
+      "ticker": "042660",
+      "name": "한화오션",
+      "pickedAt": "2026-08-31",
+      "list": "supply",
+      "pickClose": 88000,
+      "curClose": 82600,
+      "ret": -6.1,
+      "tradingDays": 13,
       "stillListed": false
+    },
+    {
+      "ticker": "032830",
+      "name": "삼성생명",
+      "pickedAt": "2026-08-31",
+      "list": "trend",
+      "pickClose": 306000,
+      "curClose": 286500,
+      "ret": -6.4,
+      "tradingDays": 13,
+      "stillListed": false
+    },
+    {
+      "ticker": "066570",
+      "name": "LG전자",
+      "pickedAt": "2026-08-31",
+      "list": "supply",
+      "pickClose": 216500,
+      "curClose": 200500,
+      "ret": -7.4,
+      "tradingDays": 13,
+      "stillListed": false
+    },
+    {
+      "ticker": "267260",
+      "name": "HD현대일렉트릭",
+      "pickedAt": "2026-08-31",
+      "list": "supply",
+      "pickClose": 781000,
+      "curClose": 706000,
+      "ret": -9.6,
+      "tradingDays": 13,
+      "stillListed": true
     },
     {
       "ticker": "078930",
@@ -1701,9 +1645,9 @@
       "pickedAt": "2026-08-31",
       "list": "trend",
       "pickClose": 127100,
-      "curClose": 112300,
-      "ret": -11.6,
-      "tradingDays": 12,
+      "curClose": 111700,
+      "ret": -12.1,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -1712,9 +1656,9 @@
       "pickedAt": "2026-08-31",
       "list": "supply",
       "pickClose": 421500,
-      "curClose": 367000,
-      "ret": -12.9,
-      "tradingDays": 12,
+      "curClose": 364000,
+      "ret": -13.6,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -1723,10 +1667,32 @@
       "pickedAt": "2026-09-01",
       "list": "trend",
       "pickClose": 26650,
-      "curClose": 29900,
-      "ret": 12.2,
-      "tradingDays": 11,
+      "curClose": 31600,
+      "ret": 18.6,
+      "tradingDays": 12,
       "stillListed": false
+    },
+    {
+      "ticker": "240810",
+      "name": "원익IPS",
+      "pickedAt": "2026-09-01",
+      "list": "supply",
+      "pickClose": 110000,
+      "curClose": 119100,
+      "ret": 8.3,
+      "tradingDays": 12,
+      "stillListed": true
+    },
+    {
+      "ticker": "047050",
+      "name": "포스코인터내셔널",
+      "pickedAt": "2026-09-01",
+      "list": "trend",
+      "pickClose": 55300,
+      "curClose": 56200,
+      "ret": 1.6,
+      "tradingDays": 12,
+      "stillListed": true
     },
     {
       "ticker": "138040",
@@ -1736,7 +1702,7 @@
       "pickClose": 125400,
       "curClose": 126000,
       "ret": 0.5,
-      "tradingDays": 11,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -1745,20 +1711,9 @@
       "pickedAt": "2026-09-01",
       "list": "trend",
       "pickClose": 192600,
-      "curClose": 188600,
-      "ret": -2.1,
-      "tradingDays": 11,
-      "stillListed": false
-    },
-    {
-      "ticker": "240810",
-      "name": "원익IPS",
-      "pickedAt": "2026-09-01",
-      "list": "supply",
-      "pickClose": 110000,
-      "curClose": 107000,
-      "ret": -2.7,
-      "tradingDays": 11,
+      "curClose": 192400,
+      "ret": -0.1,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -1767,9 +1722,9 @@
       "pickedAt": "2026-09-01",
       "list": "supply",
       "pickClose": 135500,
-      "curClose": 130200,
-      "ret": -3.9,
-      "tradingDays": 11,
+      "curClose": 133800,
+      "ret": -1.3,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -1778,20 +1733,9 @@
       "pickedAt": "2026-09-01",
       "list": "volume",
       "pickClose": 91300,
-      "curClose": 86400,
-      "ret": -5.4,
-      "tradingDays": 11,
-      "stillListed": false
-    },
-    {
-      "ticker": "000270",
-      "name": "기아",
-      "pickedAt": "2026-09-01",
-      "list": "supply",
-      "pickClose": 131200,
-      "curClose": 121300,
-      "ret": -7.5,
-      "tradingDays": 11,
+      "curClose": 86700,
+      "ret": -5,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -1800,9 +1744,9 @@
       "pickedAt": "2026-09-01",
       "list": "supply",
       "pickClose": 586000,
-      "curClose": 541000,
-      "ret": -7.7,
-      "tradingDays": 11,
+      "curClose": 547000,
+      "ret": -6.7,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -1811,19 +1755,30 @@
       "pickedAt": "2026-09-01",
       "list": "trend",
       "pickClose": 53400,
-      "curClose": 48800,
-      "ret": -8.6,
-      "tradingDays": 11,
+      "curClose": 49250,
+      "ret": -7.8,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
-      "ticker": "090460",
-      "name": "비에이치",
+      "ticker": "000270",
+      "name": "기아",
       "pickedAt": "2026-09-01",
-      "list": "volume",
-      "pickClose": 22000,
-      "curClose": 19390,
-      "ret": -11.9,
+      "list": "supply",
+      "pickClose": 131200,
+      "curClose": 120400,
+      "ret": -8.2,
+      "tradingDays": 12,
+      "stillListed": false
+    },
+    {
+      "ticker": "035420",
+      "name": "NAVER",
+      "pickedAt": "2026-09-02",
+      "list": "trend",
+      "pickClose": 209000,
+      "curClose": 201500,
+      "ret": -3.6,
       "tradingDays": 11,
       "stillListed": false
     },
@@ -1833,9 +1788,9 @@
       "pickedAt": "2026-09-02",
       "list": "supply",
       "pickClose": 91400,
-      "curClose": 87700,
-      "ret": -4,
-      "tradingDays": 10,
+      "curClose": 88000,
+      "ret": -3.7,
+      "tradingDays": 11,
       "stillListed": false
     },
     {
@@ -1844,10 +1799,21 @@
       "pickedAt": "2026-09-04",
       "list": "volume",
       "pickClose": 32550,
-      "curClose": 51200,
-      "ret": 57.3,
-      "tradingDays": 8,
-      "stillListed": true
+      "curClose": 48300,
+      "ret": 48.4,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "052690",
+      "name": "한전기술",
+      "pickedAt": "2026-09-04",
+      "list": "trend",
+      "pickClose": 107600,
+      "curClose": 134900,
+      "ret": 25.4,
+      "tradingDays": 9,
+      "stillListed": false
     },
     {
       "ticker": "443060",
@@ -1855,64 +1821,9 @@
       "pickedAt": "2026-09-04",
       "list": "trend",
       "pickClose": 210500,
-      "curClose": 233000,
-      "ret": 10.7,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "041510",
-      "name": "에스엠",
-      "pickedAt": "2026-09-04",
-      "list": "trend",
-      "pickClose": 79000,
-      "curClose": 87100,
-      "ret": 10.3,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "058610",
-      "name": "에스피지",
-      "pickedAt": "2026-09-04",
-      "list": "volume",
-      "pickClose": 94200,
-      "curClose": 99900,
-      "ret": 6.1,
-      "tradingDays": 8,
-      "stillListed": true
-    },
-    {
-      "ticker": "108490",
-      "name": "로보티즈",
-      "pickedAt": "2026-09-04",
-      "list": "volume",
-      "pickClose": 304500,
-      "curClose": 320000,
-      "ret": 5.1,
-      "tradingDays": 8,
-      "stillListed": true
-    },
-    {
-      "ticker": "175330",
-      "name": "JB금융지주",
-      "pickedAt": "2026-09-04",
-      "list": "supply",
-      "pickClose": 31000,
-      "curClose": 32250,
-      "ret": 4,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "103590",
-      "name": "일진전기",
-      "pickedAt": "2026-09-04",
-      "list": "trend",
-      "pickClose": 68300,
-      "curClose": 70600,
-      "ret": 3.4,
-      "tradingDays": 8,
+      "curClose": 237500,
+      "ret": 12.8,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -1921,9 +1832,119 @@
       "pickedAt": "2026-09-04",
       "list": "trend",
       "pickClose": 25100,
-      "curClose": 25850,
-      "ret": 3,
-      "tradingDays": 8,
+      "curClose": 28050,
+      "ret": 11.8,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "041510",
+      "name": "에스엠",
+      "pickedAt": "2026-09-04",
+      "list": "trend",
+      "pickClose": 79000,
+      "curClose": 87300,
+      "ret": 10.5,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "004020",
+      "name": "현대제철",
+      "pickedAt": "2026-09-04",
+      "list": "supply",
+      "pickClose": 31500,
+      "curClose": 34700,
+      "ret": 10.2,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "175330",
+      "name": "JB금융지주",
+      "pickedAt": "2026-09-04",
+      "list": "supply",
+      "pickClose": 31000,
+      "curClose": 32600,
+      "ret": 5.2,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "058610",
+      "name": "에스피지",
+      "pickedAt": "2026-09-04",
+      "list": "volume",
+      "pickClose": 94200,
+      "curClose": 97400,
+      "ret": 3.4,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "103590",
+      "name": "일진전기",
+      "pickedAt": "2026-09-04",
+      "list": "trend",
+      "pickClose": 68300,
+      "curClose": 70000,
+      "ret": 2.5,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "005290",
+      "name": "동진쎄미켐",
+      "pickedAt": "2026-09-04",
+      "list": "supply",
+      "pickClose": 40250,
+      "curClose": 40750,
+      "ret": 1.2,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "108490",
+      "name": "로보티즈",
+      "pickedAt": "2026-09-04",
+      "list": "volume",
+      "pickClose": 304500,
+      "curClose": 307500,
+      "ret": 1,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "084370",
+      "name": "유진테크",
+      "pickedAt": "2026-09-04",
+      "list": "supply",
+      "pickClose": 136500,
+      "curClose": 137500,
+      "ret": 0.7,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "058470",
+      "name": "리노공업",
+      "pickedAt": "2026-09-04",
+      "list": "supply",
+      "pickClose": 66600,
+      "curClose": 66800,
+      "ret": 0.3,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "120110",
+      "name": "코오롱인더",
+      "pickedAt": "2026-09-04",
+      "list": "trend",
+      "pickClose": 55800,
+      "curClose": 55600,
+      "ret": -0.4,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -1932,9 +1953,9 @@
       "pickedAt": "2026-09-04",
       "list": "supply",
       "pickClose": 14760,
-      "curClose": 14830,
-      "ret": 0.5,
-      "tradingDays": 8,
+      "curClose": 14630,
+      "ret": -0.9,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -1943,9 +1964,20 @@
       "pickedAt": "2026-09-04",
       "list": "supply",
       "pickClose": 21650,
-      "curClose": 21450,
-      "ret": -0.9,
-      "tradingDays": 8,
+      "curClose": 21300,
+      "ret": -1.6,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "042700",
+      "name": "한미반도체",
+      "pickedAt": "2026-09-04",
+      "list": "trend",
+      "pickClose": 230000,
+      "curClose": 226000,
+      "ret": -1.7,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -1956,18 +1988,7 @@
       "pickClose": 27900,
       "curClose": 27400,
       "ret": -1.8,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "005290",
-      "name": "동진쎄미켐",
-      "pickedAt": "2026-09-04",
-      "list": "supply",
-      "pickClose": 40250,
-      "curClose": 39500,
-      "ret": -1.9,
-      "tradingDays": 8,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -1976,42 +1997,9 @@
       "pickedAt": "2026-09-04",
       "list": "supply",
       "pickClose": 52800,
-      "curClose": 51400,
-      "ret": -2.7,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "120110",
-      "name": "코오롱인더",
-      "pickedAt": "2026-09-04",
-      "list": "trend",
-      "pickClose": 55800,
-      "curClose": 54000,
-      "ret": -3.2,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "058470",
-      "name": "리노공업",
-      "pickedAt": "2026-09-04",
-      "list": "supply",
-      "pickClose": 66600,
-      "curClose": 63500,
-      "ret": -4.7,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "064400",
-      "name": "LG씨엔에스",
-      "pickedAt": "2026-09-04",
-      "list": "trend",
-      "pickClose": 74100,
-      "curClose": 70300,
-      "ret": -5.1,
-      "tradingDays": 8,
+      "curClose": 51700,
+      "ret": -2.1,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -2020,42 +2008,31 @@
       "pickedAt": "2026-09-04",
       "list": "volume",
       "pickClose": 36600,
-      "curClose": 34400,
-      "ret": -6,
-      "tradingDays": 8,
+      "curClose": 35450,
+      "ret": -3.1,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
-      "ticker": "003550",
-      "name": "LG",
+      "ticker": "352820",
+      "name": "하이브",
       "pickedAt": "2026-09-04",
       "list": "trend",
-      "pickClose": 121100,
-      "curClose": 113700,
-      "ret": -6.1,
-      "tradingDays": 8,
+      "pickClose": 178500,
+      "curClose": 170100,
+      "ret": -4.7,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
-      "ticker": "084370",
-      "name": "유진테크",
-      "pickedAt": "2026-09-04",
-      "list": "supply",
-      "pickClose": 136500,
-      "curClose": 128100,
-      "ret": -6.2,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "267250",
-      "name": "HD현대",
+      "ticker": "064400",
+      "name": "LG씨엔에스",
       "pickedAt": "2026-09-04",
       "list": "trend",
-      "pickClose": 240500,
-      "curClose": 218000,
-      "ret": -9.4,
-      "tradingDays": 8,
+      "pickClose": 74100,
+      "curClose": 70500,
+      "ret": -4.9,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -2064,20 +2041,31 @@
       "pickedAt": "2026-09-04",
       "list": "volume",
       "pickClose": 29800,
-      "curClose": 26750,
-      "ret": -10.2,
-      "tradingDays": 8,
+      "curClose": 28250,
+      "ret": -5.2,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
-      "ticker": "100090",
-      "name": "SK오션플랜트",
+      "ticker": "003550",
+      "name": "LG",
       "pickedAt": "2026-09-04",
-      "list": "supply",
-      "pickClose": 13860,
-      "curClose": 12240,
-      "ret": -11.7,
-      "tradingDays": 8,
+      "list": "trend",
+      "pickClose": 121100,
+      "curClose": 113500,
+      "ret": -6.3,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "267250",
+      "name": "HD현대",
+      "pickedAt": "2026-09-04",
+      "list": "trend",
+      "pickClose": 240500,
+      "curClose": 220000,
+      "ret": -8.5,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -2086,10 +2074,32 @@
       "pickedAt": "2026-09-04",
       "list": "trend",
       "pickClose": 138900,
-      "curClose": 121900,
-      "ret": -12.2,
-      "tradingDays": 8,
+      "curClose": 120800,
+      "ret": -13,
+      "tradingDays": 9,
       "stillListed": false
+    },
+    {
+      "ticker": "100090",
+      "name": "SK오션플랜트",
+      "pickedAt": "2026-09-04",
+      "list": "supply",
+      "pickClose": 13860,
+      "curClose": 11930,
+      "ret": -13.9,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "222800",
+      "name": "심텍",
+      "pickedAt": "2026-09-07",
+      "list": "supply",
+      "pickClose": 119800,
+      "curClose": 129800,
+      "ret": 8.3,
+      "tradingDays": 8,
+      "stillListed": true
     },
     {
       "ticker": "000660",
@@ -2097,10 +2107,21 @@
       "pickedAt": "2026-09-07",
       "list": "supply",
       "pickClose": 1783000,
-      "curClose": 1691000,
-      "ret": -5.2,
-      "tradingDays": 7,
+      "curClose": 1747500,
+      "ret": -2,
+      "tradingDays": 8,
       "stillListed": false
+    },
+    {
+      "ticker": "000990",
+      "name": "DB하이텍",
+      "pickedAt": "2026-09-08",
+      "list": "trend",
+      "pickClose": 103400,
+      "curClose": 129000,
+      "ret": 24.8,
+      "tradingDays": 7,
+      "stillListed": true
     },
     {
       "ticker": "044490",
@@ -2108,9 +2129,9 @@
       "pickedAt": "2026-09-08",
       "list": "trend",
       "pickClose": 34850,
-      "curClose": 38100,
-      "ret": 9.3,
-      "tradingDays": 6,
+      "curClose": 36975,
+      "ret": 6.1,
+      "tradingDays": 7,
       "stillListed": false
     },
     {
@@ -2119,10 +2140,21 @@
       "pickedAt": "2026-09-08",
       "list": "supply",
       "pickClose": 1027000,
-      "curClose": 1059000,
-      "ret": 3.1,
-      "tradingDays": 6,
-      "stillListed": false
+      "curClose": 1075000,
+      "ret": 4.7,
+      "tradingDays": 7,
+      "stillListed": true
+    },
+    {
+      "ticker": "028050",
+      "name": "삼성E&A",
+      "pickedAt": "2026-09-08",
+      "list": "supply",
+      "pickClose": 49150,
+      "curClose": 50400,
+      "ret": 2.5,
+      "tradingDays": 7,
+      "stillListed": true
     },
     {
       "ticker": "403870",
@@ -2130,10 +2162,21 @@
       "pickedAt": "2026-09-08",
       "list": "supply",
       "pickClose": 53300,
-      "curClose": 51800,
-      "ret": -2.8,
-      "tradingDays": 6,
+      "curClose": 53500,
+      "ret": 0.4,
+      "tradingDays": 7,
       "stillListed": false
+    },
+    {
+      "ticker": "278470",
+      "name": "에이피알",
+      "pickedAt": "2026-09-08",
+      "list": "supply",
+      "pickClose": 377000,
+      "curClose": 357000,
+      "ret": -5.3,
+      "tradingDays": 7,
+      "stillListed": true
     },
     {
       "ticker": "005380",
@@ -2141,10 +2184,10 @@
       "pickedAt": "2026-09-08",
       "list": "supply",
       "pickClose": 385000,
-      "curClose": 363500,
-      "ret": -5.6,
-      "tradingDays": 6,
-      "stillListed": true
+      "curClose": 361500,
+      "ret": -6.1,
+      "tradingDays": 7,
+      "stillListed": false
     },
     {
       "ticker": "005930",
@@ -2152,9 +2195,9 @@
       "pickedAt": "2026-09-09",
       "list": "supply",
       "pickClose": 269500,
-      "curClose": 248000,
-      "ret": -8,
-      "tradingDays": 5,
+      "curClose": 255500,
+      "ret": -5.2,
+      "tradingDays": 6,
       "stillListed": false
     },
     {
@@ -2163,9 +2206,9 @@
       "pickedAt": "2026-09-10",
       "list": "supply",
       "pickClose": 1264000,
-      "curClose": 1264000,
-      "ret": 0,
-      "tradingDays": 4,
+      "curClose": 1277000,
+      "ret": 1,
+      "tradingDays": 5,
       "stillListed": false
     },
     {
@@ -2174,10 +2217,10 @@
       "pickedAt": "2026-09-10",
       "list": "trend",
       "pickClose": 51200,
-      "curClose": 48450,
-      "ret": -5.4,
-      "tradingDays": 4,
-      "stillListed": false
+      "curClose": 51700,
+      "ret": 1,
+      "tradingDays": 5,
+      "stillListed": true
     },
     {
       "ticker": "053800",
@@ -2185,20 +2228,31 @@
       "pickedAt": "2026-09-11",
       "list": "volume",
       "pickClose": 59300,
-      "curClose": 62100,
-      "ret": 4.7,
-      "tradingDays": 3,
+      "curClose": 68400,
+      "ret": 15.3,
+      "tradingDays": 4,
       "stillListed": false
     },
     {
-      "ticker": "252990",
-      "name": "샘씨엔에스",
+      "ticker": "005690",
+      "name": "파미셀",
+      "pickedAt": "2026-09-11",
+      "list": "supply",
+      "pickClose": 11260,
+      "curClose": 12390,
+      "ret": 10,
+      "tradingDays": 4,
+      "stillListed": true
+    },
+    {
+      "ticker": "189300",
+      "name": "인텔리안테크",
       "pickedAt": "2026-09-11",
       "list": "volume",
-      "pickClose": 15780,
-      "curClose": 16150,
-      "ret": 2.3,
-      "tradingDays": 3,
+      "pickClose": 63400,
+      "curClose": 69300,
+      "ret": 9.3,
+      "tradingDays": 4,
       "stillListed": false
     },
     {
@@ -2207,119 +2261,20 @@
       "pickedAt": "2026-09-11",
       "list": "supply",
       "pickClose": 200000,
-      "curClose": 204000,
-      "ret": 2,
-      "tradingDays": 3,
+      "curClose": 213500,
+      "ret": 6.7,
+      "tradingDays": 4,
       "stillListed": false
     },
     {
-      "ticker": "189300",
-      "name": "인텔리안테크",
+      "ticker": "252990",
+      "name": "샘씨엔에스",
       "pickedAt": "2026-09-11",
       "list": "volume",
-      "pickClose": 63400,
-      "curClose": 64300,
-      "ret": 1.4,
-      "tradingDays": 3,
-      "stillListed": false
-    },
-    {
-      "ticker": "140860",
-      "name": "파크시스템스",
-      "pickedAt": "2026-09-11",
-      "list": "supply",
-      "pickClose": 252000,
-      "curClose": 251000,
-      "ret": -0.4,
-      "tradingDays": 3,
-      "stillListed": false
-    },
-    {
-      "ticker": "112610",
-      "name": "씨에스윈드",
-      "pickedAt": "2026-09-11",
-      "list": "supply",
-      "pickClose": 52800,
-      "curClose": 52500,
-      "ret": -0.6,
-      "tradingDays": 3,
-      "stillListed": false
-    },
-    {
-      "ticker": "137400",
-      "name": "피엔티",
-      "pickedAt": "2026-09-11",
-      "list": "trend",
-      "pickClose": 29600,
-      "curClose": 29150,
-      "ret": -1.5,
-      "tradingDays": 3,
-      "stillListed": false
-    },
-    {
-      "ticker": "012630",
-      "name": "HDC",
-      "pickedAt": "2026-09-11",
-      "list": "volume",
-      "pickClose": 28450,
-      "curClose": 27900,
-      "ret": -1.9,
-      "tradingDays": 3,
-      "stillListed": false
-    },
-    {
-      "ticker": "006360",
-      "name": "GS건설",
-      "pickedAt": "2026-09-11",
-      "list": "supply",
-      "pickClose": 38500,
-      "curClose": 37600,
-      "ret": -2.3,
-      "tradingDays": 3,
-      "stillListed": false
-    },
-    {
-      "ticker": "023590",
-      "name": "다우기술",
-      "pickedAt": "2026-09-11",
-      "list": "trend",
-      "pickClose": 40700,
-      "curClose": 39700,
-      "ret": -2.5,
-      "tradingDays": 3,
-      "stillListed": false
-    },
-    {
-      "ticker": "214450",
-      "name": "파마리서치",
-      "pickedAt": "2026-09-11",
-      "list": "supply",
-      "pickClose": 342000,
-      "curClose": 332500,
-      "ret": -2.8,
-      "tradingDays": 3,
-      "stillListed": false
-    },
-    {
-      "ticker": "051600",
-      "name": "한전KPS",
-      "pickedAt": "2026-09-11",
-      "list": "supply",
-      "pickClose": 49300,
-      "curClose": 47300,
-      "ret": -4.1,
-      "tradingDays": 3,
-      "stillListed": false
-    },
-    {
-      "ticker": "012330",
-      "name": "현대모비스",
-      "pickedAt": "2026-09-11",
-      "list": "supply",
-      "pickClose": 415500,
-      "curClose": 390500,
-      "ret": -6,
-      "tradingDays": 3,
+      "pickClose": 15780,
+      "curClose": 16580,
+      "ret": 5.1,
+      "tradingDays": 4,
       "stillListed": false
     },
     {
@@ -2328,20 +2283,64 @@
       "pickedAt": "2026-09-11",
       "list": "trend",
       "pickClose": 50300,
-      "curClose": 47200,
-      "ret": -6.2,
-      "tradingDays": 3,
+      "curClose": 51700,
+      "ret": 2.8,
+      "tradingDays": 4,
+      "stillListed": true
+    },
+    {
+      "ticker": "140860",
+      "name": "파크시스템스",
+      "pickedAt": "2026-09-11",
+      "list": "supply",
+      "pickClose": 252000,
+      "curClose": 255000,
+      "ret": 1.2,
+      "tradingDays": 4,
       "stillListed": false
     },
     {
-      "ticker": "009540",
-      "name": "HD한국조선해양",
+      "ticker": "112610",
+      "name": "씨에스윈드",
+      "pickedAt": "2026-09-11",
+      "list": "supply",
+      "pickClose": 52800,
+      "curClose": 52100,
+      "ret": -1.3,
+      "tradingDays": 4,
+      "stillListed": false
+    },
+    {
+      "ticker": "137400",
+      "name": "피엔티",
       "pickedAt": "2026-09-11",
       "list": "trend",
-      "pickClose": 365500,
-      "curClose": 339000,
-      "ret": -7.3,
-      "tradingDays": 3,
+      "pickClose": 29600,
+      "curClose": 28900,
+      "ret": -2.4,
+      "tradingDays": 4,
+      "stillListed": false
+    },
+    {
+      "ticker": "023590",
+      "name": "다우기술",
+      "pickedAt": "2026-09-11",
+      "list": "trend",
+      "pickClose": 40700,
+      "curClose": 39650,
+      "ret": -2.6,
+      "tradingDays": 4,
+      "stillListed": false
+    },
+    {
+      "ticker": "214450",
+      "name": "파마리서치",
+      "pickedAt": "2026-09-11",
+      "list": "supply",
+      "pickClose": 342000,
+      "curClose": 332000,
+      "ret": -2.9,
+      "tradingDays": 4,
       "stillListed": false
     },
     {
@@ -2350,20 +2349,64 @@
       "pickedAt": "2026-09-11",
       "list": "volume",
       "pickClose": 24800,
-      "curClose": 22900,
-      "ret": -7.7,
-      "tradingDays": 3,
+      "curClose": 23750,
+      "ret": -4.2,
+      "tradingDays": 4,
       "stillListed": false
     },
     {
-      "ticker": "000810",
-      "name": "삼성화재",
-      "pickedAt": "2026-09-15",
+      "ticker": "051600",
+      "name": "한전KPS",
+      "pickedAt": "2026-09-11",
       "list": "supply",
-      "pickClose": 661000,
-      "curClose": 656000,
-      "ret": -0.8,
-      "tradingDays": 1,
+      "pickClose": 49300,
+      "curClose": 47050,
+      "ret": -4.6,
+      "tradingDays": 4,
+      "stillListed": false
+    },
+    {
+      "ticker": "006360",
+      "name": "GS건설",
+      "pickedAt": "2026-09-11",
+      "list": "supply",
+      "pickClose": 38500,
+      "curClose": 36700,
+      "ret": -4.7,
+      "tradingDays": 4,
+      "stillListed": false
+    },
+    {
+      "ticker": "012630",
+      "name": "HDC",
+      "pickedAt": "2026-09-11",
+      "list": "volume",
+      "pickClose": 28450,
+      "curClose": 26850,
+      "ret": -5.6,
+      "tradingDays": 4,
+      "stillListed": false
+    },
+    {
+      "ticker": "009540",
+      "name": "HD한국조선해양",
+      "pickedAt": "2026-09-11",
+      "list": "trend",
+      "pickClose": 365500,
+      "curClose": 341000,
+      "ret": -6.7,
+      "tradingDays": 4,
+      "stillListed": false
+    },
+    {
+      "ticker": "012330",
+      "name": "현대모비스",
+      "pickedAt": "2026-09-11",
+      "list": "supply",
+      "pickClose": 415500,
+      "curClose": 382000,
+      "ret": -8.1,
+      "tradingDays": 4,
       "stillListed": false
     },
     {
@@ -2372,46 +2415,90 @@
       "pickedAt": "2026-09-15",
       "list": "supply",
       "pickClose": 105600,
-      "curClose": 104500,
-      "ret": -1,
+      "curClose": 115900,
+      "ret": 9.8,
+      "tradingDays": 2,
+      "stillListed": true
+    },
+    {
+      "ticker": "000810",
+      "name": "삼성화재",
+      "pickedAt": "2026-09-15",
+      "list": "supply",
+      "pickClose": 661000,
+      "curClose": 667000,
+      "ret": 0.9,
+      "tradingDays": 2,
+      "stillListed": false
+    },
+    {
+      "ticker": "128940",
+      "name": "한미약품",
+      "pickedAt": "2026-09-16",
+      "list": "supply",
+      "pickClose": 501000,
+      "curClose": 519000,
+      "ret": 3.6,
+      "tradingDays": 1,
+      "stillListed": true
+    },
+    {
+      "ticker": "218410",
+      "name": "RFHIC",
+      "pickedAt": "2026-09-16",
+      "list": "supply",
+      "pickClose": 52100,
+      "curClose": 53000,
+      "ret": 1.7,
+      "tradingDays": 1,
+      "stillListed": true
+    },
+    {
+      "ticker": "229640",
+      "name": "LS에코에너지",
+      "pickedAt": "2026-09-16",
+      "list": "supply",
+      "pickClose": 55300,
+      "curClose": 53900,
+      "ret": -2.5,
       "tradingDays": 1,
       "stillListed": false
     }
   ],
   "record": {
-    "samples": 276,
+    "samples": 244,
     "horizon": 5,
-    "avgReturn": -1.2,
-    "hitRate": 37,
-    "benchReturn": -0.1,
+    "avgReturn": -0.4,
+    "hitRate": 39,
+    "benchReturn": 0.1,
     "byList": {
       "supply": {
-        "samples": 157,
-        "horizon": 5,
-        "avgReturn": -1.7,
-        "hitRate": 33,
-        "benchReturn": -0.1
-      },
-      "steady": {
-        "samples": 22,
-        "horizon": 5,
-        "avgReturn": -1.8,
-        "hitRate": 32,
-        "benchReturn": -1.2
-      },
-      "trend": {
-        "samples": 116,
-        "horizon": 5,
-        "avgReturn": 0,
-        "hitRate": 45,
-        "benchReturn": -0.6
-      },
-      "volume": {
-        "samples": 63,
+        "samples": 150,
         "horizon": 5,
         "avgReturn": -1.2,
-        "hitRate": 40,
-        "benchReturn": -0.5
+        "hitRate": 34,
+        "benchReturn": 0.1
+      },
+      "steady": {
+        "samples": 20,
+        "horizon": 5,
+        "avgReturn": -1.7,
+        "hitRate": 35,
+        "benchReturn": -0.8
+      },
+      "trend": {
+        "samples": 103,
+        "horizon": 5,
+        "avgReturn": 0.2,
+        "hitRate": 44,
+        "benchReturn": -0.3
+      },
+      "volume": {
+        "samples": 50,
+        "horizon": 5,
+        "avgReturn": 0.7,
+        "hitRate": 46,
+        "benchReturn": -0.2
       }
     }
   }
