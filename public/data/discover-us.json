@@ -2,10 +2,10 @@
   "version": 3,
   "scope": "us",
   "date": "2026-09-18",
-  "generated_at": "2026-09-20T23:58:48.394Z",
+  "generated_at": "2026-09-22T00:40:21.800Z",
   "market": {
     "regime": "weak",
-    "breadth": 19
+    "breadth": 20
   },
   "filter": {
     "minAmountEok": 100,
@@ -18,26 +18,26 @@
   "themeFlow": [
     {
       "sector": "헬스케어",
-      "heat": 77.5,
+      "heat": 78.5,
       "prior": 52.2,
       "stage": "주도"
     },
     {
       "sector": "IT/기술",
-      "heat": 58.5,
+      "heat": 59.5,
       "prior": 40.6,
-      "stage": "주도"
-    },
-    {
-      "sector": "산업재",
-      "heat": 15.5,
-      "prior": 5.2,
       "stage": "주도"
     },
     {
       "sector": "금융",
       "heat": 15,
       "prior": 9.8,
+      "stage": "주도"
+    },
+    {
+      "sector": "산업재",
+      "heat": 14.5,
+      "prior": 5.2,
       "stage": "주도"
     },
     {
@@ -60,7 +60,7 @@
     },
     {
       "sector": "커뮤니케이션",
-      "heat": 3,
+      "heat": 2,
       "prior": 7.4,
       "stage": "중립"
     },
@@ -90,7 +90,7 @@
       "sector": "헬스케어",
       "market": "US",
       "change": 0.1,
-      "amountEok": 10521,
+      "amountEok": 10358,
       "freshDays": 2,
       "hits": [
         "supply",
@@ -110,37 +110,12 @@
       "targetPct": 9.9
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "sector": "헬스케어",
-      "market": "US",
-      "change": -2.5,
-      "amountEok": 43206,
-      "freshDays": 16,
-      "hits": [
-        "supply",
-        "trend",
-        "steady"
-      ],
-      "reasons": [
-        "매집 프록시 — 20일 CMF +0.18 (고가권 마감 + 거래량 동반)",
-        "상승일 거래량이 하락일의 1.2배",
-        "OBV 상승 추세",
-        "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)"
-      ],
-      "entry": 154.0399932861328,
-      "stop": 146,
-      "stopPct": -5.2,
-      "target": 174,
-      "targetPct": 13
-    },
-    {
       "ticker": "TMO",
       "name": "Thermo Fisher Scientific",
       "sector": "헬스케어",
       "market": "US",
       "change": -1,
-      "amountEok": 41364,
+      "amountEok": 40722,
       "freshDays": 5,
       "hits": [
         "supply",
@@ -158,6 +133,31 @@
       "stopPct": -4.4,
       "target": 717,
       "targetPct": 10.1
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "sector": "헬스케어",
+      "market": "US",
+      "change": -2.5,
+      "amountEok": 42536,
+      "freshDays": 16,
+      "hits": [
+        "supply",
+        "trend",
+        "steady"
+      ],
+      "reasons": [
+        "매집 프록시 — 20일 CMF +0.18 (고가권 마감 + 거래량 동반)",
+        "상승일 거래량이 하락일의 1.2배",
+        "OBV 상승 추세",
+        "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)"
+      ],
+      "entry": 154.0399932861328,
+      "stop": 146,
+      "stopPct": -5.2,
+      "target": 174,
+      "targetPct": 13
     }
   ],
   "lists": {
@@ -168,7 +168,7 @@
         "market": "US",
         "sector": "에너지",
         "change": 0.7,
-        "amountEok": 58061,
+        "amountEok": 57161,
         "reasons": [
           "⚠ 고점권 — 20일 +19% 후, 추격 주의",
           "매집 프록시 — 20일 CMF +0.18 (고가권 마감 + 거래량 동반)",
@@ -185,7 +185,7 @@
         "market": "US",
         "sector": "필수소비재",
         "change": -0.8,
-        "amountEok": 26236,
+        "amountEok": 25829,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.15 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.5배",
@@ -202,7 +202,7 @@
         "market": "US",
         "sector": "산업재",
         "change": 1,
-        "amountEok": 6656,
+        "amountEok": 6552,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.16 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 2.9배",
@@ -218,7 +218,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -1,
-        "amountEok": 41364,
+        "amountEok": 40722,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.25 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.2배",
@@ -234,7 +234,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -1.9,
-        "amountEok": 6051,
+        "amountEok": 5957,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.17 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.8배",
@@ -250,7 +250,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 0.1,
-        "amountEok": 10521,
+        "amountEok": 10358,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.21 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.4배",
@@ -266,7 +266,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": -1.6,
-        "amountEok": 30001,
+        "amountEok": 29536,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.21 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.1배",
@@ -282,7 +282,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 2.6,
-        "amountEok": 26865,
+        "amountEok": 26448,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.14 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.6배",
@@ -298,7 +298,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -2.5,
-        "amountEok": 43206,
+        "amountEok": 42536,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.18 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.2배",
@@ -314,7 +314,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": -0.5,
-        "amountEok": 22295,
+        "amountEok": 21949,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.13 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.7배",
@@ -330,7 +330,7 @@
         "market": "US",
         "sector": "금융",
         "change": 0.1,
-        "amountEok": 88216,
+        "amountEok": 86848,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.14 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.6배",
@@ -346,7 +346,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": 11,
-        "amountEok": 439570,
+        "amountEok": 432754,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.18 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.1배",
@@ -362,7 +362,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": -0.6,
-        "amountEok": 7294,
+        "amountEok": 7180,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.17 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.1배",
@@ -378,7 +378,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 0.4,
-        "amountEok": 32203,
+        "amountEok": 31704,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.16 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.2배",
@@ -394,7 +394,7 @@
         "market": "US",
         "sector": "금융",
         "change": -0.3,
-        "amountEok": 9835,
+        "amountEok": 9682,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.14 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.4배",
@@ -410,7 +410,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -1.1,
-        "amountEok": 3677,
+        "amountEok": 3620,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.12 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.5배",
@@ -426,7 +426,7 @@
         "market": "US",
         "sector": "금융",
         "change": 0.1,
-        "amountEok": 88675,
+        "amountEok": 87300,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.12 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.4배",
@@ -442,7 +442,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": -0.3,
-        "amountEok": 402816,
+        "amountEok": 396570,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.15 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.1배",
@@ -458,7 +458,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": 0.8,
-        "amountEok": 96619,
+        "amountEok": 95121,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.12 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.3배",
@@ -474,7 +474,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 0.1,
-        "amountEok": 28970,
+        "amountEok": 28521,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.15 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.0배",
@@ -492,7 +492,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 0.1,
-        "amountEok": 10521,
+        "amountEok": 10358,
         "reasons": [
           "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
           "정배열 진입",
@@ -509,7 +509,7 @@
         "market": "US",
         "sector": "소비재(임의)",
         "change": -0.5,
-        "amountEok": 261718,
+        "amountEok": 257660,
         "reasons": [
           "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
           "정배열 진입"
@@ -524,7 +524,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": 1.4,
-        "amountEok": 79741,
+        "amountEok": 78504,
         "reasons": [
           "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
           "10/20 골든크로스"
@@ -539,7 +539,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -0.1,
-        "amountEok": 5037,
+        "amountEok": 4959,
         "reasons": [
           "정배열 전환 직후 — 지지 확인 전 초기 단계",
           "정배열 진입",
@@ -556,7 +556,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -0.5,
-        "amountEok": 34158,
+        "amountEok": 33628,
         "reasons": [
           "추세 신호 발생",
           "정배열 진입",
@@ -573,7 +573,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -1,
-        "amountEok": 41364,
+        "amountEok": 40722,
         "reasons": [
           "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
           "10/20 골든크로스"
@@ -583,12 +583,28 @@
         "freshDays": 2
       },
       {
+        "ticker": "P",
+        "name": "Everpure",
+        "market": "US",
+        "sector": "IT/기술",
+        "change": 0.1,
+        "amountEok": 103904,
+        "reasons": [
+          "정배열 전환 직후 — 지지 확인 전 초기 단계",
+          "정배열 진입",
+          "5/20 골든크로스"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
         "ticker": "DE",
         "name": "Deere & Company",
         "market": "US",
         "sector": "산업재",
         "change": -0.2,
-        "amountEok": 21272,
+        "amountEok": 20942,
         "reasons": [
           "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)"
         ],
@@ -602,7 +618,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -2.2,
-        "amountEok": 4400,
+        "amountEok": 4332,
         "reasons": [
           "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)"
         ],
@@ -616,7 +632,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -2.5,
-        "amountEok": 43206,
+        "amountEok": 42536,
         "reasons": [
           "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)"
         ],
@@ -630,7 +646,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": 5.2,
-        "amountEok": 22095,
+        "amountEok": 21752,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "10/20 골든크로스",
@@ -647,7 +663,7 @@
         "market": "US",
         "sector": "산업재",
         "change": 3.7,
-        "amountEok": 27164,
+        "amountEok": 26743,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "10/20 골든크로스",
@@ -664,7 +680,7 @@
         "market": "US",
         "sector": "금융",
         "change": 11.7,
-        "amountEok": 58880,
+        "amountEok": 57967,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "5/10 골든크로스",
@@ -681,7 +697,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 2.6,
-        "amountEok": 26865,
+        "amountEok": 26448,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "BB 수축→상단돌파",
@@ -697,7 +713,7 @@
         "market": "US",
         "sector": "금융",
         "change": 0.7,
-        "amountEok": 1724,
+        "amountEok": 1698,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "5/20 골든크로스",
@@ -713,7 +729,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": 0.2,
-        "amountEok": 3176,
+        "amountEok": 3127,
         "reasons": [
           "추세 신호 발생",
           "RSI 과매도 탈출",
@@ -729,7 +745,7 @@
         "market": "US",
         "sector": "소비재(임의)",
         "change": -0.9,
-        "amountEok": 32384,
+        "amountEok": 31882,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "BB 수축→상단돌파",
@@ -745,7 +761,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": -5.8,
-        "amountEok": 134115,
+        "amountEok": 132035,
         "reasons": [
           "정배열 전환 직후 — 지지 확인 전 초기 단계",
           "정배열 진입"
@@ -760,7 +776,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": 4.7,
-        "amountEok": 49214,
+        "amountEok": 48451,
         "reasons": [
           "추세 신호 발생",
           "MACD 골든크로스"
@@ -775,23 +791,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": 3.9,
-        "amountEok": 502187,
-        "reasons": [
-          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
-          "MACD 골든크로스",
-          "20일선 위 안착"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "MCHP",
-        "name": "Microchip Technology",
-        "market": "US",
-        "sector": "IT/기술",
-        "change": 3.5,
-        "amountEok": 16182,
+        "amountEok": 494400,
         "reasons": [
           "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
           "MACD 골든크로스",
@@ -804,30 +804,30 @@
     ],
     "volume": [
       {
-        "ticker": "BLDR",
-        "name": "Builders FirstSource",
+        "ticker": "P",
+        "name": "Everpure",
         "market": "US",
-        "sector": "산업재",
-        "change": 0.8,
-        "amountEok": 21830,
+        "sector": "IT/기술",
+        "change": 0.1,
+        "amountEok": 103904,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 10.5배"
+          "거래대금 평소 24.1배"
         ],
         "grade": "B",
         "warn": false,
         "freshDays": 1
       },
       {
-        "ticker": "TTD",
-        "name": "Trade Desk (The)",
+        "ticker": "ILMN",
+        "name": "Illumina, Inc.",
         "market": "US",
-        "sector": "커뮤니케이션",
-        "change": -2.4,
-        "amountEok": 28775,
+        "sector": "헬스케어",
+        "change": -2.3,
+        "amountEok": 106584,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 8.6배"
+          "거래대금 평소 16.5배"
         ],
         "grade": "B",
         "warn": false,
@@ -839,7 +839,7 @@
         "market": "US",
         "sector": "금융",
         "change": -0.2,
-        "amountEok": 19678,
+        "amountEok": 19373,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 8.4배"
@@ -854,7 +854,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 0.4,
-        "amountEok": 32203,
+        "amountEok": 31704,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 4.6배"
@@ -869,7 +869,7 @@
         "market": "US",
         "sector": "AI/반도체",
         "change": 0.2,
-        "amountEok": 27493,
+        "amountEok": 27067,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 4.6배"
@@ -884,7 +884,7 @@
         "market": "US",
         "sector": "커뮤니케이션",
         "change": -2.6,
-        "amountEok": 17759,
+        "amountEok": 17483,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 6.5배"
@@ -899,7 +899,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 1.6,
-        "amountEok": 18054,
+        "amountEok": 17774,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 4.2배"
@@ -914,7 +914,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": 1.2,
-        "amountEok": 15811,
+        "amountEok": 15566,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 4.2배"
@@ -929,7 +929,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": 1.1,
-        "amountEok": 11176,
+        "amountEok": 11003,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 4.1배"
@@ -944,7 +944,7 @@
         "market": "US",
         "sector": "에너지",
         "change": -1,
-        "amountEok": 137340,
+        "amountEok": 135210,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 6.1배"
@@ -959,7 +959,7 @@
         "market": "US",
         "sector": "산업재",
         "change": 0.1,
-        "amountEok": 5234,
+        "amountEok": 5153,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 3.9배"
@@ -974,7 +974,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": 3.3,
-        "amountEok": 70435,
+        "amountEok": 69343,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 3.7배"
@@ -989,7 +989,7 @@
         "market": "US",
         "sector": "에너지",
         "change": 1.6,
-        "amountEok": 6625,
+        "amountEok": 6522,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 3.7배"
@@ -1004,7 +1004,7 @@
         "market": "US",
         "sector": "에너지",
         "change": 0.3,
-        "amountEok": 15651,
+        "amountEok": 15408,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 3.6배"
@@ -1019,7 +1019,7 @@
         "market": "US",
         "sector": "에너지",
         "change": 2.5,
-        "amountEok": 15563,
+        "amountEok": 15322,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 3.5배"
@@ -1034,7 +1034,7 @@
         "market": "US",
         "sector": "커뮤니케이션",
         "change": -1.2,
-        "amountEok": 4779,
+        "amountEok": 4705,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 5.5배"
@@ -1049,7 +1049,7 @@
         "market": "US",
         "sector": "금융",
         "change": -1.4,
-        "amountEok": 9388,
+        "amountEok": 9243,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 5.5배"
@@ -1064,7 +1064,7 @@
         "market": "US",
         "sector": "필수소비재",
         "change": 0.9,
-        "amountEok": 10092,
+        "amountEok": 9936,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 3.4배"
@@ -1079,7 +1079,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 0.4,
-        "amountEok": 38500,
+        "amountEok": 37903,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 3.3배"
@@ -1094,7 +1094,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 0.4,
-        "amountEok": 5351,
+        "amountEok": 5268,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 3.2배"
@@ -1111,7 +1111,7 @@
         "market": "US",
         "sector": "에너지",
         "change": 0.2,
-        "amountEok": 53213,
+        "amountEok": 52388,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1126,7 +1126,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": -0.3,
-        "amountEok": 402816,
+        "amountEok": 396570,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1141,7 +1141,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -1,
-        "amountEok": 41364,
+        "amountEok": 40722,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1156,7 +1156,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -2.5,
-        "amountEok": 43206,
+        "amountEok": 42536,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1171,7 +1171,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -2.2,
-        "amountEok": 6606,
+        "amountEok": 6504,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1186,7 +1186,7 @@
         "market": "US",
         "sector": "에너지",
         "change": 0.7,
-        "amountEok": 58061,
+        "amountEok": 57161,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1201,7 +1201,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 0,
-        "amountEok": 29874,
+        "amountEok": 29411,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1216,7 +1216,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 0.1,
-        "amountEok": 10521,
+        "amountEok": 10358,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1231,7 +1231,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": 0.8,
-        "amountEok": 96619,
+        "amountEok": 95121,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1246,7 +1246,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": -2.8,
-        "amountEok": 27213,
+        "amountEok": 26791,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1261,7 +1261,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": 1.6,
-        "amountEok": 18054,
+        "amountEok": 17774,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1276,7 +1276,7 @@
         "market": "US",
         "sector": "산업재",
         "change": 1,
-        "amountEok": 6656,
+        "amountEok": 6552,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1291,7 +1291,7 @@
         "market": "US",
         "sector": "헬스케어",
         "change": -1.9,
-        "amountEok": 6051,
+        "amountEok": 5957,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1306,7 +1306,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": -0.8,
-        "amountEok": 270729,
+        "amountEok": 266531,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -1321,7 +1321,7 @@
         "market": "US",
         "sector": "IT/기술",
         "change": -3.3,
-        "amountEok": 64032,
+        "amountEok": 63039,
         "grade": "A",
         "warn": false,
         "reasons": [
@@ -3567,7 +3567,7 @@
         "horizon": 5,
         "avgReturn": -0.8,
         "hitRate": 43,
-        "benchReturn": -1.3
+        "benchReturn": -1.2
       }
     }
   }
