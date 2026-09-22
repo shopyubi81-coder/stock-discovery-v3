@@ -89,6 +89,24 @@ const toDate = (yyyymmdd) =>
   `${yyyymmdd.slice(0, 4)}-${yyyymmdd.slice(4, 6)}-${yyyymmdd.slice(6, 8)}`;
 const pct = (s) => Number(String(s ?? '').replace(/[%,배원조억]/g, '').replace(/,/g, '')) || 0;
 
+// /basic 한 콜 → 종목명·시장 (시총/순위 문턱 없이 아무 코드나 조회 가능).
+// fetchUniverse()의 시총 랭킹 API에 안 걸리는 종목(문턱 예외 추적 대상)의
+// 이름·시장을 채울 때 씀 — 랭킹 API처럼 필터링된 결과가 아니라 종목 단건 조회.
+export async function fetchBasic(ticker) {
+  const res = await fetch(
+    `https://m.stock.naver.com/api/stock/${ticker}/basic`,
+    { headers: { 'User-Agent': 'Mozilla/5.0', Referer: 'https://m.stock.naver.com/' } });
+  if (!res.ok) throw new Error(`basic ${res.status}`);
+  const j = await res.json();
+  const marketCode = j.stockExchangeType?.code; // 'KS' KOSPI / 'KQ' KOSDAQ
+  return {
+    ticker,
+    name: j.stockName ?? ticker,
+    market: marketCode === 'KQ' ? 'KOSDAQ' : 'KOSPI',
+    close: num(j.closePrice),
+  };
+}
+
 // /integration 한 콜 → 펀더멘털(PER/PBR/EPS) + 최근 수급(외국인·기관 순매수)
 export async function fetchIntegration(ticker) {
   const res = await fetch(

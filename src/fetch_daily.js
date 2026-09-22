@@ -14,9 +14,12 @@
 import { writeFile, readFile } from 'node:fs/promises';
 import { upsert, hasSupabase } from './lib/supabase.js';
 import { sampleHistory, TODAY } from './lib/sample.js';
-import { fetchUniverse, fetchBundleMany } from './lib/naver.js';
+import { fetchUniverse, fetchBundleMany, fetchBasic } from './lib/naver.js';
 import { resolveSectorNames } from './lib/sector.js';
 import { outPath } from './lib/paths.js';
+import { FORCE_TRACK_CODES } from './lib/force_track.js';
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const MODE = process.env.FETCH_MODE || 'sample';
 const MIN_CAP = Number(process.env.MIN_MARKET_CAP || 5e10);    // 500억
@@ -42,6 +45,27 @@ async function collectLive() {
   if (universe.length !== rawUniverse.length)
     console.log(`    중복 티커 ${rawUniverse.length - universe.length}건 제거`);
   console.log(`    유니버스 ${universe.length}종목 (시총 ${(MIN_CAP / 1e8).toFixed(0)}억↑, 상한 ${UNIVERSE_LIMIT})`);
+
+  // 1-1) 문턱 예외 추적 종목 (src/lib/force_track.js) — 시총·순위 무관하게
+  // 강제 포함. 이미 정규 유니버스에 들어있으면 중복 조회하지 않는다.
+  const missing = FORCE_TRACK_CODES.filter((t) => !seenT.has(t));
+  if (missing.length) {
+    console.log(`  · 문턱 예외 추적 종목 ${missing.length}개 조회…`);
+    for (const ticker of missing) {
+      try {
+        const b = await fetchBasic(ticker);
+        universe.push({
+          ticker, name: b.name, market: b.market,
+          sector: null, market_cap: null, close: b.close, is_active: true,
+        });
+        seenT.add(ticker);
+      } catch (e) {
+        console.warn(`    ! 문턱예외 ${ticker} 조회 실패: ${e.message}`);
+      }
+      await sleep(80);
+    }
+  }
+
   if (!universe.length) return { stocks: [], quotes: [], supply: [] };
 
   // 2) 종목별 [60일 시세 + 펀더(PER/PBR/EPS+영업이익률/ROE/부채) + 수급] 수집.
