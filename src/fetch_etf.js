@@ -12,16 +12,25 @@
 // 파이프라인엔 없는 ETF 고유 지표(NAV·괴리율·보수·추적오차·분배수익률·
 // 구성종목 top10·섹터/국가 비중)뿐이다 — 역할이 겹치지 않는다.
 //
-// Supabase 테이블 없음 — 새 스키마를 만들려면 Founder가 SQL Editor에서
-// 직접 실행해야 하는 수동 단계라(이 프로젝트의 다른 신규 테이블들과 동일
-// 패턴), 지금은 JSON 폴백만 저장한다. 나중에 테이블이 생기면 이 스크립트
-// 끝에 upsert 호출 한 줄만 추가하면 된다.
+// Supabase: 시세는 fetch_daily.js와 같은 daily_quotes 표에 그대로
+// upsert한다(같은 ticker/date/OHLCV 스키마 — 주식이냐 ETF냐로 구분할
+// 이유가 없다). daily_quotes.ticker가 stocks.ticker를 참조하는 외래키라서
+// (실측 확인, 2026-09-22) ETF도 먼저 stocks에 올려야 한다 — fetchUniverse()가
+// stockEndType!=='stock'을 걸러서 정규 스크리닝 유니버스엔 안 들어가지만,
+// stocks 표 자체엔 그런 제약이 없다.
+//
+// ETF 전용 지표(NAV 등)는 새 표 `etfs`가 필요해서 sql/etfs.sql을 Founder가
+// Supabase SQL Editor에서 한 번 실행해야 한다(다른 신규 표들과 동일한
+// 수동 단계). 표가 아직 없으면 그 upsert만 404로 실패하는데, stocks/
+// daily_quotes와 JSON 폴백은 그와 무관하게 먼저 저장되므로 SQL 실행 전에도
+// 이 스크립트 자체는 안전하다.
 //
 // 실행: node src/fetch_etf.js
 
 import { writeFile } from 'node:fs/promises';
 import { fetchEtfUniverse, fetchEtfBundleMany } from './lib/naver.js';
 import { outPath } from './lib/paths.js';
+import { upsert, hasSupabase } from './lib/supabase.js';
 
 const MIN_CAP = Number(process.env.ETF_MIN_MARKET_CAP || 1e10); // 100억
 const LIMIT = Number(process.env.ETF_UNIVERSE_LIMIT || 120);
@@ -50,7 +59,37 @@ async function main() {
   await writeFile(outPath('etfs.json'), JSON.stringify(etfs, null, 2));
   await writeFile(outPath('etf-quotes.json'), JSON.stringify(quotes, null, 2));
   console.log(`  종목 ${etfs.length} · 시세 ${quotes.length}`);
-  console.log('  ✓ JSON 저장 완료 (Supabase 테이블 없음 — 신설 시 이 스크립트 그대로 재사용 가능)');
+  console.log('  ✓ JSON 저장 완료');
+
+  if (hasSupabase) {
+    // daily_quotes.ticker는 stocks.ticker를 참조하는 외래키다(실측 확인,
+    // 2026-09-22) — ETF는 fetchUniverse()의 stocks 표에 원천 제외되므로
+    // 먼저 stocks에 ETF 행을 올려야 daily_quotes upsert가 통과한다.
+    const stockRows = universe.map((u) => ({
+      ticker: u.ticker, name: u.name, market: u.market,
+      sector: null, market_cap: u.market_cap ?? null, is_active: true,
+    }));
+    await upsert('stocks', stockRows);
+    await upsert('daily_quotes', quotes);
+    const etfRows = etfs.map((e) => ({
+      ticker: e.ticker, name: e.name, market: e.market, market_cap: e.market_cap ?? null,
+      issuer: e.issuer ?? null, base_index: e.baseIndex ?? null, listed_date: e.listedDate ?? null,
+      nav: e.nav ?? null, deviation: e.deviation ?? null, fee: e.fee ?? null, track_err: e.trackErr ?? null,
+      ret_1m: e.ret1m ?? null, ret_3m: e.ret3m ?? null, ret_1y: e.ret1y ?? null, div_yield: e.divYield ?? null,
+      top10: e.top10 ?? [], sectors: e.sectors ?? [], countries: e.countries ?? [],
+    }));
+    try {
+      await upsert('etfs', etfRows);
+      console.log('  ✓ Supabase upsert 완료 (daily_quotes + etfs)');
+    } catch (e) {
+      // sql/etfs.sql 이 아직 Supabase에서 실행되기 전이면 여기서 404로
+      // 떨어진다 — daily_quotes는 이미 위에서 별도로 upsert했으니 그건
+      // 안전하고, etfs 표만 못 쓸 뿐이라 JSON 폴백(etfs.json)으로 계속 확인 가능.
+      console.warn(`  ! etfs 표 upsert 실패 (sql/etfs.sql 미실행 가능성): ${e.message}`);
+    }
+  } else {
+    console.log('  (Supabase 키 없음 — JSON 폴백만)');
+  }
 }
 
 main().catch((e) => {
