@@ -1,11 +1,11 @@
 {
   "version": 3,
   "scope": "us",
-  "date": "2026-10-28",
-  "generated_at": "2026-10-29T01:40:33.449Z",
+  "date": "2026-10-29",
+  "generated_at": "2026-10-30T01:44:11.877Z",
   "market": {
     "regime": "strong",
-    "breadth": 69
+    "breadth": 75
   },
   "filter": {
     "minAmountEok": 100,
@@ -18,128 +18,80 @@
   "themeFlow": [
     {
       "sector": "헬스케어",
-      "heat": 56,
-      "prior": 38.4,
+      "heat": 85.4,
+      "prior": 39.2,
       "stage": "주도"
     },
     {
       "sector": "금융",
-      "heat": 35.5,
-      "prior": 25.8,
+      "heat": 35.9,
+      "prior": 25,
       "stage": "주도"
     },
     {
       "sector": "산업재",
-      "heat": 34.5,
-      "prior": 23.8,
+      "heat": 34.3,
+      "prior": 26.2,
       "stage": "주도"
     },
     {
       "sector": "IT/기술",
-      "heat": 29,
-      "prior": 13.2,
+      "heat": 28,
+      "prior": 15.2,
       "stage": "주도"
     },
     {
+      "sector": "소재",
+      "heat": 16.9,
+      "prior": 5.6,
+      "stage": "강화"
+    },
+    {
       "sector": "유틸리티",
-      "heat": 22.5,
-      "prior": 20.2,
+      "heat": 15.9,
+      "prior": 19,
       "stage": "이탈"
     },
     {
       "sector": "소비재(임의)",
-      "heat": 21,
-      "prior": 12.2,
-      "stage": "강화"
-    },
-    {
-      "sector": "소재",
-      "heat": 13.5,
-      "prior": 5.4,
-      "stage": "강화"
-    },
-    {
-      "sector": "필수소비재",
-      "heat": 12,
-      "prior": 10.2,
+      "heat": 12.3,
+      "prior": 12.6,
       "stage": "중립"
     },
     {
+      "sector": "필수소비재",
+      "heat": 7.5,
+      "prior": 9.4,
+      "stage": "중립"
+    },
+    {
+      "sector": "커뮤니케이션",
+      "heat": 7.5,
+      "prior": 4,
+      "stage": "강화"
+    },
+    {
       "sector": "에너지",
-      "heat": 10,
-      "prior": 15.6,
+      "heat": 4.5,
+      "prior": 14,
       "stage": "중립"
     },
     {
       "sector": "리츠/부동산",
-      "heat": 7.5,
-      "prior": 2.2,
-      "stage": "강화"
-    },
-    {
-      "sector": "커뮤니케이션",
       "heat": 3,
-      "prior": 3.4,
+      "prior": 3,
       "stage": "중립"
     }
   ],
   "focus": [
     {
-      "ticker": "EIX",
-      "name": "Edison International",
-      "sector": "유틸리티",
-      "market": "US",
-      "change": 1.1,
-      "amountEok": 2426,
-      "freshDays": 8,
-      "hits": [
-        "supply",
-        "steady"
-      ],
-      "reasons": [
-        "매집 프록시 — 20일 CMF +0.45 (고가권 마감 + 거래량 동반)",
-        "상승일 거래량이 하락일의 1.7배",
-        "OBV 상승 추세",
-        "60일 저가권 — 바닥 매집 추정"
-      ],
-      "entry": 58.83000183105469,
-      "stop": 56,
-      "stopPct": -4.8,
-      "target": 68,
-      "targetPct": 15.6
-    },
-    {
-      "ticker": "PYPL",
-      "name": "PayPal",
-      "sector": "금융",
-      "market": "US",
-      "change": 0.8,
-      "amountEok": 8530,
-      "freshDays": 1,
-      "hits": [
-        "supply",
-        "steady"
-      ],
-      "reasons": [
-        "매집 프록시 — 20일 CMF +0.35 (고가권 마감 + 거래량 동반)",
-        "상승일 거래량이 하락일의 1.9배",
-        "OBV 상승 추세",
-        "장기 매집 프록시 — 60일 CMF +0.12 · OBV 상승 지속"
-      ],
-      "entry": 56.54999923706055,
-      "stop": 56,
-      "stopPct": -1,
-      "target": 62,
-      "targetPct": 9.6
-    },
-    {
       "ticker": "PGR",
       "name": "Progressive Corporation",
       "sector": "금융",
       "market": "US",
-      "change": 0,
-      "amountEok": 5096,
-      "freshDays": 4,
+      "change": 2,
+      "amountEok": 5649,
+      "freshDays": 5,
       "hits": [
         "supply",
         "steady"
@@ -148,43 +100,121 @@
         "매집 프록시 — 20일 CMF +0.39 (고가권 마감 + 거래량 동반)",
         "상승일 거래량이 하락일의 1.6배",
         "OBV 상승 추세",
-        "장기 매집 프록시 — 60일 CMF +0.15 · OBV 상승 지속"
+        "장기 매집 프록시 — 60일 CMF +0.16 · OBV 상승 지속"
       ],
-      "entry": 225.66000366210938,
-      "stop": 219,
-      "stopPct": -3,
-      "target": 248,
+      "entry": 230.17999267578125,
+      "stop": 220,
+      "stopPct": -4.4,
+      "target": 253,
       "targetPct": 9.9
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal",
+      "sector": "금융",
+      "market": "US",
+      "change": 0.7,
+      "amountEok": 7490,
+      "freshDays": 2,
+      "hits": [
+        "supply",
+        "steady"
+      ],
+      "reasons": [
+        "매집 프록시 — 20일 CMF +0.36 (고가권 마감 + 거래량 동반)",
+        "상승일 거래량이 하락일의 1.9배",
+        "OBV 상승 추세",
+        "장기 매집 프록시 — 60일 CMF +0.13 · OBV 상승 지속"
+      ],
+      "entry": 56.95000076293945,
+      "stop": 56,
+      "stopPct": -1.7,
+      "target": 62,
+      "targetPct": 8.9
+    },
+    {
+      "ticker": "WM",
+      "name": "Waste Management",
+      "sector": "산업재",
+      "market": "US",
+      "change": 2.6,
+      "amountEok": 8809,
+      "freshDays": 1,
+      "hits": [
+        "supply"
+      ],
+      "reasons": [
+        "매집 프록시 — 20일 CMF +0.36 (고가권 마감 + 거래량 동반)",
+        "상승일 거래량이 하락일의 3.0배",
+        "OBV 상승 추세"
+      ],
+      "entry": 230.89999389648438,
+      "stop": 222,
+      "stopPct": -3.9,
+      "target": 241,
+      "targetPct": 4.4
     }
   ],
   "lists": {
     "supply": [
       {
+        "ticker": "DOV",
+        "name": "Dover Corporation",
+        "market": "US",
+        "sector": "산업재",
+        "change": 1.1,
+        "amountEok": 4381,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.29 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 4.2배",
+          "OBV 상승 추세"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 2
+      },
+      {
         "ticker": "EXC",
         "name": "Exelon",
         "market": "US",
         "sector": "유틸리티",
-        "change": 0.2,
-        "amountEok": 7249,
+        "change": 2.5,
+        "amountEok": 6405,
         "reasons": [
-          "매집 프록시 — 20일 CMF +0.28 (고가권 마감 + 거래량 동반)",
+          "매집 프록시 — 20일 CMF +0.27 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 4.4배",
           "OBV 상승 추세"
         ],
         "grade": "A",
         "warn": false,
-        "freshDays": 1
+        "freshDays": 2
       },
       {
-        "ticker": "DOV",
-        "name": "Dover Corporation",
+        "ticker": "APD",
+        "name": "Air Products",
+        "market": "US",
+        "sector": "소재",
+        "change": 1.5,
+        "amountEok": 5356,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.33 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 3.7배",
+          "OBV 상승 추세"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 2
+      },
+      {
+        "ticker": "WM",
+        "name": "Waste Management",
         "market": "US",
         "sector": "산업재",
-        "change": 0.9,
-        "amountEok": 4360,
+        "change": 2.6,
+        "amountEok": 8809,
         "reasons": [
-          "매집 프록시 — 20일 CMF +0.26 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 4.1배",
+          "매집 프록시 — 20일 CMF +0.36 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 3.0배",
           "OBV 상승 추세"
         ],
         "grade": "A",
@@ -196,44 +226,11 @@
         "name": "Ball Corporation",
         "market": "US",
         "sector": "소재",
-        "change": -1.3,
-        "amountEok": 1929,
+        "change": 2,
+        "amountEok": 1295,
         "reasons": [
-          "매집 프록시 — 20일 CMF +0.33 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 3.3배",
-          "OBV 상승 추세"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 3
-      },
-      {
-        "ticker": "EIX",
-        "name": "Edison International",
-        "market": "US",
-        "sector": "유틸리티",
-        "change": 1.1,
-        "amountEok": 2426,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.45 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 1.7배",
-          "OBV 상승 추세",
-          "60일 저가권 — 바닥 매집 추정"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 8
-      },
-      {
-        "ticker": "CSX",
-        "name": "CSX Corporation",
-        "market": "US",
-        "sector": "산업재",
-        "change": -0.6,
-        "amountEok": 6503,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.33 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 2.7배",
+          "매집 프록시 — 20일 CMF +0.32 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 3.1배",
           "OBV 상승 추세"
         ],
         "grade": "A",
@@ -241,47 +238,128 @@
         "freshDays": 4
       },
       {
-        "ticker": "XEL",
-        "name": "Xcel Energy",
+        "ticker": "CHD",
+        "name": "Church & Dwight",
         "market": "US",
-        "sector": "유틸리티",
-        "change": -1.2,
-        "amountEok": 5285,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.32 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 2.7배",
-          "OBV 상승 추세"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 8
-      },
-      {
-        "ticker": "CME",
-        "name": "CME Group",
-        "market": "US",
-        "sector": "금융",
-        "change": 0.2,
-        "amountEok": 5125,
+        "sector": "필수소비재",
+        "change": 1.2,
+        "amountEok": 3554,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.28 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 3.0배",
+          "상승일 거래량이 하락일의 3.5배",
           "OBV 상승 추세"
         ],
         "grade": "A",
         "warn": false,
-        "freshDays": 1
+        "freshDays": 2
       },
       {
         "ticker": "LHX",
         "name": "L3Harris",
         "market": "US",
         "sector": "산업재",
-        "change": 0.5,
-        "amountEok": 5840,
+        "change": 6.8,
+        "amountEok": 12699,
         "reasons": [
-          "매집 프록시 — 20일 CMF +0.33 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 2.5배",
+          "매집 프록시 — 20일 CMF +0.36 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 2.7배",
+          "OBV 상승 추세"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 4
+      },
+      {
+        "ticker": "DIS",
+        "name": "Walt Disney Company (The)",
+        "market": "US",
+        "sector": "커뮤니케이션",
+        "change": 1.7,
+        "amountEok": 9000,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.34 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 2.8배",
+          "OBV 상승 추세"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "EIX",
+        "name": "Edison International",
+        "market": "US",
+        "sector": "유틸리티",
+        "change": 0.9,
+        "amountEok": 1804,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.44 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 1.7배",
+          "OBV 상승 추세",
+          "60일 저가권 — 바닥 매집 추정"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 9
+      },
+      {
+        "ticker": "XEL",
+        "name": "Xcel Energy",
+        "market": "US",
+        "sector": "유틸리티",
+        "change": 2.4,
+        "amountEok": 6940,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.32 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 2.7배",
+          "OBV 상승 추세"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 9
+      },
+      {
+        "ticker": "CME",
+        "name": "CME Group",
+        "market": "US",
+        "sector": "금융",
+        "change": 0.8,
+        "amountEok": 8719,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.29 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 3.0배",
+          "OBV 상승 추세"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 2
+      },
+      {
+        "ticker": "V",
+        "name": "Visa Inc.",
+        "market": "US",
+        "sector": "금융",
+        "change": 2.5,
+        "amountEok": 42245,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.31 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 2.7배",
+          "OBV 상승 추세"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 2
+      },
+      {
+        "ticker": "MRSH",
+        "name": "Marsh McLennan",
+        "market": "US",
+        "sector": "금융",
+        "change": 2.5,
+        "amountEok": 6363,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.27 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 3.0배",
           "OBV 상승 추세"
         ],
         "grade": "A",
@@ -289,12 +367,28 @@
         "freshDays": 3
       },
       {
-        "ticker": "APD",
-        "name": "Air Products",
+        "ticker": "CSX",
+        "name": "CSX Corporation",
         "market": "US",
-        "sector": "소재",
-        "change": 0,
-        "amountEok": 3423,
+        "sector": "산업재",
+        "change": 0.5,
+        "amountEok": 9169,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.29 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 2.7배",
+          "OBV 상승 추세"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 5
+      },
+      {
+        "ticker": "RL",
+        "name": "Ralph Lauren Corporation",
+        "market": "US",
+        "sector": "소비재(임의)",
+        "change": 2.8,
+        "amountEok": 3600,
         "reasons": [
           "매집 프록시 — 20일 CMF +0.32 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 2.4배",
@@ -302,146 +396,33 @@
         ],
         "grade": "A",
         "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "MRSH",
-        "name": "Marsh McLennan",
-        "market": "US",
-        "sector": "금융",
-        "change": 0.9,
-        "amountEok": 6152,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.26 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 3.0배",
-          "OBV 상승 추세"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 2
-      },
-      {
-        "ticker": "PGR",
-        "name": "Progressive Corporation",
-        "market": "US",
-        "sector": "금융",
-        "change": 0,
-        "amountEok": 5096,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.39 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 1.6배",
-          "OBV 상승 추세"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 4
-      },
-      {
-        "ticker": "NSC",
-        "name": "Norfolk Southern",
-        "market": "US",
-        "sector": "산업재",
-        "change": -0.5,
-        "amountEok": 3660,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.26 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 3.0배",
-          "OBV 상승 추세"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 2
-      },
-      {
-        "ticker": "SWK",
-        "name": "Stanley Black & Decker",
-        "market": "US",
-        "sector": "산업재",
-        "change": 1.1,
-        "amountEok": 2206,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.34 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 2.1배",
-          "OBV 상승 추세"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "PEG",
-        "name": "Public Service Enterprise Group",
-        "market": "US",
-        "sector": "유틸리티",
-        "change": -0.5,
-        "amountEok": 2030,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.25 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 2.9배",
-          "OBV 상승 추세"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 4
+        "freshDays": 17
       },
       {
         "ticker": "PYPL",
         "name": "PayPal",
         "market": "US",
         "sector": "금융",
-        "change": 0.8,
-        "amountEok": 8530,
+        "change": 0.7,
+        "amountEok": 7490,
         "reasons": [
-          "매집 프록시 — 20일 CMF +0.35 (고가권 마감 + 거래량 동반)",
+          "매집 프록시 — 20일 CMF +0.36 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 1.9배",
           "OBV 상승 추세"
         ],
         "grade": "A",
         "warn": false,
-        "freshDays": 1
+        "freshDays": 2
       },
       {
-        "ticker": "RL",
-        "name": "Ralph Lauren Corporation",
+        "ticker": "ZTS",
+        "name": "Zoetis",
         "market": "US",
-        "sector": "소비재(임의)",
-        "change": -0.4,
-        "amountEok": 2316,
+        "sector": "헬스케어",
+        "change": 1.3,
+        "amountEok": 3094,
         "reasons": [
-          "매집 프록시 — 20일 CMF +0.30 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 2.4배",
-          "OBV 상승 추세"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 16
-      },
-      {
-        "ticker": "DLR",
-        "name": "Digital Realty",
-        "market": "US",
-        "sector": "리츠/부동산",
-        "change": 0.4,
-        "amountEok": 7212,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.27 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 2.7배",
-          "OBV 상승 추세",
-          "60일 저가권 — 바닥 매집 추정"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "V",
-        "name": "Visa Inc.",
-        "market": "US",
-        "sector": "금융",
-        "change": -0.3,
-        "amountEok": 37249,
-        "reasons": [
-          "매집 프록시 — 20일 CMF +0.27 (고가권 마감 + 거래량 동반)",
+          "매집 프록시 — 20일 CMF +0.29 (고가권 마감 + 거래량 동반)",
           "상승일 거래량이 하락일의 2.6배",
           "OBV 상승 추세"
         ],
@@ -450,15 +431,15 @@
         "freshDays": 1
       },
       {
-        "ticker": "CHD",
-        "name": "Church & Dwight",
+        "ticker": "FERG",
+        "name": "Ferguson Enterprises",
         "market": "US",
-        "sector": "필수소비재",
-        "change": -0.2,
-        "amountEok": 2130,
+        "sector": "산업재",
+        "change": 4.2,
+        "amountEok": 3060,
         "reasons": [
-          "매집 프록시 — 20일 CMF +0.27 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 2.5배",
+          "매집 프록시 — 20일 CMF +0.22 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 3.3배",
           "OBV 상승 추세"
         ],
         "grade": "A",
@@ -466,15 +447,31 @@
         "freshDays": 1
       },
       {
-        "ticker": "HAL",
-        "name": "Halliburton",
+        "ticker": "PGR",
+        "name": "Progressive Corporation",
         "market": "US",
-        "sector": "에너지",
-        "change": 0.4,
-        "amountEok": 5959,
+        "sector": "금융",
+        "change": 2,
+        "amountEok": 5649,
         "reasons": [
-          "매집 프록시 — 20일 CMF +0.30 (고가권 마감 + 거래량 동반)",
-          "상승일 거래량이 하락일의 2.2배",
+          "매집 프록시 — 20일 CMF +0.39 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 1.6배",
+          "OBV 상승 추세"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 5
+      },
+      {
+        "ticker": "CRH",
+        "name": "CRH plc",
+        "market": "US",
+        "sector": "소재",
+        "change": 4.7,
+        "amountEok": 12912,
+        "reasons": [
+          "매집 프록시 — 20일 CMF +0.27 (고가권 마감 + 거래량 동반)",
+          "상승일 거래량이 하락일의 2.8배",
           "OBV 상승 추세"
         ],
         "grade": "A",
@@ -484,17 +481,96 @@
     ],
     "trend": [
       {
-        "ticker": "ADI",
-        "name": "Analog Devices",
+        "ticker": "STLD",
+        "name": "Steel Dynamics",
         "market": "US",
-        "sector": "IT/기술",
-        "change": 0.7,
-        "amountEok": 22186,
+        "sector": "소재",
+        "change": 1.4,
+        "amountEok": 2854,
         "reasons": [
           "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
           "정배열 진입",
-          "5/20 골든크로스",
-          "60일 신고가",
+          "5/10 골든크로스",
+          "BB 수축→상단돌파"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "ECHO",
+        "name": "EchoStar",
+        "market": "US",
+        "sector": "커뮤니케이션",
+        "change": 3.6,
+        "amountEok": 7847,
+        "reasons": [
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
+          "정배열 진입",
+          "5/20 골든크로스"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "ROK",
+        "name": "Rockwell Automation",
+        "market": "US",
+        "sector": "산업재",
+        "change": 1.7,
+        "amountEok": 3600,
+        "reasons": [
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
+          "정배열 진입",
+          "5/20 골든크로스"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "TEL",
+        "name": "TE Connectivity",
+        "market": "US",
+        "sector": "IT/기술",
+        "change": 0.7,
+        "amountEok": 5816,
+        "reasons": [
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
+          "정배열 진입",
+          "5/20 골든크로스"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "LUV",
+        "name": "Southwest Airlines",
+        "market": "US",
+        "sector": "AI/반도체",
+        "change": 0.5,
+        "amountEok": 2749,
+        "reasons": [
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
+          "정배열 진입",
+          "10/20 골든크로스"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "ILMN",
+        "name": "Illumina, Inc.",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": 0.4,
+        "amountEok": 7860,
+        "reasons": [
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
+          "10/20 골든크로스",
           "MACD 골든크로스"
         ],
         "grade": "A",
@@ -502,17 +578,60 @@
         "freshDays": 1
       },
       {
-        "ticker": "CRWD",
-        "name": "CrowdStrike",
+        "ticker": "DVA",
+        "name": "DaVita",
         "market": "US",
-        "sector": "IT/기술",
-        "change": -0.5,
-        "amountEok": 26631,
+        "sector": "헬스케어",
+        "change": 5.1,
+        "amountEok": 5369,
         "reasons": [
           "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
-          "정배열 진입",
-          "5/20 골든크로스",
+          "BB 수축→상단돌파"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 2
+      },
+      {
+        "ticker": "RCL",
+        "name": "Royal Caribbean Group",
+        "market": "US",
+        "sector": "소비재(임의)",
+        "change": 4.1,
+        "amountEok": 11225,
+        "reasons": [
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
+          "BB 수축→상단돌파"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 2
+      },
+      {
+        "ticker": "ICE",
+        "name": "Intercontinental Exchange",
+        "market": "US",
+        "sector": "금융",
+        "change": 4.5,
+        "amountEok": 12965,
+        "reasons": [
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
           "MACD 골든크로스"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "MDT",
+        "name": "Medtronic",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": 2.5,
+        "amountEok": 12176,
+        "reasons": [
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
+          "60일 신고가"
         ],
         "grade": "A",
         "warn": false,
@@ -523,27 +642,40 @@
         "name": "Microchip Technology",
         "market": "US",
         "sector": "IT/기술",
-        "change": -0.7,
-        "amountEok": 9886,
+        "change": 1.9,
+        "amountEok": 8634,
         "reasons": [
           "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
-          "정배열 진입",
-          "5/20 골든크로스"
+          "10/20 골든크로스"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 2
+      },
+      {
+        "ticker": "QCOM",
+        "name": "Qualcomm",
+        "market": "US",
+        "sector": "IT/기술",
+        "change": 1.3,
+        "amountEok": 20280,
+        "reasons": [
+          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
+          "10/20 골든크로스"
         ],
         "grade": "A",
         "warn": false,
         "freshDays": 1
       },
       {
-        "ticker": "TXN",
-        "name": "Texas Instruments",
+        "ticker": "ADI",
+        "name": "Analog Devices",
         "market": "US",
         "sector": "IT/기술",
-        "change": 0.3,
-        "amountEok": 30377,
+        "change": 1.2,
+        "amountEok": 18186,
         "reasons": [
           "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
-          "BB 수축→상단돌파",
           "60일 신고가"
         ],
         "grade": "A",
@@ -551,42 +683,12 @@
         "freshDays": 2
       },
       {
-        "ticker": "CCL",
-        "name": "Carnival Corporation",
+        "ticker": "AES",
+        "name": "AES Corporation",
         "market": "US",
-        "sector": "소비재(임의)",
-        "change": 1.2,
-        "amountEok": 5813,
-        "reasons": [
-          "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)",
-          "BB 수축→상단돌파"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "RCL",
-        "name": "Royal Caribbean Group",
-        "market": "US",
-        "sector": "소비재(임의)",
-        "change": 0.8,
-        "amountEok": 9661,
-        "reasons": [
-          "역배열→정배열 전환 + 이평선 지지 확인 후 반등",
-          "BB 수축→상단돌파"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "A",
-        "name": "Agilent Technologies",
-        "market": "US",
-        "sector": "헬스케어",
-        "change": 2.2,
-        "amountEok": 3751,
+        "sector": "유틸리티",
+        "change": 0.5,
+        "amountEok": 1806,
         "reasons": [
           "추세 신호 발생",
           "BB 수축→상단돌파",
@@ -598,42 +700,29 @@
         "freshDays": 1
       },
       {
-        "ticker": "HCA",
-        "name": "HCA Healthcare",
+        "ticker": "IRM",
+        "name": "Iron Mountain",
         "market": "US",
-        "sector": "헬스케어",
-        "change": 2.9,
-        "amountEok": 13161,
+        "sector": "AI/반도체",
+        "change": 2.3,
+        "amountEok": 1602,
         "reasons": [
-          "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)",
-          "5/10 골든크로스"
+          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
+          "5/20 골든크로스",
+          "BB 수축→상단돌파",
+          "20일선 위 안착"
         ],
-        "grade": "A",
+        "grade": "B",
         "warn": false,
         "freshDays": 1
       },
       {
-        "ticker": "PM",
-        "name": "Philip Morris International",
+        "ticker": "JCI",
+        "name": "Johnson Controls",
         "market": "US",
-        "sector": "필수소비재",
-        "change": 0,
-        "amountEok": 9014,
-        "reasons": [
-          "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)",
-          "5/10 골든크로스"
-        ],
-        "grade": "A",
-        "warn": false,
-        "freshDays": 2
-      },
-      {
-        "ticker": "DDOG",
-        "name": "Datadog",
-        "market": "US",
-        "sector": "IT/기술",
-        "change": -0.9,
-        "amountEok": 9321,
+        "sector": "산업재",
+        "change": 0.6,
+        "amountEok": 7080,
         "reasons": [
           "정배열 전환 직후 — 지지 확인 전 초기 단계",
           "정배열 진입",
@@ -644,264 +733,132 @@
         "freshDays": 1
       },
       {
-        "ticker": "GS",
-        "name": "Goldman Sachs",
+        "ticker": "PANW",
+        "name": "Palo Alto Networks",
         "market": "US",
-        "sector": "금융",
-        "change": 1.5,
-        "amountEok": 23387,
+        "sector": "IT/기술",
+        "change": -3.5,
+        "amountEok": 37495,
         "reasons": [
-          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
-          "10/20 골든크로스",
-          "BB 수축→상단돌파",
-          "20일선 위 안착"
+          "정배열 전환 직후 — 지지 확인 전 초기 단계",
+          "정배열 진입",
+          "5/20 골든크로스"
         ],
         "grade": "B",
         "warn": false,
         "freshDays": 1
       },
       {
-        "ticker": "EMR",
-        "name": "Emerson Electric",
+        "ticker": "TYL",
+        "name": "Tyler Technologies",
         "market": "US",
-        "sector": "산업재",
-        "change": 0.9,
-        "amountEok": 6024,
-        "reasons": [
-          "추세 신호 발생",
-          "BB 수축→상단돌파",
-          "60일 신고가"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "RL",
-        "name": "Ralph Lauren Corporation",
-        "market": "US",
-        "sector": "소비재(임의)",
-        "change": -0.4,
-        "amountEok": 2316,
+        "sector": "IT/기술",
+        "change": 3.6,
+        "amountEok": 8985,
         "reasons": [
           "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)"
         ],
         "grade": "A",
         "warn": false,
-        "freshDays": 2
+        "freshDays": 1
       },
       {
-        "ticker": "DVA",
-        "name": "DaVita",
+        "ticker": "DG",
+        "name": "Dollar General",
+        "market": "US",
+        "sector": "필수소비재",
+        "change": 3.1,
+        "amountEok": 3403,
+        "reasons": [
+          "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)"
+        ],
+        "grade": "A",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "CAH",
+        "name": "Cardinal Health",
         "market": "US",
         "sector": "헬스케어",
-        "change": 1.2,
-        "amountEok": 1068,
+        "change": 2.6,
+        "amountEok": 5841,
         "reasons": [
-          "정배열 전환 직후 — 지지 확인 전 초기 단계",
-          "정배열 진입",
-          "5/10 골든크로스"
+          "추세 지속 중 조정 → 20일선 지지 반등 (눌림목)"
         ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "VRT",
-        "name": "Vertiv",
-        "market": "US",
-        "sector": "산업재",
-        "change": 16.5,
-        "amountEok": 63183,
-        "reasons": [
-          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
-          "RSI 과매도 탈출",
-          "MACD 골든크로스",
-          "20일선 위 안착"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "ORCL",
-        "name": "Oracle Corporation",
-        "market": "US",
-        "sector": "IT/기술",
-        "change": 10.7,
-        "amountEok": 156870,
-        "reasons": [
-          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
-          "5/10 골든크로스",
-          "MACD 골든크로스",
-          "20일선 위 안착"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "NCLH",
-        "name": "Norwegian Cruise Line Holdings",
-        "market": "US",
-        "sector": "소비재(임의)",
-        "change": 2,
-        "amountEok": 4072,
-        "reasons": [
-          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
-          "BB 수축→상단돌파",
-          "20일선 위 안착"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "VRSK",
-        "name": "Verisk Analytics",
-        "market": "US",
-        "sector": "산업재",
-        "change": 1.1,
-        "amountEok": 2328,
-        "reasons": [
-          "정배열 전환 직후 — 지지 확인 전 초기 단계",
-          "정배열 진입"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "JPM",
-        "name": "JPMorgan Chase",
-        "market": "US",
-        "sector": "금융",
-        "change": 1,
-        "amountEok": 23616,
-        "reasons": [
-          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
-          "BB 수축→상단돌파",
-          "20일선 위 안착"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "JNJ",
-        "name": "Johnson & Johnson",
-        "market": "US",
-        "sector": "헬스케어",
-        "change": 0.9,
-        "amountEok": 23096,
-        "reasons": [
-          "역배열 속 20일선 돌파 — 전환 시도, 60일선 확인 필요",
-          "BB 수축→상단돌파",
-          "20일선 위 안착"
-        ],
-        "grade": "B",
+        "grade": "A",
         "warn": false,
         "freshDays": 1
       }
     ],
     "volume": [
       {
-        "ticker": "VRT",
-        "name": "Vertiv",
-        "market": "US",
-        "sector": "산업재",
-        "change": 16.5,
-        "amountEok": 63183,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 3.7배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "ORCL",
-        "name": "Oracle Corporation",
-        "market": "US",
-        "sector": "IT/기술",
-        "change": 10.7,
-        "amountEok": 156870,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 3.2배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "FLEX",
-        "name": "Flex Ltd.",
-        "market": "US",
-        "sector": "IT/기술",
-        "change": 11.6,
-        "amountEok": 16266,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2.5배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "IEX",
-        "name": "IDEX Corporation",
-        "market": "US",
-        "sector": "산업재",
-        "change": 2.3,
-        "amountEok": 5203,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2.4배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "GOOGL",
-        "name": "Alphabet Inc. (Class A)",
-        "market": "US",
-        "sector": "커뮤니케이션",
-        "change": 1.3,
-        "amountEok": 261123,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2.4배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "GNRC",
-        "name": "Generac",
-        "market": "US",
-        "sector": "산업재",
-        "change": 3.9,
-        "amountEok": 6345,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2.2배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "BAX",
-        "name": "Baxter International",
+        "ticker": "DVA",
+        "name": "DaVita",
         "market": "US",
         "sector": "헬스케어",
-        "change": 2.2,
-        "amountEok": 4220,
+        "change": 5.1,
+        "amountEok": 5369,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 3.5배"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "TYL",
+        "name": "Tyler Technologies",
+        "market": "US",
+        "sector": "IT/기술",
+        "change": 3.6,
+        "amountEok": 8985,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 2.9배"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "DASH",
+        "name": "DoorDash",
+        "market": "US",
+        "sector": "소비재(임의)",
+        "change": 5.6,
+        "amountEok": 23570,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 2.7배"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "RTX",
+        "name": "RTX Corporation",
+        "market": "US",
+        "sector": "산업재",
+        "change": 1.8,
+        "amountEok": 31231,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 2.4배"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "MGM",
+        "name": "MGM Resorts",
+        "market": "US",
+        "sector": "소비재(임의)",
+        "change": 5.7,
+        "amountEok": 4296,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 2.2배"
@@ -911,27 +868,12 @@
         "freshDays": 1
       },
       {
-        "ticker": "WELL",
-        "name": "Welltower",
+        "ticker": "IR",
+        "name": "Ingersoll Rand",
         "market": "US",
-        "sector": "리츠/부동산",
-        "change": 0.2,
-        "amountEok": 17717,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2.2배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "BXP",
-        "name": "BXP, Inc.",
-        "market": "US",
-        "sector": "리츠/부동산",
-        "change": 1,
-        "amountEok": 2223,
+        "sector": "산업재",
+        "change": 6,
+        "amountEok": 9044,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 2.1배"
@@ -941,117 +883,72 @@
         "freshDays": 1
       },
       {
-        "ticker": "ECHO",
-        "name": "EchoStar",
+        "ticker": "ICE",
+        "name": "Intercontinental Exchange",
         "market": "US",
-        "sector": "커뮤니케이션",
-        "change": 4.3,
-        "amountEok": 9904,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "GOOG",
-        "name": "Alphabet Inc. (Class C)",
-        "market": "US",
-        "sector": "커뮤니케이션",
-        "change": 1.6,
-        "amountEok": 143146,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "NXPI",
-        "name": "NXP Semiconductors",
-        "market": "US",
-        "sector": "IT/기술",
-        "change": -0.7,
-        "amountEok": 31134,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2.8배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "UHS",
-        "name": "Universal Health Services",
-        "market": "US",
-        "sector": "헬스케어",
-        "change": -2.9,
-        "amountEok": 3466,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2.6배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "TEL",
-        "name": "TE Connectivity",
-        "market": "US",
-        "sector": "IT/기술",
-        "change": -1.8,
-        "amountEok": 13022,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2.4배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "GEV",
-        "name": "GE Vernova",
-        "market": "US",
-        "sector": "산업재",
-        "change": -1.9,
-        "amountEok": 71641,
-        "reasons": [
-          "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2.2배"
-        ],
-        "grade": "B",
-        "warn": false,
-        "freshDays": 1
-      },
-      {
-        "ticker": "EQT",
-        "name": "EQT Corporation",
-        "market": "US",
-        "sector": "에너지",
-        "change": -0.1,
-        "amountEok": 12424,
+        "sector": "금융",
+        "change": 4.5,
+        "amountEok": 12965,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 2.1배"
         ],
         "grade": "B",
         "warn": false,
-        "freshDays": 2
+        "freshDays": 1
       },
       {
-        "ticker": "ARE",
-        "name": "Alexandria Real Estate Equities",
+        "ticker": "EBAY",
+        "name": "eBay Inc.",
+        "market": "US",
+        "sector": "소비재(임의)",
+        "change": 2.7,
+        "amountEok": 12013,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 2.1배"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "FFIV",
+        "name": "F5, Inc.",
+        "market": "US",
+        "sector": "IT/기술",
+        "change": -0.6,
+        "amountEok": 10196,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 2.3배"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "ORLY",
+        "name": "O'Reilly Automotive",
+        "market": "US",
+        "sector": "소비재(임의)",
+        "change": -2.6,
+        "amountEok": 14131,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 2.3배"
+        ],
+        "grade": "B",
+        "warn": false,
+        "freshDays": 1
+      },
+      {
+        "ticker": "INVH",
+        "name": "Invitation Homes",
         "market": "US",
         "sector": "리츠/부동산",
-        "change": -2.3,
-        "amountEok": 2980,
+        "change": -0.4,
+        "amountEok": 3845,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 2.1배"
@@ -1065,14 +962,95 @@
         "name": "Carrier Global",
         "market": "US",
         "sector": "산업재",
-        "change": -2.7,
-        "amountEok": 7851,
+        "change": -1.3,
+        "amountEok": 8134,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
           "거래대금 평소 2.1배"
         ],
         "grade": "B",
         "warn": false,
+        "freshDays": 2
+      },
+      {
+        "ticker": "EG",
+        "name": "Everest Group",
+        "market": "US",
+        "sector": "금융",
+        "change": 3.5,
+        "amountEok": 9053,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 5.2배",
+          "⚠ 과열 구간 (RSI 72) — 추격 주의"
+        ],
+        "grade": "C",
+        "warn": true,
+        "freshDays": 1
+      },
+      {
+        "ticker": "NCLH",
+        "name": "Norwegian Cruise Line Holdings",
+        "market": "US",
+        "sector": "소비재(임의)",
+        "change": 13.4,
+        "amountEok": 16559,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 4.1배",
+          "⚠ 과열 구간 (RSI 73) — 추격 주의"
+        ],
+        "grade": "C",
+        "warn": true,
+        "freshDays": 1
+      },
+      {
+        "ticker": "HII",
+        "name": "Huntington Ingalls Industries",
+        "market": "US",
+        "sector": "산업재",
+        "change": 13.2,
+        "amountEok": 7220,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 3.8배",
+          "⚠ 과열 구간 (RSI 81) — 추격 주의"
+        ],
+        "grade": "C",
+        "warn": true,
+        "freshDays": 1
+      },
+      {
+        "ticker": "WST",
+        "name": "West Pharmaceutical Services",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": 3.2,
+        "amountEok": 10438,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 3.8배",
+          "⚠ 과열 구간 (RSI 96) — 추격 주의",
+          "60일 신고가"
+        ],
+        "grade": "C",
+        "warn": true,
+        "freshDays": 1
+      },
+      {
+        "ticker": "TXT",
+        "name": "Textron",
+        "market": "US",
+        "sector": "산업재",
+        "change": 11.7,
+        "amountEok": 5011,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 3.1배",
+          "⚠ 과열 구간 (RSI 84) — 추격 주의"
+        ],
+        "grade": "C",
+        "warn": true,
         "freshDays": 1
       },
       {
@@ -1080,209 +1058,318 @@
         "name": "Carvana",
         "market": "US",
         "sector": "소비재(임의)",
-        "change": -0.3,
-        "amountEok": 13167,
+        "change": 15.7,
+        "amountEok": 21204,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2배"
+          "거래대금 평소 3배",
+          "⚠ 과열 구간 (RSI 58) — 추격 주의"
         ],
-        "grade": "B",
-        "warn": false,
+        "grade": "C",
+        "warn": true,
+        "freshDays": 2
+      },
+      {
+        "ticker": "WEC",
+        "name": "WEC Energy Group",
+        "market": "US",
+        "sector": "유틸리티",
+        "change": 3.7,
+        "amountEok": 10018,
+        "reasons": [
+          "주체 불분명 폭발 — 수급 확인 필요",
+          "거래대금 평소 2.9배",
+          "⚠ 과열 구간 (RSI 77) — 추격 주의",
+          "60일 신고가"
+        ],
+        "grade": "C",
+        "warn": true,
         "freshDays": 1
       },
       {
-        "ticker": "BA",
-        "name": "Boeing",
+        "ticker": "VMC",
+        "name": "Vulcan Materials Company",
         "market": "US",
-        "sector": "산업재",
-        "change": -0.6,
-        "amountEok": 46718,
+        "sector": "소재",
+        "change": 5.8,
+        "amountEok": 10620,
         "reasons": [
           "주체 불분명 폭발 — 수급 확인 필요",
-          "거래대금 평소 2배"
+          "거래대금 평소 2.6배",
+          "⚠ 과열 구간 (RSI 81) — 추격 주의"
         ],
-        "grade": "B",
-        "warn": false,
+        "grade": "C",
+        "warn": true,
         "freshDays": 1
       }
     ],
     "steady": [
       {
-        "ticker": "TMO",
-        "name": "Thermo Fisher Scientific",
-        "market": "US",
-        "sector": "헬스케어",
-        "change": 1.6,
-        "amountEok": 15465,
-        "grade": "A",
-        "warn": false,
-        "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.27 · OBV 상승 지속",
-          "상승일 거래량 우위 1.7배"
-        ],
-        "freshDays": 31
-      },
-      {
         "ticker": "MRNA",
         "name": "Moderna",
         "market": "US",
         "sector": "헬스케어",
-        "change": 3,
-        "amountEok": 34327,
+        "change": 4,
+        "amountEok": 32111,
+        "grade": "A",
+        "warn": false,
+        "reasons": [
+          "장기 매집 프록시 — 60일 CMF +0.27 · OBV 상승 지속",
+          "상승일 거래량 우위 1.8배"
+        ],
+        "freshDays": 25
+      },
+      {
+        "ticker": "TMO",
+        "name": "Thermo Fisher Scientific",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": 0.7,
+        "amountEok": 13968,
         "grade": "A",
         "warn": false,
         "reasons": [
           "장기 매집 프록시 — 60일 CMF +0.26 · OBV 상승 지속",
-          "상승일 거래량 우위 1.5배"
+          "상승일 거래량 우위 2.1배"
         ],
-        "freshDays": 24
+        "freshDays": 31
       },
       {
         "ticker": "A",
         "name": "Agilent Technologies",
         "market": "US",
         "sector": "헬스케어",
-        "change": 2.2,
-        "amountEok": 3751,
+        "change": -0.2,
+        "amountEok": 4422,
         "grade": "A",
         "warn": false,
         "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.22 · OBV 상승 지속",
-          "상승일 거래량 우위 1.1배"
+          "장기 매집 프록시 — 60일 CMF +0.21 · OBV 상승 지속",
+          "상승일 거래량 우위 1.2배"
         ],
-        "freshDays": 1
+        "freshDays": 2
       },
       {
         "ticker": "DHR",
         "name": "Danaher Corporation",
         "market": "US",
         "sector": "헬스케어",
-        "change": 0.9,
-        "amountEok": 9794,
+        "change": 1.2,
+        "amountEok": 8560,
         "grade": "A",
         "warn": false,
         "reasons": [
           "장기 매집 프록시 — 60일 CMF +0.19 · OBV 상승 지속",
-          "상승일 거래량 우위 1.3배"
+          "상승일 거래량 우위 1.5배"
         ],
-        "freshDays": 5
+        "freshDays": 6
       },
       {
-        "ticker": "ISRG",
-        "name": "Intuitive Surgical",
+        "ticker": "PFE",
+        "name": "Pfizer",
         "market": "US",
         "sector": "헬스케어",
-        "change": -0.4,
-        "amountEok": 10921,
+        "change": 1.7,
+        "amountEok": 13692,
         "grade": "A",
         "warn": false,
         "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.16 · OBV 상승 지속",
-          "상승일 거래량 우위 1.0배"
+          "장기 매집 프록시 — 60일 CMF +0.19 · OBV 상승 지속",
+          "상승일 거래량 우위 1.2배"
         ],
-        "freshDays": 9
+        "freshDays": 1
       },
       {
         "ticker": "PGR",
         "name": "Progressive Corporation",
         "market": "US",
         "sector": "금융",
-        "change": 0,
-        "amountEok": 5096,
+        "change": 2,
+        "amountEok": 5649,
         "grade": "A",
         "warn": false,
         "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.15 · OBV 상승 지속",
+          "장기 매집 프록시 — 60일 CMF +0.16 · OBV 상승 지속",
           "상승일 거래량 우위 1.6배"
         ],
-        "freshDays": 7
+        "freshDays": 8
+      },
+      {
+        "ticker": "SWKS",
+        "name": "Skyworks Solutions",
+        "market": "US",
+        "sector": "IT/기술",
+        "change": 2.5,
+        "amountEok": 5181,
+        "grade": "A",
+        "warn": false,
+        "reasons": [
+          "장기 매집 프록시 — 60일 CMF +0.16 · OBV 상승 지속",
+          "상승일 거래량 우위 1.1배"
+        ],
+        "freshDays": 1
       },
       {
         "ticker": "PODD",
         "name": "Insulet Corporation",
         "market": "US",
         "sector": "헬스케어",
-        "change": -0.6,
-        "amountEok": 2055,
+        "change": 2.4,
+        "amountEok": 2645,
+        "grade": "A",
+        "warn": false,
+        "reasons": [
+          "장기 매집 프록시 — 60일 CMF +0.16 · OBV 상승 지속",
+          "상승일 거래량 우위 2.5배"
+        ],
+        "freshDays": 9
+      },
+      {
+        "ticker": "ISRG",
+        "name": "Intuitive Surgical",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": 1,
+        "amountEok": 11340,
         "grade": "A",
         "warn": false,
         "reasons": [
           "장기 매집 프록시 — 60일 CMF +0.15 · OBV 상승 지속",
-          "상승일 거래량 우위 2.7배"
+          "상승일 거래량 우위 1.2배"
         ],
-        "freshDays": 8
+        "freshDays": 10
+      },
+      {
+        "ticker": "WAT",
+        "name": "Waters Corporation",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": 0.7,
+        "amountEok": 5670,
+        "grade": "A",
+        "warn": false,
+        "reasons": [
+          "장기 매집 프록시 — 60일 CMF +0.15 · OBV 상승 지속",
+          "상승일 거래량 우위 1.0배"
+        ],
+        "freshDays": 1
+      },
+      {
+        "ticker": "GILD",
+        "name": "Gilead Sciences",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": 4,
+        "amountEok": 18618,
+        "grade": "A",
+        "warn": false,
+        "reasons": [
+          "장기 매집 프록시 — 60일 CMF +0.15 · OBV 상승 지속",
+          "상승일 거래량 우위 1.2배"
+        ],
+        "freshDays": 1
+      },
+      {
+        "ticker": "RVTY",
+        "name": "Revvity",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": 0.3,
+        "amountEok": 3392,
+        "grade": "A",
+        "warn": false,
+        "reasons": [
+          "장기 매집 프록시 — 60일 CMF +0.15 · OBV 상승 지속",
+          "상승일 거래량 우위 2.2배"
+        ],
+        "freshDays": 1
       },
       {
         "ticker": "DGX",
         "name": "Quest Diagnostics",
         "market": "US",
         "sector": "헬스케어",
-        "change": 1.3,
-        "amountEok": 3054,
+        "change": 3,
+        "amountEok": 3200,
         "grade": "A",
         "warn": false,
         "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.14 · OBV 상승 지속",
-          "상승일 거래량 우위 1.3배"
+          "장기 매집 프록시 — 60일 CMF +0.15 · OBV 상승 지속",
+          "상승일 거래량 우위 1.5배"
         ],
-        "freshDays": 5
-      },
-      {
-        "ticker": "ABBV",
-        "name": "AbbVie",
-        "market": "US",
-        "sector": "헬스케어",
-        "change": -0.1,
-        "amountEok": 11848,
-        "grade": "A",
-        "warn": false,
-        "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.13 · OBV 상승 지속",
-          "상승일 거래량 우위 2.2배"
-        ],
-        "freshDays": 1
-      },
-      {
-        "ticker": "CRL",
-        "name": "Charles River Laboratories",
-        "market": "US",
-        "sector": "헬스케어",
-        "change": 4.2,
-        "amountEok": 6477,
-        "grade": "A",
-        "warn": false,
-        "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.13 · OBV 상승 지속",
-          "상승일 거래량 우위 1.4배"
-        ],
-        "freshDays": 2
+        "freshDays": 6
       },
       {
         "ticker": "LH",
         "name": "Labcorp",
         "market": "US",
         "sector": "헬스케어",
-        "change": 8.8,
-        "amountEok": 8630,
+        "change": 2.2,
+        "amountEok": 5635,
         "grade": "A",
         "warn": false,
         "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.13 · OBV 상승 지속",
-          "상승일 거래량 우위 3.7배"
+          "장기 매집 프록시 — 60일 CMF +0.15 · OBV 상승 지속",
+          "상승일 거래량 우위 5.0배"
+        ],
+        "freshDays": 3
+      },
+      {
+        "ticker": "TXN",
+        "name": "Texas Instruments",
+        "market": "US",
+        "sector": "IT/기술",
+        "change": 1,
+        "amountEok": 23636,
+        "grade": "A",
+        "warn": false,
+        "reasons": [
+          "장기 매집 프록시 — 60일 CMF +0.14 · OBV 상승 지속",
+          "상승일 거래량 우위 1.1배"
         ],
         "freshDays": 2
       },
       {
-        "ticker": "NEM",
-        "name": "Newmont",
+        "ticker": "ABBV",
+        "name": "AbbVie",
         "market": "US",
-        "sector": "소재",
-        "change": 1.1,
-        "amountEok": 9201,
+        "sector": "헬스케어",
+        "change": 1.7,
+        "amountEok": 16816,
         "grade": "A",
         "warn": false,
         "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.12 · OBV 상승 지속",
+          "장기 매집 프록시 — 60일 CMF +0.14 · OBV 상승 지속",
+          "상승일 거래량 우위 2.6배"
+        ],
+        "freshDays": 2
+      },
+      {
+        "ticker": "CRL",
+        "name": "Charles River Laboratories",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": 0.6,
+        "amountEok": 4460,
+        "grade": "A",
+        "warn": false,
+        "reasons": [
+          "장기 매집 프록시 — 60일 CMF +0.14 · OBV 상승 지속",
+          "상승일 거래량 우위 1.6배"
+        ],
+        "freshDays": 3
+      },
+      {
+        "ticker": "BDX",
+        "name": "Becton Dickinson",
+        "market": "US",
+        "sector": "헬스케어",
+        "change": 1.6,
+        "amountEok": 5837,
+        "grade": "A",
+        "warn": false,
+        "reasons": [
+          "장기 매집 프록시 — 60일 CMF +0.13 · OBV 상승 지속",
           "상승일 거래량 우위 1.2배"
         ],
         "freshDays": 1
@@ -1292,713 +1379,44 @@
         "name": "PayPal",
         "market": "US",
         "sector": "금융",
-        "change": 0.8,
-        "amountEok": 8530,
+        "change": 0.7,
+        "amountEok": 7490,
         "grade": "A",
         "warn": false,
         "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.12 · OBV 상승 지속",
+          "장기 매집 프록시 — 60일 CMF +0.13 · OBV 상승 지속",
           "상승일 거래량 우위 1.9배"
         ],
-        "freshDays": 13
-      },
-      {
-        "ticker": "TXN",
-        "name": "Texas Instruments",
-        "market": "US",
-        "sector": "IT/기술",
-        "change": 0.3,
-        "amountEok": 30377,
-        "grade": "A",
-        "warn": false,
-        "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.12 · OBV 상승 지속",
-          "상승일 거래량 우위 1.1배"
-        ],
-        "freshDays": 1
-      },
-      {
-        "ticker": "EL",
-        "name": "Estée Lauder Companies (The)",
-        "market": "US",
-        "sector": "필수소비재",
-        "change": 0.9,
-        "amountEok": 4559,
-        "grade": "A",
-        "warn": false,
-        "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.12 · OBV 상승 지속",
-          "상승일 거래량 우위 2.4배"
-        ],
-        "freshDays": 3
-      },
-      {
-        "ticker": "HAS",
-        "name": "Hasbro",
-        "market": "US",
-        "sector": "소비재(임의)",
-        "change": 0.3,
-        "amountEok": 6200,
-        "grade": "A",
-        "warn": false,
-        "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.11 · OBV 상승 지속",
-          "상승일 거래량 우위 4.4배"
-        ],
-        "freshDays": 3
+        "freshDays": 14
       },
       {
         "ticker": "MPC",
         "name": "Marathon Petroleum",
         "market": "US",
         "sector": "에너지",
-        "change": 1.1,
-        "amountEok": 14944,
+        "change": -1.9,
+        "amountEok": 13885,
         "grade": "A",
         "warn": false,
         "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.11 · OBV 상승 지속",
-          "상승일 거래량 우위 1.4배"
+          "장기 매집 프록시 — 60일 CMF +0.12 · OBV 상승 지속",
+          "상승일 거래량 우위 1.1배"
         ],
-        "freshDays": 7
-      },
-      {
-        "ticker": "TWLO",
-        "name": "Twilio",
-        "market": "US",
-        "sector": "IT/기술",
-        "change": -0.3,
-        "amountEok": 7215,
-        "grade": "A",
-        "warn": false,
-        "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.11 · OBV 상승 지속",
-          "상승일 거래량 우위 1.9배"
-        ],
-        "freshDays": 13
-      },
-      {
-        "ticker": "EIX",
-        "name": "Edison International",
-        "market": "US",
-        "sector": "유틸리티",
-        "change": 1.1,
-        "amountEok": 2426,
-        "grade": "A",
-        "warn": false,
-        "reasons": [
-          "장기 매집 프록시 — 60일 CMF +0.10 · OBV 상승 지속",
-          "상승일 거래량 우위 1.7배"
-        ],
-        "freshDays": 1
+        "freshDays": 8
       }
     ]
   },
   "tracking": [
-    {
-      "ticker": "CCI",
-      "name": "Crown Castle",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 69.01000213623047,
-      "curClose": 87.73999786376953,
-      "ret": 27.1,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "CRL",
-      "name": "Charles River Laboratories",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 300.29998779296875,
-      "curClose": 373.9800109863281,
-      "ret": 24.5,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 164.0500030517578,
-      "curClose": 182.02000427246094,
-      "ret": 11,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "MDT",
-      "name": "Medtronic",
-      "pickedAt": "2026-10-07",
-      "list": "volume",
-      "pickClose": 85.51000213623047,
-      "curClose": 94.77999877929688,
-      "ret": 10.8,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "STZ",
-      "name": "Constellation Brands",
-      "pickedAt": "2026-10-07",
-      "list": "volume",
-      "pickClose": 118.38999938964844,
-      "curClose": 129.8000030517578,
-      "ret": 9.6,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "AMGN",
-      "name": "Amgen",
-      "pickedAt": "2026-10-07",
-      "list": "steady",
-      "pickClose": 413.0799865722656,
-      "curClose": 451.8299865722656,
-      "ret": 9.4,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna",
-      "pickedAt": "2026-10-07",
-      "list": "steady",
-      "pickClose": 196.47999572753906,
-      "curClose": 214.1649932861328,
-      "ret": 9,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 137.8699951171875,
-      "curClose": 150.1300048828125,
-      "ret": 8.9,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "ROL",
-      "name": "Rollins, Inc.",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 30.8700008392334,
-      "curClose": 33.5,
-      "ret": 8.5,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "LLY",
-      "name": "Lilly (Eli)",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 1188.719970703125,
-      "curClose": 1288.300048828125,
-      "ret": 8.4,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "CHD",
-      "name": "Church & Dwight",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 96.75,
-      "curClose": 104.75,
-      "ret": 8.3,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "RL",
-      "name": "Ralph Lauren Corporation",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 361.1400146484375,
-      "curClose": 389.55999755859375,
-      "ret": 7.9,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "FIS",
-      "name": "Fidelity National Information Services",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 33.81999969482422,
-      "curClose": 36.47999954223633,
-      "ret": 7.9,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "TRGP",
-      "name": "Targa Resources",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 283.9599914550781,
-      "curClose": 305.8999938964844,
-      "ret": 7.7,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "RVTY",
-      "name": "Revvity",
-      "pickedAt": "2026-10-07",
-      "list": "steady",
-      "pickClose": 153.60000610351562,
-      "curClose": 165.3300018310547,
-      "ret": 7.6,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "EQT",
-      "name": "EQT Corporation",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 52.310001373291016,
-      "curClose": 56.220001220703125,
-      "ret": 7.5,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "A",
-      "name": "Agilent Technologies",
-      "pickedAt": "2026-10-07",
-      "list": "steady",
-      "pickClose": 169.08999633789062,
-      "curClose": 181.47999572753906,
-      "ret": 7.3,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "TXN",
-      "name": "Texas Instruments",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 288.9800109863281,
-      "curClose": 309.8299865722656,
-      "ret": 7.2,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "DHR",
-      "name": "Danaher Corporation",
-      "pickedAt": "2026-10-07",
-      "list": "steady",
-      "pickClose": 218.49000549316406,
-      "curClose": 234.07000732421875,
-      "ret": 7.1,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "NXPI",
-      "name": "NXP Semiconductors",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 235.22000122070312,
-      "curClose": 251.69000244140625,
-      "ret": 7,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla, Inc.",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 377.80999755859375,
-      "curClose": 404.2200012207031,
-      "ret": 7,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "BRO",
-      "name": "Brown & Brown",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 61.720001220703125,
-      "curClose": 65.87999725341797,
-      "ret": 6.7,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "TMO",
-      "name": "Thermo Fisher Scientific",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 662.0599975585938,
-      "curClose": 704.1500244140625,
-      "ret": 6.4,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "AIG",
-      "name": "American International Group",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 75.66000366210938,
-      "curClose": 79.87999725341797,
-      "ret": 5.6,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "HCA",
-      "name": "HCA Healthcare",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 439.1700134277344,
-      "curClose": 463.2200012207031,
-      "ret": 5.5,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "HON",
-      "name": "Honeywell Technologies",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 208.11000061035156,
-      "curClose": 219.25999450683594,
-      "ret": 5.4,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "ABBV",
-      "name": "AbbVie",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 271.3599853515625,
-      "curClose": 285.989990234375,
-      "ret": 5.4,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "PFE",
-      "name": "Pfizer",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 28,
-      "curClose": 29.450000762939453,
-      "ret": 5.2,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "ADI",
-      "name": "Analog Devices",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 410.0799865722656,
-      "curClose": 428.2699890136719,
-      "ret": 4.4,
-      "tradingDays": 15,
-      "stillListed": true
-    },
-    {
-      "ticker": "COST",
-      "name": "Costco",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 942.25,
-      "curClose": 982.72998046875,
-      "ret": 4.3,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "VRSN",
-      "name": "Verisign",
-      "pickedAt": "2026-10-07",
-      "list": "volume",
-      "pickClose": 294.2200012207031,
-      "curClose": 307.010009765625,
-      "ret": 4.3,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "HUM",
-      "name": "Humana",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 396.510009765625,
-      "curClose": 411.8699951171875,
-      "ret": 3.9,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "EXPD",
-      "name": "Expeditors International",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 190.85000610351562,
-      "curClose": 197.14999389648438,
-      "ret": 3.3,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "pickedAt": "2026-10-07",
-      "list": "steady",
-      "pickClose": 336.6700134277344,
-      "curClose": 343.8299865722656,
-      "ret": 2.1,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir Technologies",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 194.1199951171875,
-      "curClose": 196.80999755859375,
-      "ret": 1.4,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "PTC",
-      "name": "PTC Inc.",
-      "pickedAt": "2026-10-07",
-      "list": "volume",
-      "pickClose": 193.60000610351562,
-      "curClose": 194.97000122070312,
-      "ret": 0.7,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "WAB",
-      "name": "Wabtec",
-      "pickedAt": "2026-10-07",
-      "list": "steady",
-      "pickClose": 282.44000244140625,
-      "curClose": 282.17999267578125,
-      "ret": -0.1,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 259.9200134277344,
-      "curClose": 254.60000610351562,
-      "ret": -2,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks",
-      "pickedAt": "2026-10-07",
-      "list": "steady",
-      "pickClose": 405.57000732421875,
-      "curClose": 394.489990234375,
-      "ret": -2.7,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 356.1199951171875,
-      "curClose": 342.4599914550781,
-      "ret": -3.8,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "TT",
-      "name": "Trane Technologies",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 467.2699890136719,
-      "curClose": 448.4700012207031,
-      "ret": -4,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "Q",
-      "name": "Qnity Electronics",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 129.72000122070312,
-      "curClose": 122.79000091552734,
-      "ret": -5.3,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "CSCO",
-      "name": "Cisco",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 117.38999938964844,
-      "curClose": 110.29000091552734,
-      "ret": -6,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 71.86000061035156,
-      "curClose": 66.5999984741211,
-      "ret": -7.3,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "ON",
-      "name": "ON Semiconductor",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 82.51000213623047,
-      "curClose": 75.62999725341797,
-      "ret": -8.3,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy",
-      "pickedAt": "2026-10-07",
-      "list": "trend",
-      "pickClose": 424.1000061035156,
-      "curClose": 388.4800109863281,
-      "ret": -8.4,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 807.5700073242188,
-      "curClose": 697.969970703125,
-      "ret": -13.6,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy",
-      "pickedAt": "2026-10-07",
-      "list": "volume",
-      "pickClose": 299.5899963378906,
-      "curClose": 258.0799865722656,
-      "ret": -13.9,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
-      "pickedAt": "2026-10-07",
-      "list": "volume",
-      "pickClose": 166.72000122070312,
-      "curClose": 142.72000122070312,
-      "ret": -14.4,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 1425.97998046875,
-      "curClose": 1211.219970703125,
-      "ret": -15.1,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "KLAC",
-      "name": "KLA Corporation",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 196.8300018310547,
-      "curClose": 158.77000427246094,
-      "ret": -19.3,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 520.6500244140625,
-      "curClose": 416,
-      "ret": -20.1,
-      "tradingDays": 15,
-      "stillListed": false
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne",
-      "pickedAt": "2026-10-07",
-      "list": "supply",
-      "pickClose": 411.7799987792969,
-      "curClose": 313.239990234375,
-      "ret": -23.9,
-      "tradingDays": 15,
-      "stillListed": false
-    },
     {
       "ticker": "LH",
       "name": "Labcorp",
       "pickedAt": "2026-10-08",
       "list": "steady",
       "pickClose": 314.20001220703125,
-      "curClose": 360.25,
-      "ret": 14.7,
-      "tradingDays": 14,
+      "curClose": 368.1600036621094,
+      "ret": 17.2,
+      "tradingDays": 15,
       "stillListed": true
-    },
-    {
-      "ticker": "APA",
-      "name": "APA Corporation",
-      "pickedAt": "2026-10-08",
-      "list": "trend",
-      "pickClose": 45.470001220703125,
-      "curClose": 51.11000061035156,
-      "ret": 12.4,
-      "tradingDays": 14,
-      "stillListed": false
     },
     {
       "ticker": "IT",
@@ -2006,31 +1424,20 @@
       "pickedAt": "2026-10-08",
       "list": "trend",
       "pickClose": 195.41000366210938,
-      "curClose": 219.16000366210938,
-      "ret": 12.2,
-      "tradingDays": 14,
+      "curClose": 225.05999755859375,
+      "ret": 15.2,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
-      "ticker": "PODD",
-      "name": "Insulet Corporation",
+      "ticker": "NXPI",
+      "name": "NXP Semiconductors",
       "pickedAt": "2026-10-08",
       "list": "supply",
-      "pickClose": 134.47000122070312,
-      "curClose": 148.92999267578125,
-      "ret": 10.8,
-      "tradingDays": 14,
-      "stillListed": true
-    },
-    {
-      "ticker": "SBUX",
-      "name": "Starbucks",
-      "pickedAt": "2026-10-08",
-      "list": "volume",
-      "pickClose": 93.20999908447266,
-      "curClose": 103.19999694824219,
-      "ret": 10.7,
-      "tradingDays": 14,
+      "pickClose": 231.07000732421875,
+      "curClose": 266,
+      "ret": 15.1,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
@@ -2039,20 +1446,64 @@
       "pickedAt": "2026-10-08",
       "list": "trend",
       "pickClose": 564.2100219726562,
-      "curClose": 619.239990234375,
-      "ret": 9.8,
-      "tradingDays": 14,
+      "curClose": 648.280029296875,
+      "ret": 14.9,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
-      "ticker": "MAR",
-      "name": "Marriott International",
+      "ticker": "PODD",
+      "name": "Insulet Corporation",
       "pickedAt": "2026-10-08",
       "list": "supply",
-      "pickClose": 361.0799865722656,
-      "curClose": 394.3999938964844,
-      "ret": 9.2,
-      "tradingDays": 14,
+      "pickClose": 134.47000122070312,
+      "curClose": 152.5,
+      "ret": 13.4,
+      "tradingDays": 15,
+      "stillListed": true
+    },
+    {
+      "ticker": "APA",
+      "name": "APA Corporation",
+      "pickedAt": "2026-10-08",
+      "list": "trend",
+      "pickClose": 45.470001220703125,
+      "curClose": 51.5099983215332,
+      "ret": 13.3,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "SBUX",
+      "name": "Starbucks",
+      "pickedAt": "2026-10-08",
+      "list": "volume",
+      "pickClose": 93.20999908447266,
+      "curClose": 105.51000213623047,
+      "ret": 13.2,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "pickedAt": "2026-10-08",
+      "list": "steady",
+      "pickClose": 197,
+      "curClose": 222.75999450683594,
+      "ret": 13.1,
+      "tradingDays": 15,
+      "stillListed": true
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "pickedAt": "2026-10-08",
+      "list": "steady",
+      "pickClose": 407.44000244140625,
+      "curClose": 460.7300109863281,
+      "ret": 13.1,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
@@ -2061,9 +1512,9 @@
       "pickedAt": "2026-10-08",
       "list": "trend",
       "pickClose": 286.5199890136719,
-      "curClose": 312.67999267578125,
-      "ret": 9.1,
-      "tradingDays": 14,
+      "curClose": 320.0400085449219,
+      "ret": 11.7,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
@@ -2072,10 +1523,32 @@
       "pickedAt": "2026-10-08",
       "list": "trend",
       "pickClose": 118.62000274658203,
-      "curClose": 127.18000030517578,
-      "ret": 7.2,
-      "tradingDays": 14,
+      "curClose": 132.02999877929688,
+      "ret": 11.3,
+      "tradingDays": 15,
       "stillListed": false
+    },
+    {
+      "ticker": "MAR",
+      "name": "Marriott International",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 361.0799865722656,
+      "curClose": 399.6499938964844,
+      "ret": 10.7,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "MDT",
+      "name": "Medtronic",
+      "pickedAt": "2026-10-08",
+      "list": "volume",
+      "pickClose": 87.75,
+      "curClose": 97.11000061035156,
+      "ret": 10.7,
+      "tradingDays": 15,
+      "stillListed": true
     },
     {
       "ticker": "V",
@@ -2083,141 +1556,119 @@
       "pickedAt": "2026-10-08",
       "list": "trend",
       "pickClose": 375.1000061035156,
-      "curClose": 400.6000061035156,
-      "ret": 6.8,
-      "tradingDays": 14,
+      "curClose": 410.5400085449219,
+      "ret": 9.4,
+      "tradingDays": 15,
       "stillListed": true
     },
     {
-      "ticker": "CME",
-      "name": "CME Group",
+      "ticker": "RL",
+      "name": "Ralph Lauren Corporation",
       "pickedAt": "2026-10-08",
-      "list": "volume",
-      "pickClose": 276.44000244140625,
-      "curClose": 294.0400085449219,
-      "ret": 6.4,
-      "tradingDays": 14,
+      "list": "supply",
+      "pickClose": 367.3900146484375,
+      "curClose": 400.5199890136719,
+      "ret": 9,
+      "tradingDays": 15,
       "stillListed": true
     },
     {
-      "ticker": "MCHP",
-      "name": "Microchip Technology",
+      "ticker": "DHR",
+      "name": "Danaher Corporation",
       "pickedAt": "2026-10-08",
-      "list": "supply",
-      "pickClose": 75.5199966430664,
-      "curClose": 79.62999725341797,
-      "ret": 5.4,
-      "tradingDays": 14,
+      "list": "steady",
+      "pickClose": 217.4600067138672,
+      "curClose": 236.97999572753906,
+      "ret": 9,
+      "tradingDays": 15,
       "stillListed": true
     },
     {
-      "ticker": "PG",
-      "name": "Procter & Gamble",
+      "ticker": "RVTY",
+      "name": "Revvity",
       "pickedAt": "2026-10-08",
-      "list": "trend",
-      "pickClose": 150.58999633789062,
-      "curClose": 158.25999450683594,
-      "ret": 5.1,
-      "tradingDays": 14,
+      "list": "steady",
+      "pickClose": 152.16000366210938,
+      "curClose": 165.77999877929688,
+      "ret": 9,
+      "tradingDays": 15,
+      "stillListed": true
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 168.5,
+      "curClose": 183.2899932861328,
+      "ret": 8.8,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
-      "ticker": "LUV",
-      "name": "Southwest Airlines",
+      "ticker": "TMO",
+      "name": "Thermo Fisher Scientific",
+      "pickedAt": "2026-10-08",
+      "list": "steady",
+      "pickClose": 651.97998046875,
+      "curClose": 709.1799926757812,
+      "ret": 8.8,
+      "tradingDays": 15,
+      "stillListed": true
+    },
+    {
+      "ticker": "TXN",
+      "name": "Texas Instruments",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 288.20001220703125,
+      "curClose": 312.94000244140625,
+      "ret": 8.6,
+      "tradingDays": 15,
+      "stillListed": true
+    },
+    {
+      "ticker": "HUM",
+      "name": "Humana",
       "pickedAt": "2026-10-08",
       "list": "volume",
-      "pickClose": 41.36000061035156,
-      "curClose": 43.470001220703125,
-      "ret": 5.1,
-      "tradingDays": 14,
+      "pickClose": 387.1199951171875,
+      "curClose": 417.55999755859375,
+      "ret": 7.9,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
-      "ticker": "DD",
-      "name": "DuPont",
+      "ticker": "A",
+      "name": "Agilent Technologies",
       "pickedAt": "2026-10-08",
       "list": "supply",
-      "pickClose": 132.47999572753906,
-      "curClose": 138.67999267578125,
-      "ret": 4.7,
-      "tradingDays": 14,
-      "stillListed": false
+      "pickClose": 168.1699981689453,
+      "curClose": 181.14999389648438,
+      "ret": 7.7,
+      "tradingDays": 15,
+      "stillListed": true
     },
     {
-      "ticker": "BF-B",
-      "name": "Brown–Forman",
+      "ticker": "PFE",
+      "name": "Pfizer",
       "pickedAt": "2026-10-08",
-      "list": "trend",
-      "pickClose": 26.540000915527344,
-      "curClose": 27.75,
-      "ret": 4.6,
-      "tradingDays": 14,
-      "stillListed": false
+      "list": "steady",
+      "pickClose": 27.81999969482422,
+      "curClose": 29.950000762939453,
+      "ret": 7.7,
+      "tradingDays": 15,
+      "stillListed": true
     },
     {
-      "ticker": "OXY",
-      "name": "Occidental Petroleum",
-      "pickedAt": "2026-10-08",
-      "list": "trend",
-      "pickClose": 60.279998779296875,
-      "curClose": 62.86000061035156,
-      "ret": 4.3,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
+      "ticker": "HON",
+      "name": "Honeywell Technologies",
       "pickedAt": "2026-10-08",
       "list": "supply",
-      "pickClose": 241.0500030517578,
-      "curClose": 249.75999450683594,
-      "ret": 3.6,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "MCK",
-      "name": "McKesson",
-      "pickedAt": "2026-10-08",
-      "list": "trend",
-      "pickClose": 930.25,
-      "curClose": 960.5599975585938,
-      "ret": 3.3,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "PEP",
-      "name": "PepsiCo",
-      "pickedAt": "2026-10-08",
-      "list": "volume",
-      "pickClose": 128.33999633789062,
-      "curClose": 132.6300048828125,
-      "ret": 3.3,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "GDDY",
-      "name": "GoDaddy",
-      "pickedAt": "2026-10-08",
-      "list": "trend",
-      "pickClose": 103.19000244140625,
-      "curClose": 106.54000091552734,
-      "ret": 3.2,
-      "tradingDays": 14,
-      "stillListed": false
-    },
-    {
-      "ticker": "ROK",
-      "name": "Rockwell Automation",
-      "pickedAt": "2026-10-08",
-      "list": "supply",
-      "pickClose": 434.1400146484375,
-      "curClose": 443.80999755859375,
-      "ret": 2.2,
-      "tradingDays": 14,
+      "pickClose": 206.60000610351562,
+      "curClose": 222.13999938964844,
+      "ret": 7.5,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
@@ -2226,10 +1677,175 @@
       "pickedAt": "2026-10-08",
       "list": "trend",
       "pickClose": 71.41999816894531,
-      "curClose": 72.98999786376953,
-      "ret": 2.2,
-      "tradingDays": 14,
+      "curClose": 76.75,
+      "ret": 7.5,
+      "tradingDays": 15,
       "stillListed": false
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 75.5199966430664,
+      "curClose": 81.12000274658203,
+      "ret": 7.4,
+      "tradingDays": 15,
+      "stillListed": true
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare",
+      "pickedAt": "2026-10-08",
+      "list": "trend",
+      "pickClose": 445.010009765625,
+      "curClose": 478.0799865722656,
+      "ret": 7.4,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "CME",
+      "name": "CME Group",
+      "pickedAt": "2026-10-08",
+      "list": "volume",
+      "pickClose": 276.44000244140625,
+      "curClose": 296.4200134277344,
+      "ret": 7.2,
+      "tradingDays": 15,
+      "stillListed": true
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 405.92999267578125,
+      "curClose": 433.2799987792969,
+      "ret": 6.7,
+      "tradingDays": 15,
+      "stillListed": true
+    },
+    {
+      "ticker": "ABBV",
+      "name": "AbbVie",
+      "pickedAt": "2026-10-08",
+      "list": "trend",
+      "pickClose": 272.4200134277344,
+      "curClose": 290.7900085449219,
+      "ret": 6.7,
+      "tradingDays": 15,
+      "stillListed": true
+    },
+    {
+      "ticker": "PG",
+      "name": "Procter & Gamble",
+      "pickedAt": "2026-10-08",
+      "list": "trend",
+      "pickClose": 150.58999633789062,
+      "curClose": 160.58999633789062,
+      "ret": 6.6,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "DD",
+      "name": "DuPont",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 132.47999572753906,
+      "curClose": 140.5800018310547,
+      "ret": 6.1,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "BF-B",
+      "name": "Brown–Forman",
+      "pickedAt": "2026-10-08",
+      "list": "trend",
+      "pickClose": 26.540000915527344,
+      "curClose": 28.040000915527344,
+      "ret": 5.7,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "LUV",
+      "name": "Southwest Airlines",
+      "pickedAt": "2026-10-08",
+      "list": "volume",
+      "pickClose": 41.36000061035156,
+      "curClose": 43.68000030517578,
+      "ret": 5.6,
+      "tradingDays": 15,
+      "stillListed": true
+    },
+    {
+      "ticker": "MCK",
+      "name": "McKesson",
+      "pickedAt": "2026-10-08",
+      "list": "trend",
+      "pickClose": 930.25,
+      "curClose": 980.8800048828125,
+      "ret": 5.4,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "STZ",
+      "name": "Constellation Brands",
+      "pickedAt": "2026-10-08",
+      "list": "volume",
+      "pickClose": 123.62999725341797,
+      "curClose": 130.35000610351562,
+      "ret": 5.4,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 947.9199829101562,
+      "curClose": 996.0800170898438,
+      "ret": 5.1,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "OXY",
+      "name": "Occidental Petroleum",
+      "pickedAt": "2026-10-08",
+      "list": "trend",
+      "pickClose": 60.279998779296875,
+      "curClose": 63.0099983215332,
+      "ret": 4.5,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo",
+      "pickedAt": "2026-10-08",
+      "list": "volume",
+      "pickClose": 128.33999633789062,
+      "curClose": 133.7899932861328,
+      "ret": 4.2,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "ROK",
+      "name": "Rockwell Automation",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 434.1400146484375,
+      "curClose": 451.3999938964844,
+      "ret": 4,
+      "tradingDays": 15,
+      "stillListed": true
     },
     {
       "ticker": "PM",
@@ -2237,20 +1853,9 @@
       "pickedAt": "2026-10-08",
       "list": "trend",
       "pickClose": 200.5,
-      "curClose": 202.63999938964844,
-      "ret": 1.1,
-      "tradingDays": 14,
-      "stillListed": true
-    },
-    {
-      "ticker": "HSIC",
-      "name": "Henry Schein",
-      "pickedAt": "2026-10-08",
-      "list": "volume",
-      "pickClose": 84.62999725341797,
-      "curClose": 84.95999908447266,
-      "ret": 0.4,
-      "tradingDays": 14,
+      "curClose": 208.5,
+      "ret": 4,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
@@ -2259,9 +1864,53 @@
       "pickedAt": "2026-10-08",
       "list": "volume",
       "pickClose": 19.170000076293945,
-      "curClose": 19.190000534057617,
-      "ret": 0.1,
-      "tradingDays": 14,
+      "curClose": 19.75,
+      "ret": 3,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 241.0500030517578,
+      "curClose": 248.1199951171875,
+      "ret": 2.9,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "VRSN",
+      "name": "Verisign",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 297.7900085449219,
+      "curClose": 305.95001220703125,
+      "ret": 2.7,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "GDDY",
+      "name": "GoDaddy",
+      "pickedAt": "2026-10-08",
+      "list": "trend",
+      "pickClose": 103.19000244140625,
+      "curClose": 105.88999938964844,
+      "ret": 2.6,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "pickedAt": "2026-10-08",
+      "list": "steady",
+      "pickClose": 340.4200134277344,
+      "curClose": 348.9100036621094,
+      "ret": 2.5,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
@@ -2270,20 +1919,31 @@
       "pickedAt": "2026-10-08",
       "list": "volume",
       "pickClose": 75.2300033569336,
-      "curClose": 75.20999908447266,
-      "ret": 0,
-      "tradingDays": 14,
+      "curClose": 76.94999694824219,
+      "ret": 2.3,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
-      "ticker": "CPAY",
-      "name": "Corpay",
+      "ticker": "HSIC",
+      "name": "Henry Schein",
       "pickedAt": "2026-10-08",
-      "list": "trend",
-      "pickClose": 402.0799865722656,
-      "curClose": 395.8599853515625,
-      "ret": -1.5,
-      "tradingDays": 14,
+      "list": "volume",
+      "pickClose": 84.62999725341797,
+      "curClose": 86.44000244140625,
+      "ret": 2.1,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "WAB",
+      "name": "Wabtec",
+      "pickedAt": "2026-10-08",
+      "list": "steady",
+      "pickClose": 280.79998779296875,
+      "curClose": 285.55999755859375,
+      "ret": 1.7,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
@@ -2292,9 +1952,42 @@
       "pickedAt": "2026-10-08",
       "list": "trend",
       "pickClose": 82.55999755859375,
-      "curClose": 80.73999786376953,
-      "ret": -2.2,
-      "tradingDays": 14,
+      "curClose": 82.76000213623047,
+      "ret": 0.2,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "CPAY",
+      "name": "Corpay",
+      "pickedAt": "2026-10-08",
+      "list": "trend",
+      "pickClose": 402.0799865722656,
+      "curClose": 397.9700012207031,
+      "ret": -1,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "pickedAt": "2026-10-08",
+      "list": "steady",
+      "pickClose": 198.77999877929688,
+      "curClose": 196.4199981689453,
+      "ret": -1.2,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 348.8399963378906,
+      "curClose": 342.75,
+      "ret": -1.7,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
@@ -2303,9 +1996,9 @@
       "pickedAt": "2026-10-08",
       "list": "trend",
       "pickClose": 281.6000061035156,
-      "curClose": 273.760009765625,
+      "curClose": 273.6099853515625,
       "ret": -2.8,
-      "tradingDays": 14,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
@@ -2314,9 +2007,75 @@
       "pickedAt": "2026-10-08",
       "list": "volume",
       "pickClose": 32.68000030517578,
-      "curClose": 28.729999542236328,
-      "ret": -12.1,
-      "tradingDays": 14,
+      "curClose": 31.280000686645508,
+      "ret": -4.3,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks",
+      "pickedAt": "2026-10-08",
+      "list": "steady",
+      "pickClose": 398.5,
+      "curClose": 380.57000732421875,
+      "ret": -4.5,
+      "tradingDays": 15,
+      "stillListed": true
+    },
+    {
+      "ticker": "TT",
+      "name": "Trane Technologies",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 469.94000244140625,
+      "curClose": 431.1000061035156,
+      "ret": -8.3,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 774.8300170898438,
+      "curClose": 700.469970703125,
+      "ret": -9.6,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 1369.800048828125,
+      "curClose": 1198.81005859375,
+      "ret": -12.5,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "pickedAt": "2026-10-08",
+      "list": "steady",
+      "pickClose": 443.79998779296875,
+      "curClose": 384.57000732421875,
+      "ret": -13.3,
+      "tradingDays": 15,
+      "stillListed": false
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "pickedAt": "2026-10-08",
+      "list": "supply",
+      "pickClose": 509.57000732421875,
+      "curClose": 421.6600036621094,
+      "ret": -17.3,
+      "tradingDays": 15,
       "stillListed": false
     },
     {
@@ -2325,9 +2084,20 @@
       "pickedAt": "2026-10-09",
       "list": "trend",
       "pickClose": 134.10000610351562,
-      "curClose": 149.05999755859375,
-      "ret": 11.2,
-      "tradingDays": 13,
+      "curClose": 150.02999877929688,
+      "ret": 11.9,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "CCI",
+      "name": "Crown Castle",
+      "pickedAt": "2026-10-09",
+      "list": "volume",
+      "pickClose": 79.63999938964844,
+      "curClose": 88.83000183105469,
+      "ret": 11.5,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -2336,9 +2106,9 @@
       "pickedAt": "2026-10-09",
       "list": "trend",
       "pickClose": 230.0500030517578,
-      "curClose": 250.1699981689453,
-      "ret": 8.7,
-      "tradingDays": 13,
+      "curClose": 252.8300018310547,
+      "ret": 9.9,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -2347,20 +2117,9 @@
       "pickedAt": "2026-10-09",
       "list": "trend",
       "pickClose": 211.97999572753906,
-      "curClose": 229.1999969482422,
-      "ret": 8.1,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "BDX",
-      "name": "Becton Dickinson",
-      "pickedAt": "2026-10-09",
-      "list": "trend",
-      "pickClose": 183.75,
-      "curClose": 195.16000366210938,
-      "ret": 6.2,
-      "tradingDays": 13,
+      "curClose": 231.4600067138672,
+      "ret": 9.2,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -2369,10 +2128,21 @@
       "pickedAt": "2026-10-09",
       "list": "trend",
       "pickClose": 112.19000244140625,
-      "curClose": 118.0199966430664,
-      "ret": 5.2,
-      "tradingDays": 13,
-      "stillListed": false
+      "curClose": 121.19000244140625,
+      "ret": 8,
+      "tradingDays": 14,
+      "stillListed": true
+    },
+    {
+      "ticker": "BDX",
+      "name": "Becton Dickinson",
+      "pickedAt": "2026-10-09",
+      "list": "trend",
+      "pickClose": 183.75,
+      "curClose": 198.33999633789062,
+      "ret": 7.9,
+      "tradingDays": 14,
+      "stillListed": true
     },
     {
       "ticker": "ISRG",
@@ -2380,75 +2150,20 @@
       "pickedAt": "2026-10-09",
       "list": "supply",
       "pickClose": 423.9599914550781,
-      "curClose": 444.17999267578125,
-      "ret": 4.8,
-      "tradingDays": 13,
+      "curClose": 448.760009765625,
+      "ret": 5.8,
+      "tradingDays": 14,
       "stillListed": true
     },
     {
-      "ticker": "PYPL",
-      "name": "PayPal",
-      "pickedAt": "2026-10-09",
-      "list": "steady",
-      "pickClose": 55.529998779296875,
-      "curClose": 56.54999923706055,
-      "ret": 1.8,
-      "tradingDays": 13,
-      "stillListed": true
-    },
-    {
-      "ticker": "MET",
-      "name": "MetLife",
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
       "pickedAt": "2026-10-09",
       "list": "trend",
-      "pickClose": 98.33000183105469,
-      "curClose": 99.63999938964844,
-      "ret": 1.3,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "SBAC",
-      "name": "SBA Communications",
-      "pickedAt": "2026-10-09",
-      "list": "volume",
-      "pickClose": 182.49000549316406,
-      "curClose": 184.75999450683594,
-      "ret": 1.2,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "DIS",
-      "name": "Walt Disney Company (The)",
-      "pickedAt": "2026-10-09",
-      "list": "trend",
-      "pickClose": 108.05000305175781,
-      "curClose": 109.04000091552734,
-      "ret": 0.9,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "AMT",
-      "name": "American Tower",
-      "pickedAt": "2026-10-09",
-      "list": "volume",
-      "pickClose": 182.24000549316406,
-      "curClose": 183.75,
-      "ret": 0.8,
-      "tradingDays": 13,
-      "stillListed": false
-    },
-    {
-      "ticker": "ELV",
-      "name": "Elevance Health",
-      "pickedAt": "2026-10-09",
-      "list": "trend",
-      "pickClose": 412.70001220703125,
-      "curClose": 414.4100036621094,
-      "ret": 0.4,
-      "tradingDays": 13,
+      "pickClose": 382.70001220703125,
+      "curClose": 403.29998779296875,
+      "ret": 5.4,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -2457,20 +2172,75 @@
       "pickedAt": "2026-10-09",
       "list": "trend",
       "pickClose": 94.83999633789062,
-      "curClose": 94.30000305175781,
-      "ret": -0.6,
-      "tradingDays": 13,
+      "curClose": 97.66000366210938,
+      "ret": 3,
+      "tradingDays": 14,
       "stillListed": true
     },
     {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices",
+      "ticker": "PYPL",
+      "name": "PayPal",
       "pickedAt": "2026-10-09",
-      "list": "supply",
-      "pickClose": 608.0999755859375,
-      "curClose": 578.4400024414062,
-      "ret": -4.9,
-      "tradingDays": 13,
+      "list": "steady",
+      "pickClose": 55.529998779296875,
+      "curClose": 56.95000076293945,
+      "ret": 2.6,
+      "tradingDays": 14,
+      "stillListed": true
+    },
+    {
+      "ticker": "DIS",
+      "name": "Walt Disney Company (The)",
+      "pickedAt": "2026-10-09",
+      "list": "trend",
+      "pickClose": 108.05000305175781,
+      "curClose": 110.91000366210938,
+      "ret": 2.6,
+      "tradingDays": 14,
+      "stillListed": true
+    },
+    {
+      "ticker": "MET",
+      "name": "MetLife",
+      "pickedAt": "2026-10-09",
+      "list": "trend",
+      "pickClose": 98.33000183105469,
+      "curClose": 100.83000183105469,
+      "ret": 2.5,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "ELV",
+      "name": "Elevance Health",
+      "pickedAt": "2026-10-09",
+      "list": "trend",
+      "pickClose": 412.70001220703125,
+      "curClose": 422.0199890136719,
+      "ret": 2.3,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "AMT",
+      "name": "American Tower",
+      "pickedAt": "2026-10-09",
+      "list": "volume",
+      "pickClose": 182.24000549316406,
+      "curClose": 185.8800048828125,
+      "ret": 2,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "SBAC",
+      "name": "SBA Communications",
+      "pickedAt": "2026-10-09",
+      "list": "volume",
+      "pickClose": 182.49000549316406,
+      "curClose": 184.8800048828125,
+      "ret": 1.3,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -2479,9 +2249,31 @@
       "pickedAt": "2026-10-09",
       "list": "supply",
       "pickClose": 962.5599975585938,
-      "curClose": 911.9199829101562,
-      "ret": -5.3,
-      "tradingDays": 13,
+      "curClose": 928.4500122070312,
+      "ret": -3.5,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "pickedAt": "2026-10-09",
+      "list": "supply",
+      "pickClose": 608.0999755859375,
+      "curClose": 566.4199829101562,
+      "ret": -6.9,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan",
+      "pickedAt": "2026-10-09",
+      "list": "trend",
+      "pickClose": 73.69000244140625,
+      "curClose": 66.13999938964844,
+      "ret": -10.2,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -2490,10 +2282,10 @@
       "pickedAt": "2026-10-09",
       "list": "steady",
       "pickClose": 289.4700012207031,
-      "curClose": 253.77000427246094,
-      "ret": -12.3,
-      "tradingDays": 13,
-      "stillListed": true
+      "curClose": 241.89999389648438,
+      "ret": -16.4,
+      "tradingDays": 14,
+      "stillListed": false
     },
     {
       "ticker": "DELL",
@@ -2501,9 +2293,20 @@
       "pickedAt": "2026-10-09",
       "list": "trend",
       "pickClose": 586.0599975585938,
-      "curClose": 493.7900085449219,
-      "ret": -15.7,
-      "tradingDays": 13,
+      "curClose": 475.510009765625,
+      "ret": -18.9,
+      "tradingDays": 14,
+      "stillListed": false
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "pickedAt": "2026-10-09",
+      "list": "trend",
+      "pickClose": 140.86000061035156,
+      "curClose": 109.66999816894531,
+      "ret": -22.1,
+      "tradingDays": 14,
       "stillListed": false
     },
     {
@@ -2512,9 +2315,20 @@
       "pickedAt": "2026-10-12",
       "list": "trend",
       "pickClose": 67.73999786376953,
-      "curClose": 75.81999969482422,
-      "ret": 11.9,
-      "tradingDays": 12,
+      "curClose": 76.41999816894531,
+      "ret": 12.8,
+      "tradingDays": 13,
+      "stillListed": false
+    },
+    {
+      "ticker": "IDXX",
+      "name": "Idexx Laboratories",
+      "pickedAt": "2026-10-12",
+      "list": "supply",
+      "pickClose": 523.9400024414062,
+      "curClose": 575.97998046875,
+      "ret": 9.9,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2523,20 +2337,9 @@
       "pickedAt": "2026-10-12",
       "list": "trend",
       "pickClose": 100.04000091552734,
-      "curClose": 109.30999755859375,
-      "ret": 9.3,
-      "tradingDays": 12,
-      "stillListed": true
-    },
-    {
-      "ticker": "IDXX",
-      "name": "Idexx Laboratories",
-      "pickedAt": "2026-10-12",
-      "list": "supply",
-      "pickClose": 523.9400024414062,
-      "curClose": 562.9099731445312,
-      "ret": 7.4,
-      "tradingDays": 12,
+      "curClose": 108.80999755859375,
+      "ret": 8.8,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2545,9 +2348,9 @@
       "pickedAt": "2026-10-12",
       "list": "trend",
       "pickClose": 32.75,
-      "curClose": 34.93000030517578,
-      "ret": 6.7,
-      "tradingDays": 12,
+      "curClose": 35.29999923706055,
+      "ret": 7.8,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2556,9 +2359,9 @@
       "pickedAt": "2026-10-12",
       "list": "trend",
       "pickClose": 84.95999908447266,
-      "curClose": 90.66000366210938,
-      "ret": 6.7,
-      "tradingDays": 12,
+      "curClose": 90.80999755859375,
+      "ret": 6.9,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2567,9 +2370,20 @@
       "pickedAt": "2026-10-12",
       "list": "trend",
       "pickClose": 146.75,
-      "curClose": 150.16000366210938,
-      "ret": 2.3,
-      "tradingDays": 12,
+      "curClose": 154.5500030517578,
+      "ret": 5.3,
+      "tradingDays": 13,
+      "stillListed": false
+    },
+    {
+      "ticker": "AIG",
+      "name": "American International Group",
+      "pickedAt": "2026-10-12",
+      "list": "trend",
+      "pickClose": 77.69999694824219,
+      "curClose": 81.44000244140625,
+      "ret": 4.8,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2578,20 +2392,9 @@
       "pickedAt": "2026-10-12",
       "list": "supply",
       "pickClose": 34.34000015258789,
-      "curClose": 35.09000015258789,
-      "ret": 2.2,
-      "tradingDays": 12,
-      "stillListed": false
-    },
-    {
-      "ticker": "KO",
-      "name": "Coca-Cola Company (The)",
-      "pickedAt": "2026-10-12",
-      "list": "trend",
-      "pickClose": 89.79000091552734,
-      "curClose": 91.7300033569336,
-      "ret": 2.2,
-      "tradingDays": 12,
+      "curClose": 35.630001068115234,
+      "ret": 3.8,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2600,9 +2403,20 @@
       "pickedAt": "2026-10-12",
       "list": "trend",
       "pickClose": 89.9800033569336,
-      "curClose": 91.69000244140625,
-      "ret": 1.9,
-      "tradingDays": 12,
+      "curClose": 93.16000366210938,
+      "ret": 3.5,
+      "tradingDays": 13,
+      "stillListed": false
+    },
+    {
+      "ticker": "KO",
+      "name": "Coca-Cola Company (The)",
+      "pickedAt": "2026-10-12",
+      "list": "trend",
+      "pickClose": 89.79000091552734,
+      "curClose": 92.81999969482422,
+      "ret": 3.4,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2611,20 +2425,9 @@
       "pickedAt": "2026-10-12",
       "list": "trend",
       "pickClose": 33.08000183105469,
-      "curClose": 33.560001373291016,
-      "ret": 1.5,
-      "tradingDays": 12,
-      "stillListed": false
-    },
-    {
-      "ticker": "WMB",
-      "name": "Williams Companies",
-      "pickedAt": "2026-10-12",
-      "list": "trend",
-      "pickClose": 74.16999816894531,
-      "curClose": 74.2699966430664,
-      "ret": 0.1,
-      "tradingDays": 12,
+      "curClose": 33.970001220703125,
+      "ret": 2.7,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2633,9 +2436,20 @@
       "pickedAt": "2026-10-12",
       "list": "trend",
       "pickClose": 51.4900016784668,
-      "curClose": 51.45000076293945,
-      "ret": -0.1,
-      "tradingDays": 12,
+      "curClose": 52.54999923706055,
+      "ret": 2.1,
+      "tradingDays": 13,
+      "stillListed": false
+    },
+    {
+      "ticker": "WMB",
+      "name": "Williams Companies",
+      "pickedAt": "2026-10-12",
+      "list": "trend",
+      "pickClose": 74.16999816894531,
+      "curClose": 74.87999725341797,
+      "ret": 1,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2644,9 +2458,9 @@
       "pickedAt": "2026-10-12",
       "list": "supply",
       "pickClose": 85.91999816894531,
-      "curClose": 78.62000274658203,
-      "ret": -8.5,
-      "tradingDays": 12,
+      "curClose": 79.93000030517578,
+      "ret": -7,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2655,9 +2469,20 @@
       "pickedAt": "2026-10-12",
       "list": "trend",
       "pickClose": 742.9600219726562,
-      "curClose": 612.489990234375,
-      "ret": -17.6,
-      "tradingDays": 12,
+      "curClose": 624.52001953125,
+      "ret": -15.9,
+      "tradingDays": 13,
+      "stillListed": false
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne",
+      "pickedAt": "2026-10-12",
+      "list": "supply",
+      "pickClose": 383.8500061035156,
+      "curClose": 296.2300109863281,
+      "ret": -22.8,
+      "tradingDays": 13,
       "stillListed": false
     },
     {
@@ -2666,20 +2491,9 @@
       "pickedAt": "2026-10-13",
       "list": "steady",
       "pickClose": 90.70999908447266,
-      "curClose": 100.37000274658203,
-      "ret": 10.6,
-      "tradingDays": 11,
-      "stillListed": true
-    },
-    {
-      "ticker": "CTSH",
-      "name": "Cognizant",
-      "pickedAt": "2026-10-13",
-      "list": "trend",
-      "pickClose": 61.33000183105469,
-      "curClose": 66.36000061035156,
-      "ret": 8.2,
-      "tradingDays": 11,
+      "curClose": 103.61000061035156,
+      "ret": 14.2,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -2688,9 +2502,9 @@
       "pickedAt": "2026-10-13",
       "list": "volume",
       "pickClose": 377.760009765625,
-      "curClose": 407.1000061035156,
-      "ret": 7.8,
-      "tradingDays": 11,
+      "curClose": 410.9100036621094,
+      "ret": 8.8,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -2699,21 +2513,21 @@
       "pickedAt": "2026-10-13",
       "list": "volume",
       "pickClose": 55.47999954223633,
-      "curClose": 58.83000183105469,
-      "ret": 6,
-      "tradingDays": 11,
+      "curClose": 59.380001068115234,
+      "ret": 7,
+      "tradingDays": 12,
       "stillListed": true
     },
     {
-      "ticker": "GS",
-      "name": "Goldman Sachs",
+      "ticker": "TRGP",
+      "name": "Targa Resources",
       "pickedAt": "2026-10-13",
-      "list": "volume",
-      "pickClose": 891.9099731445312,
-      "curClose": 925.1699829101562,
-      "ret": 3.7,
-      "tradingDays": 11,
-      "stillListed": true
+      "list": "trend",
+      "pickClose": 293.0400085449219,
+      "curClose": 312.3699951171875,
+      "ret": 6.6,
+      "tradingDays": 12,
+      "stillListed": false
     },
     {
       "ticker": "ECL",
@@ -2721,9 +2535,31 @@
       "pickedAt": "2026-10-13",
       "list": "steady",
       "pickClose": 285.6600036621094,
-      "curClose": 292.4100036621094,
-      "ret": 2.4,
-      "tradingDays": 11,
+      "curClose": 300.8599853515625,
+      "ret": 5.3,
+      "tradingDays": 12,
+      "stillListed": false
+    },
+    {
+      "ticker": "GS",
+      "name": "Goldman Sachs",
+      "pickedAt": "2026-10-13",
+      "list": "volume",
+      "pickClose": 891.9099731445312,
+      "curClose": 927.72998046875,
+      "ret": 4,
+      "tradingDays": 12,
+      "stillListed": false
+    },
+    {
+      "ticker": "CTSH",
+      "name": "Cognizant",
+      "pickedAt": "2026-10-13",
+      "list": "trend",
+      "pickClose": 61.33000183105469,
+      "curClose": 62.52000045776367,
+      "ret": 1.9,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -2732,9 +2568,9 @@
       "pickedAt": "2026-10-13",
       "list": "trend",
       "pickClose": 50.209999084472656,
-      "curClose": 51.27000045776367,
-      "ret": 2.1,
-      "tradingDays": 11,
+      "curClose": 51.16999816894531,
+      "ret": 1.9,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -2743,9 +2579,20 @@
       "pickedAt": "2026-10-13",
       "list": "supply",
       "pickClose": 156.47000122070312,
-      "curClose": 157.35000610351562,
-      "ret": 0.6,
-      "tradingDays": 11,
+      "curClose": 158.27000427246094,
+      "ret": 1.2,
+      "tradingDays": 12,
+      "stillListed": true
+    },
+    {
+      "ticker": "Q",
+      "name": "Qnity Electronics",
+      "pickedAt": "2026-10-13",
+      "list": "supply",
+      "pickClose": 122.9000015258789,
+      "curClose": 122.66000366210938,
+      "ret": -0.2,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -2754,9 +2601,9 @@
       "pickedAt": "2026-10-13",
       "list": "trend",
       "pickClose": 92.37000274658203,
-      "curClose": 91.56999969482422,
-      "ret": -0.9,
-      "tradingDays": 11,
+      "curClose": 90.44000244140625,
+      "ret": -2.1,
+      "tradingDays": 12,
       "stillListed": false
     },
     {
@@ -2765,8 +2612,19 @@
       "pickedAt": "2026-10-13",
       "list": "supply",
       "pickClose": 370.2200012207031,
-      "curClose": 335.5,
-      "ret": -9.4,
+      "curClose": 329.8399963378906,
+      "ret": -10.9,
+      "tradingDays": 12,
+      "stillListed": false
+    },
+    {
+      "ticker": "LLY",
+      "name": "Lilly (Eli)",
+      "pickedAt": "2026-10-14",
+      "list": "trend",
+      "pickClose": 1208.739990234375,
+      "curClose": 1373.699951171875,
+      "ret": 13.6,
       "tradingDays": 11,
       "stillListed": false
     },
@@ -2776,9 +2634,9 @@
       "pickedAt": "2026-10-14",
       "list": "volume",
       "pickClose": 85.5999984741211,
-      "curClose": 93.04000091552734,
-      "ret": 8.7,
-      "tradingDays": 10,
+      "curClose": 95.81999969482422,
+      "ret": 11.9,
+      "tradingDays": 11,
       "stillListed": false
     },
     {
@@ -2787,9 +2645,9 @@
       "pickedAt": "2026-10-14",
       "list": "volume",
       "pickClose": 1073.7900390625,
-      "curClose": 1157.8800048828125,
-      "ret": 7.8,
-      "tradingDays": 10,
+      "curClose": 1176.239990234375,
+      "ret": 9.5,
+      "tradingDays": 11,
       "stillListed": false
     },
     {
@@ -2798,10 +2656,10 @@
       "pickedAt": "2026-10-14",
       "list": "trend",
       "pickClose": 153.5399932861328,
-      "curClose": 159.1999969482422,
-      "ret": 3.7,
-      "tradingDays": 10,
-      "stillListed": false
+      "curClose": 165.61000061035156,
+      "ret": 7.9,
+      "tradingDays": 11,
+      "stillListed": true
     },
     {
       "ticker": "KR",
@@ -2809,42 +2667,20 @@
       "pickedAt": "2026-10-14",
       "list": "trend",
       "pickClose": 63.09000015258789,
-      "curClose": 65.0199966430664,
-      "ret": 3.1,
-      "tradingDays": 10,
+      "curClose": 65.93000030517578,
+      "ret": 4.5,
+      "tradingDays": 11,
       "stillListed": false
     },
     {
-      "ticker": "CRM",
-      "name": "Salesforce",
-      "pickedAt": "2026-10-14",
-      "list": "trend",
-      "pickClose": 235.9499969482422,
-      "curClose": 242.11000061035156,
-      "ret": 2.6,
-      "tradingDays": 10,
-      "stillListed": false
-    },
-    {
-      "ticker": "CMI",
-      "name": "Cummins",
-      "pickedAt": "2026-10-14",
-      "list": "trend",
-      "pickClose": 525.9600219726562,
-      "curClose": 531.3900146484375,
-      "ret": 1,
-      "tradingDays": 10,
-      "stillListed": false
-    },
-    {
-      "ticker": "NTAP",
-      "name": "NetApp",
+      "ticker": "ON",
+      "name": "ON Semiconductor",
       "pickedAt": "2026-10-14",
       "list": "supply",
-      "pickClose": 222.1999969482422,
-      "curClose": 223.66000366210938,
-      "ret": 0.7,
-      "tradingDays": 10,
+      "pickClose": 73.36000061035156,
+      "curClose": 75.23999786376953,
+      "ret": 2.6,
+      "tradingDays": 11,
       "stillListed": false
     },
     {
@@ -2853,10 +2689,10 @@
       "pickedAt": "2026-10-14",
       "list": "trend",
       "pickClose": 238.6199951171875,
-      "curClose": 238.5399932861328,
-      "ret": 0,
-      "tradingDays": 10,
-      "stillListed": true
+      "curClose": 239.3300018310547,
+      "ret": 0.3,
+      "tradingDays": 11,
+      "stillListed": false
     },
     {
       "ticker": "DG",
@@ -2864,10 +2700,10 @@
       "pickedAt": "2026-10-14",
       "list": "trend",
       "pickClose": 129.94000244140625,
-      "curClose": 126.16999816894531,
-      "ret": -2.9,
-      "tradingDays": 10,
-      "stillListed": false
+      "curClose": 130.08999633789062,
+      "ret": 0.1,
+      "tradingDays": 11,
+      "stillListed": true
     },
     {
       "ticker": "TJX",
@@ -2875,9 +2711,42 @@
       "pickedAt": "2026-10-14",
       "list": "supply",
       "pickClose": 142.8300018310547,
-      "curClose": 138.38999938964844,
-      "ret": -3.1,
-      "tradingDays": 10,
+      "curClose": 141.38999938964844,
+      "ret": -1,
+      "tradingDays": 11,
+      "stillListed": false
+    },
+    {
+      "ticker": "CMI",
+      "name": "Cummins",
+      "pickedAt": "2026-10-14",
+      "list": "trend",
+      "pickClose": 525.9600219726562,
+      "curClose": 518.030029296875,
+      "ret": -1.5,
+      "tradingDays": 11,
+      "stillListed": false
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp",
+      "pickedAt": "2026-10-14",
+      "list": "supply",
+      "pickClose": 222.1999969482422,
+      "curClose": 218.4199981689453,
+      "ret": -1.7,
+      "tradingDays": 11,
+      "stillListed": false
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "pickedAt": "2026-10-14",
+      "list": "trend",
+      "pickClose": 235.9499969482422,
+      "curClose": 230.89999389648438,
+      "ret": -2.1,
+      "tradingDays": 11,
       "stillListed": false
     },
     {
@@ -2886,10 +2755,10 @@
       "pickedAt": "2026-10-14",
       "list": "trend",
       "pickClose": 185.88999938964844,
-      "curClose": 172.17999267578125,
-      "ret": -7.4,
-      "tradingDays": 10,
-      "stillListed": true
+      "curClose": 176.61000061035156,
+      "ret": -5,
+      "tradingDays": 11,
+      "stillListed": false
     },
     {
       "ticker": "PNR",
@@ -2897,31 +2766,9 @@
       "pickedAt": "2026-10-15",
       "list": "volume",
       "pickClose": 53.45000076293945,
-      "curClose": 64.37000274658203,
-      "ret": 20.4,
-      "tradingDays": 9,
-      "stillListed": false
-    },
-    {
-      "ticker": "PNC",
-      "name": "PNC Financial Services",
-      "pickedAt": "2026-10-15",
-      "list": "volume",
-      "pickClose": 214.94000244140625,
-      "curClose": 228.25,
-      "ret": 6.2,
-      "tradingDays": 9,
-      "stillListed": false
-    },
-    {
-      "ticker": "WST",
-      "name": "West Pharmaceutical Services",
-      "pickedAt": "2026-10-15",
-      "list": "trend",
-      "pickClose": 383.0199890136719,
-      "curClose": 403.6400146484375,
-      "ret": 5.4,
-      "tradingDays": 9,
+      "curClose": 65.83999633789062,
+      "ret": 23.2,
+      "tradingDays": 10,
       "stillListed": false
     },
     {
@@ -2930,42 +2777,31 @@
       "pickedAt": "2026-10-15",
       "list": "trend",
       "pickClose": 137.69000244140625,
-      "curClose": 144.75,
-      "ret": 5.1,
-      "tradingDays": 9,
+      "curClose": 149.89999389648438,
+      "ret": 8.9,
+      "tradingDays": 10,
       "stillListed": false
     },
     {
-      "ticker": "KMB",
-      "name": "Kimberly-Clark",
-      "pickedAt": "2026-10-15",
-      "list": "volume",
-      "pickClose": 104.06999969482422,
-      "curClose": 108.4000015258789,
-      "ret": 4.2,
-      "tradingDays": 9,
-      "stillListed": false
-    },
-    {
-      "ticker": "VRTX",
-      "name": "Vertex Pharmaceuticals",
-      "pickedAt": "2026-10-15",
-      "list": "volume",
-      "pickClose": 508.75,
-      "curClose": 529.6900024414062,
-      "ret": 4.1,
-      "tradingDays": 9,
-      "stillListed": false
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday, Inc.",
+      "ticker": "WST",
+      "name": "West Pharmaceutical Services",
       "pickedAt": "2026-10-15",
       "list": "trend",
-      "pickClose": 196.6300048828125,
-      "curClose": 204.36000061035156,
-      "ret": 3.9,
-      "tradingDays": 9,
+      "pickClose": 383.0199890136719,
+      "curClose": 416.6700134277344,
+      "ret": 8.8,
+      "tradingDays": 10,
+      "stillListed": true
+    },
+    {
+      "ticker": "PNC",
+      "name": "PNC Financial Services",
+      "pickedAt": "2026-10-15",
+      "list": "volume",
+      "pickClose": 214.94000244140625,
+      "curClose": 231.8300018310547,
+      "ret": 7.9,
+      "tradingDays": 10,
       "stillListed": false
     },
     {
@@ -2974,64 +2810,20 @@
       "pickedAt": "2026-10-15",
       "list": "trend",
       "pickClose": 235.35000610351562,
-      "curClose": 244.0500030517578,
-      "ret": 3.7,
-      "tradingDays": 9,
+      "curClose": 249.64999389648438,
+      "ret": 6.1,
+      "tradingDays": 10,
       "stillListed": false
     },
     {
-      "ticker": "EMR",
-      "name": "Emerson Electric",
-      "pickedAt": "2026-10-15",
-      "list": "steady",
-      "pickClose": 162.14999389648438,
-      "curClose": 167.7100067138672,
-      "ret": 3.4,
-      "tradingDays": 9,
-      "stillListed": true
-    },
-    {
-      "ticker": "VTRS",
-      "name": "Viatris",
-      "pickedAt": "2026-10-15",
-      "list": "trend",
-      "pickClose": 18.219999313354492,
-      "curClose": 18.770000457763672,
-      "ret": 3,
-      "tradingDays": 9,
-      "stillListed": false
-    },
-    {
-      "ticker": "AVY",
-      "name": "Avery Dennison",
-      "pickedAt": "2026-10-15",
-      "list": "trend",
-      "pickClose": 175.8800048828125,
-      "curClose": 180.6999969482422,
-      "ret": 2.7,
-      "tradingDays": 9,
-      "stillListed": false
-    },
-    {
-      "ticker": "HLT",
-      "name": "Hilton Worldwide",
-      "pickedAt": "2026-10-15",
-      "list": "supply",
-      "pickClose": 342.9800109863281,
-      "curClose": 349.6300048828125,
-      "ret": 1.9,
-      "tradingDays": 9,
-      "stillListed": false
-    },
-    {
-      "ticker": "VEEV",
-      "name": "Veeva Systems",
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals",
       "pickedAt": "2026-10-15",
       "list": "volume",
-      "pickClose": 313.0299987792969,
-      "curClose": 317.82000732421875,
-      "ret": 1.5,
-      "tradingDays": 9,
+      "pickClose": 508.75,
+      "curClose": 540,
+      "ret": 6.1,
+      "tradingDays": 10,
       "stillListed": false
     },
     {
@@ -3040,9 +2832,42 @@
       "pickedAt": "2026-10-15",
       "list": "volume",
       "pickClose": 111.87000274658203,
-      "curClose": 113.44999694824219,
-      "ret": 1.4,
-      "tradingDays": 9,
+      "curClose": 118.55999755859375,
+      "ret": 6,
+      "tradingDays": 10,
+      "stillListed": false
+    },
+    {
+      "ticker": "KMB",
+      "name": "Kimberly-Clark",
+      "pickedAt": "2026-10-15",
+      "list": "volume",
+      "pickClose": 104.06999969482422,
+      "curClose": 110.0199966430664,
+      "ret": 5.7,
+      "tradingDays": 10,
+      "stillListed": false
+    },
+    {
+      "ticker": "VTRS",
+      "name": "Viatris",
+      "pickedAt": "2026-10-15",
+      "list": "trend",
+      "pickClose": 18.219999313354492,
+      "curClose": 19.200000762939453,
+      "ret": 5.4,
+      "tradingDays": 10,
+      "stillListed": false
+    },
+    {
+      "ticker": "EMR",
+      "name": "Emerson Electric",
+      "pickedAt": "2026-10-15",
+      "list": "steady",
+      "pickClose": 162.14999389648438,
+      "curClose": 170.74000549316406,
+      "ret": 5.3,
+      "tradingDays": 10,
       "stillListed": false
     },
     {
@@ -3051,9 +2876,31 @@
       "pickedAt": "2026-10-15",
       "list": "trend",
       "pickClose": 228.75999450683594,
-      "curClose": 230.74000549316406,
-      "ret": 0.9,
-      "tradingDays": 9,
+      "curClose": 240.4499969482422,
+      "ret": 5.1,
+      "tradingDays": 10,
+      "stillListed": true
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide",
+      "pickedAt": "2026-10-15",
+      "list": "supply",
+      "pickClose": 342.9800109863281,
+      "curClose": 356.92999267578125,
+      "ret": 4.1,
+      "tradingDays": 10,
+      "stillListed": false
+    },
+    {
+      "ticker": "AVY",
+      "name": "Avery Dennison",
+      "pickedAt": "2026-10-15",
+      "list": "trend",
+      "pickClose": 175.8800048828125,
+      "curClose": 182.05999755859375,
+      "ret": 3.5,
+      "tradingDays": 10,
       "stillListed": false
     },
     {
@@ -3062,9 +2909,42 @@
       "pickedAt": "2026-10-15",
       "list": "volume",
       "pickClose": 224.19000244140625,
-      "curClose": 225.14999389648438,
-      "ret": 0.4,
-      "tradingDays": 9,
+      "curClose": 230.89999389648438,
+      "ret": 3,
+      "tradingDays": 10,
+      "stillListed": true
+    },
+    {
+      "ticker": "EXPD",
+      "name": "Expeditors International",
+      "pickedAt": "2026-10-15",
+      "list": "supply",
+      "pickClose": 198.63999938964844,
+      "curClose": 198.38999938964844,
+      "ret": -0.1,
+      "tradingDays": 10,
+      "stillListed": false
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday, Inc.",
+      "pickedAt": "2026-10-15",
+      "list": "trend",
+      "pickClose": 196.6300048828125,
+      "curClose": 195.4600067138672,
+      "ret": -0.6,
+      "tradingDays": 10,
+      "stillListed": false
+    },
+    {
+      "ticker": "VEEV",
+      "name": "Veeva Systems",
+      "pickedAt": "2026-10-15",
+      "list": "volume",
+      "pickClose": 313.0299987792969,
+      "curClose": 310.3399963378906,
+      "ret": -0.9,
+      "tradingDays": 10,
       "stillListed": false
     },
     {
@@ -3073,9 +2953,20 @@
       "pickedAt": "2026-10-15",
       "list": "volume",
       "pickClose": 402.4800109863281,
-      "curClose": 392.8800048828125,
-      "ret": -2.4,
-      "tradingDays": 9,
+      "curClose": 393.7200012207031,
+      "ret": -2.2,
+      "tradingDays": 10,
+      "stillListed": false
+    },
+    {
+      "ticker": "SCHW",
+      "name": "Charles Schwab Corporation",
+      "pickedAt": "2026-10-15",
+      "list": "volume",
+      "pickClose": 94.16000366210938,
+      "curClose": 89.47000122070312,
+      "ret": -5,
+      "tradingDays": 10,
       "stillListed": false
     },
     {
@@ -3084,20 +2975,9 @@
       "pickedAt": "2026-10-15",
       "list": "volume",
       "pickClose": 98.5,
-      "curClose": 93.02999877929688,
-      "ret": -5.6,
-      "tradingDays": 9,
-      "stillListed": true
-    },
-    {
-      "ticker": "SCHW",
-      "name": "Charles Schwab Corporation",
-      "pickedAt": "2026-10-15",
-      "list": "volume",
-      "pickClose": 94.16000366210938,
-      "curClose": 88.76000213623047,
-      "ret": -5.7,
-      "tradingDays": 9,
+      "curClose": 93.06999969482422,
+      "ret": -5.5,
+      "tradingDays": 10,
       "stillListed": false
     },
     {
@@ -3106,21 +2986,21 @@
       "pickedAt": "2026-10-15",
       "list": "steady",
       "pickClose": 476.9200134277344,
-      "curClose": 440.7699890136719,
-      "ret": -7.6,
-      "tradingDays": 9,
+      "curClose": 432.510009765625,
+      "ret": -9.3,
+      "tradingDays": 10,
       "stillListed": true
     },
     {
-      "ticker": "P",
-      "name": "Everpure",
+      "ticker": "LHX",
+      "name": "L3Harris",
       "pickedAt": "2026-10-16",
-      "list": "supply",
-      "pickClose": 124.01000213623047,
-      "curClose": 138.60000610351562,
-      "ret": 11.8,
-      "tradingDays": 8,
-      "stillListed": false
+      "list": "trend",
+      "pickClose": 248.50999450683594,
+      "curClose": 278.42999267578125,
+      "ret": 12,
+      "tradingDays": 9,
+      "stillListed": true
     },
     {
       "ticker": "PPG",
@@ -3128,9 +3008,20 @@
       "pickedAt": "2026-10-16",
       "list": "volume",
       "pickClose": 107.38999938964844,
-      "curClose": 118.44000244140625,
-      "ret": 10.3,
-      "tradingDays": 8,
+      "curClose": 120,
+      "ret": 11.7,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "P",
+      "name": "Everpure",
+      "pickedAt": "2026-10-16",
+      "list": "supply",
+      "pickClose": 124.01000213623047,
+      "curClose": 137.1999969482422,
+      "ret": 10.6,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3139,97 +3030,9 @@
       "pickedAt": "2026-10-16",
       "list": "trend",
       "pickClose": 97.4800033569336,
-      "curClose": 105.62000274658203,
-      "ret": 8.4,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "LHX",
-      "name": "L3Harris",
-      "pickedAt": "2026-10-16",
-      "list": "trend",
-      "pickClose": 248.50999450683594,
-      "curClose": 260.6099853515625,
-      "ret": 4.9,
-      "tradingDays": 8,
-      "stillListed": true
-    },
-    {
-      "ticker": "BBY",
-      "name": "Best Buy",
-      "pickedAt": "2026-10-16",
-      "list": "trend",
-      "pickClose": 92.62999725341797,
-      "curClose": 96.95999908447266,
-      "ret": 4.7,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "MSI",
-      "name": "Motorola Solutions",
-      "pickedAt": "2026-10-16",
-      "list": "trend",
-      "pickClose": 463.1499938964844,
-      "curClose": 483.3900146484375,
-      "ret": 4.4,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "PSA",
-      "name": "Public Storage",
-      "pickedAt": "2026-10-16",
-      "list": "trend",
-      "pickClose": 298.30999755859375,
-      "curClose": 310.04998779296875,
-      "ret": 3.9,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart",
-      "pickedAt": "2026-10-16",
-      "list": "volume",
-      "pickClose": 27.8700008392334,
-      "curClose": 28.959999084472656,
-      "ret": 3.9,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "NTRS",
-      "name": "Northern Trust",
-      "pickedAt": "2026-10-16",
-      "list": "volume",
-      "pickClose": 165.5399932861328,
-      "curClose": 171.89999389648438,
-      "ret": 3.8,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "RF",
-      "name": "Regions Financial Corporation",
-      "pickedAt": "2026-10-16",
-      "list": "volume",
-      "pickClose": 27.450000762939453,
-      "curClose": 28.389999389648438,
-      "ret": 3.4,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "CFG",
-      "name": "Citizens Financial Group",
-      "pickedAt": "2026-10-16",
-      "list": "volume",
-      "pickClose": 63.36000061035156,
-      "curClose": 65.2699966430664,
-      "ret": 3,
-      "tradingDays": 8,
+      "curClose": 107.33000183105469,
+      "ret": 10.1,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3238,9 +3041,31 @@
       "pickedAt": "2026-10-16",
       "list": "trend",
       "pickClose": 257.6300048828125,
-      "curClose": 265,
-      "ret": 2.9,
-      "tradingDays": 8,
+      "curClose": 280.30999755859375,
+      "ret": 8.8,
+      "tradingDays": 9,
+      "stillListed": true
+    },
+    {
+      "ticker": "BBY",
+      "name": "Best Buy",
+      "pickedAt": "2026-10-16",
+      "list": "trend",
+      "pickClose": 92.62999725341797,
+      "curClose": 100.38999938964844,
+      "ret": 8.4,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "PSA",
+      "name": "Public Storage",
+      "pickedAt": "2026-10-16",
+      "list": "trend",
+      "pickClose": 298.30999755859375,
+      "curClose": 317.05999755859375,
+      "ret": 6.3,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3249,9 +3074,53 @@
       "pickedAt": "2026-10-16",
       "list": "trend",
       "pickClose": 309.6300048828125,
-      "curClose": 317.55999755859375,
-      "ret": 2.6,
-      "tradingDays": 8,
+      "curClose": 328.9800109863281,
+      "ret": 6.2,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "MSI",
+      "name": "Motorola Solutions",
+      "pickedAt": "2026-10-16",
+      "list": "trend",
+      "pickClose": 463.1499938964844,
+      "curClose": 492.0799865722656,
+      "ret": 6.2,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart",
+      "pickedAt": "2026-10-16",
+      "list": "volume",
+      "pickClose": 27.8700008392334,
+      "curClose": 29.549999237060547,
+      "ret": 6,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "RF",
+      "name": "Regions Financial Corporation",
+      "pickedAt": "2026-10-16",
+      "list": "volume",
+      "pickClose": 27.450000762939453,
+      "curClose": 28.8799991607666,
+      "ret": 5.2,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "NTRS",
+      "name": "Northern Trust",
+      "pickedAt": "2026-10-16",
+      "list": "volume",
+      "pickClose": 165.5399932861328,
+      "curClose": 172.9199981689453,
+      "ret": 4.5,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3260,9 +3129,9 @@
       "pickedAt": "2026-10-16",
       "list": "trend",
       "pickClose": 57.939998626708984,
-      "curClose": 59.40999984741211,
-      "ret": 2.5,
-      "tradingDays": 8,
+      "curClose": 60.34000015258789,
+      "ret": 4.1,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3271,42 +3140,20 @@
       "pickedAt": "2026-10-16",
       "list": "volume",
       "pickClose": 215.27999877929688,
-      "curClose": 220.1999969482422,
-      "ret": 2.3,
-      "tradingDays": 8,
+      "curClose": 224.07000732421875,
+      "ret": 4.1,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
-      "ticker": "VLTO",
-      "name": "Veralto",
-      "pickedAt": "2026-10-16",
-      "list": "supply",
-      "pickClose": 101.04000091552734,
-      "curClose": 102.80000305175781,
-      "ret": 1.7,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "USB",
-      "name": "U.S. Bancorp",
+      "ticker": "CFG",
+      "name": "Citizens Financial Group",
       "pickedAt": "2026-10-16",
       "list": "volume",
-      "pickClose": 58.72999954223633,
-      "curClose": 59.599998474121094,
-      "ret": 1.5,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "PNW",
-      "name": "Pinnacle West Capital",
-      "pickedAt": "2026-10-16",
-      "list": "supply",
-      "pickClose": 103.41999816894531,
-      "curClose": 104.87000274658203,
-      "ret": 1.4,
-      "tradingDays": 8,
+      "pickClose": 63.36000061035156,
+      "curClose": 65.76000213623047,
+      "ret": 3.8,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3315,10 +3162,43 @@
       "pickedAt": "2026-10-16",
       "list": "supply",
       "pickClose": 76.30999755859375,
-      "curClose": 77.18000030517578,
-      "ret": 1.1,
-      "tradingDays": 8,
+      "curClose": 79.04000091552734,
+      "ret": 3.6,
+      "tradingDays": 9,
       "stillListed": true
+    },
+    {
+      "ticker": "USB",
+      "name": "U.S. Bancorp",
+      "pickedAt": "2026-10-16",
+      "list": "volume",
+      "pickClose": 58.72999954223633,
+      "curClose": 60.63999938964844,
+      "ret": 3.3,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "PNW",
+      "name": "Pinnacle West Capital",
+      "pickedAt": "2026-10-16",
+      "list": "supply",
+      "pickClose": 103.41999816894531,
+      "curClose": 106.63999938964844,
+      "ret": 3.1,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "VLTO",
+      "name": "Veralto",
+      "pickedAt": "2026-10-16",
+      "list": "supply",
+      "pickClose": 101.04000091552734,
+      "curClose": 104.05999755859375,
+      "ret": 3,
+      "tradingDays": 9,
+      "stillListed": false
     },
     {
       "ticker": "TRV",
@@ -3326,9 +3206,9 @@
       "pickedAt": "2026-10-16",
       "list": "volume",
       "pickClose": 389.5400085449219,
-      "curClose": 394.010009765625,
-      "ret": 1.1,
-      "tradingDays": 8,
+      "curClose": 398.2699890136719,
+      "ret": 2.2,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3337,9 +3217,9 @@
       "pickedAt": "2026-10-16",
       "list": "trend",
       "pickClose": 47.54999923706055,
-      "curClose": 47.86000061035156,
-      "ret": 0.7,
-      "tradingDays": 8,
+      "curClose": 48.47999954223633,
+      "ret": 2,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3348,31 +3228,9 @@
       "pickedAt": "2026-10-16",
       "list": "volume",
       "pickClose": 83.87000274658203,
-      "curClose": 83.66999816894531,
-      "ret": -0.2,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "FOXA",
-      "name": "Fox Corporation (Class A)",
-      "pickedAt": "2026-10-16",
-      "list": "trend",
-      "pickClose": 64.1500015258789,
-      "curClose": 63.38999938964844,
-      "ret": -1.2,
-      "tradingDays": 8,
-      "stillListed": false
-    },
-    {
-      "ticker": "SJM",
-      "name": "J.M. Smucker Company (The)",
-      "pickedAt": "2026-10-16",
-      "list": "trend",
-      "pickClose": 127.43000030517578,
-      "curClose": 125.45999908447266,
-      "ret": -1.5,
-      "tradingDays": 8,
+      "curClose": 84.80999755859375,
+      "ret": 1.1,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3381,9 +3239,31 @@
       "pickedAt": "2026-10-16",
       "list": "trend",
       "pickClose": 485.07000732421875,
-      "curClose": 477.2699890136719,
-      "ret": -1.6,
-      "tradingDays": 8,
+      "curClose": 488.8299865722656,
+      "ret": 0.8,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "FOXA",
+      "name": "Fox Corporation (Class A)",
+      "pickedAt": "2026-10-16",
+      "list": "trend",
+      "pickClose": 64.1500015258789,
+      "curClose": 64.51000213623047,
+      "ret": 0.6,
+      "tradingDays": 9,
+      "stillListed": false
+    },
+    {
+      "ticker": "SJM",
+      "name": "J.M. Smucker Company (The)",
+      "pickedAt": "2026-10-16",
+      "list": "trend",
+      "pickClose": 127.43000030517578,
+      "curClose": 126.26000213623047,
+      "ret": -0.9,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3392,9 +3272,9 @@
       "pickedAt": "2026-10-16",
       "list": "supply",
       "pickClose": 689.219970703125,
-      "curClose": 670.02001953125,
-      "ret": -2.8,
-      "tradingDays": 8,
+      "curClose": 677.739990234375,
+      "ret": -1.7,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3403,9 +3283,9 @@
       "pickedAt": "2026-10-16",
       "list": "volume",
       "pickClose": 284.7900085449219,
-      "curClose": 272.510009765625,
-      "ret": -4.3,
-      "tradingDays": 8,
+      "curClose": 279.94000244140625,
+      "ret": -1.7,
+      "tradingDays": 9,
       "stillListed": false
     },
     {
@@ -3414,10 +3294,10 @@
       "pickedAt": "2026-10-19",
       "list": "volume",
       "pickClose": 98.48999786376953,
-      "curClose": 118.68000030517578,
-      "ret": 20.5,
-      "tradingDays": 7,
-      "stillListed": true
+      "curClose": 119.56999969482422,
+      "ret": 21.4,
+      "tradingDays": 8,
+      "stillListed": false
     },
     {
       "ticker": "LMT",
@@ -3425,53 +3305,9 @@
       "pickedAt": "2026-10-19",
       "list": "trend",
       "pickClose": 548.22998046875,
-      "curClose": 629.75,
-      "ret": 14.9,
-      "tradingDays": 7,
-      "stillListed": false
-    },
-    {
-      "ticker": "CSX",
-      "name": "CSX Corporation",
-      "pickedAt": "2026-10-19",
-      "list": "supply",
-      "pickClose": 47.880001068115234,
-      "curClose": 51.97999954223633,
-      "ret": 8.6,
-      "tradingDays": 7,
-      "stillListed": true
-    },
-    {
-      "ticker": "HAL",
-      "name": "Halliburton",
-      "pickedAt": "2026-10-19",
-      "list": "volume",
-      "pickClose": 32.97999954223633,
-      "curClose": 35.7599983215332,
-      "ret": 8.4,
-      "tradingDays": 7,
-      "stillListed": true
-    },
-    {
-      "ticker": "MSCI",
-      "name": "MSCI",
-      "pickedAt": "2026-10-19",
-      "list": "volume",
-      "pickClose": 563.489990234375,
-      "curClose": 604.9400024414062,
-      "ret": 7.4,
-      "tradingDays": 7,
-      "stillListed": false
-    },
-    {
-      "ticker": "IQV",
-      "name": "IQVIA",
-      "pickedAt": "2026-10-19",
-      "list": "trend",
-      "pickClose": 265.8800048828125,
-      "curClose": 279.0400085449219,
-      "ret": 4.9,
-      "tradingDays": 7,
+      "curClose": 643.5900268554688,
+      "ret": 17.4,
+      "tradingDays": 8,
       "stillListed": false
     },
     {
@@ -3480,21 +3316,43 @@
       "pickedAt": "2026-10-19",
       "list": "supply",
       "pickClose": 73,
-      "curClose": 76.05000305175781,
-      "ret": 4.2,
-      "tradingDays": 7,
+      "curClose": 80.18000030517578,
+      "ret": 9.8,
+      "tradingDays": 8,
       "stillListed": false
     },
     {
-      "ticker": "GNRC",
-      "name": "Generac",
+      "ticker": "MSCI",
+      "name": "MSCI",
+      "pickedAt": "2026-10-19",
+      "list": "volume",
+      "pickClose": 563.489990234375,
+      "curClose": 618.5499877929688,
+      "ret": 9.8,
+      "tradingDays": 8,
+      "stillListed": false
+    },
+    {
+      "ticker": "CSX",
+      "name": "CSX Corporation",
       "pickedAt": "2026-10-19",
       "list": "supply",
-      "pickClose": 193.30999755859375,
-      "curClose": 201.33999633789062,
-      "ret": 4.2,
-      "tradingDays": 7,
+      "pickClose": 47.880001068115234,
+      "curClose": 52.2400016784668,
+      "ret": 9.1,
+      "tradingDays": 8,
       "stillListed": true
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "pickedAt": "2026-10-19",
+      "list": "volume",
+      "pickClose": 32.97999954223633,
+      "curClose": 35.900001525878906,
+      "ret": 8.9,
+      "tradingDays": 8,
+      "stillListed": false
     },
     {
       "ticker": "AMCR",
@@ -3502,64 +3360,9 @@
       "pickedAt": "2026-10-19",
       "list": "trend",
       "pickClose": 43.95000076293945,
-      "curClose": 45.65999984741211,
-      "ret": 3.9,
-      "tradingDays": 7,
-      "stillListed": false
-    },
-    {
-      "ticker": "UNP",
-      "name": "Union Pacific Corporation",
-      "pickedAt": "2026-10-19",
-      "list": "supply",
-      "pickClose": 287.010009765625,
-      "curClose": 297.79998779296875,
-      "ret": 3.8,
-      "tradingDays": 7,
-      "stillListed": false
-    },
-    {
-      "ticker": "PEG",
-      "name": "Public Service Enterprise Group",
-      "pickedAt": "2026-10-19",
-      "list": "supply",
-      "pickClose": 70.31999969482422,
-      "curClose": 72.47000122070312,
-      "ret": 3.1,
-      "tradingDays": 7,
-      "stillListed": true
-    },
-    {
-      "ticker": "PGR",
-      "name": "Progressive Corporation",
-      "pickedAt": "2026-10-19",
-      "list": "steady",
-      "pickClose": 219.11000061035156,
-      "curClose": 225.66000366210938,
-      "ret": 3,
-      "tradingDays": 7,
-      "stillListed": true
-    },
-    {
-      "ticker": "ATO",
-      "name": "Atmos Energy",
-      "pickedAt": "2026-10-19",
-      "list": "supply",
-      "pickClose": 164.74000549316406,
-      "curClose": 169.52999877929688,
-      "ret": 2.9,
-      "tradingDays": 7,
-      "stillListed": false
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "pickedAt": "2026-10-19",
-      "list": "trend",
-      "pickClose": 297.94000244140625,
-      "curClose": 304,
-      "ret": 2,
-      "tradingDays": 7,
+      "curClose": 47.130001068115234,
+      "ret": 7.2,
+      "tradingDays": 8,
       "stillListed": false
     },
     {
@@ -3568,20 +3371,86 @@
       "pickedAt": "2026-10-19",
       "list": "trend",
       "pickClose": 501.6499938964844,
-      "curClose": 510,
-      "ret": 1.7,
-      "tradingDays": 7,
+      "curClose": 534.3900146484375,
+      "ret": 6.5,
+      "tradingDays": 8,
       "stillListed": false
     },
     {
-      "ticker": "AXP",
-      "name": "American Express",
+      "ticker": "UNP",
+      "name": "Union Pacific Corporation",
+      "pickedAt": "2026-10-19",
+      "list": "supply",
+      "pickClose": 287.010009765625,
+      "curClose": 301.92999267578125,
+      "ret": 5.2,
+      "tradingDays": 8,
+      "stillListed": false
+    },
+    {
+      "ticker": "GNRC",
+      "name": "Generac",
+      "pickedAt": "2026-10-19",
+      "list": "supply",
+      "pickClose": 193.30999755859375,
+      "curClose": 203.36000061035156,
+      "ret": 5.2,
+      "tradingDays": 8,
+      "stillListed": false
+    },
+    {
+      "ticker": "PGR",
+      "name": "Progressive Corporation",
+      "pickedAt": "2026-10-19",
+      "list": "steady",
+      "pickClose": 219.11000061035156,
+      "curClose": 230.17999267578125,
+      "ret": 5.1,
+      "tradingDays": 8,
+      "stillListed": true
+    },
+    {
+      "ticker": "PEG",
+      "name": "Public Service Enterprise Group",
+      "pickedAt": "2026-10-19",
+      "list": "supply",
+      "pickClose": 70.31999969482422,
+      "curClose": 73.62999725341797,
+      "ret": 4.7,
+      "tradingDays": 8,
+      "stillListed": false
+    },
+    {
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
       "pickedAt": "2026-10-19",
       "list": "trend",
-      "pickClose": 316.4100036621094,
-      "curClose": 317.94000244140625,
-      "ret": 0.5,
-      "tradingDays": 7,
+      "pickClose": 297.94000244140625,
+      "curClose": 311.75,
+      "ret": 4.6,
+      "tradingDays": 8,
+      "stillListed": false
+    },
+    {
+      "ticker": "ATO",
+      "name": "Atmos Energy",
+      "pickedAt": "2026-10-19",
+      "list": "supply",
+      "pickClose": 164.74000549316406,
+      "curClose": 171.07000732421875,
+      "ret": 3.8,
+      "tradingDays": 8,
+      "stillListed": false
+    },
+    {
+      "ticker": "IQV",
+      "name": "IQVIA",
+      "pickedAt": "2026-10-19",
+      "list": "trend",
+      "pickClose": 265.8800048828125,
+      "curClose": 275.05999755859375,
+      "ret": 3.5,
+      "tradingDays": 8,
       "stillListed": false
     },
     {
@@ -3590,44 +3459,187 @@
       "pickedAt": "2026-10-19",
       "list": "trend",
       "pickClose": 1142.449951171875,
-      "curClose": 1136.530029296875,
-      "ret": -0.5,
+      "curClose": 1175.9100341796875,
+      "ret": 2.9,
+      "tradingDays": 8,
+      "stillListed": false
+    },
+    {
+      "ticker": "AXP",
+      "name": "American Express",
+      "pickedAt": "2026-10-19",
+      "list": "trend",
+      "pickClose": 316.4100036621094,
+      "curClose": 323.7099914550781,
+      "ret": 2.3,
+      "tradingDays": 8,
+      "stillListed": false
+    },
+    {
+      "ticker": "GPN",
+      "name": "Global Payments",
+      "pickedAt": "2026-10-19",
+      "list": "trend",
+      "pickClose": 84.58999633789062,
+      "curClose": 85.72000122070312,
+      "ret": 1.3,
+      "tradingDays": 8,
+      "stillListed": false
+    },
+    {
+      "ticker": "CAH",
+      "name": "Cardinal Health",
+      "pickedAt": "2026-10-19",
+      "list": "volume",
+      "pickClose": 252.64999389648438,
+      "curClose": 251.08999633789062,
+      "ret": -0.6,
+      "tradingDays": 8,
+      "stillListed": true
+    },
+    {
+      "ticker": "FOX",
+      "name": "Fox Corporation (Class B)",
+      "pickedAt": "2026-10-19",
+      "list": "trend",
+      "pickClose": 58.33000183105469,
+      "curClose": 57.25,
+      "ret": -1.9,
+      "tradingDays": 8,
+      "stillListed": false
+    },
+    {
+      "ticker": "CVS",
+      "name": "CVS Health",
+      "pickedAt": "2026-10-19",
+      "list": "trend",
+      "pickClose": 92.68000030517578,
+      "curClose": 90.33000183105469,
+      "ret": -2.5,
+      "tradingDays": 8,
+      "stillListed": false
+    },
+    {
+      "ticker": "CRL",
+      "name": "Charles River Laboratories",
+      "pickedAt": "2026-10-20",
+      "list": "trend",
+      "pickClose": 315.45001220703125,
+      "curClose": 376.1000061035156,
+      "ret": 19.2,
+      "tradingDays": 7,
+      "stillListed": true
+    },
+    {
+      "ticker": "TDY",
+      "name": "Teledyne Technologies",
+      "pickedAt": "2026-10-20",
+      "list": "volume",
+      "pickClose": 632.2100219726562,
+      "curClose": 677.4600219726562,
+      "ret": 7.2,
+      "tradingDays": 7,
+      "stillListed": false
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
+      "pickedAt": "2026-10-20",
+      "list": "volume",
+      "pickClose": 534,
+      "curClose": 562.3599853515625,
+      "ret": 5.3,
+      "tradingDays": 7,
+      "stillListed": false
+    },
+    {
+      "ticker": "TRMB",
+      "name": "Trimble Inc.",
+      "pickedAt": "2026-10-20",
+      "list": "trend",
+      "pickClose": 62.119998931884766,
+      "curClose": 65.33999633789062,
+      "ret": 5.2,
+      "tradingDays": 7,
+      "stillListed": false
+    },
+    {
+      "ticker": "NSC",
+      "name": "Norfolk Southern",
+      "pickedAt": "2026-10-20",
+      "list": "volume",
+      "pickClose": 325.57000732421875,
+      "curClose": 342.19000244140625,
+      "ret": 5.1,
+      "tradingDays": 7,
+      "stillListed": false
+    },
+    {
+      "ticker": "FITB",
+      "name": "Fifth Third Bancorp",
+      "pickedAt": "2026-10-20",
+      "list": "volume",
+      "pickClose": 52.40999984741211,
+      "curClose": 54.439998626708984,
+      "ret": 3.9,
+      "tradingDays": 7,
+      "stillListed": false
+    },
+    {
+      "ticker": "STLD",
+      "name": "Steel Dynamics",
+      "pickedAt": "2026-10-20",
+      "list": "volume",
+      "pickClose": 244.3699951171875,
+      "curClose": 253.52999877929688,
+      "ret": 3.7,
+      "tradingDays": 7,
+      "stillListed": true
+    },
+    {
+      "ticker": "MMM",
+      "name": "3M",
+      "pickedAt": "2026-10-20",
+      "list": "volume",
+      "pickClose": 171.3699951171875,
+      "curClose": 177.36000061035156,
+      "ret": 3.5,
       "tradingDays": 7,
       "stillListed": false
     }
   ],
   "record": {
-    "samples": 646,
+    "samples": 667,
     "horizon": 5,
-    "avgReturn": 0.9,
-    "hitRate": 68,
+    "avgReturn": 1,
+    "hitRate": 67,
     "benchReturn": 1.1,
     "byList": {
       "supply": {
         "samples": 220,
         "horizon": 5,
-        "avgReturn": -0.7,
-        "hitRate": 55,
+        "avgReturn": -0.4,
+        "hitRate": 56,
         "benchReturn": 1.1
       },
       "steady": {
-        "samples": 173,
+        "samples": 182,
         "horizon": 5,
-        "avgReturn": 0.7,
-        "hitRate": 69,
+        "avgReturn": 0.5,
+        "hitRate": 67,
         "benchReturn": 1.1
       },
       "trend": {
         "samples": 220,
         "horizon": 5,
-        "avgReturn": 2.4,
-        "hitRate": 79,
+        "avgReturn": 2.2,
+        "hitRate": 76,
         "benchReturn": 1.1
       },
       "volume": {
-        "samples": 104,
+        "samples": 118,
         "horizon": 5,
-        "avgReturn": 2.2,
+        "avgReturn": 2.3,
         "hitRate": 75,
         "benchReturn": 1.1
       }
