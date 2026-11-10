@@ -126,6 +126,13 @@ function judgeSupply(a) {
     grade = a.aligned ? 'A' : 'B';
     if (a.overheat) { ctx = `⚠ 초입~중간 구간이나 과열(RSI ${a.rsi}) — 추격 주의`; grade = 'C'; warn = true; }
   }
+  // 2026-11-10 소급 검증(9/15~11/3, 보유 3·5·10일 모두): 외인·기관 연속 매수가
+  // LONG_STREAK 일 이상인 종목은 시장 대비 일관되게 부진(5일 -2.4%p), 그 미만은 시장 수준.
+  // "오래 샀다 = 더 좋다"가 아니라 "이미 늦었다"에 가까워 경고로 강등한다.
+  if (Math.max(a.fS, a.iS) >= DISCOVER.longStreak && !warn) {
+    ctx = `⚠ ${Math.max(a.fS, a.iS)}일째 연속 매수 — 매집 후반부, 뒤늦은 진입 주의`;
+    grade = 'C'; warn = true;
+  }
 
   const reasons = [ctx];
   if (a.fS >= 1) reasons.push(`외국인 ${a.fS}일 연속 매수`);
@@ -136,7 +143,9 @@ function judgeSupply(a) {
   if (a.valueRatio >= 2) reasons.push(`거래대금 평소 ${a.valueRatio}배`);
   if (a.aligned) reasons.push('정배열 유지');
   if (!warn && soundFundamentals(a)) reasons.push(`펀더멘털 우량 (ROE ${a.roe}%)`);
-  const sort = a.fS + a.iS + (a.fS >= 2 && a.iS >= 2 ? 3 : 0) + (a.accumulating ? 2 : 0)
+  // 연속일수는 5일까지만 가점 — 길수록 위로 올리던 정렬이 상위 5개를 가장 부진하게 만들었다(검증 동일).
+  const cap = (n) => Math.min(n, 5);
+  const sort = cap(a.fS) + cap(a.iS) + (a.fS >= 2 && a.iS >= 2 ? 3 : 0) + (a.accumulating ? 2 : 0)
     + (grade === 'A' ? 3 : 0) - (warn ? 6 : 0);
   return { reasons, sort, grade, warn };
 }
@@ -161,11 +170,10 @@ function judgeTrend(a) {
   } else {
     pattern = '추세 신호 발생'; grade = 'B';
   }
-  let warn = false;
-  if (a.overheat) {
-    pattern += '';
-    grade = 'C'; warn = true;
-  }
+  // 2026-11-10 소급 검증: 과열 구간의 추세 신호는 보유 5일 -3.8%p, 10일 -4.8%p 로
+  // 세 구간 모두 부진 — 경고만 달아 두지 않고 추세 리스트에서 아예 뺀다.
+  if (a.overheat) return null;
+  const warn = false;
 
   const reasons = [pattern];
   if (warn) reasons.push(`⚠ 과열 구간 — 20일 ${a.runup20 != null ? '+' + Math.round(a.runup20 * 100) + '%' : ''} · RSI ${a.rsi} · 뒤늦은 진입 위험`);
@@ -180,8 +188,11 @@ function judgeTrend(a) {
 function judgeSteady(a) {
   const D = DISCOVER.steadyDays;
   if (a.fS < D && a.iS < D) return null;
-  let grade = 'A', warn = false;
-  const reasons = [];
+  // 2026-11-10 소급 검증: 이 리스트(10일+ 연속 매수)는 보유 3·5·10일 모두 시장보다
+  // 부진(5일 -2.1%p)했다. 리스트는 "누가 오래 사고 있나" 관찰용으로 남기되 A 등급은
+  // 주지 않고, 집중 후보 가중치도 0 으로 둔다(buildFocus).
+  let grade = 'B', warn = false;
+  const reasons = ['관찰용 — 장기 연속 매수 종목은 최근 검증에서 시장보다 부진'];
   if (a.posIn60 != null && a.posIn60 > 0.85 && a.runup20 > 0.15) {
     reasons.push(`⚠ 이미 20일간 +${Math.round(a.runup20 * 100)}% 상승한 고점권 — 추격 주의`);
     grade = 'C'; warn = true;
@@ -359,7 +370,9 @@ export function buildThemeFlow(stocks, lists, history, histDates) {
 // 여러 리스트에 동시에 걸린 종목일수록 신뢰(수급 3 + 매집 3 + 추세 2 + 거래 1).
 // 약세장 실증(수급만 시장 방어)에 따라 수급 계열(supply/steady) 근거를 필수로 요구.
 export function buildFocus(lists, qMap) {
-  const W = { supply: 3, steady: 3, trend: 2, volume: 1 };
+  // 2026-11-10 소급 검증으로 가중치 재조정(이전: supply 3·steady 3·trend 2·volume 1).
+  // 실제로 시장을 이긴 쪽은 거래 폭발 A급과 비과열 추세였고, 장기 매집은 반대였다.
+  const W = { supply: 2, steady: 0, trend: 2, volume: 3 };
   const cand = new Map();
   for (const [key, rows] of Object.entries(lists)) {
     rows.forEach((r, idx) => {
@@ -374,7 +387,9 @@ export function buildFocus(lists, qMap) {
     });
   }
   // 수급 근거 필수 + 경고(과열·추격) 종목은 집중 후보에서 제외
-  let picks = [...cand.values()].filter((c) => (c.hits.includes('supply') || c.hits.includes('steady')) && !c.warn);
+  // 경고(과열·추격·장기 연속 매수) 종목은 제외하고, 거래·추세 근거가 하나는 있어야 한다.
+  // (이전의 "수급 계열 근거 필수" 조건은 위 검증에서 성과를 깎는 쪽이라 뺐다.)
+  let picks = [...cand.values()].filter((c) => (c.hits.includes('volume') || c.hits.includes('trend')) && !c.warn);
   if (picks.length < 3) picks = [...cand.values()].filter((c) => !c.warn);
   if (picks.length < 3) picks = [...cand.values()];
   picks.sort((a, b) => b.score - a.score);

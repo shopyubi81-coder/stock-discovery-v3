@@ -29,6 +29,7 @@ export const DISCOVER = {
   maxPerList: 20,          // 탭당 최대 종목 수
   volumeSurge: 2.0,        // "거래 폭발" 기준 — 20일 평균 대비 거래대금 배수
   steadyDays: 10,          // "장기 매집" 기준 — 외인 또는 기관 연속 순매수 일수
+  longStreak: 10,          // 수급 리스트에서 "매집 후반부" 경고로 강등하는 연속 매수 일수
   recordWindowDays: 14,    // 성적표 집계 기간 (최근 N일 리스트)
   recordHorizon: 5,        // 성적표 기준 보유일 (D+5 수익률)
   historyKeep: 30,         // 발굴 이력 보관 일수
