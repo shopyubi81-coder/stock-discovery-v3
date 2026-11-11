@@ -45,6 +45,14 @@ jobs:
           node src/fetch_daily.js
           node src/engine/discover.js
 
+      # 2026-11-11: ETF 수집이 로컬 PC 예약작업(daily_batch.cmd)에만 있어 PC가
+      # 꺼지면 ETF만 갱신이 멈췄다. 순서는 daily_batch.cmd와 같게(KR 수집 뒤).
+      # 이 워크플로에는 Supabase 키가 없으므로 JSON(etfs.json, etf-quotes.json)만
+      # public/data에 저장된다. ETF는 부가 데이터라 실패해도 나머지는 계속한다.
+      - name: Fetch ETF universe + metrics
+        continue-on-error: true
+        run: node src/fetch_etf.js
+
       - name: Fetch market extras (needed for US FX rate)
         run: node src/fetch_market.js
 
